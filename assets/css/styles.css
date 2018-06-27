@@ -1,0 +1,8 @@
+html {
+  margin: 5px;
+}
+
+ol,ul {
+  padding: 5px;
+  list-style-type: none;
+}
