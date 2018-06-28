@@ -60,20 +60,43 @@
                 <div class="col-md-9" role="main">
 
 <h1 id="test-live-checkout">Test Live Checkout</h1>
-<p>This documentation is for the Magento 1.x version. For the Magento 2.x version, see <a href="https://nickolasburr.github.io/magento/2.x/extensions/testlivecheckout/latest/">here</a>.</p>
+<p>This documentation is for the Magento 1.x version. For the Magento 2.x version, see <a href="https://nickolasburr.github.io/magento/2.x/extensions/testlivecheckout/latest">here</a>.</p>
 <h2 id="preamble">Preamble</h2>
-<p>Test Live Checkout is a fairly priced Magento extension, costing only $49.99 USD. If you're uncertain about whether or not you want to purchase, please consider the following:</p>
+<p>Test Live Checkout is a premium Magento extension, costing only $49.99 USD. If you're uncertain whether or not you want to purchase, please consider the following:</p>
 <blockquote>
-<p>The average online order (across all major industries) is approximately $82 USD. If Test Live Checkout is able to save just <em>one</em> order of equal value,
-it will have covered its cost in revenue by 1.64x. That's a very small price to pay for such a useful asset.</p>
+<p>The average online order (across all industries) is approximately $82 USD. If Test Live Checkout is able to save just <em>one</em> order of equal value,
+it will have covered its cost in revenue by 1.64x.</p>
 </blockquote>
+<p>That's an exceptionally small price to pay for such a valuable asset.</p>
 <h2 id="overview">Overview</h2>
 <p>Test Live Checkout is a Magento extension intended for use with automated browser testing tools, such as <a href="https://github.com/GoogleChrome/puppeteer">Puppeteer</a>.
-Automated browser testing simulates real user behaviors through a series of instructions, allowing you to discover subtle bugs which impact your bottom line.
-Test Live Checkout provides the ability to complete the sales transaction pipeline, by allowing an automated browser test to <code>POST</code> an order, as if it were a real
-user submitting an order.</p>
+Automated browser testing simulates real user behaviors through a series of instructions, allowing you to discover subtle, difficult bugs which impact your bottom line.</p>
+<p>Test Live Checkout provides the ability to complete the sales transaction pipeline, by allowing an automated browser test to submit an order in the same fashion a real user
+would submit an order. This has several advantages over the historical approach, which is to create simple test products and submit the order outside of a browser context.</p>
 <h2 id="quick-start">Quick Start</h2>
-<p>Quick start guide</p></div>
+<ul>
+<li>Install <a href="https://www.docker.com">Docker</a></li>
+<li>Install <a href="https://nodejs.org">Node</a></li>
+<li>Clone <a href="https://github.com/andreaskoch/dockerized-magento">dockerized-magento</a> and follow setup guide</li>
+</ul>
+<p>Once dockerized-magento has completed setup, you need to install the Test Live Checkout extension.</p>
+<p>After installing the extension, complete the following:</p>
+<ul>
+<li>Log into Admin area and navigate to System -&gt; Configuration -&gt; NEB Extensions (left sidebar) -&gt; Test Live Checkout</li>
+<li>Enable the extension</li>
+<li>Generate 32 character alphanumeric authentication token and paste into <em>Authentication Token</em> field</li>
+<li>If you want a custom redirect URL, add it to the <em>Redirect URL</em> field. By default, it redirects to <code>/</code> on successful submission.</li>
+<li>Click Save</li>
+</ul>
+<p>Once the extension configuration is complete, we can now run an example automated test.</p>
+<ul>
+<li><code>mkdir testlivecheckout-puppeteer-scripts &amp;&amp; cd testlivecheckout-puppeteer-scripts</code></li>
+<li><code>curl -fsL -O https://nickolasburr.github.io/magento/1.x/extensions/testlivecheckout/puppeteer/guest-checkout.js</code></li>
+<li>Replace <code>testshop.com</code> with the domain used for dockerized-magento (default is <code>dockerized-magento.local</code>) and save file</li>
+<li>Using the authentication token from earlier, <code>export TLC_AUTH_TOKEN="&lt;AUTH_TOKEN_FROM_EARLIER&gt;"</code></li>
+<li><code>node guest-checkout.js</code></li>
+</ul>
+<p>Once the script has finished running, you should 10 PNG screenshots of the various stages of checkout.</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -155,5 +178,5 @@ user submitting an order.</p>
 
 <!--
 MkDocs version : 0.17.4
-Build Date UTC : 2018-06-28 18:00:19
+Build Date UTC : 2018-06-28 19:11:57
 -->
