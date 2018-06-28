@@ -1,0 +1,6 @@
+site_name: Test Live Checkout
+site_dir: latest
+theme: mkdocs
+pages:
+  - Home: index.md
+  - About: about.md
