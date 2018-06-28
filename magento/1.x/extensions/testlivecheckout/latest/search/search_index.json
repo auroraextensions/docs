@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Test Live Checkout\n\n\nThis documentation is for the Magento 1.x version. For the Magento 2.x version, see \nhere\n.\n\n\nOverview\n\n\nTest Live Checkout is a Magento extension intended for use with automated browser testing tools, such as \nPuppeteer\n.\nAutomated browser testing simulates real user behaviors through a series of instructions, allowing you to discover subtle bugs which impact your bottom line.\nTest Live Checkout provides the ability to complete the sales transaction pipeline, by allowing an automated browser test to POST an order, as if it were a real\nuser submitting an order.",
+            "text": "Test Live Checkout\n\n\nThis documentation is for the Magento 1.x version. For the Magento 2.x version, see \nhere\n.\n\n\nPreamble\n\n\nTest Live Checkout is a fairly priced Magento extension, costing only $49.99 USD. If you're uncertain about whether or not you want to purchase, please consider the following:\n\n\n\n\nThe average online order (across all major industries) is approximately $82 USD. If Test Live Checkout is able to save just \none\n order of equal value,\nit will have covered its cost in revenue by 1.64x. That's a very small price to pay for such a useful asset.\n\n\n\n\nOverview\n\n\nTest Live Checkout is a Magento extension intended for use with automated browser testing tools, such as \nPuppeteer\n.\nAutomated browser testing simulates real user behaviors through a series of instructions, allowing you to discover subtle bugs which impact your bottom line.\nTest Live Checkout provides the ability to complete the sales transaction pipeline, by allowing an automated browser test to \nPOST\n an order, as if it were a real\nuser submitting an order.\n\n\nQuick Start\n\n\nQuick start guide",
             "title": "Home"
         },
         {
@@ -11,29 +11,19 @@
             "title": "Test Live Checkout"
         },
         {
+            "location": "/#preamble",
+            "text": "Test Live Checkout is a fairly priced Magento extension, costing only $49.99 USD. If you're uncertain about whether or not you want to purchase, please consider the following:   The average online order (across all major industries) is approximately $82 USD. If Test Live Checkout is able to save just  one  order of equal value,\nit will have covered its cost in revenue by 1.64x. That's a very small price to pay for such a useful asset.",
+            "title": "Preamble"
+        },
+        {
             "location": "/#overview",
-            "text": "Test Live Checkout is a Magento extension intended for use with automated browser testing tools, such as  Puppeteer .\nAutomated browser testing simulates real user behaviors through a series of instructions, allowing you to discover subtle bugs which impact your bottom line.\nTest Live Checkout provides the ability to complete the sales transaction pipeline, by allowing an automated browser test to POST an order, as if it were a real\nuser submitting an order.",
+            "text": "Test Live Checkout is a Magento extension intended for use with automated browser testing tools, such as  Puppeteer .\nAutomated browser testing simulates real user behaviors through a series of instructions, allowing you to discover subtle bugs which impact your bottom line.\nTest Live Checkout provides the ability to complete the sales transaction pipeline, by allowing an automated browser test to  POST  an order, as if it were a real\nuser submitting an order.",
             "title": "Overview"
         },
         {
-            "location": "/about/",
-            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "About"
-        },
-        {
-            "location": "/about/#welcome-to-mkdocs",
-            "text": "For full documentation visit  mkdocs.org .",
-            "title": "Welcome to MkDocs"
-        },
-        {
-            "location": "/about/#commands",
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
-            "title": "Commands"
-        },
-        {
-            "location": "/about/#project-layout",
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Project layout"
+            "location": "/#quick-start",
+            "text": "Quick start guide",
+            "title": "Quick Start"
         }
     ]
 }
