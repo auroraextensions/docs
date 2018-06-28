@@ -1,17 +1,10 @@
-# Welcome to MkDocs
+# Test Live Checkout
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+This documentation is for the Magento 1.x version. For the Magento 2.x version, see [here](https://nickolasburr.github.io/magento/2.x/extensions/testlivecheckout/latest/).
 
-## Commands
+## Overview
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Test Live Checkout is a Magento extension intended for use with automated browser testing tools, such as [Puppeteer](https://github.com/GoogleChrome/puppeteer).
+Automated browser testing simulates real user behaviors through a series of instructions, allowing you to discover subtle bugs which impact your bottom line.
+Test Live Checkout provides the ability to complete the sales transaction pipeline, by allowing an automated browser test to POST an order, as if it were a real
+user submitting an order.
