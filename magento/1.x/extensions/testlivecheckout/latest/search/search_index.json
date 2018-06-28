@@ -2,23 +2,18 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "text": "Test Live Checkout\n\n\nThis documentation is for the Magento 1.x version. For the Magento 2.x version, see \nhere\n.\n\n\nOverview\n\n\nTest Live Checkout is a Magento extension intended for use with automated browser testing tools, such as \nPuppeteer\n.\nAutomated browser testing simulates real user behaviors through a series of instructions, allowing you to discover subtle bugs which impact your bottom line.\nTest Live Checkout provides the ability to complete the sales transaction pipeline, by allowing an automated browser test to POST an order, as if it were a real\nuser submitting an order.",
             "title": "Home"
         },
         {
-            "location": "/#welcome-to-mkdocs",
-            "text": "For full documentation visit  mkdocs.org .",
-            "title": "Welcome to MkDocs"
+            "location": "/#test-live-checkout",
+            "text": "This documentation is for the Magento 1.x version. For the Magento 2.x version, see  here .",
+            "title": "Test Live Checkout"
         },
         {
-            "location": "/#commands",
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
-            "title": "Commands"
-        },
-        {
-            "location": "/#project-layout",
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Project layout"
+            "location": "/#overview",
+            "text": "Test Live Checkout is a Magento extension intended for use with automated browser testing tools, such as  Puppeteer .\nAutomated browser testing simulates real user behaviors through a series of instructions, allowing you to discover subtle bugs which impact your bottom line.\nTest Live Checkout provides the ability to complete the sales transaction pipeline, by allowing an automated browser test to POST an order, as if it were a real\nuser submitting an order.",
+            "title": "Overview"
         },
         {
             "location": "/about/",
