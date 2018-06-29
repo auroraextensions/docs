@@ -2,13 +2,6 @@
 
 > This documentation is for the Magento 1.x version. For the Magento 2.x version, see [here](https://nickolasburr.github.io/magento/extensions/2.x/testlivecheckout/latest).
 
-## Value Proposition
-
-Test Live Checkout is a premium Magento extension, costing only $49.99 USD. If you're uncertain whether or not you want to purchase, please consider the following:
-
-> The average online order (across all industries) is approximately $82 USD. If Test Live Checkout is able to save just _one_ order of equal value,
-> it will have covered its cost in revenue by 1.64x.
-
 ## Overview
 
 Test Live Checkout is a Magento extension intended for use with automated browser testing tools, such as [Puppeteer](https://github.com/GoogleChrome/puppeteer).
@@ -16,6 +9,10 @@ Automated browser tests simulate real user behaviors through a series of instruc
 
 Test Live Checkout provides the ability to complete the sales transaction pipeline, by allowing an automated browser test to submit an order in the same fashion a real user
 would submit an order. This has several advantages over the historical approach, which is to create simple test products and submit the order outside of a browser context.
+
+## Download
+
+The extension is available for purchase [here](https://marketplace.magento.com/nickolasburr-test-live-checkout.html).
 
 ## Quick Start
 
