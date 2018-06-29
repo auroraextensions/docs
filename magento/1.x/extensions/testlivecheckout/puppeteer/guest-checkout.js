@@ -117,7 +117,6 @@ try {
 		 * Add tlc_auth_token <input> to payment <form>. TestLiveCheckout
 		 * will evaluate the POST form parameters for this auth token.
 		 */
-
 		await webpage.evaluate(token => {
 			(function ($) {
 				var input = document.createElement('input');
