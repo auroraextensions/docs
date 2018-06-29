@@ -105,14 +105,9 @@ try {
 		await webpage.screenshot({ path: (imagesDir + '/step-8.png') });
 
 		/**
-		 * Wait for 'Payment Information' section to load, then
-		 * fill out payment details and click 'Continue'.
+		 * Wait for 'Payment Information' section to load, then click 'Continue'.
 		 */
 		await webpage.waitForSelector('li[id="opc-payment"].section.allow.active', waitForTimeout);
-		await webpage.select('select[id="authorizenet_cc_type"]', 'VI');
-		await webpage.type('input[id="authorizenet_cc_number"]', '4111111111111111', { delay: 100 });
-		await webpage.select('select[id="authorizenet_expiration"]', '12');
-		await webpage.select('select[id="authorizenet_expiration_yr"]', '2028');
 		await webpage.click('div[id="payment-buttons-container"] > button');
 
 		console.log('Step Nine: Complete');
