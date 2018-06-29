@@ -84,19 +84,22 @@ would submit an order. This has several advantages over the historical approach,
 <ul>
 <li>Log into Admin area and navigate to System -&gt; Configuration -&gt; NEB Extensions (left sidebar) -&gt; Test Live Checkout</li>
 <li>Enable the extension</li>
-<li>Generate 32 character alphanumeric authentication token and paste into <em>Authentication Token</em> field</li>
-<li>If you want a custom redirect URL, add it to the <em>Redirect URL</em> field. By default, it redirects to <code>/</code> on successful submission.</li>
-<li>Click Save</li>
+<li>Generate 32 character alphanumeric authentication token and paste into <tt>Authentication Token</tt> field</li>
+<li>If you want a custom redirect URL, add it to the <tt>Redirect URL</tt> field. By default, it redirects to <code>/</code> on successful submission.</li>
+<li>Click <tt>Save</tt></li>
 </ul>
 <p>Once the extension configuration is complete, we can now run an example automated test.</p>
-<ul>
-<li><code>mkdir testlivecheckout-puppeteer-scripts &amp;&amp; cd testlivecheckout-puppeteer-scripts</code></li>
-<li><code>curl -fsL -O https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/puppeteer/guest-checkout.js</code></li>
-<li>Replace <code>testshop.com</code> with the domain used for dockerized-magento (default is <code>dockerized-magento.local</code>) and save file</li>
-<li>Using the authentication token from earlier, <code>export TLC_AUTH_TOKEN="&lt;AUTH_TOKEN_FROM_EARLIER&gt;"</code></li>
-<li><code>node guest-checkout.js</code></li>
-</ul>
-<p>Once the script has finished running, you should 10 PNG screenshots of the various stages of checkout.</p></div>
+<pre><code>mkdir testlivecheckout-puppeteer-scripts &amp;&amp; cd testlivecheckout-puppeteer-scripts
+</code></pre>
+
+<pre><code>curl -fsL -O https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/puppeteer/guest-checkout.js
+</code></pre>
+
+<p>Using the authentication token from earlier, <code>export TLC_AUTH_TOKEN="&lt;AUTH_TOKEN_FROM_EARLIER&gt;"</code></p>
+<pre><code>node guest-checkout.js
+</code></pre>
+
+<p>Once the script has finished running, you should have 10 PNG screenshots of the various stages of checkout.</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -178,5 +181,5 @@ would submit an order. This has several advantages over the historical approach,
 
 <!--
 MkDocs version : 0.17.4
-Build Date UTC : 2018-06-29 00:50:09
+Build Date UTC : 2018-06-29 18:01:32
 -->
