@@ -27,10 +27,9 @@ Once dockerized-magento has completed setup, you need to install the Test Live C
 
 After installing the extension, complete the following:
 
-+ Log into Admin area and navigate to <tt>System</tt> -> <tt>Configuration</tt> -> <tt>NEB Extensions</tt> (left sidebar) -> <tt>Test Live Checkout</tt>
-+ Set <tt>Enable Live Checkout Testing</tt> to <tt>Yes</tt>
++ From Admin area, navigate to <tt>System</tt> -> <tt>Configuration</tt> -> <tt>NEB Extensions</tt> (left sidebar) -> <tt>Test Live Checkout</tt>
++ Under <tt>General Settings</tt>, set <tt>Enable Live Checkout Testing</tt> to <tt>Yes</tt>
 + Generate 32 character alphanumeric authentication token and paste into <tt>Authentication Token</tt> field
-+ If you want a custom redirect URL, add it to the <tt>Redirect URL</tt> field. By default, it redirects to `/` on success.
 + Click <tt>Save</tt>
 
 Once extension configuration is complete, we'll need to set up a workspace for running our tests.
@@ -59,4 +58,4 @@ Now run <tt>guest-checkout.js</tt>:
 node guest-checkout.js
 ```
 
-Once the script has finished running, you should have 10 PNG screenshots of the various stages of checkout.
+Once the script has finished running, you should have 10 PNG screenshots of the various stages of checkout. The last screenshot should be of the Home page, indicating a successful order submission.
