@@ -6,7 +6,7 @@
 
 const puppeteer = require('puppeteer');
 const imagesDir = '.';
-const shopUrl = 'http://testshop.com';
+const shopUrl = 'http://dockerized-magento.local';
 
 /**
  * waitFor functions timeout.
