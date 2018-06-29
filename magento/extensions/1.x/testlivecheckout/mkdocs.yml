@@ -4,4 +4,5 @@ theme: mkdocs
 pages:
   - Getting Started: index.md
   - Configuration: configuration.md
-  - Examples: examples.md
+  - Examples:
+    - 'Guest Checkout': 'examples/guest-checkout.md'
