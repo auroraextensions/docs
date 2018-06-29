@@ -2,14 +2,12 @@
 
 This documentation is for the Magento 1.x version. For the Magento 2.x version, see [here](https://nickolasburr.github.io/magento/extensions/2.x/testlivecheckout/latest).
 
-## Preamble
+## Value Proposition
 
 Test Live Checkout is a premium Magento extension, costing only $49.99 USD. If you're uncertain whether or not you want to purchase, please consider the following:
 
 > The average online order (across all industries) is approximately $82 USD. If Test Live Checkout is able to save just _one_ order of equal value,
 > it will have covered its cost in revenue by 1.64x.
-
-That's an exceptionally small price to pay for such a valuable asset.
 
 ## Overview
 
@@ -29,23 +27,33 @@ Once dockerized-magento has completed setup, you need to install the Test Live C
 
 After installing the extension, complete the following:
 
-+ Log into Admin area and navigate to System -> Configuration -> NEB Extensions (left sidebar) -> Test Live Checkout
-+ Enable the extension
++ Log into Admin area and navigate to <tt>System</tt> -> <tt>Configuration</tt> -> <tt>NEB Extensions</tt> (left sidebar) -> <tt>Test Live Checkout</tt>
++ Set <tt>Enable Live Checkout Testing</tt> to <tt>Yes</tt>
 + Generate 32 character alphanumeric authentication token and paste into <tt>Authentication Token</tt> field
-+ If you want a custom redirect URL, add it to the <tt>Redirect URL</tt> field. By default, it redirects to `/` on successful submission.
++ If you want a custom redirect URL, add it to the <tt>Redirect URL</tt> field. By default, it redirects to `/` on success.
 + Click <tt>Save</tt>
 
-Once the extension configuration is complete, we can now run an example automated test.
+Once extension configuration is complete, we'll need to set up a workspace for running our tests.
+
+First, create a workspace directory:
 
 ```
 mkdir testlivecheckout-puppeteer-scripts && cd testlivecheckout-puppeteer-scripts
 ```
 
+Then fetch a copy of the <tt>guest-checkout.js</tt> Puppeteer script we'll use shortly:
+
 ```
 curl -fsL -O https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/puppeteer/guest-checkout.js
 ```
 
-Using the authentication token from earlier, `export TLC_AUTH_TOKEN="<AUTH_TOKEN_FROM_EARLIER>"`
+Using the authentication token from earlier, export `TLC_AUTH_TOKEN` to your shell environment:
+
+```
+export TLC_AUTH_TOKEN="<AUTH_TOKEN_FROM_EARLIER>"
+```
+
+Now run <tt>guest-checkout.js</tt>:
 
 ```
 node guest-checkout.js
