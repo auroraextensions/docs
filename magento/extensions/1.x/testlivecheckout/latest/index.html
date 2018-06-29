@@ -52,7 +52,7 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#test-live-checkout">Test Live Checkout</a></li>
-            <li><a href="#preamble">Preamble</a></li>
+            <li><a href="#value-proposition">Value Proposition</a></li>
             <li><a href="#overview">Overview</a></li>
             <li><a href="#quick-start">Quick Start</a></li>
     </ul>
@@ -61,13 +61,12 @@
 
 <h1 id="test-live-checkout">Test Live Checkout</h1>
 <p>This documentation is for the Magento 1.x version. For the Magento 2.x version, see <a href="https://nickolasburr.github.io/magento/extensions/2.x/testlivecheckout/latest">here</a>.</p>
-<h2 id="preamble">Preamble</h2>
+<h2 id="value-proposition">Value Proposition</h2>
 <p>Test Live Checkout is a premium Magento extension, costing only $49.99 USD. If you're uncertain whether or not you want to purchase, please consider the following:</p>
 <blockquote>
 <p>The average online order (across all industries) is approximately $82 USD. If Test Live Checkout is able to save just <em>one</em> order of equal value,
 it will have covered its cost in revenue by 1.64x.</p>
 </blockquote>
-<p>That's an exceptionally small price to pay for such a valuable asset.</p>
 <h2 id="overview">Overview</h2>
 <p>Test Live Checkout is a Magento extension intended for use with automated browser testing tools, such as <a href="https://github.com/GoogleChrome/puppeteer">Puppeteer</a>.
 Automated browser testing simulates real user behaviors through a series of instructions, allowing you to discover subtle, difficult bugs which impact your bottom line.</p>
@@ -82,20 +81,26 @@ would submit an order. This has several advantages over the historical approach,
 <p>Once dockerized-magento has completed setup, you need to install the Test Live Checkout extension.</p>
 <p>After installing the extension, complete the following:</p>
 <ul>
-<li>Log into Admin area and navigate to System -&gt; Configuration -&gt; NEB Extensions (left sidebar) -&gt; Test Live Checkout</li>
-<li>Enable the extension</li>
+<li>Log into Admin area and navigate to <tt>System</tt> -&gt; <tt>Configuration</tt> -&gt; <tt>NEB Extensions</tt> (left sidebar) -&gt; <tt>Test Live Checkout</tt></li>
+<li>Set <tt>Enable Live Checkout Testing</tt> to <tt>Yes</tt></li>
 <li>Generate 32 character alphanumeric authentication token and paste into <tt>Authentication Token</tt> field</li>
-<li>If you want a custom redirect URL, add it to the <tt>Redirect URL</tt> field. By default, it redirects to <code>/</code> on successful submission.</li>
+<li>If you want a custom redirect URL, add it to the <tt>Redirect URL</tt> field. By default, it redirects to <code>/</code> on success.</li>
 <li>Click <tt>Save</tt></li>
 </ul>
-<p>Once the extension configuration is complete, we can now run an example automated test.</p>
+<p>Once extension configuration is complete, we'll need to set up a workspace for running our tests.</p>
+<p>First, create a workspace directory:</p>
 <pre><code>mkdir testlivecheckout-puppeteer-scripts &amp;&amp; cd testlivecheckout-puppeteer-scripts
 </code></pre>
 
+<p>Then fetch a copy of the <tt>guest-checkout.js</tt> Puppeteer script we'll use shortly:</p>
 <pre><code>curl -fsL -O https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/puppeteer/guest-checkout.js
 </code></pre>
 
-<p>Using the authentication token from earlier, <code>export TLC_AUTH_TOKEN="&lt;AUTH_TOKEN_FROM_EARLIER&gt;"</code></p>
+<p>Using the authentication token from earlier, export <code>TLC_AUTH_TOKEN</code> to your shell environment:</p>
+<pre><code>export TLC_AUTH_TOKEN=&quot;&lt;AUTH_TOKEN_FROM_EARLIER&gt;&quot;
+</code></pre>
+
+<p>Now run <tt>guest-checkout.js</tt>:</p>
 <pre><code>node guest-checkout.js
 </code></pre>
 
@@ -181,5 +186,5 @@ would submit an order. This has several advantages over the historical approach,
 
 <!--
 MkDocs version : 0.17.4
-Build Date UTC : 2018-06-29 18:01:32
+Build Date UTC : 2018-06-29 18:21:48
 -->
