@@ -31,16 +31,24 @@ After installing the extension, complete the following:
 
 + Log into Admin area and navigate to System -> Configuration -> NEB Extensions (left sidebar) -> Test Live Checkout
 + Enable the extension
-+ Generate 32 character alphanumeric authentication token and paste into *Authentication Token* field
-+ If you want a custom redirect URL, add it to the *Redirect URL* field. By default, it redirects to `/` on successful submission.
-+ Click Save
++ Generate 32 character alphanumeric authentication token and paste into <tt>Authentication Token</tt> field
++ If you want a custom redirect URL, add it to the <tt>Redirect URL</tt> field. By default, it redirects to `/` on successful submission.
++ Click <tt>Save</tt>
 
 Once the extension configuration is complete, we can now run an example automated test.
 
-+ `mkdir testlivecheckout-puppeteer-scripts && cd testlivecheckout-puppeteer-scripts`
-+ `curl -fsL -O https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/puppeteer/guest-checkout.js`
-+ Replace `testshop.com` with the domain used for dockerized-magento (default is `dockerized-magento.local`) and save file
-+ Using the authentication token from earlier, `export TLC_AUTH_TOKEN="<AUTH_TOKEN_FROM_EARLIER>"`
-+ `node guest-checkout.js`
+```
+mkdir testlivecheckout-puppeteer-scripts && cd testlivecheckout-puppeteer-scripts
+```
 
-Once the script has finished running, you should 10 PNG screenshots of the various stages of checkout.
+```
+curl -fsL -O https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/puppeteer/guest-checkout.js
+```
+
+Using the authentication token from earlier, `export TLC_AUTH_TOKEN="<AUTH_TOKEN_FROM_EARLIER>"`
+
+```
+node guest-checkout.js
+```
+
+Once the script has finished running, you should have 10 PNG screenshots of the various stages of checkout.
