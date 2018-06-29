@@ -81,10 +81,9 @@ would submit an order. This has several advantages over the historical approach,
 <p>Once dockerized-magento has completed setup, you need to install the Test Live Checkout extension.</p>
 <p>After installing the extension, complete the following:</p>
 <ul>
-<li>Log into Admin area and navigate to <tt>System</tt> -&gt; <tt>Configuration</tt> -&gt; <tt>NEB Extensions</tt> (left sidebar) -&gt; <tt>Test Live Checkout</tt></li>
-<li>Set <tt>Enable Live Checkout Testing</tt> to <tt>Yes</tt></li>
+<li>From Admin area, navigate to <tt>System</tt> -&gt; <tt>Configuration</tt> -&gt; <tt>NEB Extensions</tt> (left sidebar) -&gt; <tt>Test Live Checkout</tt></li>
+<li>Under <tt>General Settings</tt>, set <tt>Enable Live Checkout Testing</tt> to <tt>Yes</tt></li>
 <li>Generate 32 character alphanumeric authentication token and paste into <tt>Authentication Token</tt> field</li>
-<li>If you want a custom redirect URL, add it to the <tt>Redirect URL</tt> field. By default, it redirects to <code>/</code> on success.</li>
 <li>Click <tt>Save</tt></li>
 </ul>
 <p>Once extension configuration is complete, we'll need to set up a workspace for running our tests.</p>
@@ -104,7 +103,7 @@ would submit an order. This has several advantages over the historical approach,
 <pre><code>node guest-checkout.js
 </code></pre>
 
-<p>Once the script has finished running, you should have 10 PNG screenshots of the various stages of checkout.</p></div>
+<p>Once the script has finished running, you should have 10 PNG screenshots of the various stages of checkout. The last screenshot should be of the Home page, indicating a successful order submission.</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -186,5 +185,5 @@ would submit an order. This has several advantages over the historical approach,
 
 <!--
 MkDocs version : 0.17.4
-Build Date UTC : 2018-06-29 18:21:48
+Build Date UTC : 2018-06-29 18:38:23
 -->
