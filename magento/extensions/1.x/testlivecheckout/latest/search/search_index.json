@@ -24,6 +24,46 @@
             "location": "/#quick-start",
             "text": "Install  Docker  Install  Node  Clone  dockerized-magento  and follow setup guide   Once dockerized-magento has completed setup, you need to install the Test Live Checkout extension.  After installing the extension, complete the following:   From Admin area, navigate to  System  ->  Configuration  ->  NEB Extensions  (left sidebar) ->  Test Live Checkout  Under  General Settings , set  Enable Live Checkout Testing  to  Yes  Generate 32 character alphanumeric authentication token and paste into  Authentication Token  field  Click  Save   After configuring the extension, complete the following:    Create a workspace directory:  mkdir testlivecheckout-puppeteer-scripts && cd testlivecheckout-puppeteer-scripts    Fetch a copy of the  guest-checkout.js  Puppeteer script we'll use shortly:  curl -fsL -O https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/puppeteer/guest-checkout.js    Export the authentication token from earlier to your shell environment:  export TLC_AUTH_TOKEN=\"<AUTH_TOKEN_FROM_EARLIER>\"    Run  guest-checkout.js :  node guest-checkout.js    Once the script has finished running, you should have 10 PNG screenshots of the various stages of checkout. The last screenshot should be of the Home page, indicating a successful order submission.",
             "title": "Quick Start"
+        },
+        {
+            "location": "/configuration/",
+            "text": "Test Live Checkout\n\n\n\n\nThis documentation is for the Magento 1.x version. For the Magento 2.x version, see \nhere\n.\n\n\n\n\nConfiguration\n\n\nBelow are configuration details for Test Live Checkout.\n\n\nEnvironment Variables\n\n\nTLC_AUTH_TOKEN\n: Authentication token used by Puppeteer to authenticate a TLC order.",
+            "title": "Configuration"
+        },
+        {
+            "location": "/configuration/#test-live-checkout",
+            "text": "This documentation is for the Magento 1.x version. For the Magento 2.x version, see  here .",
+            "title": "Test Live Checkout"
+        },
+        {
+            "location": "/configuration/#configuration",
+            "text": "Below are configuration details for Test Live Checkout.",
+            "title": "Configuration"
+        },
+        {
+            "location": "/configuration/#environment-variables",
+            "text": "TLC_AUTH_TOKEN : Authentication token used by Puppeteer to authenticate a TLC order.",
+            "title": "Environment Variables"
+        },
+        {
+            "location": "/examples/",
+            "text": "Test Live Checkout\n\n\n\n\nThis documentation is for the Magento 1.x version. For the Magento 2.x version, see \nhere\n.\n\n\n\n\nExamples\n\n\nBelow are example tests that identify common use cases for automated browser testing and Test Live Checkout.\n\n\nGuest Checkout\n\n\n\n\nGuest checkout",
+            "title": "Examples"
+        },
+        {
+            "location": "/examples/#test-live-checkout",
+            "text": "This documentation is for the Magento 1.x version. For the Magento 2.x version, see  here .",
+            "title": "Test Live Checkout"
+        },
+        {
+            "location": "/examples/#examples",
+            "text": "Below are example tests that identify common use cases for automated browser testing and Test Live Checkout.",
+            "title": "Examples"
+        },
+        {
+            "location": "/examples/#guest-checkout",
+            "text": "Guest checkout",
+            "title": "Guest Checkout"
         }
     ]
 }
