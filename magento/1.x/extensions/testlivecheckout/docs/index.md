@@ -1,6 +1,6 @@
 # Test Live Checkout
 
-This documentation is for the Magento 1.x version. For the Magento 2.x version, see [here](https://nickolasburr.github.io/magento/2.x/extensions/testlivecheckout/latest).
+This documentation is for the Magento 1.x version. For the Magento 2.x version, see [here](https://nickolasburr.github.io/magento/extensions/2.x/testlivecheckout/latest).
 
 ## Preamble
 
@@ -38,7 +38,7 @@ After installing the extension, complete the following:
 Once the extension configuration is complete, we can now run an example automated test.
 
 + `mkdir testlivecheckout-puppeteer-scripts && cd testlivecheckout-puppeteer-scripts`
-+ `curl -fsL -O https://nickolasburr.github.io/magento/1.x/extensions/testlivecheckout/puppeteer/guest-checkout.js`
++ `curl -fsL -O https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/puppeteer/guest-checkout.js`
 + Replace `testshop.com` with the domain used for dockerized-magento (default is `dockerized-magento.local`) and save file
 + Using the authentication token from earlier, `export TLC_AUTH_TOKEN="<AUTH_TOKEN_FROM_EARLIER>"`
 + `node guest-checkout.js`
