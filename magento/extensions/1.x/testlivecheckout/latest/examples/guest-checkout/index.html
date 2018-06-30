@@ -86,21 +86,33 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#test-live-checkout">Test Live Checkout</a></li>
-            <li><a href="#examples">Examples</a></li>
+        <li class="main active"><a href="#guest-checkout">Guest Checkout</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#purpose">Purpose</a></li>
+            <li><a href="#steps">Steps</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="test-live-checkout">Test Live Checkout</h1>
+<h1 id="guest-checkout">Guest Checkout</h1>
 <blockquote>
 <p>This documentation is for the Magento 1.x version. For the Magento 2.x version, see <a href="https://nickolasburr.github.io/magento/extensions/2.x/testlivecheckout/latest">here</a>.</p>
+<p>Tests were performed using the default Magento 1.9.3.9 CE setup with sample data.</p>
 </blockquote>
-<h2 id="examples">Examples</h2>
-<p>Below are example tests that identify common use cases for automated browser testing and Test Live Checkout.</p>
-<h3 id="guest-checkout">Guest Checkout</h3>
+<h2 id="download">Download</h2>
+<p>You can download <tt>guest-checkout.js</tt> <a href="https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/puppeteer/guest-checkout.js">here</a>.</p>
+<h2 id="purpose">Purpose</h2>
+<p>To simulate a guest checkout scenario.</p>
+<h2 id="steps">Steps</h2>
 <ol>
-<li>Guest checkout</li>
+<li>Visit Home page and click on 'Home &amp; Decor -&gt; Bed &amp; Bath' navigation link</li>
+<li>On 'Bed &amp; Bath' category page, click 'Add to cart' button on first product</li>
+<li>On Cart overview page, click 'Proceed to Checkout'</li>
+<li>On Checkout page, click 'Checkout as Guest'</li>
+<li>Fill in 'Billing Information' section and click 'Continue'</li>
+<li>Select 'Flat Rate' option as shipping method and click 'Continue'</li>
+<li>Fill in 'Payment Information' section and click 'Continue'</li>
+<li>Click 'Place Order' to submit order</li>
 </ol></div>
         </div>
 

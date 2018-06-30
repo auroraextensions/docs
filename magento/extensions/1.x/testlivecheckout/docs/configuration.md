@@ -1,4 +1,4 @@
-# Test Live Checkout
+# Configuration
 
 > This documentation is for the Magento 1.x version. For the Magento 2.x version, see [here](https://nickolasburr.github.io/magento/extensions/2.x/testlivecheckout/latest).
 
