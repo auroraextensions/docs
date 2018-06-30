@@ -25,13 +25,42 @@ To simulate a guest checkout scenario on a Magento 1.x storefront.
 
 ## Screenshots
 
-<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-01.png" alt="Step One" height="250" width="250">
-<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-02.png" alt="Step Two" height="250" width="250">
-<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-03.png" alt="Step Three" height="250" width="250">
-<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-04.png" alt="Step Four" height="250" width="250">
-<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-05.png" alt="Step Five" height="250" width="250">
-<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-06.png" alt="Step Six" height="250" width="250">
-<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-07.png" alt="Step Seven" height="250" width="250">
-<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-08.png" alt="Step Eight" height="250" width="250">
-<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-09.png" alt="Step Nine" height="250" width="250">
-<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-10.png" alt="Step Ten" height="250" width="250">
+<a href="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-01.png">
+  <img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-01.png" alt="Step One" height="250" width="250">
+</a>
+
+<a href="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-02.png">
+  <img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-02.png" alt="Step Two" height="250" width="250">
+</a>
+
+<a href="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-03.png">
+  <img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-03.png" alt="Step Three" height="250" width="250">
+</a>
+
+<a href="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-04.png">
+  <img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-04.png" alt="Step Four" height="250" width="250">
+</a>
+
+<a href="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-05.png">
+  <img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-05.png" alt="Step Five" height="250" width="250">
+</a>
+
+<a href="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-06.png">
+  <img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-06.png" alt="Step Six" height="250" width="250">
+</a>
+
+<a href="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-07.png">
+  <img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-07.png" alt="Step Seven" height="250" width="250">
+</a>
+
+<a href="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-08.png">
+  <img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-08.png" alt="Step Eight" height="250" width="250">
+</a>
+
+<a href="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-09.png">
+  <img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-09.png" alt="Step Nine" height="250" width="250">
+</a>
+
+<a href="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-10.png">
+  <img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-10.png" alt="Step Ten" height="250" width="250">
+</a>
