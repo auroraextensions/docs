@@ -27,8 +27,6 @@ To simulate a guest checkout scenario.
 
 ## Screenshots
 
-A visual walkthrough of each major step in the guest checkout scenario.
-
 <img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-01.png" alt="Step One" height="250" width="250">
 <img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-02.png" alt="Step One" height="250" width="250">
 <img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-03.png" alt="Step One" height="250" width="250">
