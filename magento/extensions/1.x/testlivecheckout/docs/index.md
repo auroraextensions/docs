@@ -22,8 +22,8 @@ The extension is available for purchase [here](https://marketplace.magento.com/n
 + [Git](https://git-scm.com)
 + [Node](https://nodejs.org)
 + [Authorize.net Sandbox Credentials](https://sandbox.authorize.net)
-  - API Login
-  - Transaction Key
+    - API Login
+    - Transaction Key
 
 ### Setup
 
