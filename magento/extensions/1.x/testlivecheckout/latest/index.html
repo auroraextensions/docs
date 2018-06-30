@@ -111,11 +111,7 @@ would submit an order. This has several advantages over the historical approach,
 <li><a href="https://www.docker.com">Docker</a></li>
 <li><a href="https://git-scm.com">Git</a></li>
 <li><a href="https://nodejs.org">Node</a></li>
-<li><a href="https://sandbox.authorize.net">Authorize.net Sandbox Credentials</a><ul>
-<li>API Login</li>
-<li>Transaction Key</li>
-</ul>
-</li>
+<li><a href="https://sandbox.authorize.net">Authorize.net Sandbox Credentials</a></li>
 </ul>
 <h3 id="setup">Setup</h3>
 <p>To get started quickly, we're going to use <a href="https://github.com/andreaskoch/dockerized-magento">dockerized-magento</a>.</p>
@@ -128,12 +124,14 @@ cd dockerized-magento
 <ol>
 <li>From Admin area, navigate to <tt>System</tt> -&gt; <tt>Configuration</tt> -&gt; <tt>Sales</tt> -&gt; <tt>Payment Methods</tt></li>
 <li>Click on <em>Cash On Delivery Payment</em> and set <tt>Enabled</tt> to <tt>No</tt></li>
-<li>Click on <em>Authorize.net</em> (not <em>Authorize.net Direct Post</em>) and set the following fields:</li>
+<li>Click on <em>Authorize.net</em> (not <em>Authorize.net Direct Post</em>) and set the following fields:<ul>
 <li><tt>Enabled</tt> to <tt>Yes</tt></li>
 <li><tt>Payment Action</tt> to <tt>Authorize and Capture</tt></li>
 <li><tt>API Login ID</tt> to your Sandbox account API Login ID</li>
 <li><tt>Merchant's Email</tt> to the email used for your Sandbox account</li>
 <li><tt>Transaction Key</tt> to your Sandbox account Transaction Key</li>
+</ul>
+</li>
 <li>Click <tt>Save Config</tt></li>
 <li>If you have caching enabled, clear the config cache.</li>
 </ol>
@@ -247,5 +245,5 @@ cd dockerized-magento
 
 <!--
 MkDocs version : 0.17.4
-Build Date UTC : 2018-06-30 21:17:56
+Build Date UTC : 2018-06-30 21:22:50
 -->
