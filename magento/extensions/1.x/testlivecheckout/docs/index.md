@@ -22,8 +22,6 @@ The extension is available for purchase [here](https://marketplace.magento.com/n
 + [Git](https://git-scm.com)
 + [Node](https://nodejs.org)
 + [Authorize.net Sandbox Credentials](https://sandbox.authorize.net)
-    - API Login
-    - Transaction Key
 
 ### Setup
 
@@ -40,11 +38,11 @@ Once dockerized-magento has completed setup, we need to disable *Cash On Deliver
 1. From Admin area, navigate to <tt>System</tt> -> <tt>Configuration</tt> -> <tt>Sales</tt> -> <tt>Payment Methods</tt>
 2. Click on *Cash On Delivery Payment* and set <tt>Enabled</tt> to <tt>No</tt>
 3. Click on *Authorize.net* (not *Authorize.net Direct Post*) and set the following fields:
-  - <tt>Enabled</tt> to <tt>Yes</tt>
-  - <tt>Payment Action</tt> to <tt>Authorize and Capture</tt>
-  - <tt>API Login ID</tt> to your Sandbox account API Login ID
-  - <tt>Merchant's Email</tt> to the email used for your Sandbox account
-  - <tt>Transaction Key</tt> to your Sandbox account Transaction Key
+    - <tt>Enabled</tt> to <tt>Yes</tt>
+    - <tt>Payment Action</tt> to <tt>Authorize and Capture</tt>
+    - <tt>API Login ID</tt> to your Sandbox account API Login ID
+    - <tt>Merchant's Email</tt> to the email used for your Sandbox account
+    - <tt>Transaction Key</tt> to your Sandbox account Transaction Key
 4. Click <tt>Save Config</tt>
 5. If you have caching enabled, clear the config cache.
 
