@@ -106,19 +106,43 @@ would submit an order. This has several advantages over the historical approach,
 <h2 id="download">Download</h2>
 <p>The extension is available for purchase <a href="https://marketplace.magento.com/nickolasburr-test-live-checkout.html">here</a>.</p>
 <h2 id="quick-start">Quick Start</h2>
+<h3 id="requirements">Requirements</h3>
 <ul>
-<li>Install <a href="https://www.docker.com">Docker</a></li>
-<li>Install <a href="https://nodejs.org">Node</a></li>
-<li>Clone <a href="https://github.com/andreaskoch/dockerized-magento">dockerized-magento</a> and follow setup guide</li>
+<li><a href="https://www.docker.com">Docker</a></li>
+<li><a href="https://git-scm.com">Git</a></li>
+<li><a href="https://nodejs.org">Node</a></li>
+<li><a href="https://sandbox.authorize.net">Authorize.net Sandbox Credentials</a></li>
+<li>API Login</li>
+<li>Transaction Key</li>
 </ul>
-<p>Once dockerized-magento has completed setup, you need to install the Test Live Checkout extension.</p>
+<h3 id="setup">Setup</h3>
+<p>To get started quickly, we're going to use <a href="https://github.com/andreaskoch/dockerized-magento">dockerized-magento</a>.</p>
+<pre><code>git clone https://github.com/andreaskoch/dockerized-magento
+cd dockerized-magento
+./magento start
+</code></pre>
+
+<p>Once dockerized-magento has completed setup, we need to disable <em>Cash On Delivery</em> payment method and set up <em>Authorize.net</em>.</p>
+<ol>
+<li>From Admin area, navigate to <tt>System</tt> -&gt; <tt>Configuration</tt> -&gt; <tt>Sales</tt> -&gt; <tt>Payment Methods</tt></li>
+<li>Click on <em>Cash On Delivery Payment</em> and set <tt>Enabled</tt> to <tt>No</tt></li>
+<li>Click on <em>Authorize.net</em> (not <em>Authorize.net Direct Post</em>) and set the following fields:</li>
+<li><tt>Enabled</tt> to <tt>Yes</tt></li>
+<li><tt>Payment Action</tt> to <tt>Authorize and Capture</tt></li>
+<li><tt>API Login ID</tt> to your Sandbox account API Login ID</li>
+<li><tt>Merchant's Email</tt> to the email used for your Sandbox account</li>
+<li><tt>Transaction Key</tt> to your Sandbox account Transaction Key</li>
+<li>Click <tt>Save Config</tt></li>
+<li>If you have caching enabled, clear the config cache.</li>
+</ol>
+<p>Once the payment gateway has been configured, we need to install Test Live Checkout.</p>
 <p>After installing the extension, complete the following:</p>
-<ul>
-<li>From Admin area, navigate to <tt>System</tt> -&gt; <tt>Configuration</tt> -&gt; <tt>NEB Extensions</tt> (left sidebar) -&gt; <tt>Test Live Checkout</tt></li>
+<ol>
+<li>From Admin area, navigate to <tt>System</tt> -&gt; <tt>Configuration</tt> -&gt; <tt>NEB Extensions</tt> (sidebar) -&gt; <tt>Test Live Checkout</tt></li>
 <li>Under <tt>General Settings</tt>, set <tt>Enable Live Checkout Testing</tt> to <tt>Yes</tt></li>
-<li>Generate 32 character alphanumeric authentication token and paste into <tt>Authentication Token</tt> field</li>
-<li>Click <tt>Save</tt></li>
-</ul>
+<li>Generate random 32 character alphanumeric string and paste into <tt>Authentication Token</tt> field</li>
+<li>Click <tt>Save Config</tt></li>
+</ol>
 <p>After configuring the extension, complete the following:</p>
 <ol>
 <li>
@@ -138,7 +162,8 @@ would submit an order. This has several advantages over the historical approach,
 <p><code>node guest-checkout.js</code></p>
 </li>
 </ol>
-<p>Once the script has finished running, you should have 10 PNG screenshots of the various stages of checkout. The last screenshot should be of the Home page, indicating a successful order submission.</p></div>
+<p>Once the script has finished running, you should have 10 PNG screenshots of the various stages of checkout.</p>
+<p>To see an example of what to expect, see <a href="https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/examples/guest-checkout/">Guest Checkout</a>.</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -220,5 +245,5 @@ would submit an order. This has several advantages over the historical approach,
 
 <!--
 MkDocs version : 0.17.4
-Build Date UTC : 2018-06-30 19:51:12
+Build Date UTC : 2018-06-30 21:16:05
 -->
