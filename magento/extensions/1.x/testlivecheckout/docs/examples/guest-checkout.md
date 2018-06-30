@@ -9,11 +9,11 @@ You can download <tt>guest-checkout.js</tt> [here](https://nickolasburr.github.i
 
 ## Purpose
 
-To simulate a guest checkout scenario.
+To simulate a guest checkout scenario on a Magento 1.x storefront.
 
 ## Steps
 
-1. Visit Home page and click on <tt>Home & Decor</tt> -> <tt>Bed & Bath</tt> navigation link
+1. Visit Home page and click on <tt>Bed & Bath</tt> link under __Home & Decor__ navigation menu
 2. On __Bed & Bath__ category page, click <tt>Add to Cart</tt> button on first product
 3. On __Cart__ overview page, click <tt>Proceed to Checkout</tt>
 4. On __Checkout__ page, click <tt>Checkout as Guest</tt>
