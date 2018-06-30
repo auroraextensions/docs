@@ -1,12 +1,12 @@
 # Guest Checkout
 
 > This documentation is for the Magento 1.x version. For the Magento 2.x version, see [here](https://nickolasburr.github.io/magento/extensions/2.x/testlivecheckout/latest).
-
+---
 > Tests were performed using the default Magento 1.9.3.9 CE setup with sample data.
 
 ## Download
 
-You can download <tt>guest-checkout.js</tt> [here](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/puppeteer/guest-checkout.js).
+You can download <tt>guest-checkout.js</tt> [here](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/puppeteer/scripts/guest-checkout.js).
 
 ## Purpose
 
@@ -22,3 +22,18 @@ To simulate a guest checkout scenario.
 6. Select 'Flat Rate' option as shipping method and click 'Continue'
 7. Fill in 'Payment Information' section and click 'Continue'
 8. Click 'Place Order' to submit order
+
+## Screenshots
+
+A visual walkthrough of each major step in the guest checkout scenario.
+
+<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/step-01.png" alt="Step One" height="250" width="250">
+<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/step-02.png" alt="Step One" height="250" width="250">
+<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/step-03.png" alt="Step One" height="250" width="250">
+<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/step-04.png" alt="Step One" height="250" width="250">
+<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/step-05.png" alt="Step One" height="250" width="250">
+<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/step-06.png" alt="Step One" height="250" width="250">
+<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/step-07.png" alt="Step One" height="250" width="250">
+<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/step-08.png" alt="Step One" height="250" width="250">
+<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/step-09.png" alt="Step One" height="250" width="250">
+<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/step-10.png" alt="Step One" height="250" width="250">

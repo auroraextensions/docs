@@ -40,7 +40,7 @@ After configuring the extension, complete the following:
 2. Fetch a copy of the <tt>guest-checkout.js</tt> Puppeteer script we'll use shortly:
 
     ```
-    curl -fsL -O https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/puppeteer/guest-checkout.js
+    curl -fsL -O https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/puppeteer/scripts/guest-checkout.js
     ```
 
 3. Export the authentication token from earlier to your shell environment:
