@@ -34,10 +34,10 @@ After configuring the extension, complete the following:
 1. Create a workspace directory:
 
     ```
-    mkdir testlivecheckout-puppeteer-scripts && cd testlivecheckout-puppeteer-scripts
+    mkdir testlivecheckout-puppeteer && cd testlivecheckout-puppeteer
     ```
 
-2. Fetch a copy of the <tt>guest-checkout.js</tt> Puppeteer script we'll use shortly:
+2. Fetch a copy of the <tt>guest-checkout.js</tt> Puppeteer script:
 
     ```
     curl -fsL -O https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/puppeteer/scripts/guest-checkout.js
