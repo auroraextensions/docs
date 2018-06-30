@@ -14,26 +14,27 @@ To simulate a guest checkout scenario.
 
 ## Steps
 
-1. Visit Home page and click on 'Home & Decor -> Bed & Bath' navigation link
-2. On 'Bed & Bath' category page, click 'Add to cart' button on first product
-3. On Cart overview page, click 'Proceed to Checkout'
-4. On Checkout page, click 'Checkout as Guest'
-5. Fill in 'Billing Information' section and click 'Continue'
-6. Select 'Flat Rate' option as shipping method and click 'Continue'
-7. Fill in 'Payment Information' section and click 'Continue'
-8. Click 'Place Order' to submit order
+1. Visit Home page and click on <tt>Home & Decor</tt> -> <tt>Bed & Bath</tt> navigation link
+2. On __Bed & Bath__ category page, click <tt>Add to Cart</tt> button on first product
+3. On __Cart__ overview page, click <tt>Proceed to Checkout</tt>
+4. On __Checkout__ page, click <tt>Checkout as Guest</tt>
+5. Fill in __Billing Information__ section and click <tt>Continue</tt>
+6. Select <tt>Flat Rate</tt> option as shipping method and click <tt>Continue</tt>
+7. Fill in __Payment Information__ section and click <tt>Continue</tt>
+8. Click <tt>Place Order</tt> to submit order
+9. On success, redirect to Home page
 
 ## Screenshots
 
 A visual walkthrough of each major step in the guest checkout scenario.
 
-<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/step-01.png" alt="Step One" height="250" width="250">
-<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/step-02.png" alt="Step One" height="250" width="250">
-<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/step-03.png" alt="Step One" height="250" width="250">
-<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/step-04.png" alt="Step One" height="250" width="250">
-<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/step-05.png" alt="Step One" height="250" width="250">
-<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/step-06.png" alt="Step One" height="250" width="250">
-<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/step-07.png" alt="Step One" height="250" width="250">
-<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/step-08.png" alt="Step One" height="250" width="250">
-<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/step-09.png" alt="Step One" height="250" width="250">
-<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/step-10.png" alt="Step One" height="250" width="250">
+<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-01.png" alt="Step One" height="250" width="250">
+<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-02.png" alt="Step One" height="250" width="250">
+<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-03.png" alt="Step One" height="250" width="250">
+<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-04.png" alt="Step One" height="250" width="250">
+<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-05.png" alt="Step One" height="250" width="250">
+<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-06.png" alt="Step One" height="250" width="250">
+<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-07.png" alt="Step One" height="250" width="250">
+<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-08.png" alt="Step One" height="250" width="250">
+<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-09.png" alt="Step One" height="250" width="250">
+<img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-10.png" alt="Step One" height="250" width="250">
