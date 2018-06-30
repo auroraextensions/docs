@@ -1,6 +1,6 @@
 # Guest Checkout
 
-<blockquote>This documentation is for the Magento 1.x version. For the Magento 2.x version, see [here](https://nickolasburr.github.io/magento/extensions/2.x/testlivecheckout/latest).</blockquote>
+<blockquote>This documentation is for the Magento 1.x version. For the Magento 2.x version, see <a href="https://nickolasburr.github.io/magento/extensions/2.x/testlivecheckout/latest">here</a>.</blockquote>
 <blockquote>Tests were performed using the default Magento 1.9.3.9 CE setup with sample data.</blockquote>
 
 ## Download
