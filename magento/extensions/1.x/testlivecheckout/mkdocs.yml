@@ -6,3 +6,5 @@ pages:
   - Configuration: configuration.md
   - Examples:
     - 'Guest Checkout': 'examples/guest-checkout.md'
+extra_css:
+  - css/extra.css

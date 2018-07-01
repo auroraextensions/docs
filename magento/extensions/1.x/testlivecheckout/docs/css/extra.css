@@ -1,0 +1,9 @@
+/**
+ * mkdocs stylesheet updates.
+ */
+
+@media (min-width: 1480px) {
+  .container {
+    width: 1440px;
+  }
+}
