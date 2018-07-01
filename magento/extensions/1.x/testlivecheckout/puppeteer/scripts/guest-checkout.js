@@ -8,7 +8,7 @@ const imagesDir = '.';
 const shopUrl = 'http://dockerized-magento.local';
 
 /**
- * TestLiveCheckout authentication token.
+ * Test Live Checkout authentication token.
  */
 const TLC_AUTH_TOKEN = process.env.TLC_AUTH_TOKEN;
 
@@ -45,6 +45,16 @@ const billingInfo = {
 	state: '42',
 	postcode: '87111',
 	telephone: '5055034455'
+};
+
+/**
+ * Payment details.
+ */
+const paymentInfo = {
+	ccType: 'VI',
+	ccNumber: '4111111111111111',
+	ccExprMonth: '12',
+	ccExprYear: '2028'
 };
 
 try {
@@ -91,7 +101,8 @@ try {
 		await webpage.screenshot({ path: (imagesDir + '/step-05.png') });
 
 		/**
-		 * Fill out Billing Information form.
+		 * Wait for 'Billing Information' section to load, then
+		 * fill out billing details.
 		 */
 		await webpage.waitForSelector('li[id="opc-billing"].section.allow.active', waitForTimeout);
 
@@ -103,11 +114,7 @@ try {
 		await webpage.type('input[id="billing:city"]', billingInfo.city, typeDelay);
 		await webpage.type('input[id="billing:postcode"]', billingInfo.postcode, typeDelay);
 		await webpage.type('input[id="billing:telephone"]', billingInfo.telephone, typeDelay);
-
-		/**
-		 * Select 'New York' from 'State/Province' list.
-		 */
-		await webpage.select('select[id="billing:region_id"]', '43');
+		await webpage.select('select[id="billing:region_id"]', billingInfo.state);
 
 		console.log('Step Six: Complete');
 		await webpage.screenshot({ path: (imagesDir + '/step-06.png') });
@@ -122,10 +129,11 @@ try {
 		await webpage.screenshot({ path: (imagesDir + '/step-07.png') });
 
 		/**
-		 * Wait for Shipping Method section to load, then
+		 * Wait for 'Shipping Method' section to load, then
 		 * select 'Fixed' option, then click 'Continue'.
 		 */
 		await webpage.waitForSelector('li[id="opc-shipping_method"].section.allow.active', waitForTimeout);
+
 		await webpage.click('input[id="s_method_flatrate_flatrate"]');
 		await webpage.click('div[id="shipping-method-buttons-container"] > button');
 
@@ -133,17 +141,23 @@ try {
 		await webpage.screenshot({ path: (imagesDir + '/step-08.png') });
 
 		/**
-		 * Wait for 'Payment Information' section to load, then click 'Continue'.
+		 * Wait for 'Payment Information' section to load, then
+		 * fill out payment details and click 'Continue'.
 		 */
 		await webpage.waitForSelector('li[id="opc-payment"].section.allow.active', waitForTimeout);
+
+		await webpage.select('select[id="authorizenet_cc_type"]', paymentInfo.ccType);
+		await webpage.type('input[id="authorizenet_cc_number"]', paymentInfo.ccNumber, typeDelay);
+		await webpage.select('select[id="authorizenet_expiration"]', paymentInfo.ccExprMonth);
+		await webpage.select('select[id="authorizenet_expiration_yr"]', paymentInfo.ccExprYear);
 		await webpage.click('div[id="payment-buttons-container"] > button');
 
 		console.log('Step Nine: Complete');
 		await webpage.screenshot({ path: (imagesDir + '/step-09.png') });
 
 		/**
-		 * Add tlc_auth_token <input> to payment <form>. TestLiveCheckout
-		 * will evaluate the POST form parameters for this auth token.
+		 * Add tlc_auth_token <input> to payment <form>. Test Live Checkout
+		 * will evaluate the payment form parameters for this auth token.
 		 */
 		await webpage.evaluate(token => {
 			(function ($) {
