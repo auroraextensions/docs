@@ -1,6 +1,32 @@
 /**
- * mkdocs stylesheet updates.
+ * extra.css
  */
+
+a {
+  color: #8317cc;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #4d0a7c;
+  text-decoration: none;
+}
+
+.navbar {
+  background-image: linear-gradient(#c754eb, #a02fe7 60%, #981de5);
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #8317cc;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: #b58fe6;
+  color: #fff;
+}
 
 @media (min-width: 1480px) {
   .container {
