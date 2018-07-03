@@ -29,7 +29,7 @@ const typeDelay = {
  * waitFor functions timeout.
  */
 const waitForTimeout = {
-	timeout: 60000
+	timeout: 90000
 };
 
 /**
