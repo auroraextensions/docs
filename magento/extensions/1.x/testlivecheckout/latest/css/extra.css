@@ -35,6 +35,13 @@ a:focus {
   color: #fff;
 }
 
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background-color: #912fe7;
+  color: #fff;
+  text-decoration: none;
+}
+
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
