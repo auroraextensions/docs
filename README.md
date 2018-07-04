@@ -1,7 +1,3 @@
 ## Table of Contents
 
-- [Pages](#pages)
-
-## Pages
-
-Listed pages.
+- [Free open-source projects](https://nickolasburr.github.io/foss/projects/)
