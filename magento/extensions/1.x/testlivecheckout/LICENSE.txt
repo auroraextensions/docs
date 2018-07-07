@@ -1,6 +1,8 @@
-End User License Agreement
+YOU AND YOU ONLY ("YAYO") PUBLIC LICENSE
 
 Copyright (C) 2018 Nickolas Burr <nickolasburr@gmail.com>
+
+End User License Agreement
 
 1. Purpose
 
