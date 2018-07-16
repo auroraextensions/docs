@@ -23,6 +23,12 @@ To simulate a guest checkout scenario on a Magento 1.x storefront.
 8. Click <tt>Place Order</tt> to submit order
 9. On success, redirect to Home page
 
+## Walkthrough
+
+<a href="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/walkthrough.gif" target="_blank">
+  <img src="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/walkthrough.gif">
+</a>
+
 ## Screenshots
 
 <a href="/magento/extensions/1.x/testlivecheckout/puppeteer/images/guest-checkout/step-01.png" target="_blank">
