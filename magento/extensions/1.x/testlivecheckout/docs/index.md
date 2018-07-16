@@ -1,6 +1,6 @@
 # Overview
 
-> This documentation is for the Magento 1.x version. For the Magento 2.x version, see [here](https://nickolasburr.github.io/magento/extensions/2.x/testlivecheckout/latest).
+> This documentation is for the Magento 1.x version. For the Magento 2.x version, see [here](https://nickolasburr.github.io/magento/extensions/2.x/testlivecheckout/latest/).
 
 ## Background
 
@@ -10,9 +10,12 @@ a mechanism for testing aspects of your storefront.
 
 ## About
 
-Test Live Checkout for Magento 1.x is intended for use with automated browser testing tools, such as [Puppeteer](https://github.com/GoogleChrome/puppeteer) and [Selenium](https://www.seleniumhq.org).
-By allowing authenticated users to submit test orders using real products on live storefronts, Test Live Checkout for Magento 1.x can help with the discovery and
-remediation of issues affecting your checkout, and, ultimately, your bottom line.
+Test Live Checkout is intended for use with automated browser testing tools, such as [Puppeteer](https://github.com/GoogleChrome/puppeteer) and [Selenium](https://www.seleniumhq.org).
+By allowing authenticated users to submit test orders using real products, Test Live Checkout can help aid in the discovery and remediation of issues affecting your checkout, which
+subsequently affect your bottom line, too.
+
+Test Live Checkout provides the most value when used with automated browser tests, as part of a comprehensive transaction monitoring plan. However, it can be a helpful
+tool to use during development and testing phases, as well, because it provides useful feedback regarding checkout health.
 
 ## Download
 
