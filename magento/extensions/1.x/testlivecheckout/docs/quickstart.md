@@ -1,29 +1,15 @@
-# Getting Started
+# Quick Start
 
 > This documentation is for the Magento 1.x version. For the Magento 2.x version, see [here](https://nickolasburr.github.io/magento/extensions/2.x/testlivecheckout/latest).
 
-## Overview
-
-Test Live Checkout is a Magento extension intended for use with automated browser testing tools, such as [Puppeteer](https://github.com/GoogleChrome/puppeteer).
-Automated browser tests simulate real user behaviors through a series of instructions, allowing you to discover subtle, difficult bugs which impact your bottom line.
-
-Test Live Checkout provides the ability to complete the sales transaction pipeline, by allowing an automated browser test to submit an order in the same fashion a real user
-would submit an order. This has several advantages over the historical approach, which is to create simple test products and submit the order outside of a browser context.
-
-## Download
-
-The extension is available for purchase [here](https://marketplace.magento.com/nickolasburr-test-live-checkout.html).
-
-## Quick Start
-
-### Requirements
+## Requirements
 
 + [Docker](https://www.docker.com)
 + [Git](https://git-scm.com)
 + [Node](https://nodejs.org)
 + [Authorize.net Sandbox Credentials](https://sandbox.authorize.net)
 
-### Setup
+## Setup
 
 To get started quickly, we're going to use [dockerized-magento](https://github.com/andreaskoch/dockerized-magento).
 
@@ -50,7 +36,7 @@ Once the payment gateway has been configured, we need to install Test Live Check
 
 After installing the extension, complete the following:
 
-1. From Admin area, navigate to <tt>System</tt> -> <tt>Configuration</tt> -> <tt>NEB Extensions</tt> (sidebar) -> <tt>Test Live Checkout</tt>
+1. From Admin area, navigate to <tt>System</tt> -> <tt>Configuration</tt> -> <tt>Nickolas Burr Extensions</tt> (sidebar) -> <tt>Test Live Checkout</tt>
 2. Under <tt>General Settings</tt>, set <tt>Enable Live Checkout Testing</tt> to <tt>Yes</tt>
 3. Generate random 32 character alphanumeric string and paste into <tt>Authentication Token</tt> field
 4. Click <tt>Save Config</tt>
