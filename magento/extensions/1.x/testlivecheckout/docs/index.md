@@ -20,6 +20,6 @@ The extension is available for purchase [here](https://marketplace.magento.com/n
 
 ## Table of Contents
 
-- [Quick Start](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/docs/latest/quickstart/)
-- [Examples](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/docs/latest/examples/)
-    + [Guest Checkout](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/docs/latest/examples/)
+- [Quick Start](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/quickstart/)
+- [Examples](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/examples/)
+    + [Guest Checkout](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/examples/guest-checkout/)
