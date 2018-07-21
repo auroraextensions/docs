@@ -8,3 +8,4 @@ pages:
     - 'Guest Checkout': 'examples/guest-checkout.md'
 extra_css:
   - css/extra.css
+google_analytics: ['UA-113897119-2', 'nickolasburr.github.io']
