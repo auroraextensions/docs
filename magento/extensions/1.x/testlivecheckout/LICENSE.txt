@@ -33,8 +33,8 @@ a. Relicensing of the Extension, in whole or in part, at any point in time, for 
 b. Redistribution of the Extension, in whole or in part, at any point in time, for any purpose, is strictly prohibited.
 c. Fraudulent, malicious, or otherwise malevolent use of the Extension, in whole or in part, for any purpose, at any point in time, is strictly prohibited.
 d. Removal, alteration, or obfuscation of the Notice of License, in whole or in part, for any purpose, at any point in time, is strictly prohibited.
-e. Exceeding the Maximum Instances allotment of ten (10), in whole or in part, for any purpose, at any point in time, is strictly prohibited.
-   A new license key must be purchased if you wish to exceed ten (10) instances. Instances used for development, testing, or QA do not apply
+e. Exceeding the Maximum Instances allotment of five (5), in whole or in part, for any purpose, at any point in time, is strictly prohibited.
+   A new license key must be purchased if you wish to exceed five (5) instances. Instances used for development, testing, or QA do not apply
    toward the Maximum Instances allotment. Please contact the Licensor if you have any questions or concerns regarding these terms.
 
 4. Rights
