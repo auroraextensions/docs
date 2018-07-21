@@ -4,6 +4,10 @@
   <span style="color: red !important; font-weight: bold !important;">IMPORTANT</span>: Test Live Checkout for Magento 2.x is currently unavailable. It will become available for purchase within the next month.
 </blockquote>
 
+<blockquote>
+This documentation is for the Magento 2.x version. For the Magento 1.x version, see [here](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/).
+</blockquote>
+
 ## Background
 
 Automated browser testing is an established paradigm that allows a developer to programmatically control a web browser through an API. While it may not seem obvious
