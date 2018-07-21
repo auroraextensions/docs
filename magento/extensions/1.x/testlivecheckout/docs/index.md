@@ -19,7 +19,7 @@ tool to use during development and testing phases, as well, because it provides 
 
 ## Download
 
-The extension is available for purchase [here](https://marketplace.magento.com/nickolasburr-test-live-checkout.html).
+The extension is available for purchase [here](https://marketplace.magento.com/nickolasburr-nickolasburr-testlivecheckout.html).
 
 ## Table of Contents
 
