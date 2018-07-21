@@ -5,7 +5,7 @@
 </blockquote>
 
 <blockquote>
-This documentation is for the Magento 2.x version. For the Magento 1.x version, see [here](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/).
+This documentation is for the Magento 2.x version. For the Magento 1.x version, see <a href="https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/">here</a>.
 </blockquote>
 
 ## Background
