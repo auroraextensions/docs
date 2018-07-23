@@ -2,6 +2,10 @@
  * extra.css
  */
 
+body {
+  font-family: Futura, Helvetica, sans-serif;
+}
+
 a {
   color: #8317cc;
   text-decoration: none;
