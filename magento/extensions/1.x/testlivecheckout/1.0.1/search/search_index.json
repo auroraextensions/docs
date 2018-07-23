@@ -52,7 +52,7 @@
         },
         {
             "location": "/configuration/",
-            "text": "Configuration\n\n\n\n\nThis documentation is for the Magento 1.x version. For the Magento 2.x version, see \nhere\n.\n\n\n\n\nSettings\n\n\nBelow are the available configuration fields.\n\n\nGeneral\n\n\n\n\nEnable Live Checkout Testing: Enable the extension for live use.\n\n\nAuthentication Token: Alphanumeric token used to authenticate a test order.\n\n\nRedirect URL: URL to 302 redirect to after a successful test order.\n\n\n\n\n\n\nLog\n\n\n\n\nEnable Logging: Enable transaction logging.\n\n\n\n\n\n\nTransaction Log",
+            "text": "Configuration\n\n\n\n\nThis documentation is for the Magento 1.x version. For the Magento 2.x version, see \nhere\n.\n\n\n\n\nSettings\n\n\n\n\nGeneral\n\n\nLog\n\n\n\n\nGeneral\n\n\n\n\nEnable Live Checkout Testing: Enable the extension for live use.\n\n\nAuthentication Token: Alphanumeric token used to authenticate a test order.\n\n\nRedirect URL: URL to 302 redirect to after a successful test order.\n\n\n\n\nLog\n\n\n\n\nEnable Logging: Enable transaction logging.\n\n\n\n\n\n\nTransaction Log\n\n\nThe transaction log must be enabled before any logs are recorded.\n\n\nDuring an authenticated transaction, Test Live Checkout will record certain fields\nfrom the order, such as the payment gateway and timestamp, that are helpful when\ndebugging checkout issues.",
             "title": "Configuration"
         },
         {
@@ -62,7 +62,7 @@
         },
         {
             "location": "/configuration/#settings",
-            "text": "Below are the available configuration fields.",
+            "text": "General  Log",
             "title": "Settings"
         },
         {
@@ -77,7 +77,7 @@
         },
         {
             "location": "/configuration/#transaction-log",
-            "text": "",
+            "text": "The transaction log must be enabled before any logs are recorded.  During an authenticated transaction, Test Live Checkout will record certain fields\nfrom the order, such as the payment gateway and timestamp, that are helpful when\ndebugging checkout issues.",
             "title": "Transaction Log"
         },
         {
