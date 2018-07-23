@@ -4,7 +4,8 @@
 
 ## Settings
 
-Below are the available configuration fields.
+- [General](#general)
+- [Log](#log)
 
 #### General
 
@@ -12,12 +13,18 @@ Below are the available configuration fields.
 2. Authentication Token: Alphanumeric token used to authenticate a test order.
 3. Redirect URL: URL to 302 redirect to after a successful test order.
 
-![General Settings](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/images/settings.png)
-
 #### Log
 
 1. Enable Logging: Enable transaction logging.
 
-![Transaction Log](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/images/log.png)
+![General Settings](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/images/settings.png)
 
 ## Transaction Log
+
+The transaction log must be enabled before any logs are recorded.
+
+During an authenticated transaction, Test Live Checkout will record certain fields
+from the order, such as the payment gateway and timestamp, that are helpful when
+debugging checkout issues.
+
+![Transaction Log](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/images/log.png)
