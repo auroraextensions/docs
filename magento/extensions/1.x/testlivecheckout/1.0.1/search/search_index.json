@@ -51,6 +51,36 @@
             "title": "Setup"
         },
         {
+            "location": "/configuration/",
+            "text": "Configuration\n\n\n\n\nThis documentation is for the Magento 1.x version. For the Magento 2.x version, see \nhere\n.\n\n\n\n\nSettings\n\n\nBelow are the available configuration fields.\n\n\nGeneral\n\n\n\n\nEnable Live Checkout Testing: Enable the extension for live use.\n\n\nAuthentication Token: Alphanumeric token used to authenticate a test order.\n\n\nRedirect URL: URL to 302 redirect to after a successful test order.\n\n\n\n\n\n\nLog\n\n\n\n\nEnable Logging: Enable transaction logging.\n\n\n\n\n\n\nTransaction Log",
+            "title": "Configuration"
+        },
+        {
+            "location": "/configuration/#configuration",
+            "text": "This documentation is for the Magento 1.x version. For the Magento 2.x version, see  here .",
+            "title": "Configuration"
+        },
+        {
+            "location": "/configuration/#settings",
+            "text": "Below are the available configuration fields.",
+            "title": "Settings"
+        },
+        {
+            "location": "/configuration/#general",
+            "text": "Enable Live Checkout Testing: Enable the extension for live use.  Authentication Token: Alphanumeric token used to authenticate a test order.  Redirect URL: URL to 302 redirect to after a successful test order.",
+            "title": "General"
+        },
+        {
+            "location": "/configuration/#log",
+            "text": "Enable Logging: Enable transaction logging.",
+            "title": "Log"
+        },
+        {
+            "location": "/configuration/#transaction-log",
+            "text": "",
+            "title": "Transaction Log"
+        },
+        {
             "location": "/examples/guest-checkout/",
             "text": "Guest Checkout\n\n\nThis documentation is for the Magento 1.x version. For the Magento 2.x version, see \nhere\n.\n\n\n\nTests were performed using Puppeteer and the default Magento 1.9.3.9 CE setup with sample data.\n\n\n\nDownload\n\n\nYou can download \nguest-checkout.js\n \nhere\n.\n\n\nPurpose\n\n\nTo simulate a guest checkout scenario on a Magento 1.x storefront.\n\n\nSteps\n\n\n\n\nVisit Home page and click on \nBed & Bath\n link under \nHome & Decor\n navigation menu\n\n\nOn \nBed & Bath\n category page, click \nAdd to Cart\n button on first product\n\n\nOn \nCart\n overview page, click \nProceed to Checkout\n\n\nOn \nCheckout\n page, click \nCheckout as Guest\n\n\nFill in \nBilling Information\n section and click \nContinue\n\n\nSelect \nFlat Rate\n option as shipping method and click \nContinue\n\n\nFill in \nPayment Information\n section and click \nContinue\n\n\nClick \nPlace Order\n to submit order\n\n\nOn success, redirect to Home page\n\n\n\n\nWalkthrough\n\n\n\n  \n\n\n\n\nScreenshots",
             "title": "Guest Checkout"
