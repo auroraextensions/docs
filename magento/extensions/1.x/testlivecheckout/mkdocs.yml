@@ -4,6 +4,7 @@ theme: mkdocs
 pages:
   - Home: index.md
   - Quick Start: quickstart.md
+  - Configuration: configuration.md
   - Examples:
     - 'Guest Checkout': 'examples/guest-checkout.md'
 extra_css:
