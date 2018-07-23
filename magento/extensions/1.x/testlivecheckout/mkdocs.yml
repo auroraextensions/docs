@@ -1,9 +1,10 @@
 site_name: Test Live Checkout
-site_dir: 1.0.0
+site_dir: 1.0.1
 theme: mkdocs
 pages:
   - Home: index.md
   - Quick Start: quickstart.md
+  - Configuration: configuration.md
   - Examples:
     - 'Guest Checkout': 'examples/guest-checkout.md'
 extra_css:
