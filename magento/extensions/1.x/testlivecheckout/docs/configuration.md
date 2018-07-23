@@ -16,4 +16,8 @@ Below are the available configuration fields.
 
 #### Log
 
+1. Enable Logging: Enable transaction logging.
+
+![Transaction Log](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/images/log.png)
+
 ## Transaction Log
