@@ -26,6 +26,11 @@ blockquote.important {
   border-left: 5px solid #e11a1a;
 }
 
+blockquote.notice {
+  background-color: rgba(237, 237, 237, 0.5);
+  border-left: 5px solid #e37d0e;
+}
+
 @media only screen and (max-width: 770px) {
   blockquote > p {
     font-size: 12px;
