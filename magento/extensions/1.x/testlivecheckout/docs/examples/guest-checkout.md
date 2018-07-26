@@ -4,7 +4,7 @@ This documentation is for the Magento 1.x version. For the Magento 2.x version, 
 
 # Guest Checkout
 
-<blockquote>Tests were performed using Puppeteer and Magento 1.9.3.9 CE with sample data.</blockquote>
+<blockquote class="notice">Tests were performed using Puppeteer and Magento 1.9.3.9 CE with sample data.</blockquote>
 
 ## Download
 
