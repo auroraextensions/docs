@@ -34,7 +34,8 @@ blockquote.important {
 
 @media only screen and (min-width: 771px) {
   blockquote {
-    padding: 20px;
+    margin: 25px 0;
+    padding: 15px;
   }
 }
 
