@@ -8,6 +8,7 @@ a {
 
 ol,
 ul {
+  display: inline-block;
   padding: 5px;
   list-style-type: none;
 }
