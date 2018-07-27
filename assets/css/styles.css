@@ -2,7 +2,8 @@ html {
   margin: 5px;
 }
 
-ol,ul {
+ol,
+ul {
   padding: 5px;
   list-style-type: none;
 }
