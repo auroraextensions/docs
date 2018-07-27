@@ -2,6 +2,10 @@ html {
   margin: 5px;
 }
 
+a {
+  float: left;
+}
+
 ol,
 ul {
   padding: 5px;
