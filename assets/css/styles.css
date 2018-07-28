@@ -3,7 +3,9 @@ html {
 }
 
 a {
+  clear: left;
   float: left;
+  line-height: 18px;
 }
 
 ol,
