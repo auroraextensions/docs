@@ -5,8 +5,10 @@ pages:
   - Home: index.md
   - Quick Start: quickstart.md
   - Configuration: configuration.md
-  - Examples:
-    - 'Guest Checkout': 'examples/guest-checkout.md'
+  - Puppeteer:
+    - 'Guest Checkout':
+      - 'Authorize.net': 'examples/guest-checkout/authorizenet.md'
+      - 'Braintree': 'examples/guest-checkout/braintree.md'
 extra_css:
   - css/extra.css
 google_analytics: ['UA-113897119-2', 'nickolasburr.github.io']
