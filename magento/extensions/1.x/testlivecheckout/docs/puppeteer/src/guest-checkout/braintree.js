@@ -1,8 +1,8 @@
 /**
- * authorizenet.js
+ * braintree.js
  *
  * Simulate guest checkout user flow with
- * Authorize.net as the payment gateway.
+ * Braintree as the payment gateway.
  */
 
 /**
@@ -34,16 +34,16 @@ const fs = require('fs');
 const getPixels = require('get-pixels');
 
 const shopUrl = 'http://dockerized-magento.local';
-const imagesDir = './img/guest-checkout-authorizenet';
+const imagesDir = './img/guest-checkout-braintree';
 const pngDir = imagesDir + '/png';
 const gifDir = imagesDir + '/gif';
 
 /**
  * If any of the following do not exist, create them:
  *
- * ./img/guest-checkout-authorizenet
- * ./img/guest-checkout-authorizenet/png
- * ./img/guest-checkout-authorizenet/gif
+ * ./img/guest-checkout-braintree
+ * ./img/guest-checkout-braintree/png
+ * ./img/guest-checkout-braintree/gif
  */
 if (!fs.existsSync(imagesDir)) {
 	fs.mkdirSync(imagesDir);
@@ -146,10 +146,17 @@ const typeDelay = {
 };
 
 /**
+ * Mouse click delay.
+ */
+const clickDelay = {
+	delay: 250
+};
+
+/**
  * waitFor functions timeout.
  */
 const waitForTimeout = {
-	timeout: 90000
+	timeout: 120000
 };
 
 /**
@@ -174,7 +181,7 @@ const paymentInfo = {
 	ccType: 'VI',
 	ccNumber: '4111111111111111',
 	ccExprMonth: '12',
-	ccExprYear: '2028'
+	ccExprYear: '28'
 };
 
 try {
@@ -281,15 +288,41 @@ try {
 		await webpage.screenshot(getScreenshotConfig('0' + index, true));
 
 		/**
-		 * Wait for 'Payment Information' section to load, then
-		 * fill out payment details and click 'Continue'.
+		 * Wait for 'Payment Information' and Braintree hosted fields to load.
+		 * Once they're both loaded, fill out the info and click 'Submit'.
 		 */
 		await webpage.waitForSelector('li[id="opc-payment"].section.allow.active', waitForTimeout);
+		await webpage.waitForSelector('iframe[id="braintree-hosted-field-number"]', waitForTimeout);
+		await webpage.waitForSelector('iframe[id="braintree-hosted-field-expirationMonth"]', waitForTimeout);
+		await webpage.waitForSelector('iframe[id="braintree-hosted-field-expirationYear"]', waitForTimeout);
 
-		await webpage.select('select[id="authorizenet_cc_type"]', paymentInfo.ccType);
-		await webpage.type('input[id="authorizenet_cc_number"]', paymentInfo.ccNumber, typeDelay);
-		await webpage.select('select[id="authorizenet_expiration"]', paymentInfo.ccExprMonth);
-		await webpage.select('select[id="authorizenet_expiration_yr"]', paymentInfo.ccExprYear);
+		/**
+		 * Get all <iframe> elements within webpage.
+		 */
+		const frames = await webpage.frames();
+
+		for (var i = 0; i < frames.length; i += 1) {
+			/**
+			 * <iframe> Frame object.
+			 */
+			var frame = frames[i];
+
+			if (frame.name() === 'braintree-hosted-field-number') {
+				await frame.waitForSelector('input[id="credit-card-number"]', waitForTimeout);
+				await frame.type('input[id="credit-card-number"]', paymentInfo.ccNumber, typeDelay);
+			}
+
+			if (frame.name() === 'braintree-hosted-field-expirationMonth') {
+				await frame.waitForSelector('input[id="expiration-month"]', waitForTimeout);
+				await frame.type('input[id="expiration-month"]', paymentInfo.ccExprMonth, typeDelay);
+			}
+
+			if (frame.name() === 'braintree-hosted-field-expirationYear') {
+				await frame.waitForSelector('input[id="expiration-year"]', waitForTimeout);
+				await frame.type('input[id="expiration-year"]', paymentInfo.ccExprYear, typeDelay);
+			}
+		}
+
 		await webpage.click('div[id="payment-buttons-container"] > button');
 
 		/**
@@ -326,7 +359,7 @@ try {
 		await webpage.waitForSelector('li[id="opc-review"].section.allow.active', waitForTimeout);
 
 		const fourthNavigation = webpage.waitForNavigation(waitForTimeout);
-		await webpage.click('div[id="checkout-review-submit"] > div[id="review-buttons-container"] > button.btn-checkout');
+		webpage.click('div[id="checkout-review-submit"] > div[id="review-buttons-container"] > button.btn-checkout', clickDelay);
 
 		/**
 		 * Step 8.
