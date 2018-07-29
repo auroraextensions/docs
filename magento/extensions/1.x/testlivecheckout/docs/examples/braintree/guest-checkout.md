@@ -2,17 +2,17 @@
 This documentation is for the Magento 1.x version. For the Magento 2.x version, see <a href="https://nickolasburr.github.io/magento/extensions/2.x/testlivecheckout/latest">here</a>.
 </blockquote>
 
-# Guest Checkout
+# Braintree Guest Checkout
 
-<blockquote class="notice">Tests were performed using Puppeteer and Magento 1.9.3.9 CE with sample data.</blockquote>
+<blockquote class="notice">Tests were performed using Puppeteer, Magento 1.9.3.9 CE with sample data, and Braintree.</blockquote>
 
 ## Download
 
-You can download <tt>guest-checkout.js</tt> [here](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/src/guest-checkout.js).
+You can download <tt>braintree.js</tt> [here](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/src/guest-checkout/braintree.js).
 
 ## Purpose
 
-To simulate a guest checkout scenario on a Magento 1.x storefront.
+To simulate a guest checkout scenario on a Magento 1.x storefront using Braintree.
 
 ## Steps
 
@@ -28,39 +28,16 @@ To simulate a guest checkout scenario on a Magento 1.x storefront.
 
 ## Walkthrough
 
-<a href="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/walkthrough.gif" target="_blank">
-  <img src="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/walkthrough.gif">
-</a>
+![Braintree Guest Checkout -- Walkthrough](/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/braintree/walkthrough.gif)
 
 ## Screenshots
 
-<a href="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/step-01.png" target="_blank">
-  <img src="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/step-01.png" alt="Step One" height="250" width="250">
-</a>
-<a href="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/step-02.png" target="_blank">
-  <img src="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/step-02.png" alt="Step Two" height="250" width="250">
-</a>
-<a href="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/step-03.png" target="_blank">
-  <img src="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/step-03.png" alt="Step Three" height="250" width="250">
-</a>
-<a href="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/step-04.png" target="_blank">
-  <img src="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/step-04.png" alt="Step Four" height="250" width="250">
-</a>
-<a href="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/step-05.png" target="_blank">
-  <img src="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/step-05.png" alt="Step Five" height="250" width="250">
-</a>
-<a href="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/step-06.png" target="_blank">
-  <img src="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/step-06.png" alt="Step Six" height="250" width="250">
-</a>
-<a href="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/step-07.png" target="_blank">
-  <img src="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/step-07.png" alt="Step Seven" height="250" width="250">
-</a>
-<a href="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/step-08.png" target="_blank">
-  <img src="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/step-08.png" alt="Step Eight" height="250" width="250">
-</a>
-<a href="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/step-09.png" target="_blank">
-  <img src="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/step-09.png" alt="Step Nine" height="250" width="250">
-</a>
-<a href="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/step-10.png" target="_blank">
-  <img src="/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/step-10.png" alt="Step Ten" height="250" width="250">
-</a>
+![Braintree Guest Checkout -- Step 1](/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/braintree/step-01.png)
+![Braintree Guest Checkout -- Step 2](/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/braintree/step-02.png)
+![Braintree Guest Checkout -- Step 3](/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/braintree/step-03.png)
+![Braintree Guest Checkout -- Step 4](/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/braintree/step-04.png)
+![Braintree Guest Checkout -- Step 5](/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/braintree/step-05.png)
+![Braintree Guest Checkout -- Step 6](/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/braintree/step-06.png)
+![Braintree Guest Checkout -- Step 7](/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/braintree/step-07.png)
+![Braintree Guest Checkout -- Step 8](/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/braintree/step-08.png)
+![Braintree Guest Checkout -- Step 9](/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/braintree/step-09.png)

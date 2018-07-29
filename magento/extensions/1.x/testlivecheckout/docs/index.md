@@ -2,8 +2,6 @@
 This documentation is for the Magento 1.x version. For the Magento 2.x version, see <a href="https://nickolasburr.github.io/magento/extensions/2.x/testlivecheckout/latest/">here</a>.
 </blockquote>
 
-# Overview
-
 ## Background
 
 Automated browser testing is an established paradigm that allows a developer to programmatically control a web browser through an API. While it may not seem obvious
@@ -27,5 +25,7 @@ The extension is available for purchase [here](https://marketplace.magento.com/n
 
 - [Quick Start](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/quickstart/)
 - [Configuration](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/configuration/)
-- Examples
+- Puppeteer
     + [Guest Checkout](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/examples/guest-checkout/)
+        - [Authorize.net](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/examples/guest-checkout/authorizenet/)
+        - [Braintree](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/examples/guest-checkout/braintree/)
