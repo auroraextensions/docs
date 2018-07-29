@@ -26,6 +26,6 @@ The extension is available for purchase [here](https://marketplace.magento.com/n
 - [Quick Start](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/quickstart/)
 - [Configuration](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/configuration/)
 - Puppeteer
-    + [Guest Checkout](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/examples/guest-checkout/)
+    + Guest Checkout
         - [Authorize.net](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/examples/guest-checkout/authorizenet/)
         - [Braintree](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/examples/guest-checkout/braintree/)

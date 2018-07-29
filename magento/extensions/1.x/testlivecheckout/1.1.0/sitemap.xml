@@ -16,7 +16,12 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/examples/guest-checkout/</loc>
+     <loc>/examples/guest-checkout/authorizenet/</loc>
+     <lastmod>2018-07-29</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/examples/guest-checkout/braintree/</loc>
      <lastmod>2018-07-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
