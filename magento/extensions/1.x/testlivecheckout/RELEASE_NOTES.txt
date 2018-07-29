@@ -1,0 +1,18 @@
+Release Notes - Test Live Checkout - Magento 1.x
+------------------------------------------------
+
+1.1.0
+-----
+
+- Add support for Braintree payment gateway
+
+1.0.1
+-----
+
+- Add support for transaction logging
+- Improve error handling of Authorize.net gateway responses
+
+1.0.0
+-----
+
+- Initial release of Test Live Checkout.
