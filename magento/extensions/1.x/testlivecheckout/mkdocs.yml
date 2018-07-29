@@ -1,5 +1,5 @@
-site_name: Test Live Checkout v1.0.1
-site_dir: 1.0.1
+site_name: Test Live Checkout v1.1.0
+site_dir: 1.1.0
 theme: mkdocs
 pages:
   - Home: index.md
