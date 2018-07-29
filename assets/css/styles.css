@@ -20,5 +20,6 @@ li {
 }
 
 pre {
-  margin: 1em 0 0;
+  display: table;
+  margin: 0;
 }
