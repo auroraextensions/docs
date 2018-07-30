@@ -17,6 +17,11 @@ a:focus {
   text-decoration: none;
 }
 
+pre,
+code {
+  font-family: monospace, sans-serif;
+}
+
 blockquote {
   border-radius: 1px;
 }
