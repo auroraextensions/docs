@@ -1,6 +1,6 @@
 # Braintree Guest Checkout
 
-<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://nickolasburr.github.io/magento/extensions/2.x/testlivecheckout/latest">here</a>.</blockquote>
+<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://nickolasburr.github.io/magento/extensions/2.x/testlivecheckout/latest/">here</a>.</blockquote>
 <blockquote class="important"><a href="https://marketplace.magento.com/paypal-gene-braintree.html" target="_blank">Braintree Payments With Hosted Fields</a> is required by Test Live Checkout to use Braintree.</blockquote>
 <blockquote class="notice">Tests were performed using Puppeteer, Magento 1.9.3.9 CE with sample data, and Braintree.</blockquote>
 
