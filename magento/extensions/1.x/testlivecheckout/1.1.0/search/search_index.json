@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/",
-            "text": "This documentation is for the Magento 1.x version. For the Magento 2.x version, see \nhere\n.\n\n\n\n\nBackground\n\n\nAutomated browser testing is an established paradigm that allows a developer to programmatically control a web browser through an API. While it may not seem obvious\nat first, this is especially valuable for online retailers because it allows a developer to simulate real user behaviors within the context of a web browser, providing\na mechanism for testing aspects of your storefront.\n\n\nAbout\n\n\nTest Live Checkout is intended for use with automated browser testing tools, such as \nPuppeteer\n and \nSelenium\n.\nBy allowing authenticated users to submit test orders using real products, Test Live Checkout can help aid in the discovery and remediation of issues affecting your checkout, which\nsubsequently affect your bottom line, too.\n\n\nTest Live Checkout provides the most value when used with automated browser tests, as part of a comprehensive transaction monitoring plan. However, it can be a helpful\ntool to use during development and testing phases, as well, because it provides useful feedback regarding checkout health.\n\n\nDownload\n\n\nThe extension is available for purchase \nhere\n.\n\n\nTable of Contents\n\n\n\n\nQuick Start\n\n\nConfiguration\n\n\nPuppeteer\n\n\nGuest Checkout\n\n\nAuthorize.net\n\n\nBraintree",
+            "text": "Background\n\n\nThis documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nAutomated browser testing is an established paradigm that allows a developer to programmatically control a web browser through an API. While it may not seem obvious\nat first, this is especially valuable for online retailers because it allows a developer to simulate real user behaviors within the context of a web browser, providing\na mechanism for testing aspects of your storefront.\n\n\nAbout\n\n\nTest Live Checkout is intended for use with automated browser testing tools, such as \nPuppeteer\n and \nSelenium\n.\nBy allowing authenticated users to submit test orders using real products, Test Live Checkout can help aid in the discovery and remediation of issues affecting your checkout, which\nsubsequently affect your bottom line, too.\n\n\nTest Live Checkout provides the most value when used with automated browser tests, as part of a comprehensive transaction monitoring plan. However, it can be a helpful\ntool to use during development and testing phases, as well, because it provides useful feedback regarding checkout health.\n\n\nDownload\n\n\nThe extension is available for purchase \nhere\n.\n\n\nTable of Contents\n\n\n\n\nQuick Start\n\n\nConfiguration\n\n\nPuppeteer\n\n\nGuest Checkout\n\n\nAuthorize.net\n\n\nBraintree",
             "title": "Home"
         },
         {
             "location": "/#background",
-            "text": "Automated browser testing is an established paradigm that allows a developer to programmatically control a web browser through an API. While it may not seem obvious\nat first, this is especially valuable for online retailers because it allows a developer to simulate real user behaviors within the context of a web browser, providing\na mechanism for testing aspects of your storefront.",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see  here .  Automated browser testing is an established paradigm that allows a developer to programmatically control a web browser through an API. While it may not seem obvious\nat first, this is especially valuable for online retailers because it allows a developer to simulate real user behaviors within the context of a web browser, providing\na mechanism for testing aspects of your storefront.",
             "title": "Background"
         },
         {
@@ -27,12 +27,12 @@
         },
         {
             "location": "/quickstart/",
-            "text": "This documentation is for the Magento 1.x version. For the Magento 2.x version, see \nhere\n.\n\n\n\n\nQuick Start\n\n\nRequirements\n\n\n\n\nDocker\n\n\nGit\n\n\nNode\n\n\nAuthorize.net Sandbox Credentials\n\n\n\n\nSetup\n\n\nTo get started quickly, we're going to use \ndockerized-magento\n.\n\n\ngit clone https://github.com/andreaskoch/dockerized-magento\ncd dockerized-magento\n./magento start\n\n\n\n\nOnce dockerized-magento has completed setup, we need to disable \nCash On Delivery\n payment method and set up \nAuthorize.net\n.\n\n\n\n\nFrom Admin area, navigate to \nSystem\n -> \nConfiguration\n -> \nSales\n -> \nPayment Methods\n\n\nClick on \nCash On Delivery Payment\n and set \nEnabled\n to \nNo\n\n\nClick on \nAuthorize.net\n (not \nAuthorize.net Direct Post\n) and set the following fields:\n\n\nEnabled\n to \nYes\n\n\nPayment Action\n to \nAuthorize and Capture\n\n\nAPI Login ID\n to your Sandbox account API Login ID\n\n\nMerchant's Email\n to the email used for your Sandbox account\n\n\nTransaction Key\n to your Sandbox account Transaction Key\n\n\n\n\n\n\nClick \nSave Config\n\n\nIf you have caching enabled, clear the config cache.\n\n\n\n\nOnce the payment gateway has been configured, we need to install Test Live Checkout.\n\n\nAfter installing the extension, complete the following:\n\n\n\n\nFrom Admin area, navigate to \nSystem\n -> \nConfiguration\n -> \nNickolas Burr Extensions\n (sidebar) -> \nTest Live Checkout\n\n\nUnder \nGeneral Settings\n, set \nEnable Live Checkout Testing\n to \nYes\n\n\nGenerate random 32 character alphanumeric string and paste into \nAuthentication Token\n field\n\n\nClick \nSave Config\n\n\n\n\nAfter configuring the extension, complete the following:\n\n\n\n\n\n\nCreate a workspace directory:\n\n\nmkdir testlivecheckout-puppeteer && cd testlivecheckout-puppeteer\n\n\n\n\n\n\nFetch a copy of the \nguest-checkout.js\n Puppeteer script:\n\n\ncurl -fsL -O https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/src/guest-checkout.js\n\n\n\n\n\n\nExport the authentication token from earlier to your shell environment:\n\n\nexport TLC_AUTH_TOKEN=\"<AUTH_TOKEN_FROM_EARLIER>\"\n\n\n\n\n\n\nRun \nguest-checkout.js\n:\n\n\nnode guest-checkout.js\n\n\n\n\n\n\nOnce the script has finished running, you should have 10 PNG screenshots of the various stages of checkout.\n\n\nTo see an example of what to expect, see \nGuest Checkout\n.",
+            "text": "Quick Start\n\n\nThis documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nRequirements\n\n\n\n\nDocker\n\n\nGit\n\n\nNode\n\n\nAuthorize.net Sandbox Credentials\n\n\n\n\nSetup\n\n\nTo get started quickly, we're going to use \ndockerized-magento\n.\n\n\ngit clone https://github.com/andreaskoch/dockerized-magento\ncd dockerized-magento\n./magento start\n\n\n\n\nOnce dockerized-magento has completed setup, we need to disable \nCash On Delivery\n payment method and set up \nAuthorize.net\n.\n\n\n\n\nFrom Admin area, navigate to \nSystem\n -> \nConfiguration\n -> \nSales\n -> \nPayment Methods\n\n\nClick on \nCash On Delivery Payment\n and set \nEnabled\n to \nNo\n\n\nClick on \nAuthorize.net\n (not \nAuthorize.net Direct Post\n) and set the following fields:\n\n\nEnabled\n to \nYes\n\n\nPayment Action\n to \nAuthorize and Capture\n\n\nAPI Login ID\n to your Sandbox account API Login ID\n\n\nMerchant's Email\n to the email used for your Sandbox account\n\n\nTransaction Key\n to your Sandbox account Transaction Key\n\n\n\n\n\n\nClick \nSave Config\n\n\nIf you have caching enabled, clear the config cache.\n\n\n\n\nOnce the payment gateway has been configured, we need to install Test Live Checkout.\n\n\nAfter installing the extension, complete the following:\n\n\n\n\nFrom Admin area, navigate to \nSystem\n -> \nConfiguration\n -> \nNickolas Burr Extensions\n (sidebar) -> \nTest Live Checkout\n\n\nUnder \nGeneral Settings\n, set \nEnable Live Checkout Testing\n to \nYes\n\n\nGenerate random 32 character alphanumeric string and paste into \nAuthentication Token\n field\n\n\nClick \nSave Config\n\n\n\n\nAfter configuring the extension, complete the following:\n\n\n\n\n\n\nCreate a workspace directory:\n\n\nmkdir testlivecheckout-puppeteer && cd testlivecheckout-puppeteer\n\n\n\n\n\n\nFetch a copy of the \nguest-checkout.js\n Puppeteer script:\n\n\ncurl -fsL -O https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/src/guest-checkout.js\n\n\n\n\n\n\nExport the authentication token from earlier to your shell environment:\n\n\nexport TLC_AUTH_TOKEN=\"<AUTH_TOKEN_FROM_EARLIER>\"\n\n\n\n\n\n\nRun \nguest-checkout.js\n:\n\n\nnode guest-checkout.js\n\n\n\n\n\n\nOnce the script has finished running, you should have 10 PNG screenshots of the various stages of checkout.\n\n\nTo see an example of what to expect, see \nGuest Checkout\n.",
             "title": "Quick Start"
         },
         {
             "location": "/quickstart/#quick-start",
-            "text": "",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see  here .",
             "title": "Quick Start"
         },
         {
@@ -47,32 +47,27 @@
         },
         {
             "location": "/configuration/",
-            "text": "This documentation is for the Magento 1.x version. For the Magento 2.x version, see \nhere\n.\n\n\n\n\nConfiguration\n\n\nSettings\n\n\n\n\nGeneral\n\n\nLog\n\n\n\n\nGeneral\n\n\n\n\nEnable Live Checkout Testing: Enable the extension for live use.\n\n\nAuthentication Token: Alphanumeric token used to authenticate a test order.\n\n\nRedirect URL: URL to 302 redirect to after a successful test order.\n\n\n\n\nLog\n\n\n\n\nEnable Logging: Enable transaction logging.\n\n\n\n\n\n\nTransaction Log\n\n\nThe transaction log must be enabled before any logs are recorded.\n\n\nDuring an authenticated transaction, Test Live Checkout will record certain fields\nfrom the order, such as the payment gateway and timestamp, that are helpful when\ndebugging checkout issues.",
+            "text": "Configuration\n\n\nThis documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nTo configure Test Live Checkout, log into the \nadmin panel\n and navigate to \nSystem\n \u2192 \nConfiguration\n \u2192 \nTest Live Checkout\n (left sidebar, typically toward the bottom).\n\n\nGeneral Settings\n\n\n\n\nEnable Live Checkout Testing\n: Enable the extension for use. This must be enabled for the extension to function.\n\n\nAuthentication Token\n: An alphanumeric token used for authentication. It must be \nat least\n 32 characters in length, and can only contain letters and numbers.\n\n\nRedirect URL\n: The redirect URL is the URL where the browser is redirected after a successful test order submission. The URL must be part of the same \nSLD\n as Magento.\n\n\n\n\nLog Settings\n\n\n\n\nEnable Logging\n: Enable transaction logging. For monitoring and debugging purposes, Test Live Checkout provides the ability to log test transactions. By default, transaction logging is disabled.\n\n\n\n\n\n\nTransaction Log\n\n\nDuring an authenticated transaction, Test Live Checkout will record certain fields from the order, such as the payment gateway and timestamp, that are helpful when debugging checkout issues.",
             "title": "Configuration"
         },
         {
             "location": "/configuration/#configuration",
-            "text": "",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see  here .  To configure Test Live Checkout, log into the  admin panel  and navigate to  System  \u2192  Configuration  \u2192  Test Live Checkout  (left sidebar, typically toward the bottom).",
             "title": "Configuration"
         },
         {
-            "location": "/configuration/#settings",
-            "text": "General  Log",
-            "title": "Settings"
+            "location": "/configuration/#general-settings",
+            "text": "Enable Live Checkout Testing : Enable the extension for use. This must be enabled for the extension to function.  Authentication Token : An alphanumeric token used for authentication. It must be  at least  32 characters in length, and can only contain letters and numbers.  Redirect URL : The redirect URL is the URL where the browser is redirected after a successful test order submission. The URL must be part of the same  SLD  as Magento.",
+            "title": "General Settings"
         },
         {
-            "location": "/configuration/#general",
-            "text": "Enable Live Checkout Testing: Enable the extension for live use.  Authentication Token: Alphanumeric token used to authenticate a test order.  Redirect URL: URL to 302 redirect to after a successful test order.",
-            "title": "General"
-        },
-        {
-            "location": "/configuration/#log",
-            "text": "Enable Logging: Enable transaction logging.",
-            "title": "Log"
+            "location": "/configuration/#log-settings",
+            "text": "Enable Logging : Enable transaction logging. For monitoring and debugging purposes, Test Live Checkout provides the ability to log test transactions. By default, transaction logging is disabled.",
+            "title": "Log Settings"
         },
         {
             "location": "/configuration/#transaction-log",
-            "text": "The transaction log must be enabled before any logs are recorded.  During an authenticated transaction, Test Live Checkout will record certain fields\nfrom the order, such as the payment gateway and timestamp, that are helpful when\ndebugging checkout issues.",
+            "text": "During an authenticated transaction, Test Live Checkout will record certain fields from the order, such as the payment gateway and timestamp, that are helpful when debugging checkout issues.",
             "title": "Transaction Log"
         },
         {

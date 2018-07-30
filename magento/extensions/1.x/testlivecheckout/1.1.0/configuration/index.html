@@ -110,38 +110,30 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#configuration">Configuration</a></li>
-            <li><a href="#settings">Settings</a></li>
+            <li><a href="#general-settings">General Settings</a></li>
+            <li><a href="#log-settings">Log Settings</a></li>
             <li><a href="#transaction-log">Transaction Log</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<blockquote class="important">
-This documentation is for the Magento 1.x version. For the Magento 2.x version, see <a href="https://nickolasburr.github.io/magento/extensions/2.x/testlivecheckout/latest/">here</a>.
-</blockquote>
-
 <h1 id="configuration">Configuration</h1>
-<h2 id="settings">Settings</h2>
-<ul>
-<li><a href="#general">General</a></li>
-<li><a href="#log">Log</a></li>
-</ul>
-<h4 id="general">General</h4>
+<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://nickolasburr.github.io/magento/extensions/2.x/testlivecheckout/latest/">here</a>.</blockquote>
+
+<p>To configure Test Live Checkout, log into the <strong>admin panel</strong> and navigate to <strong>System</strong> &#8594; <strong>Configuration</strong> &#8594; <strong>Test Live Checkout</strong> (left sidebar, typically toward the bottom).</p>
+<h3 id="general-settings">General Settings</h3>
 <ol>
-<li>Enable Live Checkout Testing: Enable the extension for live use.</li>
-<li>Authentication Token: Alphanumeric token used to authenticate a test order.</li>
-<li>Redirect URL: URL to 302 redirect to after a successful test order.</li>
+<li><strong>Enable Live Checkout Testing</strong>: Enable the extension for use. This must be enabled for the extension to function.</li>
+<li><strong>Authentication Token</strong>: An alphanumeric token used for authentication. It must be <em>at least</em> 32 characters in length, and can only contain letters and numbers.</li>
+<li><strong>Redirect URL</strong>: The redirect URL is the URL where the browser is redirected after a successful test order submission. The URL must be part of the same <a href="https://en.wikipedia.org/wiki/Second-level_domain">SLD</a> as Magento.</li>
 </ol>
-<h4 id="log">Log</h4>
+<h3 id="log-settings">Log Settings</h3>
 <ol>
-<li>Enable Logging: Enable transaction logging.</li>
+<li><strong>Enable Logging</strong>: Enable transaction logging. For monitoring and debugging purposes, Test Live Checkout provides the ability to log test transactions. By default, transaction logging is disabled.</li>
 </ol>
 <p><img alt="General Settings" src="https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/images/settings.png" /></p>
 <h2 id="transaction-log">Transaction Log</h2>
-<p>The transaction log must be enabled before any logs are recorded.</p>
-<p>During an authenticated transaction, Test Live Checkout will record certain fields
-from the order, such as the payment gateway and timestamp, that are helpful when
-debugging checkout issues.</p>
+<p>During an authenticated transaction, Test Live Checkout will record certain fields from the order, such as the payment gateway and timestamp, that are helpful when debugging checkout issues.</p>
 <p><img alt="Transaction Log" src="https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/images/log.png" /></p></div>
         </div>
 
