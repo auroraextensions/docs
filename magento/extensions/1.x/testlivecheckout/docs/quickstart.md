@@ -10,6 +10,7 @@ This guide shows how to use [Puppeteer](https://github.com/GoogleChrome/puppetee
     - [docker-compose](https://docs.docker.com/compose/)
 + [Git](https://git-scm.com)
 + [Node](https://nodejs.org)
+    - [puppeteer](https://www.npmjs.com/package/puppeteer)
 + [Authorize.net Sandbox Credentials](https://sandbox.authorize.net)
 
 **macOS Users:**
