@@ -77,12 +77,12 @@
         },
         {
             "location": "/examples/guest-checkout/authorizenet/",
-            "text": "This documentation is for the Magento 1.x version. For the Magento 2.x version, see \nhere\n.\n\n\n\n\nAuthorize.net Guest Checkout\n\n\nTests were performed using Puppeteer, Magento 1.9.3.9 CE with sample data, and Authorize.net.\n\n\n\nDownload\n\n\nYou can download \nauthorizenet.js\n \nhere\n.\n\n\nPurpose\n\n\nTo simulate a guest checkout scenario on a Magento 1.x storefront using Authorize.net.\n\n\nSteps\n\n\n\n\nVisit Home page and click on \nBed & Bath\n link under \nHome & Decor\n navigation menu\n\n\nOn \nBed & Bath\n category page, click \nAdd to Cart\n button on first product\n\n\nOn \nCart\n overview page, click \nProceed to Checkout\n\n\nOn \nCheckout\n page, click \nCheckout as Guest\n\n\nFill in \nBilling Information\n section and click \nContinue\n\n\nSelect \nFlat Rate\n option as shipping method and click \nContinue\n\n\nFill in \nPayment Information\n section and click \nContinue\n\n\nClick \nPlace Order\n to submit order\n\n\nOn success, redirect to Home page\n\n\n\n\nWalkthrough\n\n\n\n\nScreenshots",
+            "text": "Authorize.net Guest Checkout\n\n\nThis documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nTests were performed using Puppeteer, Magento 1.9.3.9 CE with sample data, and Authorize.net.\n\n\n\nDownload\n\n\nYou can download \nauthorizenet.js\n \nhere\n.\n\n\nPurpose\n\n\nTo simulate a guest checkout scenario on a Magento 1.x storefront using Authorize.net.\n\n\nSteps\n\n\n\n\nVisit Home page and click on \nBed & Bath\n link under \nHome & Decor\n navigation menu\n\n\nOn \nBed & Bath\n category page, click \nAdd to Cart\n button on first product\n\n\nOn \nCart\n overview page, click \nProceed to Checkout\n\n\nOn \nCheckout\n page, click \nCheckout as Guest\n\n\nFill in \nBilling Information\n section and click \nContinue\n\n\nSelect \nFlat Rate\n option as shipping method and click \nContinue\n\n\nFill in \nPayment Information\n section and click \nContinue\n\n\nClick \nPlace Order\n to submit order\n\n\nOn success, redirect to Home page\n\n\n\n\nWalkthrough\n\n\n\n\nScreenshots",
             "title": "Authorize.net"
         },
         {
             "location": "/examples/guest-checkout/authorizenet/#authorizenet-guest-checkout",
-            "text": "Tests were performed using Puppeteer, Magento 1.9.3.9 CE with sample data, and Authorize.net.",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see  here .  Tests were performed using Puppeteer, Magento 1.9.3.9 CE with sample data, and Authorize.net.",
             "title": "Authorize.net Guest Checkout"
         },
         {
@@ -112,12 +112,12 @@
         },
         {
             "location": "/examples/guest-checkout/braintree/",
-            "text": "This documentation is for the Magento 1.x version. For the Magento 2.x version, see \nhere\n.\n\n\n\n\nBraintree Guest Checkout\n\n\n\n  \nBraintree Payments With Hosted Fields\n is a free extension by PayPal, and is required for use with Test Live Checkout and Braintree.\n\n\n\n\nTests were performed using Puppeteer, Magento 1.9.3.9 CE with sample data, and Braintree.\n\n\n\nDownload\n\n\nYou can download \nbraintree.js\n \nhere\n.\n\n\nPurpose\n\n\nTo simulate a guest checkout scenario on a Magento 1.x storefront using Braintree.\n\n\nSteps\n\n\n\n\nVisit Home page and click on \nBed & Bath\n link under \nHome & Decor\n navigation menu\n\n\nOn \nBed & Bath\n category page, click \nAdd to Cart\n button on first product\n\n\nOn \nCart\n overview page, click \nProceed to Checkout\n\n\nOn \nCheckout\n page, click \nCheckout as Guest\n\n\nFill in \nBilling Information\n section and click \nContinue\n\n\nSelect \nFlat Rate\n option as shipping method and click \nContinue\n\n\nFill in \nPayment Information\n section and click \nContinue\n\n\nClick \nPlace Order\n to submit order\n\n\nOn success, redirect to Home page\n\n\n\n\nWalkthrough\n\n\n\n\nScreenshots",
+            "text": "Braintree Guest Checkout\n\n\nThis documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nBraintree Payments With Hosted Fields\n is required by Test Live Checkout to use Braintree.\n\n\n\nTests were performed using Puppeteer, Magento 1.9.3.9 CE with sample data, and Braintree.\n\n\n\nDownload\n\n\nYou can download \nbraintree.js\n \nhere\n.\n\n\nPurpose\n\n\nTo simulate a guest checkout scenario on a Magento 1.x storefront using Braintree.\n\n\nSteps\n\n\n\n\nVisit Home page and click on \nBed & Bath\n link under \nHome & Decor\n navigation menu\n\n\nOn \nBed & Bath\n category page, click \nAdd to Cart\n button on first product\n\n\nOn \nCart\n overview page, click \nProceed to Checkout\n\n\nOn \nCheckout\n page, click \nCheckout as Guest\n\n\nFill in \nBilling Information\n section and click \nContinue\n\n\nSelect \nFlat Rate\n option as shipping method and click \nContinue\n\n\nFill in \nPayment Information\n section and click \nContinue\n\n\nClick \nPlace Order\n to submit order\n\n\nOn success, redirect to Home page\n\n\n\n\nWalkthrough\n\n\n\n\nScreenshots",
             "title": "Braintree"
         },
         {
             "location": "/examples/guest-checkout/braintree/#braintree-guest-checkout",
-            "text": "Braintree Payments With Hosted Fields  is a free extension by PayPal, and is required for use with Test Live Checkout and Braintree.  Tests were performed using Puppeteer, Magento 1.9.3.9 CE with sample data, and Braintree.",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see  here .  Braintree Payments With Hosted Fields  is required by Test Live Checkout to use Braintree.  Tests were performed using Puppeteer, Magento 1.9.3.9 CE with sample data, and Braintree.",
             "title": "Braintree Guest Checkout"
         },
         {
