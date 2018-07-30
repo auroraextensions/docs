@@ -111,51 +111,85 @@
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#quick-start">Quick Start</a></li>
             <li><a href="#requirements">Requirements</a></li>
-            <li><a href="#setup">Setup</a></li>
+            <li><a href="#getting-started">Getting Started</a></li>
+            <li><a href="#notes">Notes</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="quick-start">Quick Start</h1>
 <blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://nickolasburr.github.io/magento/extensions/2.x/testlivecheckout/latest/">here</a>.</blockquote>
 
+<h1 id="quick-start">Quick Start</h1>
+<p>This guide shows how to use <a href="https://github.com/GoogleChrome/puppeteer">Puppeteer</a> with <a href="https://marketplace.magento.com/nickolasburr-nickolasburr-testlivecheckout.html">Test Live Checkout</a> to simulate a guest checkout scenario.</p>
 <h2 id="requirements">Requirements</h2>
 <ul>
-<li><a href="https://www.docker.com">Docker</a></li>
+<li><a href="https://www.docker.com">Docker</a><ul>
+<li><a href="https://docs.docker.com/compose/">docker-compose</a></li>
+</ul>
+</li>
 <li><a href="https://git-scm.com">Git</a></li>
 <li><a href="https://nodejs.org">Node</a></li>
 <li><a href="https://sandbox.authorize.net">Authorize.net Sandbox Credentials</a></li>
 </ul>
-<h2 id="setup">Setup</h2>
-<p>To get started quickly, we're going to use <a href="https://github.com/andreaskoch/dockerized-magento">dockerized-magento</a>.</p>
-<pre><code>git clone https://github.com/andreaskoch/dockerized-magento
+<p><strong>macOS Users:</strong></p>
+<p>To run Docker locally, you need to install <a href="https://www.virtualbox.org">VirtualBox</a> and <a href="https://github.com/docker/machine">Docker Machine</a>.</p>
+<p>For Homebrew users, Docker Machine is available via homebrew/core and VirtualBox is available via homebrew/cask.</p>
+<pre><code>brew update
+brew cask install virtualbox
+brew install docker-machine
+</code></pre>
+
+<p>Once VirtualBox and Docker Machine are installed, you will need to create a new machine (VM).</p>
+<pre><code>docker-machine create magento
+</code></pre>
+
+<p>This will generate a new VM where the Docker processes will run. Lastly, you will need to export several
+<code>docker-machine</code> variables to your shell environment, in order for <code>docker-machine</code> to work properly.</p>
+<pre><code>eval $(docker-machine env magento)
+</code></pre>
+
+<h2 id="getting-started">Getting Started</h2>
+<p>To get started, verify Docker is running properly.</p>
+<pre><code>docker ps
+</code></pre>
+
+<p>If the daemon process (<code>dockerd</code>) has yet to be started, you will receive an error.</p>
+<p>Next, we're going to use the prebuilt Magento 1.x setup provided by <a href="https://github.com/andreaskoch/dockerized-magento">dockerized-magento</a>. It will supply us with all of the
+necessary components we need to run Magento 1.9.3.9 locally.</p>
+<pre><code>git clone https://github.com/andreaskoch/dockerized-magento.git
 cd dockerized-magento
 ./magento start
 </code></pre>
 
-<p>Once dockerized-magento has completed setup, we need to disable <em>Cash On Delivery</em> payment method and set up <em>Authorize.net</em>.</p>
+<p>Setup can take awhile the first time around, so be patient and follow the instructions to avoid issues.</p>
+<h4 id="payment-configuration">Payment Configuration</h4>
+<p>Once dockerized-magento setup is complete, we need to update the payment methods configuration.</p>
 <ol>
-<li>From Admin area, navigate to <tt>System</tt> -&gt; <tt>Configuration</tt> -&gt; <tt>Sales</tt> -&gt; <tt>Payment Methods</tt></li>
-<li>Click on <em>Cash On Delivery Payment</em> and set <tt>Enabled</tt> to <tt>No</tt></li>
+<li>From <strong>admin panel</strong>, navigate to <strong>System</strong> &#8594; <strong>Configuration</strong> &#8594; <strong>Sales</strong> &#8594; <strong>Payment Methods</strong></li>
+<li>Click on <em>Cash On Delivery Payment</em> and set <strong>Enabled</strong> to <strong>No</strong></li>
 <li>Click on <em>Authorize.net</em> (not <em>Authorize.net Direct Post</em>) and set the following fields:<ul>
-<li><tt>Enabled</tt> to <tt>Yes</tt></li>
-<li><tt>Payment Action</tt> to <tt>Authorize and Capture</tt></li>
-<li><tt>API Login ID</tt> to your Sandbox account API Login ID</li>
-<li><tt>Merchant's Email</tt> to the email used for your Sandbox account</li>
-<li><tt>Transaction Key</tt> to your Sandbox account Transaction Key</li>
+<li><strong>Enabled</strong> to <strong>Yes</strong></li>
+<li><strong>Payment Action</strong> to <strong>Authorize and Capture</strong></li>
+<li><strong>API Login ID</strong> to your Sandbox API Login ID</li>
+<li><strong>Merchant's Email</strong> to the email used for your Sandbox account</li>
+<li><strong>Transaction Key</strong> to your Sandbox Transaction Key</li>
 </ul>
 </li>
-<li>Click <tt>Save Config</tt></li>
+<li>Click <strong>Save Config</strong></li>
 <li>If you have caching enabled, clear the config cache.</li>
 </ol>
-<p>Once the payment gateway has been configured, we need to install Test Live Checkout.</p>
+<h4 id="extension-installation">Extension Installation</h4>
+<p>Once the payment gateway has been configured, we need to install Test Live Checkout. If you are unfamiliar with installing Magento extensions,
+a great resource to get you started is <a href="https://store.fooman.co.nz/media/custom/upload/TheUltimateGuidetoInstallingMagentoExtensions.pdf">The Ultimate Guide to Installing Magento Extensions</a>.</p>
 <p>After installing the extension, complete the following:</p>
 <ol>
-<li>From Admin area, navigate to <tt>System</tt> -&gt; <tt>Configuration</tt> -&gt; <tt>Nickolas Burr Extensions</tt> (sidebar) -&gt; <tt>Test Live Checkout</tt></li>
-<li>Under <tt>General Settings</tt>, set <tt>Enable Live Checkout Testing</tt> to <tt>Yes</tt></li>
-<li>Generate random 32 character alphanumeric string and paste into <tt>Authentication Token</tt> field</li>
-<li>Click <tt>Save Config</tt></li>
+<li>From Admin area, navigate to <strong>System</strong> &#8594; <strong>Configuration</strong> &#8594; <strong>Test Live Checkout</strong> (left sidebar)</li>
+<li>Under <strong>General Settings</strong>, set <strong>Enable Live Checkout Testing</strong> to <strong>Yes</strong></li>
+<li>Generate random 32 character alphanumeric string<sup>1</sup> and paste into <strong>Authentication Token</strong> field.</li>
+<li>Under <strong>Log Settings</strong>, set <strong>Enable Logging</strong> to <strong>Yes</strong>.</li>
+<li>Click <strong>Save Config</strong></li>
 </ol>
+<h4 id="automated-browser-testing">Automated Browser Testing</h4>
 <p>After configuring the extension, complete the following:</p>
 <ol>
 <li>
@@ -163,20 +197,31 @@ cd dockerized-magento
 <p><code>mkdir testlivecheckout-puppeteer &amp;&amp; cd testlivecheckout-puppeteer</code></p>
 </li>
 <li>
-<p>Fetch a copy of the <tt>guest-checkout.js</tt> Puppeteer script:</p>
-<p><code>curl -fsL -O https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/src/guest-checkout.js</code></p>
+<p>Fetch a copy of the <strong>authorizenet.js</strong> Puppeteer script:</p>
+<p><code>curl -fsL \
+     -O https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/src/guest-checkout/authorizenet.js</code></p>
 </li>
 <li>
 <p>Export the authentication token from earlier to your shell environment:</p>
 <p><code>export TLC_AUTH_TOKEN="&lt;AUTH_TOKEN_FROM_EARLIER&gt;"</code></p>
 </li>
 <li>
-<p>Run <tt>guest-checkout.js</tt>:</p>
+<p>Use <code>npm</code> to install <code>puppeteer</code>:</p>
+<p><code>npm install puppeteer</code></p>
+</li>
+<li>
+<p>Run <strong>authorizenet.js</strong>:</p>
 <p><code>node guest-checkout.js</code></p>
 </li>
 </ol>
-<p>Once the script has finished running, you should have 10 PNG screenshots of the various stages of checkout.</p>
-<p>To see an example of what to expect, see <a href="https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/examples/guest-checkout/">Guest Checkout</a>.</p></div>
+<p>Once <code>authorizenet.js</code> has finished running, you should have 9 PNGs showing the various stages of checkout, and a GIF of all screenshots merged.</p>
+<p>To see an example of what to expect, see <a href="https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/examples/guest-checkout/authorizenet/">Guest Checkout</a>.</p>
+<h2 id="notes">Notes</h2>
+<ol>
+<li>There are many ways to generate random, secure alphanumeric strings. Below is just one of many such ways:</li>
+</ol>
+<pre><code>LC_CTYPE=C tr -dc A-Za-z0-9 &lt; /dev/urandom | head -c 32 | xargs ;
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">
