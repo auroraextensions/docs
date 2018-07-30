@@ -7,8 +7,8 @@ To configure Test Live Checkout, log into the **admin panel** and navigate to **
 ### General Settings
 
 1. **Enable Live Checkout Testing**: Enable the extension for use. This must be enabled for the extension to function.
-2. **Authentication Token**: An alphanumeric token used for authentication. It must be _at least_ 32 characters in length, and can only contain letters and numbers.
-3. **Redirect URL**: The redirect URL is the URL where the browser is redirected after a successful test order submission. The URL must be part of the same [SLD](https://en.wikipedia.org/wiki/Second-level_domain) as Magento.
+2. **Authentication Token**: An alphanumeric token used for authentication. Must be _at least_ 32 characters in length, containing only letters and numbers.
+3. **Redirect URL**: The URL where the browser is redirected after a successful test order submission. The URL must be part of the same [SLD](https://en.wikipedia.org/wiki/Second-level_domain) as Magento.
 
 ### Log Settings
 
