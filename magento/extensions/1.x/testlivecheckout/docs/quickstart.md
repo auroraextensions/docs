@@ -4,7 +4,7 @@
 
 This guide shows how to use [Puppeteer](https://github.com/GoogleChrome/puppeteer) with [Test Live Checkout](https://marketplace.magento.com/nickolasburr-nickolasburr-testlivecheckout.html) to simulate a guest checkout scenario.
 
-## Requirements
+### Requirements
 
 + [Docker](https://www.docker.com)
     - [docker-compose](https://docs.docker.com/compose/)
@@ -38,7 +38,7 @@ This will generate a new VM where the Docker processes will run. Lastly, you wil
 eval $(docker-machine env magento)
 ```
 
-## Getting Started
+### Getting Started
 
 To get started, verify Docker is running properly.
 
@@ -59,7 +59,7 @@ cd dockerized-magento
 
 Setup can take awhile the first time around, so be patient and follow the instructions to avoid issues.
 
-#### Payment Configuration
+### Payment Configuration
 
 Once dockerized-magento setup is complete, we need to update the payment methods configuration.
 
@@ -74,10 +74,12 @@ Once dockerized-magento setup is complete, we need to update the payment methods
 4. Click **Save Config**
 5. If you have caching enabled, clear the config cache.
 
-#### Extension Installation
+### Extension Installation
 
 Once the payment gateway has been configured, we need to install Test Live Checkout. If you are unfamiliar with installing Magento extensions,
-a great resource to get you started is [The Ultimate Guide to Installing Magento Extensions](https://store.fooman.co.nz/media/custom/upload/TheUltimateGuidetoInstallingMagentoExtensions.pdf).
+a great resource to get started is [The Ultimate Guide to Installing Magento Extensions](https://store.fooman.co.nz/media/custom/upload/TheUltimateGuidetoInstallingMagentoExtensions.pdf).
+
+### Extension Configuration
 
 After installing the extension, complete the following:
 
@@ -87,46 +89,42 @@ After installing the extension, complete the following:
 4. Under **Log Settings**, set **Enable Logging** to **Yes**.
 5. Click **Save Config**
 
-#### Automated Browser Testing
+### Automated Browser Testing
 
-After configuring the extension, complete the following:
+After configuring the extension, we can start running automated browser tests.
 
-1. Create a workspace directory:
+Create a workspace directory and fetch a copy of the **authorizenet.js** Puppeteer script:
 
-    ```
-    mkdir testlivecheckout-puppeteer && cd testlivecheckout-puppeteer
-    ```
+```
+mkdir tlc-puppeteer && cd tlc-puppeteer
+curl -fsLO \
+  https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/src/guest-checkout/authorizenet.js
+```
 
-2. Fetch a copy of the **authorizenet.js** Puppeteer script:
-    <pre>
-      <code class="shell">
-        curl -fsL \
-             -O https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/src/guest-checkout/authorizenet.js
-      </code>
-    </pre>
-3. Export the authentication token from earlier to your shell environment:
+The **authorizenet.js** Puppeteer script requires the environment variable `TLC_AUTH_TOKEN` to be present. Using the authentication
+token we created earlier, export `TLC_AUTH_TOKEN` to your shell environment.
 
-    ```
-    export TLC_AUTH_TOKEN="<AUTH_TOKEN_FROM_EARLIER>"
-    ```
+```
+export TLC_AUTH_TOKEN="<AUTH_TOKEN_FROM_EARLIER>"
+```
 
-4. Use `npm` to install `puppeteer`:
+Next, install the puppeteer package via `npm`:
 
-    ```
-    npm install puppeteer
-    ```
+```
+npm install puppeteer
+```
 
-5. Run **authorizenet.js**:
+Last but not least, let's run the script.
 
-    ```
-    node guest-checkout.js
-    ```
+```
+node authorizenet.js
+```
 
-Once `authorizenet.js` has finished running, you should have 9 PNGs showing the various stages of checkout, and a GIF of all screenshots merged.
+Once the process has completed, you will be left with 9 PNGs showing various stages of checkout, and a GIF of all screenshots merged.
 
-To see an example of what to expect, see [Guest Checkout](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/examples/guest-checkout/authorizenet/).
+To see what the end result will look like, take a look at [Guest Checkout](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/examples/guest-checkout/authorizenet/).
 
-## Notes
+### Notes
 
 1. There are many ways to generate random, secure alphanumeric strings. Below is just one of many such ways:
 
