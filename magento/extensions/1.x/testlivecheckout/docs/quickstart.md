@@ -97,14 +97,12 @@ After configuring the extension, complete the following:
     ```
 
 2. Fetch a copy of the **authorizenet.js** Puppeteer script:
-
     <pre>
       <code class="shell">
         curl -fsL \
              -O https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/src/guest-checkout/authorizenet.js
       </code>
     </pre>
-
 3. Export the authentication token from earlier to your shell environment:
 
     ```
