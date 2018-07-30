@@ -95,3 +95,11 @@ blockquote.notice {
     width: 1440px;
   }
 }
+
+@media only screen and (min-width: 1280px) {
+  img[alt^="Braintree Guest Checkout -- Step"],
+  img[alt^="Authorize.net Guest Checkout -- Step"] {
+    height: 350px;
+    width: calc(33.33333% - 5px);
+  }
+}
