@@ -5,7 +5,7 @@ pages:
   - Home: index.md
   - Quick Start: quickstart.md
   - Configuration: configuration.md
-  - Puppeteer:
+  - Examples:
     - 'Guest Checkout':
       - 'Authorize.net': 'examples/guest-checkout/authorizenet.md'
       - 'Braintree': 'examples/guest-checkout/braintree.md'
