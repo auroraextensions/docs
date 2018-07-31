@@ -14,4 +14,5 @@
 - [Release Notes](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/RELEASE_NOTES.txt)
 - [Sitemap](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/sitemap.xml)
 - [Manuals](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/manuals/)
+    + [UserManual.pdf](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/manuals/UserManual.pdf)
 - [Versions](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/)
