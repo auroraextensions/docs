@@ -164,6 +164,11 @@
             "location": "/examples/guest-checkout/braintree/#screenshots",
             "text": "",
             "title": "Screenshots"
+        },
+        {
+            "location": "/pdf/",
+            "text": "Index of /magento/extensions/1.x/testlivecheckout/1.1.0/pdf/\n\n        \n\n        \n\n    \n\n    \n\n        \nIndex of /magento/extensions/1.x/testlivecheckout/1.1.0/pdf/\n\n        \n\n        \n\n            \n../\n\n            \nUserManual.pdf",
+            "title": "Manual"
         }
     ]
 }
