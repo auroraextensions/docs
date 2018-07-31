@@ -1,6 +1,6 @@
 <blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://nickolasburr.github.io/docs/magento/extensions/2.x/testlivecheckout/latest/">here</a>.</blockquote>
 
-# Quick Start
+## Quick Start
 
 This guide shows how to use [Puppeteer](https://github.com/GoogleChrome/puppeteer) with [Test Live Checkout](https://marketplace.magento.com/nickolasburr-nickolasburr-testlivecheckout.html) to simulate a guest checkout scenario.
 
@@ -89,7 +89,7 @@ After installing the extension, complete the following:
 4. Under **Log Settings**, set **Enable Logging** to **Yes**.
 5. Click **Save Config**
 
-### Automated Browser Testing
+### Tests
 
 After configuring the extension, we can start running automated browser tests.
 
