@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/",
-            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nTable of Contents\n\n\n\n\nAbout\n\n\nPurchase\n\n\nQuick Start\n\n\nConfiguration\n\n\nExamples\n\n\nGuest Checkout\n\n\nAuthorize.net\n\n\nBraintree\n\n\n\n\n\n\n\n\n\n\nVersions\n\n\nLicense\n\n\nRelease Notes\n\n\nSitemap",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nTable of Contents\n\n\n\n\nAbout\n\n\nPurchase\n\n\nQuick Start\n\n\nConfiguration\n\n\nExamples\n\n\nGuest Checkout\n\n\nAuthorize.net\n\n\nBraintree\n\n\n\n\n\n\n\n\n\n\nLicense\n\n\nRelease Notes\n\n\nSitemap\n\n\nManuals\n\n\nVersions",
             "title": "Home"
         },
         {
             "location": "/#table-of-contents",
-            "text": "About  Purchase  Quick Start  Configuration  Examples  Guest Checkout  Authorize.net  Braintree      Versions  License  Release Notes  Sitemap",
+            "text": "About  Purchase  Quick Start  Configuration  Examples  Guest Checkout  Authorize.net  Braintree      License  Release Notes  Sitemap  Manuals  Versions",
             "title": "Table of Contents"
         },
         {
@@ -151,14 +151,9 @@
             "title": "Screenshots"
         },
         {
-            "location": "/pdf/",
-            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nPDFs\n\n\n\n\nUserManual.pdf",
+            "location": "/manuals/",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\n\n\nUserManual.pdf",
             "title": "Manuals"
-        },
-        {
-            "location": "/pdf/#pdfs",
-            "text": "UserManual.pdf",
-            "title": "PDFs"
         }
     ]
 }
