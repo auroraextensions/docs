@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Quick Start - Test Live Checkout v1.1.0</title>
+        <title>About - Test Live Checkout v1.1.0</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -58,11 +58,11 @@
                     <li >
                         <a href="..">Home</a>
                     </li>
-                    <li class="active">
-                        <a href="./">Quick Start</a>
-                    </li>
                     <li >
-                        <a href="../about/">About</a>
+                        <a href="../quickstart/">Quick Start</a>
+                    </li>
+                    <li class="active">
+                        <a href="./">About</a>
                     </li>
                     <li >
                         <a href="../configuration/">Configuration</a>
@@ -98,12 +98,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="..">
+                        <a rel="next" href="../quickstart/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../about/">
+                        <a rel="prev" href="../configuration/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -115,123 +115,22 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#quick-start">Quick Start</a></li>
-            <li><a href="#requirements">Requirements</a></li>
-            <li><a href="#getting-started">Getting Started</a></li>
-            <li><a href="#payment-configuration">Payment Configuration</a></li>
-            <li><a href="#extension-installation">Extension Installation</a></li>
-            <li><a href="#extension-configuration">Extension Configuration</a></li>
-            <li><a href="#automated-browser-testing">Automated Browser Testing</a></li>
-            <li><a href="#notes">Notes</a></li>
+        <li class="main active"><a href="#background">Background</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
 <blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://nickolasburr.github.io/magento/extensions/2.x/testlivecheckout/latest/">here</a>.</blockquote>
 
-<h1 id="quick-start">Quick Start</h1>
-<p>This guide shows how to use <a href="https://github.com/GoogleChrome/puppeteer">Puppeteer</a> with <a href="https://marketplace.magento.com/nickolasburr-nickolasburr-testlivecheckout.html">Test Live Checkout</a> to simulate a guest checkout scenario.</p>
-<h3 id="requirements">Requirements</h3>
-<ul>
-<li><a href="https://www.docker.com">Docker</a><ul>
-<li><a href="https://docs.docker.com/compose/">docker-compose</a></li>
-</ul>
-</li>
-<li><a href="https://git-scm.com">Git</a></li>
-<li><a href="https://nodejs.org">Node</a><ul>
-<li><a href="https://www.npmjs.com/package/puppeteer">puppeteer</a></li>
-</ul>
-</li>
-<li><a href="https://sandbox.authorize.net">Authorize.net Sandbox Credentials</a></li>
-</ul>
-<p><strong>macOS Users:</strong></p>
-<p>To run Docker locally, you need to install <a href="https://www.virtualbox.org">VirtualBox</a> and <a href="https://github.com/docker/machine">Docker Machine</a>.</p>
-<p>For Homebrew users, Docker Machine is available via homebrew/core and VirtualBox is available via homebrew/cask.</p>
-<pre><code>brew update
-brew cask install virtualbox
-brew install docker-machine
-</code></pre>
-
-<p>Once VirtualBox and Docker Machine are installed, you will need to create a new machine (VM).</p>
-<pre><code>docker-machine create magento
-</code></pre>
-
-<p>This will generate a new VM where the Docker processes will run. Lastly, you will need to export several
-<code>docker-machine</code> variables to your shell environment, in order for <code>docker-machine</code> to work properly.</p>
-<pre><code>eval $(docker-machine env magento)
-</code></pre>
-
-<h3 id="getting-started">Getting Started</h3>
-<p>To get started, verify Docker is running properly.</p>
-<pre><code>docker ps
-</code></pre>
-
-<p>If the daemon process (<code>dockerd</code>) has yet to be started, you will receive an error.</p>
-<p>Next, we're going to use the prebuilt Magento 1.x setup provided by <a href="https://github.com/andreaskoch/dockerized-magento">dockerized-magento</a>. It will supply us with all of the
-necessary components we need to run Magento 1.9.3.9 locally.</p>
-<pre><code>git clone https://github.com/andreaskoch/dockerized-magento.git
-cd dockerized-magento
-./magento start
-</code></pre>
-
-<p>Setup can take awhile the first time around, so be patient and follow the instructions to avoid issues.</p>
-<h3 id="payment-configuration">Payment Configuration</h3>
-<p>Once dockerized-magento setup is complete, we need to update the payment methods configuration.</p>
-<ol>
-<li>From <strong>admin panel</strong>, navigate to <strong>System</strong> &#8594; <strong>Configuration</strong> &#8594; <strong>Sales</strong> &#8594; <strong>Payment Methods</strong></li>
-<li>Click on <em>Cash On Delivery Payment</em> and set <strong>Enabled</strong> to <strong>No</strong></li>
-<li>Click on <em>Authorize.net</em> (not <em>Authorize.net Direct Post</em>) and set the following fields:<ul>
-<li><strong>Enabled</strong> to <strong>Yes</strong></li>
-<li><strong>Payment Action</strong> to <strong>Authorize and Capture</strong></li>
-<li><strong>API Login ID</strong> to your Sandbox API Login ID</li>
-<li><strong>Merchant's Email</strong> to the email used for your Sandbox account</li>
-<li><strong>Transaction Key</strong> to your Sandbox Transaction Key</li>
-</ul>
-</li>
-<li>Click <strong>Save Config</strong></li>
-<li>If you have caching enabled, clear the config cache.</li>
-</ol>
-<h3 id="extension-installation">Extension Installation</h3>
-<p>Once the payment gateway has been configured, we need to install Test Live Checkout. If you are unfamiliar with installing Magento extensions,
-a great resource to get started is <a href="https://store.fooman.co.nz/media/custom/upload/TheUltimateGuidetoInstallingMagentoExtensions.pdf">The Ultimate Guide to Installing Magento Extensions</a>.</p>
-<h3 id="extension-configuration">Extension Configuration</h3>
-<p>After installing the extension, complete the following:</p>
-<ol>
-<li>From Admin area, navigate to <strong>System</strong> &#8594; <strong>Configuration</strong> &#8594; <strong>Test Live Checkout</strong> (left sidebar)</li>
-<li>Under <strong>General Settings</strong>, set <strong>Enable Live Checkout Testing</strong> to <strong>Yes</strong></li>
-<li>Generate random 32 character alphanumeric string<sup>1</sup> and paste into <strong>Authentication Token</strong> field.</li>
-<li>Under <strong>Log Settings</strong>, set <strong>Enable Logging</strong> to <strong>Yes</strong>.</li>
-<li>Click <strong>Save Config</strong></li>
-</ol>
-<h3 id="automated-browser-testing">Automated Browser Testing</h3>
-<p>After configuring the extension, we can start running automated browser tests.</p>
-<p>Create a workspace directory and fetch a copy of the <strong>authorizenet.js</strong> Puppeteer script:</p>
-<pre><code>mkdir tlc-puppeteer &amp;&amp; cd tlc-puppeteer
-curl -fsLO \
-  https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/src/guest-checkout/authorizenet.js
-</code></pre>
-
-<p>The <strong>authorizenet.js</strong> Puppeteer script requires the environment variable <code>TLC_AUTH_TOKEN</code> to be present. Using the authentication
-token we created earlier, export <code>TLC_AUTH_TOKEN</code> to your shell environment.</p>
-<pre><code>export TLC_AUTH_TOKEN=&quot;&lt;AUTH_TOKEN_FROM_EARLIER&gt;&quot;
-</code></pre>
-
-<p>Next, install the puppeteer package via <code>npm</code>:</p>
-<pre><code>npm install puppeteer
-</code></pre>
-
-<p>Last but not least, let's run the script.</p>
-<pre><code>node authorizenet.js
-</code></pre>
-
-<p>Once the process has completed, you will be left with 9 PNGs showing various stages of checkout, and a GIF of all screenshots merged.</p>
-<p>To see what the end result will look like, take a look at <a href="https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/examples/guest-checkout/authorizenet/">Guest Checkout</a>.</p>
-<h3 id="notes">Notes</h3>
-<ol>
-<li>There are many ways to generate random, secure alphanumeric strings. Below is just one of many such ways:</li>
-</ol>
-<pre><code>LC_CTYPE=C tr -dc A-Za-z0-9 &lt; /dev/urandom | head -c 32 | xargs ;
-</code></pre></div>
+<h2 id="background">Background</h2>
+<p>Automated browser testing is an established paradigm that allows a developer to programmatically control a web browser through an API. While it may not seem obvious
+at first, this is especially valuable for online retailers because it allows a developer to simulate real user behaviors within the context of a web browser, providing
+a mechanism for testing aspects of your storefront.</p>
+<p>Test Live Checkout is intended for use with automated browser testing tools, such as <a href="https://github.com/GoogleChrome/puppeteer">Puppeteer</a> and <a href="https://www.seleniumhq.org">Selenium</a>.
+By allowing authenticated users to submit test orders using real products, Test Live Checkout can help aid in the discovery and remediation of issues affecting your checkout, which
+subsequently affect your bottom line, too.</p>
+<p>Test Live Checkout provides the most value when used with automated browser tests, as part of a comprehensive transaction monitoring plan. However, it can be a helpful
+tool to use during development and testing phases, as well, because it provides useful feedback regarding checkout health.</p></div>
         </div>
 
         <footer class="col-md-12">
