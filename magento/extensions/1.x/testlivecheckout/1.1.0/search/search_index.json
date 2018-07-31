@@ -167,8 +167,13 @@
         },
         {
             "location": "/pdf/",
-            "text": "Index of /magento/extensions/1.x/testlivecheckout/1.1.0/pdf/\n\n        \n\n        \n\n    \n\n    \n\n        \nIndex of /magento/extensions/1.x/testlivecheckout/1.1.0/pdf/\n\n        \n\n        \n\n            \n../\n\n            \nUserManual.pdf",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nPDFs\n\n\n\n\nUser Manual",
             "title": "Manual"
+        },
+        {
+            "location": "/pdf/#pdfs",
+            "text": "User Manual",
+            "title": "PDFs"
         }
     ]
 }
