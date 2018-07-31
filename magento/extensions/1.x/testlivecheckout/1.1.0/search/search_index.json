@@ -167,12 +167,12 @@
         },
         {
             "location": "/pdf/",
-            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nPDFs\n\n\n\n\nUser Manual",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nPDFs\n\n\n\n\nUserManual.pdf",
             "title": "Manual"
         },
         {
             "location": "/pdf/#pdfs",
-            "text": "User Manual",
+            "text": "UserManual.pdf",
             "title": "PDFs"
         }
     ]

@@ -2,4 +2,4 @@
 
 # PDFs
 
-- [User Manual](https://nickolasburr.github.io/magento/extensions/2.x/testlivecheckout/1.1.0/pdf/UserManual.pdf)
+- [UserManual.pdf](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/1.1.0/pdf/UserManual.pdf)
