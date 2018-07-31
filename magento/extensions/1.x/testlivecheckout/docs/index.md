@@ -10,7 +10,8 @@
     + Guest Checkout
         - [Authorize.net](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/examples/guest-checkout/authorizenet/)
         - [Braintree](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/examples/guest-checkout/braintree/)
-- [Versions](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/)
 - [License](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/LICENSE.txt)
 - [Release Notes](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/RELEASE_NOTES.txt)
 - [Sitemap](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/sitemap.xml)
+- [Manuals](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/latest/manuals/)
+- [Versions](https://nickolasburr.github.io/magento/extensions/1.x/testlivecheckout/)
