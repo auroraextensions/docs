@@ -9,7 +9,7 @@ pages:
     - 'Guest Checkout':
       - 'Authorize.net': 'examples/guest-checkout/authorizenet.md'
       - 'Braintree': 'examples/guest-checkout/braintree.md'
-  - Manual: 'pdf/UserManual.pdf'
+  - Manual: 'pdf/index.html'
 extra_css:
   - css/extra.css
 google_analytics: ['UA-113897119-2', 'nickolasburr.github.io']
