@@ -57,7 +57,7 @@
         },
         {
             "location": "/configuration/",
-            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nConfiguration\n\n\nTo configure Test Live Checkout, log into the \nadmin panel\n and navigate to \nSystem\n \u2192 \nConfiguration\n \u2192 \nTest Live Checkout\n (left sidebar, typically toward the bottom).\n\n\nGeneral Settings\n\n\n\n\nEnable Live Checkout Testing\n: Enable the extension for use. This must be enabled for the extension to function.\n\n\nAuthentication Token\n: An alphanumeric token used for authentication. Must be \nat least\n 32 characters in length, containing only letters and numbers.\n\n\nRedirect URL\n: The URL where the browser is redirected after a successful test order submission. The URL must be part of the same \nSLD\n as Magento.\n\n\n\n\nLog Settings\n\n\n\n\nEnable Logging\n: Enable transaction logging. For monitoring and debugging purposes, Test Live Checkout provides the ability to log test transactions. By default, transaction logging is disabled.\n\n\n\n\n\n\nTransaction Log\n\n\nDuring an authenticated transaction, Test Live Checkout will record certain fields from the order, such as the payment gateway and timestamp, that are helpful when debugging checkout issues.",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nConfiguration\n\n\nTo configure Test Live Checkout, log into the \nadmin panel\n and navigate to \nSystem\n \u2192 \nConfiguration\n \u2192 \nTest Live Checkout\n (left sidebar, typically toward the bottom).\n\n\nGeneral Settings\n\n\n\n\nEnable Live Checkout Testing\n: Enable the extension for use. This must be enabled for the extension to function.\n\n\nAuthentication Token\n: An alphanumeric token used for authentication. Must be \nat least\n 32 characters in length, containing only letters and numbers.\n\n\nRedirect URL\n: The URL where the browser is redirected after a successful test order submission. The URL must be part of the same \nSLD\n as Magento.\n\n\n\n\nLog Settings\n\n\n\n\nEnable Logging\n: Enable transaction logging. For monitoring and debugging purposes, Test Live Checkout provides the ability to log test transactions. By default, transaction logging is disabled.\n\n\n\n\n\n\nTransaction Log\n\n\nDuring an authenticated transaction, Test Live Checkout will record certain fields from the order, such as response code, payment gateway name,\nand timestamp, which can be helpful when monitoring and debugging transactions.\n\n\n\n\nTo view details of a particular transaction, select the transaction from the list.",
             "title": "Configuration"
         },
         {
@@ -77,7 +77,7 @@
         },
         {
             "location": "/configuration/#transaction-log",
-            "text": "During an authenticated transaction, Test Live Checkout will record certain fields from the order, such as the payment gateway and timestamp, that are helpful when debugging checkout issues.",
+            "text": "During an authenticated transaction, Test Live Checkout will record certain fields from the order, such as response code, payment gateway name,\nand timestamp, which can be helpful when monitoring and debugging transactions.   To view details of a particular transaction, select the transaction from the list.",
             "title": "Transaction Log"
         },
         {
