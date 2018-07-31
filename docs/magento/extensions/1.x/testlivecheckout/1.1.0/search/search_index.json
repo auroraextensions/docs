@@ -2,13 +2,23 @@
     "docs": [
         {
             "location": "/",
-            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nTable of Contents\n\n\n\n\nAbout\n\n\nPurchase\n\n\nQuick Start\n\n\nConfiguration\n\n\nExamples\n\n\nGuest Checkout\n\n\nAuthorize.net\n\n\nBraintree\n\n\n\n\n\n\n\n\n\n\nLicense\n\n\nRelease Notes\n\n\nSitemap\n\n\nManuals\n\n\nUserManual.pdf\n\n\n\n\n\n\nVersions",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nTable of Contents\n\n\n\n\nHome\n\n\nQuick Start\n\n\nConfiguration\n\n\nExamples\n\n\nGuest Checkout\n\n\nAuthorize.net\n\n\nBraintree\n\n\n\n\n\n\n\n\n\n\nLicense\n\n\nRelease Notes\n\n\nSitemap\n\n\nManuals\n\n\nUserManual.pdf\n\n\n\n\n\n\nVersions\n\n\n\n\nWhat is automated browser testing?\n\n\nAutomated browser testing (ABT) is the process of testing aspects of a website within the context of a web browser. As such, ABT has become\nan invaluable tool for online retailers who are looking to outpace the competition and provide their customers with the best experiences.\n\n\nWhat is Test Live Checkout?\n\n\nTest Live Checkout is a Magento extension intended for use with ABT tools, such as \nPuppeteer\n and \nSelenium\n.\nBy allowing authenticated users to submit test orders using real products, Test Live Checkout can help aid in the discovery and remediation of issues affecting your checkout, which\nsubsequently affect your bottom line, too.\n\n\nAs a versatile tool, Test Live Checkout can also be used during development, testing, and QA processes because it provides helpful feedback regarding checkout health.",
             "title": "Home"
         },
         {
             "location": "/#table-of-contents",
-            "text": "About  Purchase  Quick Start  Configuration  Examples  Guest Checkout  Authorize.net  Braintree      License  Release Notes  Sitemap  Manuals  UserManual.pdf    Versions",
+            "text": "Home  Quick Start  Configuration  Examples  Guest Checkout  Authorize.net  Braintree      License  Release Notes  Sitemap  Manuals  UserManual.pdf    Versions",
             "title": "Table of Contents"
+        },
+        {
+            "location": "/#what-is-automated-browser-testing",
+            "text": "Automated browser testing (ABT) is the process of testing aspects of a website within the context of a web browser. As such, ABT has become\nan invaluable tool for online retailers who are looking to outpace the competition and provide their customers with the best experiences.",
+            "title": "What is automated browser testing?"
+        },
+        {
+            "location": "/#what-is-test-live-checkout",
+            "text": "Test Live Checkout is a Magento extension intended for use with ABT tools, such as  Puppeteer  and  Selenium .\nBy allowing authenticated users to submit test orders using real products, Test Live Checkout can help aid in the discovery and remediation of issues affecting your checkout, which\nsubsequently affect your bottom line, too.  As a versatile tool, Test Live Checkout can also be used during development, testing, and QA processes because it provides helpful feedback regarding checkout health.",
+            "title": "What is Test Live Checkout?"
         },
         {
             "location": "/quickstart/",
@@ -54,16 +64,6 @@
             "location": "/quickstart/#notes",
             "text": "There are many ways to generate random, secure alphanumeric strings. Below is just one of many such ways:   LC_CTYPE=C tr -dc A-Za-z0-9 < /dev/urandom | head -c 32 | xargs ;",
             "title": "Notes"
-        },
-        {
-            "location": "/about/",
-            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nBackground\n\n\nAutomated browser testing is an established paradigm that allows a developer to programmatically control a web browser through an API. While it may not seem obvious\nat first, this is especially valuable for online retailers because it allows a developer to simulate real user behaviors within the context of a web browser, providing\na mechanism for testing aspects of your storefront.\n\n\nTest Live Checkout is intended for use with automated browser testing tools, such as \nPuppeteer\n and \nSelenium\n.\nBy allowing authenticated users to submit test orders using real products, Test Live Checkout can help aid in the discovery and remediation of issues affecting your checkout, which\nsubsequently affect your bottom line, too.\n\n\nTest Live Checkout provides the most value when used with automated browser tests, as part of a comprehensive transaction monitoring plan. However, it can be a helpful\ntool to use during development and testing phases, as well, because it provides useful feedback regarding checkout health.",
-            "title": "About"
-        },
-        {
-            "location": "/about/#background",
-            "text": "Automated browser testing is an established paradigm that allows a developer to programmatically control a web browser through an API. While it may not seem obvious\nat first, this is especially valuable for online retailers because it allows a developer to simulate real user behaviors within the context of a web browser, providing\na mechanism for testing aspects of your storefront.  Test Live Checkout is intended for use with automated browser testing tools, such as  Puppeteer  and  Selenium .\nBy allowing authenticated users to submit test orders using real products, Test Live Checkout can help aid in the discovery and remediation of issues affecting your checkout, which\nsubsequently affect your bottom line, too.  Test Live Checkout provides the most value when used with automated browser tests, as part of a comprehensive transaction monitoring plan. However, it can be a helpful\ntool to use during development and testing phases, as well, because it provides useful feedback regarding checkout health.",
-            "title": "Background"
         },
         {
             "location": "/configuration/",
