@@ -10,10 +10,11 @@
         - [Authorize.net](https://nickolasburr.github.io/docs/magento/extensions/1.x/testlivecheckout/latest/examples/guest-checkout/authorizenet/)
         - [Braintree](https://nickolasburr.github.io/docs/magento/extensions/1.x/testlivecheckout/latest/examples/guest-checkout/braintree/)
 - [License](https://nickolasburr.github.io/docs/magento/extensions/1.x/testlivecheckout/LICENSE.txt)
-- [Release Notes](https://nickolasburr.github.io/docs/magento/extensions/1.x/testlivecheckout/RELEASE_NOTES.txt)
-- [Sitemap](https://nickolasburr.github.io/docs/magento/extensions/1.x/testlivecheckout/latest/sitemap.xml)
 - [Manuals](https://nickolasburr.github.io/docs/magento/extensions/1.x/testlivecheckout/latest/manuals/)
     + [UserManual.pdf](https://nickolasburr.github.io/docs/magento/extensions/1.x/testlivecheckout/latest/manuals/UserManual.pdf)
+- [Puppeteer Scripts](https://nickolasburr.github.io/docs/magento/extensions/1.x/testlivecheckout/latest/puppeteer/src/)
+- [Release Notes](https://nickolasburr.github.io/docs/magento/extensions/1.x/testlivecheckout/RELEASE_NOTES.txt)
+- [Sitemap](https://nickolasburr.github.io/docs/magento/extensions/1.x/testlivecheckout/latest/sitemap.xml)
 - [Versions](https://nickolasburr.github.io/docs/magento/extensions/1.x/testlivecheckout/)
 
 ## What is automated browser testing?
