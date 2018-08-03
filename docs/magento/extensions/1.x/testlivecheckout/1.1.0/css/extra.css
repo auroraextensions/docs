@@ -52,7 +52,7 @@ blockquote.notice {
   font-family: Baskerville, monospace, sans-serif;
   font-size: 2rem;
   font-weight: bold;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
 }
 
 blockquote.important {
