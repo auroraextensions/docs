@@ -11,3 +11,5 @@
 ## What is Authenticate Direct Download?
 
 Authenticate Direct Download is a Magento extension that allows a guest user to download their purchase without the need to create an account and sign in.
+By eliminating the need for users to create an account, you should see improvements in sales conversion rates, and fewer abandoned carts, as a result of a
+better user experience.
