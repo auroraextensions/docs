@@ -1,0 +1,7 @@
+Release Notes - Authenticate Direct Download - Magento 1.x
+------------------------------------------------
+
+1.0.0
+-----
+
+- Initial release of Authenticate Direct Download.

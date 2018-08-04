@@ -1,0 +1,19 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nTable of Contents\n\n\n\n\nHome\n\n\nLicense\n\n\nRelease Notes\n\n\nSitemap\n\n\nVersions\n\n\n\n\nWhat is Authenticate Direct Download?\n\n\nAuthenticate Direct Download is a Magento extension that allows a guest user to download their purchase without the need to create an account and sign in.",
+            "title": "Home"
+        },
+        {
+            "location": "/#table-of-contents",
+            "text": "Home  License  Release Notes  Sitemap  Versions",
+            "title": "Table of Contents"
+        },
+        {
+            "location": "/#what-is-authenticate-direct-download",
+            "text": "Authenticate Direct Download is a Magento extension that allows a guest user to download their purchase without the need to create an account and sign in.",
+            "title": "What is Authenticate Direct Download?"
+        }
+    ]
+}
