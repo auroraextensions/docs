@@ -1,3 +1,3 @@
-## Table of Contents
+## nickolasburr.github.io
 
-- [Free open-source projects](https://nickolasburr.github.io/foss/projects/)
+Hosted repository for [docs.nickolasburr.com](https://docs.nickolasburr.com).
