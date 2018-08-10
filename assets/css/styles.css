@@ -23,3 +23,7 @@ pre {
   display: table;
   margin: 0;
 }
+
+span.block {
+  display: block;
+}
