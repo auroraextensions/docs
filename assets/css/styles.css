@@ -16,7 +16,16 @@ ol,
 ul {
   display: inline-block;
   padding: 5px;
+}
+
+ol {
   list-style-type: none;
+  margin-left: 5px;
+}
+
+ul {
+  list-style-type: circle;
+  margin-left: 10px;
 }
 
 li {
