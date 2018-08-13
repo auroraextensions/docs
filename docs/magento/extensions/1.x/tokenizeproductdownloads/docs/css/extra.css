@@ -21,6 +21,10 @@ a:focus {
   text-decoration: none;
 }
 
+footer {
+  display: none !important;
+}
+
 pre,
 code {
   font-family: monospace, sans-serif;
@@ -126,14 +130,4 @@ blockquote.notice {
   .container {
     width: 1440px;
   }
-}
-
-/**
- * Homepage
- */
-
-body.homepage footer {
-  bottom: 0;
-  position: fixed;
-  width: 100%;
 }
