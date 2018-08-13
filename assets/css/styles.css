@@ -31,3 +31,11 @@ pre {
 span.block {
   display: block;
 }
+
+span.bold {
+  font-weight: bold;
+}
+
+span.emph {
+  font-style: italic;
+}
