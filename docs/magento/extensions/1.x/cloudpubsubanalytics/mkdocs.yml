@@ -1,0 +1,8 @@
+site_name: Cloud Pub/Sub Analytics v1.0.0
+site_dir: 1.0.0
+theme: mkdocs
+pages:
+  - Home: index.md
+extra_css:
+  - css/extra.css
+google_analytics: ['UA-113897119-2', 'nickolasburr.github.io']

@@ -1,0 +1,7 @@
+Release Notes - Cloud Pub/Sub Analytics - Magento 1.x
+------------------------------------------------
+
+1.0.0
+-----
+
+- Initial release of Cloud Pub/Sub Analytics.
