@@ -34,6 +34,10 @@ blockquote {
   border-radius: 1px;
 }
 
+blockquote > div {
+  margin: 10px 0;
+}
+
 @media only screen and (max-width: 770px) {
   blockquote > p {
     font-size: 12px;
