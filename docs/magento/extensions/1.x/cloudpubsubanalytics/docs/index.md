@@ -11,15 +11,19 @@
 ## What is Cloud Pub/Sub?
 
 <blockquote>
-Cloud Pub/Sub is a simple, reliable, scalable foundation for stream analytics and event-driven computing systems. As part of Google Cloud's
-stream analytics solution, the service ingests event streams and delivers them to Cloud Dataflow for processing and BigQuery for analysis as
-a data warehousing solution. Relying on the Cloud Pub/Sub service for delivery of event data frees you to focus on transforming your business
-and data systems with applications such as:
-
-- Real-time personalization in gaming
-- Fast reporting, targeting and optimization in advertising and media
-- Processing device data for healthcare, manufacturing, oil and gas, and logistics
-- Syndicating market-related data streams for financial services
+  <div>
+    Cloud Pub/Sub is a simple, reliable, scalable foundation for stream analytics and event-driven computing systems. As part of Google Cloud's
+    stream analytics solution, the service ingests event streams and delivers them to Cloud Dataflow for processing and BigQuery for analysis as
+    a data warehousing solution. Relying on the Cloud Pub/Sub service for delivery of event data frees you to focus on transforming your business
+    and data systems with applications such as:
+  </div>
+  <ul>
+    <li>Real-time personalization in gaming</li>
+    <li>Fast reporting, targeting and optimization in advertising and media</li>
+    <li>Processing device data for healthcare, manufacturing, oil and gas, and logistics</li>
+    <li>Syndicating market-related data streams for financial services</li>
+  </ul>
+  <div>Source:&nbsp;<a href="https://cloud.google.com/pubsub/" target="_blank">Google</a></div>
 </blockquote>
 
 ## What is Cloud Pub/Sub Analytics?
