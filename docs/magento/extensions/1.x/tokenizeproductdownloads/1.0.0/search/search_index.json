@@ -1,19 +1,29 @@
 {
     "docs": [
         {
-            "location": "/", 
-            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nTable of Contents\n\n\n\n\nHome\n\n\nLicense\n\n\nRelease Notes\n\n\nSitemap\n\n\nVersions\n\n\n\n\nWhat is Tokenize Product Downloads?\n\n\nTokenize Product Downloads is a Magento extension that allows a guest user to download their purchase without the need to create an account and sign in.\nBy eliminating the need for users to create an account, you should see improvements in sales conversion rates, and fewer abandoned carts, as a result of a\nbetter user experience.", 
+            "location": "/",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nTable of Contents\n\n\n\n\nHome\n\n\nLicense\n\n\nRelease Notes\n\n\nSitemap\n\n\nVersions\n\n\n\n\nWhat is Tokenize Product Downloads?\n\n\nTokenize Product Downloads is a Magento extension that allows a guest user to download their purchase without the need to create an account and sign in.\nBy eliminating the need for users to create an account, you should see improvements in sales conversion rates, and fewer abandoned carts, as a result of a\nbetter user experience.",
             "title": "Home"
-        }, 
+        },
         {
-            "location": "/#table-of-contents", 
-            "text": "Home  License  Release Notes  Sitemap  Versions", 
+            "location": "/#table-of-contents",
+            "text": "Home  License  Release Notes  Sitemap  Versions",
             "title": "Table of Contents"
-        }, 
+        },
         {
-            "location": "/#what-is-tokenize-product-downloads", 
-            "text": "Tokenize Product Downloads is a Magento extension that allows a guest user to download their purchase without the need to create an account and sign in.\nBy eliminating the need for users to create an account, you should see improvements in sales conversion rates, and fewer abandoned carts, as a result of a\nbetter user experience.", 
+            "location": "/#what-is-tokenize-product-downloads",
+            "text": "Tokenize Product Downloads is a Magento extension that allows a guest user to download their purchase without the need to create an account and sign in.\nBy eliminating the need for users to create an account, you should see improvements in sales conversion rates, and fewer abandoned carts, as a result of a\nbetter user experience.",
             "title": "What is Tokenize Product Downloads?"
+        },
+        {
+            "location": "/manuals/",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nManuals\n\n\n\n\nUserManual.pdf",
+            "title": "Manuals"
+        },
+        {
+            "location": "/manuals/#manuals",
+            "text": "UserManual.pdf",
+            "title": "Manuals"
         }
     ]
 }
