@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/",
-            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nTable of Contents\n\n\n\n\nHome\n\n\nConfiguration\n\n\nLicense\n\n\nManuals\n\n\nUserManual.pdf\n\n\nRelease Notes\n\n\nSitemap\n\n\nVersions\n\n\n\n\nWhat is Tokenize Product Downloads?\n\n\nTokenize Product Downloads is a Magento extension that allows a guest user to download their purchase without the need to create an account and sign in.\nBy eliminating the need for users to create an account, you should see improvements in sales conversion rates, and fewer abandoned carts, as a result of a\nbetter user experience.",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nTable of Contents\n\n\n\n\nHome\n\n\nConfiguration\n\n\nLicense\n\n\nManuals\n\n\nUserManual.pdf\n\n\n\n\n\n\nRelease Notes\n\n\nSitemap\n\n\nVersions\n\n\n\n\nWhat is Tokenize Product Downloads?\n\n\nTokenize Product Downloads is a Magento extension that allows a guest user to download their purchase without the need to create an account and sign in.\nBy eliminating the need for users to create an account, you should see improvements in sales conversion rates, and fewer abandoned carts, as a result of a\nbetter user experience.",
             "title": "Home"
         },
         {
             "location": "/#table-of-contents",
-            "text": "Home  Configuration  License  Manuals  UserManual.pdf  Release Notes  Sitemap  Versions",
+            "text": "Home  Configuration  License  Manuals  UserManual.pdf    Release Notes  Sitemap  Versions",
             "title": "Table of Contents"
         },
         {
