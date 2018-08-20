@@ -6,7 +6,7 @@
 - [Configuration](https://docs.nickolasburr.com/magento/extensions/1.x/tokenizeproductdownloads/latest/configuration/)
 - [License](https://docs.nickolasburr.com/magento/extensions/1.x/tokenizeproductdownloads/LICENSE.txt)
 - [Manuals](https://docs.nickolasburr.com/magento/extensions/1.x/tokenizeproductdownloads/latest/manuals/)
-  + [UserManual.pdf](https://docs.nickolasburr.com/magento/extensions/1.x/tokenizeproductdownloads/latest/manuals/UserManual.pdf)
+    + [UserManual.pdf](https://docs.nickolasburr.com/magento/extensions/1.x/tokenizeproductdownloads/latest/manuals/UserManual.pdf)
 - [Release Notes](https://docs.nickolasburr.com/magento/extensions/1.x/tokenizeproductdownloads/RELEASE_NOTES.txt)
 - [Sitemap](https://docs.nickolasburr.com/magento/extensions/1.x/tokenizeproductdownloads/latest/sitemap.xml)
 - [Versions](https://docs.nickolasburr.com/magento/extensions/1.x/tokenizeproductdownloads/)
