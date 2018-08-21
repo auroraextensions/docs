@@ -7,7 +7,11 @@
  */
 
 body {
-  font-family: Futura, Helvetica, sans-serif;
+  font-family: Futura, Helvetica, monospace, sans-serif;
+}
+
+body > .container {
+  font-family: Charter, Optima, Palatino, monospace, sans-serif;
 }
 
 a {
@@ -53,8 +57,8 @@ blockquote {
 
 blockquote.important,
 blockquote.notice {
-  font-family: Baskerville, monospace, sans-serif;
-  font-size: 2rem;
+  font-family: "PT Mono", "Trebuchet MS", monospace, sans-serif;
+  font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: -0.5px;
 }
@@ -67,13 +71,6 @@ blockquote.important {
 blockquote.notice {
   background-color: rgba(237, 237, 237, 0.5);
   border-left: 5px solid #e37d0e;
-}
-
-@media only screen and (max-width: 414px) {
-  blockquote.important,
-  blockquote.notice {
-    font-size: 1.5rem;
-  }
 }
 
 /**
