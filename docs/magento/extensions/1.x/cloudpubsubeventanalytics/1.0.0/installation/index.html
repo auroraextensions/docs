@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Configuration - Cloud Pub/Sub Event Analytics v1.0.0</title>
+        <title>Installation - Cloud Pub/Sub Event Analytics v1.0.0</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -58,11 +58,11 @@
                     <li >
                         <a href="..">Home</a>
                     </li>
-                    <li >
-                        <a href="../installation/">Installation</a>
-                    </li>
                     <li class="active">
-                        <a href="./">Configuration</a>
+                        <a href="./">Installation</a>
+                    </li>
+                    <li >
+                        <a href="../configuration/">Configuration</a>
                     </li>
                     <li >
                         <a href="../manuals/">Manuals</a>
@@ -76,12 +76,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../installation/">
+                        <a rel="next" href="..">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../manuals/">
+                        <a rel="prev" href="../configuration/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -93,43 +93,82 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#configuration">Configuration</a></li>
-            <li><a href="#general-settings">General Settings</a></li>
-            <li><a href="#event-settings">Event Settings</a></li>
+        <li class="main active"><a href="#installation-guide">Installation Guide</a></li>
+            <li><a href="#requirements">Requirements</a></li>
+            <li><a href="#dependencies">Dependencies</a></li>
+            <li><a href="#getting-started">Getting Started</a></li>
+            <li><a href="#composer">Composer</a></li>
+            <li><a href="#wrapping-it-up">Wrapping It Up</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/magento/extensions/2.x/cloudpubsubeventanalytics/latest/">here</a>.</blockquote>
+<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://nickolasburr.github.io/magento/extensions/2.x/cloudpubsubeventanalytics/latest/">here</a>.</blockquote>
 
-<h1 id="configuration">Configuration</h1>
-<p>To configure Cloud Pub/Sub Event Analytics, log into the <strong>admin panel</strong> and navigate to <strong>System</strong> &#8594; <strong>Configuration</strong> &#8594; <strong>Cloud Pub/Sub Event Analytics</strong> (left sidebar).</p>
-<h3 id="general-settings">General Settings</h3>
-<ol>
-<li><strong>Enable Cloud Pub/Sub Event Analytics</strong>: Disabled by default. Event data will not be sent unless the extension is enabled first.</li>
-<li><strong>Google Cloud Platform Project</strong>: The name of the GCP project. You can find this information through Google Cloud Platform Console.</li>
-<li><strong>JSON Key File Path</strong>: Path to JSON key file. Relative paths are relative to the Magento root directory. For more information on service account keys, see <a href="https://cloud.google.com/iam/docs/creating-managing-service-account-keys" target="_blank">here</a>. To generate a service account key, see <a href="https://console.cloud.google.com/projectselector/iam-admin/serviceaccounts" target="_blank">here</a>.</li>
-<li><strong>Initialize Cloud Pub/Sub Topic</strong>: Enabled by default. If a Cloud Pub/Sub topic does not exist, it will be created.</li>
-</ol>
-<p><img alt="General Settings" src="https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/images/general_settings.png" /></p>
-<h3 id="event-settings">Event Settings</h3>
-<ol>
-<li><strong>Events</strong>: Trackable events. Each event has associated fields, which will display while the event selection is activated.</li>
-</ol>
-<p><strong>Available Events</strong>:</p>
+<h2 id="installation-guide">Installation Guide</h2>
+<p>This guide explains how to install Cloud Pub/Sub Event Analytics and its dependencies.</p>
+<h3 id="requirements">Requirements</h3>
 <ul>
-<li><code>order_save</code>: Order save event.</li>
-<li><code>customer_register</code>: Customer registration event.</li>
-<li><code>catalogsearch_query</code>: Catalog search event.</li>
+<li><a href="https://getcomposer.org">Composer</a></li>
+<li><a href="https://github.com/colinmollenhour/modman">modman</a> (Recommended)</li>
 </ul>
-<p><img alt="Event Settings" src="https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/images/event_settings.png" /></p>
-<ol>
-<li><strong><code>{event}</code> Event Cloud Pub/Sub Topic</strong>: The name of the Cloud Pub/Sub topic for the event. If <strong>Initialize Cloud Pub/Sub Topic</strong> is set to <strong>Yes</strong>, the topic will be initialized using this value.</li>
-<li><strong><code>{event}</code> Message Type</strong>: The type of message to include in the Cloud Pub/Sub <tt>Data</tt> field.</li>
-<li><strong>Custom <code>{event}</code> Message</strong>: User-defined message to include in the Cloud Pub/Sub <tt>Data</tt> field.</li>
-<li><strong><code>{event}</code> Attributes</strong>: Attributes to include in the Cloud Pub/Sub <tt>Attributes</tt> field.</li>
-</ol>
-<p><img alt="Order Save Event Settings" src="https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/images/event_settings_order_save.png" /></p></div>
+<h3 id="dependencies">Dependencies</h3>
+<p>Cloud Pub/Sub Event Analytics relies on components from the <a href="https://googlecloudplatform.github.io/google-cloud-php">Google Cloud PHP</a> library for Pub/Sub communication.
+Listed below are those dependencies and each dependency requirements, all of which are handled by Composer.</p>
+<ul>
+<li><a href="https://packagist.org/packages/google/cloud-pubsub">google/cloud-pubsub</a><ul>
+<li><a href="https://packagist.org/packages/google/cloud-core">google/cloud-core</a></li>
+<li><a href="https://packagist.org/packages/google/gax">google/gax</a></li>
+</ul>
+</li>
+</ul>
+<p>Cloud Pub/Sub Event Analytics is pre-packaged with the necessary Composer files, therefore no additional configuration should be needed to install the dependencies.</p>
+<h3 id="getting-started">Getting Started</h3>
+<p>Make sure you've downloaded your copy of the extension archive. If you have not yet purchased the extension, you can do so at the following locations:</p>
+<ul>
+<li><a href="https://store.nickolasburr.com/extensions/magento-1-x/analytics/cloud-pubsub-event-analytics.html">https://store.nickolasburr.com/extensions/magento-1-x/analytics/cloud-pubsub-event-analytics.html</a></li>
+<li><a href="http://marketplace.magento.com/nickolasburr-nickolasburr-cloudpubsubeventanalytics.html">http://marketplace.magento.com/nickolasburr-nickolasburr-cloudpubsubeventanalytics.html</a></li>
+</ul>
+<p>Next, we'll show how to install the extension via <code>modman</code> and manually.</p>
+<h4 id="modman">modman</h4>
+<pre><code>cd /var/www                                                           # Replace with the Magento root directory
+modman init                                                           # Only run if you haven't initialized modman yet.
+mkdir -p .modman/NickolasBurr_CloudPubSubEventAnalytics &amp;&amp; \
+tar -C .modman/NickolasBurr_CloudPubSubEventAnalytics \
+    -xzf /path/to/NickolasBurr_CloudPubSubEventAnalytics-1.0.0.tgz
+</code></pre>
+
+<p>The extension archive does not contain a <code>modman</code> file, but one is available <a href="https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/examples/modman">here</a>.
+Run the following to add the <code>modman</code> file to the extension root directory:</p>
+<pre><code>curl -fsL https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/examples/modman \
+     &gt; .modman/NickolasBurr_CloudPubSubEventAnalytics/modman
+</code></pre>
+
+<p>Lastly, deploy the updates:</p>
+<pre><code>modman deploy NickolasBurr_CloudPubSubEventAnalytics
+</code></pre>
+
+<h4 id="manual">Manual</h4>
+<pre><code># Replace /var/www with the Magento root directory.
+cd /var/www
+mkdir -p /tmp/NickolasBurr_CloudPubSubEventAnalytics &amp;&amp; \
+tar -C /tmp/NickolasBurr_CloudPubSubEventAnalytics \
+    -xzf /path/to/NickolasBurr_CloudPubSubEventAnalytics-1.0.0.tgz
+rsync -Pahmvz --stats \
+              --exclude=&quot;package.xml&quot; /tmp/NickolasBurr_CloudPubSubEventAnalytics/* ./
+rm -rf /tmp/NickolasBurr_CloudPubSubEventAnalytics
+</code></pre>
+
+<h3 id="composer">Composer</h3>
+<p>After the extension files are installed, we need to install the library dependencies via Composer.</p>
+<pre><code># Replace /var/www with the Magento root directory.
+cd /var/www/lib/NickolasBurr
+composer install --no-dev
+</code></pre>
+
+<p>The Composer file is configured to install modules under <code>lib/NickolasBurr</code> instead of <code>lib/NickolasBurr/vendor</code>. This is done to make compatibility with Magento 1.x easier.</p>
+<h3 id="wrapping-it-up">Wrapping It Up</h3>
+<p>Before attempting to configure the extension, make sure to clear the configuration cache, and, if any admin sessions are open, log out and log back in.</p></div>
         </div>
 
         <footer class="col-md-12">
