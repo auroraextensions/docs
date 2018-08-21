@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/",
-            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nTable of Contents\n\n\n\n\nHome\n\n\nLicense\n\n\nRelease Notes\n\n\nSitemap\n\n\nVersions\n\n\n\n\nWhat is Cloud Pub/Sub?\n\n\n\n  \n\n    Cloud Pub/Sub is a simple, reliable, scalable foundation for stream analytics and event-driven computing systems. As part of Google Cloud's\n    stream analytics solution, the service ingests event streams and delivers them to Cloud Dataflow for processing and BigQuery for analysis as\n    a data warehousing solution. Relying on the Cloud Pub/Sub service for delivery of event data frees you to focus on transforming your business\n    and data systems with applications such as:\n  \n\n  \n\n    \nReal-time personalization in gaming\n\n    \nFast reporting, targeting and optimization in advertising and media\n\n    \nProcessing device data for healthcare, manufacturing, oil and gas, and logistics\n\n    \nSyndicating market-related data streams for financial services\n\n  \n\n  \nSource:\u00a0\nGoogle\n\n\n\n\n\nWhat is Cloud Pub/Sub Event Analytics?\n\n\nCloud Pub/Sub Event Analytics is a Magento extension for streaming event-driven business analytics data from Magento to Cloud Pub/Sub. It eliminates\nthe need for an external endpoint to ingest Cloud Pub/Sub message data, and provides an easy-to-use interface with a variety of events and\nfields to select for data collection.",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nTable of Contents\n\n\n\n\nHome\n\n\nInstallation\n\n\nConfiguration\n\n\nLicense\n\n\nRelease Notes\n\n\nSitemap\n\n\nVersions\n\n\n\n\nWhat is Cloud Pub/Sub?\n\n\n\n  \n\n    Cloud Pub/Sub is a simple, reliable, scalable foundation for stream analytics and event-driven computing systems. As part of Google Cloud's\n    stream analytics solution, the service ingests event streams and delivers them to Cloud Dataflow for processing and BigQuery for analysis as\n    a data warehousing solution. Relying on the Cloud Pub/Sub service for delivery of event data frees you to focus on transforming your business\n    and data systems with applications such as:\n  \n\n  \n\n    \nReal-time personalization in gaming\n\n    \nFast reporting, targeting and optimization in advertising and media\n\n    \nProcessing device data for healthcare, manufacturing, oil and gas, and logistics\n\n    \nSyndicating market-related data streams for financial services\n\n  \n\n  \nSource:\u00a0\nGoogle\n\n\n\n\n\nWhat is Cloud Pub/Sub Event Analytics?\n\n\nCloud Pub/Sub Event Analytics is a Magento extension for streaming event-driven business analytics data from Magento to Cloud Pub/Sub. It eliminates\nthe need for an external endpoint to ingest Cloud Pub/Sub message data, and provides an easy-to-use interface with a variety of events and\nfields to select for data collection.",
             "title": "Home"
         },
         {
             "location": "/#table-of-contents",
-            "text": "Home  License  Release Notes  Sitemap  Versions",
+            "text": "Home  Installation  Configuration  License  Release Notes  Sitemap  Versions",
             "title": "Table of Contents"
         },
         {
@@ -19,6 +19,51 @@
             "location": "/#what-is-cloud-pubsub-event-analytics",
             "text": "Cloud Pub/Sub Event Analytics is a Magento extension for streaming event-driven business analytics data from Magento to Cloud Pub/Sub. It eliminates\nthe need for an external endpoint to ingest Cloud Pub/Sub message data, and provides an easy-to-use interface with a variety of events and\nfields to select for data collection.",
             "title": "What is Cloud Pub/Sub Event Analytics?"
+        },
+        {
+            "location": "/installation/",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nInstallation Guide\n\n\nThis guide explains how to install Cloud Pub/Sub Event Analytics and its dependencies.\n\n\nRequirements\n\n\n\n\nComposer\n\n\nmodman\n (Recommended)\n\n\n\n\nDependencies\n\n\nCloud Pub/Sub Event Analytics relies on components from the \nGoogle Cloud PHP\n library for Pub/Sub communication.\nListed below are those dependencies and each dependency requirements, all of which are handled by Composer.\n\n\n\n\ngoogle/cloud-pubsub\n\n\ngoogle/cloud-core\n\n\ngoogle/gax\n\n\n\n\n\n\n\n\nCloud Pub/Sub Event Analytics is pre-packaged with the necessary Composer files, therefore no additional configuration should be needed to install the dependencies.\n\n\nGetting Started\n\n\nMake sure you've downloaded your copy of the extension archive. If you have not yet purchased the extension, you can do so at the following locations:\n\n\n\n\nhttps://store.nickolasburr.com/extensions/magento-1-x/analytics/cloud-pubsub-event-analytics.html\n\n\nhttp://marketplace.magento.com/nickolasburr-nickolasburr-cloudpubsubeventanalytics.html\n\n\n\n\nNext, we'll show how to install the extension via \nmodman\n and manually.\n\n\nmodman\n\n\ncd /var/www                                                           # Replace with the Magento root directory\nmodman init                                                           # Only run if you haven't initialized modman yet.\nmkdir -p .modman/NickolasBurr_CloudPubSubEventAnalytics && \\\ntar -C .modman/NickolasBurr_CloudPubSubEventAnalytics \\\n    -xzf /path/to/NickolasBurr_CloudPubSubEventAnalytics-1.0.0.tgz\n\n\n\n\nThe extension archive does not contain a \nmodman\n file, but one is available \nhere\n.\nRun the following to add the \nmodman\n file to the extension root directory:\n\n\ncurl -fsL https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/examples/modman \\\n     > .modman/NickolasBurr_CloudPubSubEventAnalytics/modman\n\n\n\n\nLastly, deploy the updates:\n\n\nmodman deploy NickolasBurr_CloudPubSubEventAnalytics\n\n\n\n\nManual\n\n\n# Replace /var/www with the Magento root directory.\ncd /var/www\nmkdir -p /tmp/NickolasBurr_CloudPubSubEventAnalytics && \\\ntar -C /tmp/NickolasBurr_CloudPubSubEventAnalytics \\\n    -xzf /path/to/NickolasBurr_CloudPubSubEventAnalytics-1.0.0.tgz\nrsync -Pahmvz --stats \\\n              --exclude=\"package.xml\" /tmp/NickolasBurr_CloudPubSubEventAnalytics/* ./\nrm -rf /tmp/NickolasBurr_CloudPubSubEventAnalytics\n\n\n\n\nComposer\n\n\nAfter the extension files are installed, we need to install the library dependencies via Composer.\n\n\n# Replace /var/www with the Magento root directory.\ncd /var/www/lib/NickolasBurr\ncomposer install --no-dev\n\n\n\n\nThe Composer file is configured to install modules under \nlib/NickolasBurr\n instead of \nlib/NickolasBurr/vendor\n. This is done to make compatibility with Magento 1.x easier.\n\n\nWrapping It Up\n\n\nBefore attempting to configure the extension, make sure to clear the configuration cache, and, if any admin sessions are open, log out and log back in.",
+            "title": "Installation"
+        },
+        {
+            "location": "/installation/#installation-guide",
+            "text": "This guide explains how to install Cloud Pub/Sub Event Analytics and its dependencies.",
+            "title": "Installation Guide"
+        },
+        {
+            "location": "/installation/#requirements",
+            "text": "Composer  modman  (Recommended)",
+            "title": "Requirements"
+        },
+        {
+            "location": "/installation/#dependencies",
+            "text": "Cloud Pub/Sub Event Analytics relies on components from the  Google Cloud PHP  library for Pub/Sub communication.\nListed below are those dependencies and each dependency requirements, all of which are handled by Composer.   google/cloud-pubsub  google/cloud-core  google/gax     Cloud Pub/Sub Event Analytics is pre-packaged with the necessary Composer files, therefore no additional configuration should be needed to install the dependencies.",
+            "title": "Dependencies"
+        },
+        {
+            "location": "/installation/#getting-started",
+            "text": "Make sure you've downloaded your copy of the extension archive. If you have not yet purchased the extension, you can do so at the following locations:   https://store.nickolasburr.com/extensions/magento-1-x/analytics/cloud-pubsub-event-analytics.html  http://marketplace.magento.com/nickolasburr-nickolasburr-cloudpubsubeventanalytics.html   Next, we'll show how to install the extension via  modman  and manually.",
+            "title": "Getting Started"
+        },
+        {
+            "location": "/installation/#modman",
+            "text": "cd /var/www                                                           # Replace with the Magento root directory\nmodman init                                                           # Only run if you haven't initialized modman yet.\nmkdir -p .modman/NickolasBurr_CloudPubSubEventAnalytics && \\\ntar -C .modman/NickolasBurr_CloudPubSubEventAnalytics \\\n    -xzf /path/to/NickolasBurr_CloudPubSubEventAnalytics-1.0.0.tgz  The extension archive does not contain a  modman  file, but one is available  here .\nRun the following to add the  modman  file to the extension root directory:  curl -fsL https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/examples/modman \\\n     > .modman/NickolasBurr_CloudPubSubEventAnalytics/modman  Lastly, deploy the updates:  modman deploy NickolasBurr_CloudPubSubEventAnalytics",
+            "title": "modman"
+        },
+        {
+            "location": "/installation/#manual",
+            "text": "# Replace /var/www with the Magento root directory.\ncd /var/www\nmkdir -p /tmp/NickolasBurr_CloudPubSubEventAnalytics && \\\ntar -C /tmp/NickolasBurr_CloudPubSubEventAnalytics \\\n    -xzf /path/to/NickolasBurr_CloudPubSubEventAnalytics-1.0.0.tgz\nrsync -Pahmvz --stats \\\n              --exclude=\"package.xml\" /tmp/NickolasBurr_CloudPubSubEventAnalytics/* ./\nrm -rf /tmp/NickolasBurr_CloudPubSubEventAnalytics",
+            "title": "Manual"
+        },
+        {
+            "location": "/installation/#composer",
+            "text": "After the extension files are installed, we need to install the library dependencies via Composer.  # Replace /var/www with the Magento root directory.\ncd /var/www/lib/NickolasBurr\ncomposer install --no-dev  The Composer file is configured to install modules under  lib/NickolasBurr  instead of  lib/NickolasBurr/vendor . This is done to make compatibility with Magento 1.x easier.",
+            "title": "Composer"
+        },
+        {
+            "location": "/installation/#wrapping-it-up",
+            "text": "Before attempting to configure the extension, make sure to clear the configuration cache, and, if any admin sessions are open, log out and log back in.",
+            "title": "Wrapping It Up"
         },
         {
             "location": "/configuration/",
