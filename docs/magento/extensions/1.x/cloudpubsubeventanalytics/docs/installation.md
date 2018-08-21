@@ -24,8 +24,8 @@ Cloud Pub/Sub Event Analytics is pre-packaged with the necessary Composer files,
 
 Make sure you've downloaded your copy of the extension archive. If you have not yet purchased the extension, you can do so at the following locations:
 
-+ [https://store.nickolasburr.com/extensions/magento-1-x/analytics/cloud-pubsub-event-analytics.html](https://store.nickolasburr.com/extensions/magento-1-x/analytics/cloud-pubsub-event-analytics.html)
-+ [http://marketplace.magento.com/nickolasburr-nickolasburr-cloudpubsubeventanalytics.html](http://marketplace.magento.com/nickolasburr-nickolasburr-cloudpubsubeventanalytics.html)
++ <a href="https://store.nickolasburr.com/extensions/magento-1-x/analytics/cloud-pubsub-event-analytics.html" target="_blank">https://store.nickolasburr.com/extensions/magento-1-x/analytics/cloud-pubsub-event-analytics.html</a>
++ <a href="https://marketplace.magento.com/nickolasburr-nickolasburr-cloudpubsubeventanalytics.html" target="_blank">https://marketplace.magento.com/nickolasburr-nickolasburr-cloudpubsubeventanalytics.html</a>
 
 Next, we'll show how to install the extension via `modman` and manually.
 
