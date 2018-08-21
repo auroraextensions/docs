@@ -21,6 +21,26 @@
             "title": "What is Cloud Pub/Sub Event Analytics?"
         },
         {
+            "location": "/configuration/",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nConfiguration\n\n\nTo configure Cloud Pub/Sub Event Analytics, log into the \nadmin panel\n and navigate to \nSystem\n \u2192 \nConfiguration\n \u2192 \nCloud Pub/Sub Event Analytics\n (left sidebar).\n\n\nGeneral Settings\n\n\n\n\nEnable Cloud Pub/Sub Event Analytics\n: Disabled by default. Event data will not be sent unless the extension is enabled first.\n\n\nGoogle Cloud Platform Project\n: The name of the GCP project. You can find this information through Google Cloud Platform Console.\n\n\nJSON Key File Path\n: Path to JSON key file. Relative paths are relative to the Magento root directory. For more information on service account keys, see \nhere\n. To generate a service account key, see \nhere\n.\n\n\nInitialize Cloud Pub/Sub Topic\n: Enabled by default. If a Cloud Pub/Sub topic does not exist, it will be created.\n\n\n\n\n\n\nEvent Settings\n\n\n\n\nEvents\n: Trackable events. Each event has associated fields, which will display while the event selection is activated.\n\n\n\n\nAvailable Events\n:\n\n\n\n\norder_save\n: Order save event.\n\n\ncustomer_register\n: Customer registration event.\n\n\ncatalogsearch_query\n: Catalog search event.\n\n\n\n\n\n\n\n\n{event}\n Event Cloud Pub/Sub Topic\n: The name of the Cloud Pub/Sub topic for the event. If \nInitialize Cloud Pub/Sub Topic\n is set to \nYes\n, the topic will be initialized using this value.\n\n\n{event}\n Message Type\n: The type of message to include in the Cloud Pub/Sub \nData\n field.\n\n\nCustom \n{event}\n Message\n: User-defined message to include in the Cloud Pub/Sub \nData\n field.\n\n\n{event}\n Attributes\n: Attributes to include in the Cloud Pub/Sub \nAttributes\n field.",
+            "title": "Configuration"
+        },
+        {
+            "location": "/configuration/#configuration",
+            "text": "To configure Cloud Pub/Sub Event Analytics, log into the  admin panel  and navigate to  System  \u2192  Configuration  \u2192  Cloud Pub/Sub Event Analytics  (left sidebar).",
+            "title": "Configuration"
+        },
+        {
+            "location": "/configuration/#general-settings",
+            "text": "Enable Cloud Pub/Sub Event Analytics : Disabled by default. Event data will not be sent unless the extension is enabled first.  Google Cloud Platform Project : The name of the GCP project. You can find this information through Google Cloud Platform Console.  JSON Key File Path : Path to JSON key file. Relative paths are relative to the Magento root directory. For more information on service account keys, see  here . To generate a service account key, see  here .  Initialize Cloud Pub/Sub Topic : Enabled by default. If a Cloud Pub/Sub topic does not exist, it will be created.",
+            "title": "General Settings"
+        },
+        {
+            "location": "/configuration/#event-settings",
+            "text": "Events : Trackable events. Each event has associated fields, which will display while the event selection is activated.   Available Events :   order_save : Order save event.  customer_register : Customer registration event.  catalogsearch_query : Catalog search event.     {event}  Event Cloud Pub/Sub Topic : The name of the Cloud Pub/Sub topic for the event. If  Initialize Cloud Pub/Sub Topic  is set to  Yes , the topic will be initialized using this value.  {event}  Message Type : The type of message to include in the Cloud Pub/Sub  Data  field.  Custom  {event}  Message : User-defined message to include in the Cloud Pub/Sub  Data  field.  {event}  Attributes : Attributes to include in the Cloud Pub/Sub  Attributes  field.",
+            "title": "Event Settings"
+        },
+        {
             "location": "/manuals/",
             "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nManuals\n\n\n\n\nUserManual.pdf",
             "title": "Manuals"
