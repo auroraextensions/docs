@@ -1,0 +1,5 @@
+app/code/community/NickolasBurr/CloudPubSubEventAnalytics  app/code/community/NickolasBurr/CloudPubSubEventAnalytics
+app/design/adminhtml/base/default/layout/cloudpubsubeventanalytics  app/design/adminhtml/base/default/layout/cloudpubsubeventanalytics
+app/etc/modules/NickolasBurr_CloudPubSubEventAnalytics.xml  app/etc/modules/NickolasBurr_CloudPubSubEventAnalytics.xml
+js/cloudpubsubeventanalytics  js/cloudpubsubeventanalytics
+lib/NickolasBurr  lib/NickolasBurr
