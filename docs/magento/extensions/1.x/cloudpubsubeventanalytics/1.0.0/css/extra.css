@@ -38,6 +38,36 @@ code {
   font-family: monospace, sans-serif;
 }
 
+h1, h2, h3,
+h4, h5, h6 {
+  color: #444;
+  font-weight: 500;
+}
+
+h1, .h1 {
+  font-size: 40px;
+}
+
+h2, .h2 {
+  font-size: 36px;
+}
+
+h3, .h3 {
+  font-size: 32px;
+}
+
+h4, .h4 {
+  font-size: 28px;
+}
+
+h5, .h5 {
+  font-size: 24px;
+}
+
+h6, .h6 {
+  font-size: 20px;
+}
+
 blockquote {
   border-radius: 1px;
 }
