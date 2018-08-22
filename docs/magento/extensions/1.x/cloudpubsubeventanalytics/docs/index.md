@@ -6,6 +6,8 @@
 - [Installation](https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/installation/)
 - [Configuration](https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/configuration/)
 - [License](https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubeventanalytics/LICENSE.txt)
+- [Manuals](https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/manuals/)
+    + [UserManual.pdf](https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/manuals/UserManual.pdf)
 - [Release Notes](https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubeventanalytics/RELEASE_NOTES.txt)
 - [Sitemap](https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/sitemap.xml)
 - [Versions](https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubeventanalytics/)
