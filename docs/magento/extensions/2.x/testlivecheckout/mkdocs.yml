@@ -5,4 +5,4 @@ pages:
   - Home: index.md
 extra_css:
   - css/extra.css
-google_analytics: ['UA-113897119-2', 'nickolasburr.github.io']
+google_analytics: ['UA-113897119-2', 'docs.nickolasburr.com']

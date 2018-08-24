@@ -1,4 +1,4 @@
-<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://nickolasburr.github.io/docs/magento/extensions/2.x/testlivecheckout/latest/">here</a>.</blockquote>
+<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/docs/magento/extensions/2.x/testlivecheckout/latest/">here</a>.</blockquote>
 
 ## Quick Start
 
@@ -98,7 +98,7 @@ Create a workspace directory and fetch a copy of the **authorizenet.js** Puppete
 ```
 mkdir tlc-puppeteer && cd tlc-puppeteer
 curl -fsLO \
-  https://nickolasburr.github.io/docs/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/src/guest-checkout/authorizenet.js
+  https://docs.nickolasburr.com/docs/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/src/guest-checkout/authorizenet.js
 ```
 
 The **authorizenet.js** Puppeteer script requires the environment variable `TLC_AUTH_TOKEN` to be present. Using the authentication
@@ -122,7 +122,7 @@ node authorizenet.js
 
 Once the process has completed, you will be left with 9 PNGs showing various stages of checkout, and a GIF of all screenshots merged.
 
-To see what the end result will look like, take a look at [Guest Checkout](https://nickolasburr.github.io/docs/magento/extensions/1.x/testlivecheckout/latest/examples/guest-checkout/authorizenet/).
+To see what the end result will look like, take a look at [Guest Checkout](https://docs.nickolasburr.com/docs/magento/extensions/1.x/testlivecheckout/latest/examples/guest-checkout/authorizenet/).
 
 ### Notes
 
