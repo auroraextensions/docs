@@ -1,4 +1,4 @@
-<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://nickolasburr.github.io/docs/magento/extensions/2.x/testlivecheckout/latest/">here</a>.</blockquote>
+<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/docs/magento/extensions/2.x/testlivecheckout/latest/">here</a>.</blockquote>
 
 # Configuration
 
@@ -14,15 +14,15 @@ To configure Test Live Checkout, log into the **admin panel** and navigate to **
 
 1. **Enable Logging**: Enable transaction logging. For monitoring and debugging purposes, Test Live Checkout provides the ability to log test transactions. By default, transaction logging is disabled.
 
-![Settings](https://nickolasburr.github.io/docs/magento/extensions/1.x/testlivecheckout/latest/images/settings.png)
+![Settings](https://docs.nickolasburr.com/docs/magento/extensions/1.x/testlivecheckout/latest/images/settings.png)
 
 ## Transaction Log
 
 During an authenticated transaction, Test Live Checkout will record certain fields from the order, such as response code, payment gateway name,
 and timestamp, which can be helpful when monitoring and debugging transactions.
 
-![Transaction Log](https://nickolasburr.github.io/docs/magento/extensions/1.x/testlivecheckout/latest/images/log.png)
+![Transaction Log](https://docs.nickolasburr.com/docs/magento/extensions/1.x/testlivecheckout/latest/images/log.png)
 
 To view details of a particular transaction, select the transaction from the list.
 
-![Transaction Details](https://nickolasburr.github.io/docs/magento/extensions/1.x/testlivecheckout/latest/images/details.png)
+![Transaction Details](https://docs.nickolasburr.com/docs/magento/extensions/1.x/testlivecheckout/latest/images/details.png)
