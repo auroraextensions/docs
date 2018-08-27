@@ -1,11 +1,11 @@
 # Authorize.net Guest Checkout
 
-<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/docs/magento/extensions/2.x/testlivecheckout/latest/">here</a>.</blockquote>
+<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/magento/extensions/2.x/testlivecheckout/latest/">here</a>.</blockquote>
 <blockquote class="notice">Tests were performed using Puppeteer, Magento 1.9.3.9 CE with sample data, and Authorize.net.</blockquote>
 
 ## Download
 
-You can download <tt>authorizenet.js</tt> [here](https://docs.nickolasburr.com/docs/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/src/guest-checkout/authorizenet.js).
+You can download <tt>authorizenet.js</tt> [here](https://docs.nickolasburr.com/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/src/guest-checkout/authorizenet.js).
 
 ## Purpose
 
@@ -25,16 +25,16 @@ To simulate a guest checkout scenario on a Magento 1.x storefront using Authoriz
 
 ## Walkthrough
 
-![Authorize.net Guest Checkout -- Walkthrough](https://docs.nickolasburr.com/docs/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/authorizenet/walkthrough.gif)
+![Authorize.net Guest Checkout -- Walkthrough](https://docs.nickolasburr.com/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/authorizenet/walkthrough.gif)
 
 ## Screenshots
 
-![Authorize.net Guest Checkout -- Step 1](https://docs.nickolasburr.com/docs/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/authorizenet/step-01.png)
-![Authorize.net Guest Checkout -- Step 2](https://docs.nickolasburr.com/docs/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/authorizenet/step-02.png)
-![Authorize.net Guest Checkout -- Step 3](https://docs.nickolasburr.com/docs/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/authorizenet/step-03.png)
-![Authorize.net Guest Checkout -- Step 4](https://docs.nickolasburr.com/docs/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/authorizenet/step-04.png)
-![Authorize.net Guest Checkout -- Step 5](https://docs.nickolasburr.com/docs/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/authorizenet/step-05.png)
-![Authorize.net Guest Checkout -- Step 6](https://docs.nickolasburr.com/docs/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/authorizenet/step-06.png)
-![Authorize.net Guest Checkout -- Step 7](https://docs.nickolasburr.com/docs/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/authorizenet/step-07.png)
-![Authorize.net Guest Checkout -- Step 8](https://docs.nickolasburr.com/docs/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/authorizenet/step-08.png)
-![Authorize.net Guest Checkout -- Step 9](https://docs.nickolasburr.com/docs/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/authorizenet/step-09.png)
+![Authorize.net Guest Checkout -- Step 1](https://docs.nickolasburr.com/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/authorizenet/step-01.png)
+![Authorize.net Guest Checkout -- Step 2](https://docs.nickolasburr.com/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/authorizenet/step-02.png)
+![Authorize.net Guest Checkout -- Step 3](https://docs.nickolasburr.com/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/authorizenet/step-03.png)
+![Authorize.net Guest Checkout -- Step 4](https://docs.nickolasburr.com/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/authorizenet/step-04.png)
+![Authorize.net Guest Checkout -- Step 5](https://docs.nickolasburr.com/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/authorizenet/step-05.png)
+![Authorize.net Guest Checkout -- Step 6](https://docs.nickolasburr.com/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/authorizenet/step-06.png)
+![Authorize.net Guest Checkout -- Step 7](https://docs.nickolasburr.com/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/authorizenet/step-07.png)
+![Authorize.net Guest Checkout -- Step 8](https://docs.nickolasburr.com/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/authorizenet/step-08.png)
+![Authorize.net Guest Checkout -- Step 9](https://docs.nickolasburr.com/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/img/guest-checkout/authorizenet/step-09.png)

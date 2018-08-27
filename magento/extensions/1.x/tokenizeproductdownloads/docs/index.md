@@ -1,4 +1,4 @@
-<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/docs/magento/extensions/2.x/tokenizeproductdownloads/latest/">here</a>.</blockquote>
+<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/magento/extensions/2.x/tokenizeproductdownloads/latest/">here</a>.</blockquote>
 
 ## Table of Contents
 
