@@ -1,0 +1,174 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nTable of Contents\n\n\n\n\nHome\n\n\nQuick Start\n\n\nConfiguration\n\n\nExamples\n\n\nGuest Checkout\n\n\nAuthorize.net\n\n\nBraintree\n\n\n\n\n\n\n\n\n\n\nLicense\n\n\nManuals\n\n\nUserManual.pdf\n\n\n\n\n\n\nPuppeteer Scripts\n\n\nRelease Notes\n\n\nSitemap\n\n\nVersions\n\n\n\n\nWhat is automated browser testing?\n\n\nAutomated browser testing (ABT) is the process of testing aspects of a website within the context of a web browser. As such, ABT has become\nan invaluable tool for online retailers who are looking to outpace the competition and provide their customers with the best experiences.\n\n\nWhat is Test Live Checkout?\n\n\nTest Live Checkout is a Magento extension intended for use with ABT tools, such as \nPuppeteer\n and \nSelenium\n.\nBy allowing authenticated users to submit test orders using real products, Test Live Checkout can help aid in the discovery and remediation of issues affecting your checkout, which\nsubsequently affect your bottom line, too.\n\n\nAs a versatile tool, Test Live Checkout can also be used during development, testing, and QA processes because it provides helpful feedback regarding checkout health.",
+            "title": "Home"
+        },
+        {
+            "location": "/#table-of-contents",
+            "text": "Home  Quick Start  Configuration  Examples  Guest Checkout  Authorize.net  Braintree      License  Manuals  UserManual.pdf    Puppeteer Scripts  Release Notes  Sitemap  Versions",
+            "title": "Table of Contents"
+        },
+        {
+            "location": "/#what-is-automated-browser-testing",
+            "text": "Automated browser testing (ABT) is the process of testing aspects of a website within the context of a web browser. As such, ABT has become\nan invaluable tool for online retailers who are looking to outpace the competition and provide their customers with the best experiences.",
+            "title": "What is automated browser testing?"
+        },
+        {
+            "location": "/#what-is-test-live-checkout",
+            "text": "Test Live Checkout is a Magento extension intended for use with ABT tools, such as  Puppeteer  and  Selenium .\nBy allowing authenticated users to submit test orders using real products, Test Live Checkout can help aid in the discovery and remediation of issues affecting your checkout, which\nsubsequently affect your bottom line, too.  As a versatile tool, Test Live Checkout can also be used during development, testing, and QA processes because it provides helpful feedback regarding checkout health.",
+            "title": "What is Test Live Checkout?"
+        },
+        {
+            "location": "/quickstart/",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nQuick Start\n\n\nThis guide shows how to use \nPuppeteer\n with \nTest Live Checkout\n to simulate a guest checkout scenario.\n\n\nRequirements\n\n\n\n\nDocker\n\n\ndocker-compose\n\n\n\n\n\n\nGit\n\n\nNode\n\n\npuppeteer\n\n\n\n\n\n\nAuthorize.net Sandbox Credentials\n\n\n\n\nmacOS Users:\n\n\nTo run Docker locally, you need to install \nVirtualBox\n and \nDocker Machine\n.\n\n\nFor Homebrew users, Docker Machine is available via homebrew/core and VirtualBox is available via homebrew/cask.\n\n\nbrew update\nbrew cask install virtualbox\nbrew install docker-machine\n\n\n\n\nOnce VirtualBox and Docker Machine are installed, you will need to create a new machine (VM).\n\n\ndocker-machine create magento\n\n\n\n\nThis will generate a new VM where the Docker processes will run. Lastly, you will need to export several\n\ndocker-machine\n variables to your shell environment, in order for \ndocker-machine\n to work properly.\n\n\neval $(docker-machine env magento)\n\n\n\n\nGetting Started\n\n\nTo get started, verify Docker is running properly.\n\n\ndocker ps\n\n\n\n\nIf the daemon process (\ndockerd\n) has yet to be started, you will receive an error.\n\n\nNext, we're going to use the prebuilt Magento 1.x setup provided by \ndockerized-magento\n. It will supply us with all of the\nnecessary components we need to run Magento 1.9.3.9 locally.\n\n\ngit clone https://github.com/andreaskoch/dockerized-magento.git\ncd dockerized-magento\n./magento start\n\n\n\n\nSetup can take awhile the first time around, so be patient and follow the instructions to avoid issues.\n\n\nPayment Configuration\n\n\nOnce dockerized-magento setup is complete, we need to update the payment methods configuration.\n\n\n\n\nFrom \nadmin panel\n, navigate to \nSystem\n \u2192 \nConfiguration\n \u2192 \nSales\n \u2192 \nPayment Methods\n\n\nClick on \nCash On Delivery Payment\n and set \nEnabled\n to \nNo\n\n\nClick on \nAuthorize.net\n (not \nAuthorize.net Direct Post\n) and set the following fields:\n\n\nEnabled\n to \nYes\n\n\nPayment Action\n to \nAuthorize and Capture\n\n\nAPI Login ID\n to your Sandbox API Login ID\n\n\nMerchant's Email\n to the email used for your Sandbox account\n\n\nTransaction Key\n to your Sandbox Transaction Key\n\n\n\n\n\n\nClick \nSave Config\n\n\nIf you have caching enabled, clear the config cache.\n\n\n\n\nExtension Installation\n\n\nOnce the payment gateway has been configured, we need to install Test Live Checkout. If you are unfamiliar with installing Magento extensions,\na great resource to get started is \nThe Ultimate Guide to Installing Magento Extensions\n.\n\n\nExtension Configuration\n\n\nAfter installing the extension, complete the following:\n\n\n\n\nFrom Admin area, navigate to \nSystem\n \u2192 \nConfiguration\n \u2192 \nTest Live Checkout\n (left sidebar)\n\n\nUnder \nGeneral Settings\n, set \nEnable Live Checkout Testing\n to \nYes\n\n\nGenerate random 32 character alphanumeric string\n1\n and paste into \nAuthentication Token\n field.\n\n\nUnder \nLog Settings\n, set \nEnable Logging\n to \nYes\n.\n\n\nClick \nSave Config\n\n\n\n\nTests\n\n\nAfter configuring the extension, we can start running automated browser tests.\n\n\nCreate a workspace directory and fetch a copy of the \nauthorizenet.js\n Puppeteer script:\n\n\nmkdir tlc-puppeteer && cd tlc-puppeteer\ncurl -fsLO \\\n  https://docs.nickolasburr.com/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/src/guest-checkout/authorizenet.js\n\n\n\n\nThe \nauthorizenet.js\n Puppeteer script requires the environment variable \nTLC_AUTH_TOKEN\n to be present. Using the authentication\ntoken we created earlier, export \nTLC_AUTH_TOKEN\n to your shell environment.\n\n\nexport TLC_AUTH_TOKEN=\"<AUTH_TOKEN_FROM_EARLIER>\"\n\n\n\n\nNext, install the puppeteer package via \nnpm\n:\n\n\nnpm install puppeteer\n\n\n\n\nLast but not least, let's run the script.\n\n\nnode authorizenet.js\n\n\n\n\nOnce the process has completed, you will be left with 9 PNGs showing various stages of checkout, and a GIF of all screenshots merged.\n\n\nTo see what the end result will look like, take a look at \nGuest Checkout\n.\n\n\nNotes\n\n\n\n\nThere are many ways to generate random, secure alphanumeric strings. Below is just one of many such ways:\n\n\n\n\nLC_CTYPE=C tr -dc A-Za-z0-9 < /dev/urandom | head -c 32 | xargs ;",
+            "title": "Quick Start"
+        },
+        {
+            "location": "/quickstart/#quick-start",
+            "text": "This guide shows how to use  Puppeteer  with  Test Live Checkout  to simulate a guest checkout scenario.",
+            "title": "Quick Start"
+        },
+        {
+            "location": "/quickstart/#requirements",
+            "text": "Docker  docker-compose    Git  Node  puppeteer    Authorize.net Sandbox Credentials   macOS Users:  To run Docker locally, you need to install  VirtualBox  and  Docker Machine .  For Homebrew users, Docker Machine is available via homebrew/core and VirtualBox is available via homebrew/cask.  brew update\nbrew cask install virtualbox\nbrew install docker-machine  Once VirtualBox and Docker Machine are installed, you will need to create a new machine (VM).  docker-machine create magento  This will generate a new VM where the Docker processes will run. Lastly, you will need to export several docker-machine  variables to your shell environment, in order for  docker-machine  to work properly.  eval $(docker-machine env magento)",
+            "title": "Requirements"
+        },
+        {
+            "location": "/quickstart/#getting-started",
+            "text": "To get started, verify Docker is running properly.  docker ps  If the daemon process ( dockerd ) has yet to be started, you will receive an error.  Next, we're going to use the prebuilt Magento 1.x setup provided by  dockerized-magento . It will supply us with all of the\nnecessary components we need to run Magento 1.9.3.9 locally.  git clone https://github.com/andreaskoch/dockerized-magento.git\ncd dockerized-magento\n./magento start  Setup can take awhile the first time around, so be patient and follow the instructions to avoid issues.",
+            "title": "Getting Started"
+        },
+        {
+            "location": "/quickstart/#payment-configuration",
+            "text": "Once dockerized-magento setup is complete, we need to update the payment methods configuration.   From  admin panel , navigate to  System  \u2192  Configuration  \u2192  Sales  \u2192  Payment Methods  Click on  Cash On Delivery Payment  and set  Enabled  to  No  Click on  Authorize.net  (not  Authorize.net Direct Post ) and set the following fields:  Enabled  to  Yes  Payment Action  to  Authorize and Capture  API Login ID  to your Sandbox API Login ID  Merchant's Email  to the email used for your Sandbox account  Transaction Key  to your Sandbox Transaction Key    Click  Save Config  If you have caching enabled, clear the config cache.",
+            "title": "Payment Configuration"
+        },
+        {
+            "location": "/quickstart/#extension-installation",
+            "text": "Once the payment gateway has been configured, we need to install Test Live Checkout. If you are unfamiliar with installing Magento extensions,\na great resource to get started is  The Ultimate Guide to Installing Magento Extensions .",
+            "title": "Extension Installation"
+        },
+        {
+            "location": "/quickstart/#extension-configuration",
+            "text": "After installing the extension, complete the following:   From Admin area, navigate to  System  \u2192  Configuration  \u2192  Test Live Checkout  (left sidebar)  Under  General Settings , set  Enable Live Checkout Testing  to  Yes  Generate random 32 character alphanumeric string 1  and paste into  Authentication Token  field.  Under  Log Settings , set  Enable Logging  to  Yes .  Click  Save Config",
+            "title": "Extension Configuration"
+        },
+        {
+            "location": "/quickstart/#tests",
+            "text": "After configuring the extension, we can start running automated browser tests.  Create a workspace directory and fetch a copy of the  authorizenet.js  Puppeteer script:  mkdir tlc-puppeteer && cd tlc-puppeteer\ncurl -fsLO \\\n  https://docs.nickolasburr.com/magento/extensions/1.x/testlivecheckout/1.1.0/puppeteer/src/guest-checkout/authorizenet.js  The  authorizenet.js  Puppeteer script requires the environment variable  TLC_AUTH_TOKEN  to be present. Using the authentication\ntoken we created earlier, export  TLC_AUTH_TOKEN  to your shell environment.  export TLC_AUTH_TOKEN=\"<AUTH_TOKEN_FROM_EARLIER>\"  Next, install the puppeteer package via  npm :  npm install puppeteer  Last but not least, let's run the script.  node authorizenet.js  Once the process has completed, you will be left with 9 PNGs showing various stages of checkout, and a GIF of all screenshots merged.  To see what the end result will look like, take a look at  Guest Checkout .",
+            "title": "Tests"
+        },
+        {
+            "location": "/quickstart/#notes",
+            "text": "There are many ways to generate random, secure alphanumeric strings. Below is just one of many such ways:   LC_CTYPE=C tr -dc A-Za-z0-9 < /dev/urandom | head -c 32 | xargs ;",
+            "title": "Notes"
+        },
+        {
+            "location": "/configuration/",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nConfiguration\n\n\nTo configure Test Live Checkout, log into the \nadmin panel\n and navigate to \nSystem\n \u2192 \nConfiguration\n \u2192 \nTest Live Checkout\n (left sidebar, typically toward the bottom).\n\n\nGeneral Settings\n\n\n\n\nEnable Live Checkout Testing\n: Enable the extension for use. This must be enabled for the extension to function.\n\n\nAuthentication Token\n: An alphanumeric token used for authentication. Must be \nat least\n 32 characters in length, containing only letters and numbers.\n\n\nRedirect URL\n: The URL where the browser is redirected after a successful test order submission. The URL must be part of the same \nSLD\n as Magento.\n\n\n\n\nLog Settings\n\n\n\n\nEnable Logging\n: Enable transaction logging. For monitoring and debugging purposes, Test Live Checkout provides the ability to log test transactions. By default, transaction logging is disabled.\n\n\n\n\n\n\nTransaction Log\n\n\nDuring an authenticated transaction, Test Live Checkout will record certain fields from the order, such as response code, payment gateway name,\nand timestamp, which can be helpful when monitoring and debugging transactions.\n\n\n\n\nTo view details of a particular transaction, select the transaction from the list.",
+            "title": "Configuration"
+        },
+        {
+            "location": "/configuration/#configuration",
+            "text": "To configure Test Live Checkout, log into the  admin panel  and navigate to  System  \u2192  Configuration  \u2192  Test Live Checkout  (left sidebar, typically toward the bottom).",
+            "title": "Configuration"
+        },
+        {
+            "location": "/configuration/#general-settings",
+            "text": "Enable Live Checkout Testing : Enable the extension for use. This must be enabled for the extension to function.  Authentication Token : An alphanumeric token used for authentication. Must be  at least  32 characters in length, containing only letters and numbers.  Redirect URL : The URL where the browser is redirected after a successful test order submission. The URL must be part of the same  SLD  as Magento.",
+            "title": "General Settings"
+        },
+        {
+            "location": "/configuration/#log-settings",
+            "text": "Enable Logging : Enable transaction logging. For monitoring and debugging purposes, Test Live Checkout provides the ability to log test transactions. By default, transaction logging is disabled.",
+            "title": "Log Settings"
+        },
+        {
+            "location": "/configuration/#transaction-log",
+            "text": "During an authenticated transaction, Test Live Checkout will record certain fields from the order, such as response code, payment gateway name,\nand timestamp, which can be helpful when monitoring and debugging transactions.   To view details of a particular transaction, select the transaction from the list.",
+            "title": "Transaction Log"
+        },
+        {
+            "location": "/examples/guest-checkout/authorizenet/",
+            "text": "Authorize.net Guest Checkout\n\n\nThis documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nTests were performed using Puppeteer, Magento 1.9.3.9 CE with sample data, and Authorize.net.\n\n\n\nDownload\n\n\nYou can download \nauthorizenet.js\n \nhere\n.\n\n\nPurpose\n\n\nTo simulate a guest checkout scenario on a Magento 1.x storefront using Authorize.net.\n\n\nSteps\n\n\n\n\nVisit Home page and click on \nBed & Bath\n link under \nHome & Decor\n navigation menu\n\n\nOn \nBed & Bath\n category page, click \nAdd to Cart\n button on first product\n\n\nOn \nCart\n overview page, click \nProceed to Checkout\n\n\nOn \nCheckout\n page, click \nCheckout as Guest\n\n\nFill in \nBilling Information\n section and click \nContinue\n\n\nSelect \nFlat Rate\n option as shipping method and click \nContinue\n\n\nFill in \nPayment Information\n section and click \nContinue\n\n\nClick \nPlace Order\n to submit order\n\n\nOn success, redirect to Home page\n\n\n\n\nWalkthrough\n\n\n\n\nScreenshots",
+            "title": "Authorize.net"
+        },
+        {
+            "location": "/examples/guest-checkout/authorizenet/#authorizenet-guest-checkout",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see  here .  Tests were performed using Puppeteer, Magento 1.9.3.9 CE with sample data, and Authorize.net.",
+            "title": "Authorize.net Guest Checkout"
+        },
+        {
+            "location": "/examples/guest-checkout/authorizenet/#download",
+            "text": "You can download  authorizenet.js   here .",
+            "title": "Download"
+        },
+        {
+            "location": "/examples/guest-checkout/authorizenet/#purpose",
+            "text": "To simulate a guest checkout scenario on a Magento 1.x storefront using Authorize.net.",
+            "title": "Purpose"
+        },
+        {
+            "location": "/examples/guest-checkout/authorizenet/#steps",
+            "text": "Visit Home page and click on  Bed & Bath  link under  Home & Decor  navigation menu  On  Bed & Bath  category page, click  Add to Cart  button on first product  On  Cart  overview page, click  Proceed to Checkout  On  Checkout  page, click  Checkout as Guest  Fill in  Billing Information  section and click  Continue  Select  Flat Rate  option as shipping method and click  Continue  Fill in  Payment Information  section and click  Continue  Click  Place Order  to submit order  On success, redirect to Home page",
+            "title": "Steps"
+        },
+        {
+            "location": "/examples/guest-checkout/authorizenet/#walkthrough",
+            "text": "",
+            "title": "Walkthrough"
+        },
+        {
+            "location": "/examples/guest-checkout/authorizenet/#screenshots",
+            "text": "",
+            "title": "Screenshots"
+        },
+        {
+            "location": "/examples/guest-checkout/braintree/",
+            "text": "Braintree Guest Checkout\n\n\nThis documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nBraintree Payments With Hosted Fields\n is required by Test Live Checkout to use Braintree.\n\n\n\nTests were performed using Puppeteer, Magento 1.9.3.9 CE with sample data, and Braintree.\n\n\n\nDownload\n\n\nYou can download \nbraintree.js\n \nhere\n.\n\n\nPurpose\n\n\nTo simulate a guest checkout scenario on a Magento 1.x storefront using Braintree.\n\n\nSteps\n\n\n\n\nVisit Home page and click on \nBed & Bath\n link under \nHome & Decor\n navigation menu\n\n\nOn \nBed & Bath\n category page, click \nAdd to Cart\n button on first product\n\n\nOn \nCart\n overview page, click \nProceed to Checkout\n\n\nOn \nCheckout\n page, click \nCheckout as Guest\n\n\nFill in \nBilling Information\n section and click \nContinue\n\n\nSelect \nFlat Rate\n option as shipping method and click \nContinue\n\n\nFill in \nPayment Information\n section and click \nContinue\n\n\nClick \nPlace Order\n to submit order\n\n\nOn success, redirect to Home page\n\n\n\n\nWalkthrough\n\n\n\n\nScreenshots",
+            "title": "Braintree"
+        },
+        {
+            "location": "/examples/guest-checkout/braintree/#braintree-guest-checkout",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see  here .  Braintree Payments With Hosted Fields  is required by Test Live Checkout to use Braintree.  Tests were performed using Puppeteer, Magento 1.9.3.9 CE with sample data, and Braintree.",
+            "title": "Braintree Guest Checkout"
+        },
+        {
+            "location": "/examples/guest-checkout/braintree/#download",
+            "text": "You can download  braintree.js   here .",
+            "title": "Download"
+        },
+        {
+            "location": "/examples/guest-checkout/braintree/#purpose",
+            "text": "To simulate a guest checkout scenario on a Magento 1.x storefront using Braintree.",
+            "title": "Purpose"
+        },
+        {
+            "location": "/examples/guest-checkout/braintree/#steps",
+            "text": "Visit Home page and click on  Bed & Bath  link under  Home & Decor  navigation menu  On  Bed & Bath  category page, click  Add to Cart  button on first product  On  Cart  overview page, click  Proceed to Checkout  On  Checkout  page, click  Checkout as Guest  Fill in  Billing Information  section and click  Continue  Select  Flat Rate  option as shipping method and click  Continue  Fill in  Payment Information  section and click  Continue  Click  Place Order  to submit order  On success, redirect to Home page",
+            "title": "Steps"
+        },
+        {
+            "location": "/examples/guest-checkout/braintree/#walkthrough",
+            "text": "",
+            "title": "Walkthrough"
+        },
+        {
+            "location": "/examples/guest-checkout/braintree/#screenshots",
+            "text": "",
+            "title": "Screenshots"
+        },
+        {
+            "location": "/manuals/",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nManuals\n\n\n\n\nUserManual.pdf",
+            "title": "Manuals"
+        },
+        {
+            "location": "/manuals/#manuals",
+            "text": "UserManual.pdf",
+            "title": "Manuals"
+        }
+    ]
+}
