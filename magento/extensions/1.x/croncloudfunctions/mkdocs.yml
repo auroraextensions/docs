@@ -1,0 +1,8 @@
+site_name: Cron Cloud Functions v1.0.0
+site_dir: 1.0.0
+theme: mkdocs
+pages:
+  - Home: index.md
+extra_css:
+  - css/extra.css
+google_analytics: ['UA-113897119-2', 'docs.nickolasburr.com']

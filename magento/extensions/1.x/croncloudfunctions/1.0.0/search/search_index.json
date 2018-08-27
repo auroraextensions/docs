@@ -1,0 +1,24 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "This documentation is for Magento 1.x. For Magento 2.x, see \nhere\n.\n\n\n\nTable of Contents\n\n\n\n\nHome\n\n\nLicense\n\n\nRelease Notes\n\n\nSitemap\n\n\nVersions\n\n\n\n\nWhat is Cloud Functions?\n\n\n\n  \n\n    Google Cloud Functions makes it easy for developers to run and scale code in the cloud and build event-driven serverless applications.\n  \n\n  \n\n    \nSimplest way to run your code in the cloud\n\n    \nAutomatically scales, highly available and fault tolerant\n\n    \nNo servers to provision, manage, patch or update\n\n    \nPay only while your code runs\n\n    \nConnects and extends cloud services\n\n  \n\n  \nSource:\u00a0\nGoogle\n\n\n\n\n\nWhat is Cron Cloud Functions?\n\n\nCron Cloud Functions is a Magento extension for running cron tasks via Cloud Functions.",
+            "title": "Home"
+        },
+        {
+            "location": "/#table-of-contents",
+            "text": "Home  License  Release Notes  Sitemap  Versions",
+            "title": "Table of Contents"
+        },
+        {
+            "location": "/#what-is-cloud-functions",
+            "text": "Google Cloud Functions makes it easy for developers to run and scale code in the cloud and build event-driven serverless applications.\n   \n   \n     Simplest way to run your code in the cloud \n     Automatically scales, highly available and fault tolerant \n     No servers to provision, manage, patch or update \n     Pay only while your code runs \n     Connects and extends cloud services \n   \n   Source:\u00a0 Google",
+            "title": "What is Cloud Functions?"
+        },
+        {
+            "location": "/#what-is-cron-cloud-functions",
+            "text": "Cron Cloud Functions is a Magento extension for running cron tasks via Cloud Functions.",
+            "title": "What is Cron Cloud Functions?"
+        }
+    ]
+}
