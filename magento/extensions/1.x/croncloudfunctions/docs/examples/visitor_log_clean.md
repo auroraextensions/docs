@@ -1,5 +1,5 @@
 <blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/magento/extensions/2.x/croncloudfunctions/latest/">here</a>.</blockquote>
-<blockquote class="notice">At the time of writing, Cloud Functions only supports three runtimes: Node.js 6, Node.js 8, and Python 3.7. Examples use Python 3.7.</blockquote>
+<blockquote class="notice">At the time of writing, Cloud Functions only supports three runtimes: Node.js 6, Node.js 8, and Python 3.7.</blockquote>
 
 ## Example: Clean Visitor Logs
 
