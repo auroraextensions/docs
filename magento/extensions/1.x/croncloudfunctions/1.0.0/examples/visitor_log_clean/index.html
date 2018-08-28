@@ -145,12 +145,14 @@ curl -fsL \
 <li><code>INSTANCE_NAME</code>: The name of Cloud SQL instance.</li>
 </ul>
 <p>Using <code>gcloud</code>, run the following:</p>
-<p><code>gcloud functions deploy visitor_log_clean
+<p><code style="display: block">
+gcloud functions deploy visitor_log_clean
                         --entry-point="log_clean" \
                         --runtime=python37 \
-                        --set-env-vars=DB_NAME=&lt;YOUR_DB_NAME&gt;,DB_USER=&lt;YOUR_DB_USER&gt;,DB_PASS=&lt;YOUR_DB_PASS&gt;,PROJECT_ID=&lt;GCP_PROJECT_ID&gt;,REGION_ID=&lt;CLOUD_SQL_REGION_ID&gt;,INSTANCE_NAME=&lt;CLOUD_SQL_INSTANCE_NAME&gt;
+                        --set-env-vars=DB_NAME=<YOUR_DB_NAME>,DB_USER=<YOUR_DB_USER>,DB_PASS=<YOUR_DB_PASS>,PROJECT_ID=<GCP_PROJECT_ID>,REGION_ID=<CLOUD_SQL_REGION_ID>,INSTANCE_NAME=<CLOUD_SQL_INSTANCE_NAME> \
                         --source="./visitor_log_clean" \
-                        --trigger-http</code></p>
+                        --trigger-http
+</code></p>
 <p>Alternatively, you can use the <a href="https://console.cloud.google.com/functions/list">Cloud Functions</a> interface. Click <em>Create Function</em>
 from the list overview, and specify the following:</p>
 <ul>
@@ -169,18 +171,20 @@ from the list overview, and specify the following:</p>
 <p>Add entry to <code>&lt;crontab&gt;</code></p>
 <p>To make use of <code>visitor_log_clean</code> from within Magento, you will need to add
 the following to your module <code>config.xml</code> file:</p>
-<p><code>&lt;crontab&gt;
-    &lt;jobs&gt;
-      &lt;visitor_log_clean&gt;
-        &lt;schedule&gt;
-          &lt;cron_expr&gt;30 2 * * *&lt;/cron_expr&gt;
-        &lt;/schedule&gt;
-        &lt;run&gt;
-          &lt;model&gt;croncloudfunctions/observer::run&lt;/model&gt;
-        &lt;/run&gt;
-      &lt;/visitor_log_clean&gt;
-    &lt;/jobs&gt;
-  &lt;/crontab&gt;</code></p>
+<p><code style="display: block">
+  <crontab>
+    <jobs>
+      <visitor_log_clean>
+        <schedule>
+          <cron_expr>30 2 * <em> </em></cron_expr>
+        </schedule>
+        <run>
+          <model>croncloudfunctions/observer::run</model>
+        </run>
+      </visitor_log_clean>
+    </jobs>
+  </crontab>
+</code></p>
 <p>Alternatively, you can use <a href="https://github.com/AOEpeople/Aoe_Scheduler">Aoe_Scheduler</a> to create and schedule
 cron jobs. It's a substantially nicer solution and it provides a ton of additional benefits.</p>
 </li>
