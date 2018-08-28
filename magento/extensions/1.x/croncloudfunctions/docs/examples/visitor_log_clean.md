@@ -79,7 +79,7 @@ Clean the database of visitor log entries using Cloud Functions.
         &lt;jobs&gt;
           &lt;visitor_log_clean&gt;
             &lt;schedule&gt;
-              &lt;cron_expr&gt;30 2 * * *&lt;/cron_expr&gt;
+              &lt;cron_expr&gt;30 2 &#42; &#42; &#42;&lt;/cron_expr&gt;
             &lt;/schedule&gt;
             &lt;run&gt;
               &lt;model&gt;croncloudfunctions/observer::run&lt;/model&gt;
