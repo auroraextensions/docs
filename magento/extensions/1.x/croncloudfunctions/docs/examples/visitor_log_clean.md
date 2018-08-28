@@ -74,20 +74,22 @@ Clean the database of visitor log entries using Cloud Functions.
     To make use of `visitor_log_clean` from within Magento, you will need to add
     the following to your module `config.xml` file:
 
-    <code style="display: block">
-      &lt;crontab&gt;
-        &lt;jobs&gt;
-          &lt;visitor_log_clean&gt;
-            &lt;schedule&gt;
-              &lt;cron_expr&gt;30 2 &#42; &#42; &#42;&lt;/cron_expr&gt;
-            &lt;/schedule&gt;
-            &lt;run&gt;
-              &lt;model&gt;croncloudfunctions/observer::run&lt;/model&gt;
-            &lt;/run&gt;
-          &lt;/visitor_log_clean&gt;
-        &lt;/jobs&gt;
-      &lt;/crontab&gt;
-    </code>
+    <pre>
+      <code>
+        &lt;crontab&gt;
+          &lt;jobs&gt;
+            &lt;visitor_log_clean&gt;
+              &lt;schedule&gt;
+                &lt;cron_expr&gt;30 2 &#42; &#42; &#42;&lt;/cron_expr&gt;
+              &lt;/schedule&gt;
+              &lt;run&gt;
+                &lt;model&gt;croncloudfunctions/observer::run&lt;/model&gt;
+              &lt;/run&gt;
+            &lt;/visitor_log_clean&gt;
+          &lt;/jobs&gt;
+        &lt;/crontab&gt;
+      </code>
+    </pre>
 
     Alternatively, you can use [Aoe_Scheduler](https://github.com/AOEpeople/Aoe_Scheduler) to create and schedule
     cron jobs. It's a substantially nicer solution and it provides a ton of additional benefits.
