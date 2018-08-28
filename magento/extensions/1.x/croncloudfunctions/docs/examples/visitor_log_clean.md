@@ -75,18 +75,18 @@ Clean the database of visitor log entries using Cloud Functions.
     the following to your module `config.xml` file:
 
     <code style="display: block">
-      <crontab>
-        <jobs>
-          <visitor_log_clean>
-            <schedule>
-              <cron_expr>30 2 * * *</cron_expr>
-            </schedule>
-            <run>
-              <model>croncloudfunctions/observer::run</model>
-            </run>
-          </visitor_log_clean>
-        </jobs>
-      </crontab>
+      &lt;crontab&gt;
+        &lt;jobs&gt;
+          &lt;visitor_log_clean&gt;
+            &lt;schedule&gt;
+              &lt;cron_expr&gt;30 2 * * *&lt;/cron_expr&gt;
+            &lt;/schedule&gt;
+            &lt;run&gt;
+              &lt;model&gt;croncloudfunctions/observer::run&lt;/model&gt;
+            &lt;/run&gt;
+          &lt;/visitor_log_clean&gt;
+        &lt;/jobs&gt;
+      &lt;/crontab&gt;
     </code>
 
     Alternatively, you can use [Aoe_Scheduler](https://github.com/AOEpeople/Aoe_Scheduler) to create and schedule
