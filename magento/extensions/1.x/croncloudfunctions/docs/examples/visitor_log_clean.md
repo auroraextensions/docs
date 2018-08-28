@@ -46,14 +46,14 @@ Clean the database of visitor log entries using Cloud Functions.
 
     Using `gcloud`, run the following:
 
-    ```
+    <code style="display: block">
     gcloud functions deploy visitor_log_clean
                             --entry-point="log_clean" \
                             --runtime=python37 \
-                            --set-env-vars=DB_NAME=<YOUR_DB_NAME>,DB_USER=<YOUR_DB_USER>,DB_PASS=<YOUR_DB_PASS>,PROJECT_ID=<GCP_PROJECT_ID>,REGION_ID=<CLOUD_SQL_REGION_ID>,INSTANCE_NAME=<CLOUD_SQL_INSTANCE_NAME>
+                            --set-env-vars=DB_NAME=<YOUR_DB_NAME>,DB_USER=<YOUR_DB_USER>,DB_PASS=<YOUR_DB_PASS>,PROJECT_ID=<GCP_PROJECT_ID>,REGION_ID=<CLOUD_SQL_REGION_ID>,INSTANCE_NAME=<CLOUD_SQL_INSTANCE_NAME> \
                             --source="./visitor_log_clean" \
                             --trigger-http
-    ```
+    </code>
 
     Alternatively, you can use the [Cloud Functions](https://console.cloud.google.com/functions/list) interface. Click *Create Function*
     from the list overview, and specify the following:
@@ -74,7 +74,7 @@ Clean the database of visitor log entries using Cloud Functions.
     To make use of `visitor_log_clean` from within Magento, you will need to add
     the following to your module `config.xml` file:
 
-    ```
+    <code style="display: block">
       <crontab>
         <jobs>
           <visitor_log_clean>
@@ -87,7 +87,7 @@ Clean the database of visitor log entries using Cloud Functions.
           </visitor_log_clean>
         </jobs>
       </crontab>
-    ```
+    </code>
 
     Alternatively, you can use [Aoe_Scheduler](https://github.com/AOEpeople/Aoe_Scheduler) to create and schedule
     cron jobs. It's a substantially nicer solution and it provides a ton of additional benefits.
