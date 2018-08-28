@@ -3,7 +3,10 @@
 ## Table of Contents
 
 - [Home](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/)
+- Examples
+    + [Visitor Log Clean](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/examples/visitor_log_clean/)
 - [License](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/LICENSE.txt)
+- [Python Scripts](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/python/src/)
 - [Release Notes](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/RELEASE_NOTES.txt)
 - [Sitemap](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/sitemap.xml)
 - [Versions](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/)
