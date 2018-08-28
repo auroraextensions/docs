@@ -46,14 +46,16 @@ Clean the database of visitor log entries using Cloud Functions.
 
     Using `gcloud`, run the following:
 
-    <code style="display: block">
-    gcloud functions deploy visitor_log_clean
-                            --entry-point="log_clean" \
-                            --runtime=python37 \
-                            --set-env-vars=DB_NAME=<YOUR_DB_NAME>,DB_USER=<YOUR_DB_USER>,DB_PASS=<YOUR_DB_PASS>,PROJECT_ID=<GCP_PROJECT_ID>,REGION_ID=<CLOUD_SQL_REGION_ID>,INSTANCE_NAME=<CLOUD_SQL_INSTANCE_NAME> \
-                            --source="./visitor_log_clean" \
-                            --trigger-http
-    </code>
+    <pre>
+      <code>
+      gcloud functions deploy visitor_log_clean
+                              --entry-point="log_clean" \
+                              --runtime=python37 \
+                              --set-env-vars=DB_NAME=&lt;YOUR_DB_NAME&gt;,DB_USER=&lt;YOUR_DB_USER&gt;,DB_PASS=&lt;YOUR_DB_PASS&gt;,PROJECT_ID=&lt;GCP_PROJECT_ID&gt;,REGION_ID=&lt;CLOUD_SQL_REGION_ID&gt;,INSTANCE_NAME=&lt;CLOUD_SQL_INSTANCE_NAME&gt; \
+                              --source="./visitor_log_clean" \
+                              --trigger-http
+      </code>
+    </pre>
 
     Alternatively, you can use the [Cloud Functions](https://console.cloud.google.com/functions/list) interface. Click *Create Function*
     from the list overview, and specify the following:
