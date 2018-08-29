@@ -14,6 +14,51 @@
             "location": "/#what-is-google-cloud-php-autoloader",
             "text": "Google Cloud PHP Autoloader is a Magento extension for autoloading Google Cloud PHP libraries and dependencies,\nand is intended for Magento 1.x only.",
             "title": "What is Google Cloud PHP Autoloader?"
+        },
+        {
+            "location": "/installation/",
+            "text": "Installation Guide\n\n\nThis guide explains how to install Google Cloud PHP Autoloader and its dependencies.\n\n\nRequirements\n\n\n\n\nComposer\n\n\nmodman\n (Recommended)\n\n\n\n\nDependencies\n\n\nGoogle Cloud PHP Autoloader loads components from the \nGoogle Cloud PHP\n library for use by other extensions.\nListed below are those dependencies and each dependency requirements, all of which are handled by Composer.\n\n\n\n\ngoogle/cloud-pubsub\n\n\ngoogle/cloud-core\n\n\ngoogle/gax\n\n\n\n\n\n\n\n\nGoogle Cloud PHP Autoloader is pre-packaged with the necessary Composer files, therefore no additional configuration should be needed for installation.\n\n\nInstalling\n\n\nBelow are examples of how to install the extension via \nmodman\n and manually.\n\n\nmodman\n\n\nmodman init                                                                         # Only run if you haven't initialized modman yet.\nmodman clone https://github.com/nickolasburr/GoogleCloudPHPAutoloader.git\nmodman deploy GoogleCloudPHPAutoloader\n\n\n\n\nManual\n\n\ncd /var/www                                                                         # Replace /var/www with the Magento root directory.\ngit -C /tmp/ clone https://github.com/nickolasburr/GoogleCloudPHPAutoloader.git\nrsync -Pahmvz --stats \\\n              --exclude=\"package.xml\" \\\n              --exclude=\".git*\" \\\n              --exclude=\"modman\" \\\n              /tmp/GoogleCloudPHPAutoloader/* ./\nrm -rf /tmp/GoogleCloudPHPAutoloader\n\n\n\n\nComposer\n\n\nAfter the extension files are installed, we need to install the library dependencies via Composer.\n\n\ncd /var/www/lib/GoogleCloud   # Replace /var/www with Magento root directory.\ncomposer install --no-dev     # Run the Composer installer.\n\n\n\n\nThe Composer file is configured to install modules under \nlib/GoogleCloud\n instead of \nlib/GoogleCloud/vendor\n. This is to make compatibility with Magento 1.x slightly easier.\n\n\nWrap Up\n\n\nLastly, you will need to enable the extension from the admin panel. Make sure to clear the configuration cache, and, if any admin sessions are open, log out and log back in.",
+            "title": "Installation"
+        },
+        {
+            "location": "/installation/#installation-guide",
+            "text": "This guide explains how to install Google Cloud PHP Autoloader and its dependencies.",
+            "title": "Installation Guide"
+        },
+        {
+            "location": "/installation/#requirements",
+            "text": "Composer  modman  (Recommended)",
+            "title": "Requirements"
+        },
+        {
+            "location": "/installation/#dependencies",
+            "text": "Google Cloud PHP Autoloader loads components from the  Google Cloud PHP  library for use by other extensions.\nListed below are those dependencies and each dependency requirements, all of which are handled by Composer.   google/cloud-pubsub  google/cloud-core  google/gax     Google Cloud PHP Autoloader is pre-packaged with the necessary Composer files, therefore no additional configuration should be needed for installation.",
+            "title": "Dependencies"
+        },
+        {
+            "location": "/installation/#installing",
+            "text": "Below are examples of how to install the extension via  modman  and manually.",
+            "title": "Installing"
+        },
+        {
+            "location": "/installation/#modman",
+            "text": "modman init                                                                         # Only run if you haven't initialized modman yet.\nmodman clone https://github.com/nickolasburr/GoogleCloudPHPAutoloader.git\nmodman deploy GoogleCloudPHPAutoloader",
+            "title": "modman"
+        },
+        {
+            "location": "/installation/#manual",
+            "text": "cd /var/www                                                                         # Replace /var/www with the Magento root directory.\ngit -C /tmp/ clone https://github.com/nickolasburr/GoogleCloudPHPAutoloader.git\nrsync -Pahmvz --stats \\\n              --exclude=\"package.xml\" \\\n              --exclude=\".git*\" \\\n              --exclude=\"modman\" \\\n              /tmp/GoogleCloudPHPAutoloader/* ./\nrm -rf /tmp/GoogleCloudPHPAutoloader",
+            "title": "Manual"
+        },
+        {
+            "location": "/installation/#composer",
+            "text": "After the extension files are installed, we need to install the library dependencies via Composer.  cd /var/www/lib/GoogleCloud   # Replace /var/www with Magento root directory.\ncomposer install --no-dev     # Run the Composer installer.  The Composer file is configured to install modules under  lib/GoogleCloud  instead of  lib/GoogleCloud/vendor . This is to make compatibility with Magento 1.x slightly easier.",
+            "title": "Composer"
+        },
+        {
+            "location": "/installation/#wrap-up",
+            "text": "Lastly, you will need to enable the extension from the admin panel. Make sure to clear the configuration cache, and, if any admin sessions are open, log out and log back in.",
+            "title": "Wrap Up"
         }
     ]
 }
