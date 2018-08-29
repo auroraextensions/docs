@@ -1,0 +1,7 @@
+Release Notes - Google Cloud PHP Autoloader - Magento 1.x
+------------------------------------------------
+
+1.0.0
+-----
+
+- Initial release of Google Cloud PHP Autoloader.
