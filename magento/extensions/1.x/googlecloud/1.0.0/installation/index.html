@@ -105,16 +105,21 @@
 <li><a href="https://github.com/colinmollenhour/modman">modman</a> (Recommended)</li>
 </ul>
 <h3 id="dependencies">Dependencies</h3>
-<p>Google Cloud PHP Autoloader loads components from the <a href="https://googlecloudplatform.github.io/google-cloud-php">Google Cloud PHP</a> library for use by other extensions.
-Listed below are those dependencies and each dependency requirements, all of which are handled by Composer.</p>
+<p>Google Cloud PHP Autoloader loads packages from the <a href="https://googlecloudplatform.github.io/google-cloud-php">Google Cloud PHP</a> library for use by other extensions.
+Listed below are the default packages and subsequent dependencies:</p>
 <ul>
-<li><a href="https://packagist.org/packages/google/cloud-pubsub">google/cloud-pubsub</a><ul>
-<li><a href="https://packagist.org/packages/google/cloud-core">google/cloud-core</a></li>
-<li><a href="https://packagist.org/packages/google/gax">google/gax</a></li>
+<li><a href="https://packagist.org/packages/google/cloud-core">google/cloud-core</a><ul>
+<li><a href="https://packagist.org/packages/rize/uri-template">rize/uri-template</a></li>
+<li><a href="https://packagist.org/packages/google/auth">google/auth</a></li>
+<li><a href="https://packagist.org/packages/guzzlehttp/guzzle">guzzlehttp/guzzle</a></li>
+<li><a href="https://packagist.org/packages/guzzlehttp/psr7">guzzlehttp/psr7</a></li>
+<li><a href="https://packagist.org/packages/monolog/monolog">monolog/monolog</a></li>
+<li><a href="https://packagist.org/packages/psr/http-message">psr/http-message</a></li>
 </ul>
 </li>
 </ul>
-<p>Google Cloud PHP Autoloader is pre-packaged with the necessary Composer files, therefore no additional configuration should be needed for installation.</p>
+<p>Google Cloud PHP Autoloader is pre-packaged with the necessary Composer files, therefore little to no additional configuration should be needed for installation.
+If you would like to add additional packages to the mix, simply update the composer.json file and re-run the installer.</p>
 <h3 id="installing">Installing</h3>
 <p>Below are examples of how to install the extension via <code>modman</code> and manually.</p>
 <h4 id="modman">modman</h4>
