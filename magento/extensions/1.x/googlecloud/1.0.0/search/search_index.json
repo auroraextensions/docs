@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Table of Contents\n\n\n\n\nHome\n\n\nInstallation\n\n\nLicense\n\n\nRelease Notes\n\n\nRepository\n\n\nSitemap\n\n\nVersions\n\n\n\n\nWhat is Google Cloud PHP?\n\n\nGoogle Cloud PHP encompasses several packages, which are used for integrating with Google Cloud services.\n\n\nWhat is Google Cloud PHP Autoloader?\n\n\nGoogle Cloud PHP Autoloader is a Magento extension for autoloading Google Cloud PHP libraries and dependencies.\nIt is intended to be used with Magento 1.9 only.\n\n\nUsage\n\n\n<config>\n    <modules>\n        <Vendor_Package>\n            <active>true</active>\n            <codePool>community</codePool>\n            <depends>\n                <NickolasBurr_GoogleCloud/>\n            </depends>\n        </Vendor_Package>\n    </modules>\n</config>",
+            "text": "Table of Contents\n\n\n\n\nHome\n\n\nInstallation\n\n\nLicense\n\n\nRelease Notes\n\n\nRepository\n\n\nSitemap\n\n\nVersions\n\n\n\n\nWhat is Google Cloud PHP?\n\n\nGoogle Cloud PHP encompasses several packages, which are used for integrating with Google Cloud services.\n\n\nWhat is Google Cloud PHP Autoloader?\n\n\nGoogle Cloud PHP Autoloader is a Magento extension for autoloading Google Cloud PHP libraries and dependencies.\nIt is intended to be used with Magento 1.9 only.\n\n\nUsage\n\n\nTo use Google Cloud PHP classes, add \n<NickolasBurr_GoogleCloud/>\n as a module dependency:\n\n\n<config>\n    <modules>\n        <Vendor_Package>\n            <active>true</active>\n            <codePool>community</codePool>\n            <depends>\n                <NickolasBurr_GoogleCloud/>\n            </depends>\n        </Vendor_Package>\n    </modules>\n</config>",
             "title": "Home"
         },
         {
@@ -22,7 +22,7 @@
         },
         {
             "location": "/#usage",
-            "text": "<config>\n    <modules>\n        <Vendor_Package>\n            <active>true</active>\n            <codePool>community</codePool>\n            <depends>\n                <NickolasBurr_GoogleCloud/>\n            </depends>\n        </Vendor_Package>\n    </modules>\n</config>",
+            "text": "To use Google Cloud PHP classes, add  <NickolasBurr_GoogleCloud/>  as a module dependency:  <config>\n    <modules>\n        <Vendor_Package>\n            <active>true</active>\n            <codePool>community</codePool>\n            <depends>\n                <NickolasBurr_GoogleCloud/>\n            </depends>\n        </Vendor_Package>\n    </modules>\n</config>",
             "title": "Usage"
         },
         {
