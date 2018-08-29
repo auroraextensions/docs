@@ -8,16 +8,18 @@
 - [Sitemap](https://docs.nickolasburr.com/magento/extensions/1.x/googlecloud/latest/sitemap.xml)
 - [Versions](https://docs.nickolasburr.com/magento/extensions/1.x/googlecloud/)
 
-## What is Google Cloud PHP?
+### What is Google Cloud PHP?
 
 Google Cloud PHP encompasses several packages, which are used for integrating with Google Cloud services.
 
-## What is Google Cloud PHP Autoloader?
+### What is Google Cloud PHP Autoloader?
 
 Google Cloud PHP Autoloader is a Magento extension for autoloading Google Cloud PHP libraries and dependencies.
 It is intended to be used with Magento 1.9 only.
 
-## Usage
+### Usage
+
+To use Google Cloud PHP classes, add `<NickolasBurr_GoogleCloud/>` as a module dependency:
 
 ```
 <config>
