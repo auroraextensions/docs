@@ -9,14 +9,19 @@ This guide explains how to install Google Cloud PHP Autoloader and its dependenc
 
 ### Dependencies
 
-Google Cloud PHP Autoloader loads components from the [Google Cloud PHP](https://googlecloudplatform.github.io/google-cloud-php) library for use by other extensions.
-Listed below are those dependencies and each dependency requirements, all of which are handled by Composer.
+Google Cloud PHP Autoloader loads packages from the [Google Cloud PHP](https://googlecloudplatform.github.io/google-cloud-php) library for use by other extensions.
+Listed below are the default packages and subsequent dependencies:
 
-+ [google/cloud-pubsub](https://packagist.org/packages/google/cloud-pubsub)
-    - [google/cloud-core](https://packagist.org/packages/google/cloud-core)
-    - [google/gax](https://packagist.org/packages/google/gax)
++ [google/cloud-core](https://packagist.org/packages/google/cloud-core)
+    - [rize/uri-template](https://packagist.org/packages/rize/uri-template)
+    - [google/auth](https://packagist.org/packages/google/auth)
+    - [guzzlehttp/guzzle](https://packagist.org/packages/guzzlehttp/guzzle)
+    - [guzzlehttp/psr7](https://packagist.org/packages/guzzlehttp/psr7)
+    - [monolog/monolog](https://packagist.org/packages/monolog/monolog)
+    - [psr/http-message](https://packagist.org/packages/psr/http-message)
 
-Google Cloud PHP Autoloader is pre-packaged with the necessary Composer files, therefore no additional configuration should be needed for installation.
+Google Cloud PHP Autoloader is pre-packaged with the necessary Composer files, therefore little to no additional configuration should be needed for installation.
+If you would like to add additional packages to the mix, simply update the composer.json file and re-run the installer.
 
 ### Installing
 
