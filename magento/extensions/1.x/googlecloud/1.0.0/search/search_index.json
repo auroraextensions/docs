@@ -2,18 +2,28 @@
     "docs": [
         {
             "location": "/",
-            "text": "Table of Contents\n\n\n\n\nHome\n\n\nLicense\n\n\nRelease Notes\n\n\nSitemap\n\n\nVersions\n\n\n\n\nWhat is Google Cloud PHP Autoloader?\n\n\nGoogle Cloud PHP Autoloader is a Magento extension for autoloading Google Cloud PHP libraries and dependencies,\nand is intended for Magento 1.x only.",
+            "text": "Table of Contents\n\n\n\n\nHome\n\n\nInstallation\n\n\nLicense\n\n\nRelease Notes\n\n\nRepository\n\n\nSitemap\n\n\nVersions\n\n\n\n\nWhat is Google Cloud PHP?\n\n\nGoogle Cloud PHP encompasses several packages, which are used for integrating with Google Cloud services.\n\n\nWhat is Google Cloud PHP Autoloader?\n\n\nGoogle Cloud PHP Autoloader is a Magento extension for autoloading Google Cloud PHP libraries and dependencies.\nIt is intended to be used with Magento 1.9 only.\n\n\nUsage\n\n\n<config>\n    <modules>\n        <Vendor_Package>\n            <active>true</active>\n            <codePool>community</codePool>\n            <depends>\n                <NickolasBurr_GoogleCloud/>\n            </depends>\n        </Vendor_Package>\n    </modules>\n</config>",
             "title": "Home"
         },
         {
             "location": "/#table-of-contents",
-            "text": "Home  License  Release Notes  Sitemap  Versions",
+            "text": "Home  Installation  License  Release Notes  Repository  Sitemap  Versions",
             "title": "Table of Contents"
         },
         {
+            "location": "/#what-is-google-cloud-php",
+            "text": "Google Cloud PHP encompasses several packages, which are used for integrating with Google Cloud services.",
+            "title": "What is Google Cloud PHP?"
+        },
+        {
             "location": "/#what-is-google-cloud-php-autoloader",
-            "text": "Google Cloud PHP Autoloader is a Magento extension for autoloading Google Cloud PHP libraries and dependencies,\nand is intended for Magento 1.x only.",
+            "text": "Google Cloud PHP Autoloader is a Magento extension for autoloading Google Cloud PHP libraries and dependencies.\nIt is intended to be used with Magento 1.9 only.",
             "title": "What is Google Cloud PHP Autoloader?"
+        },
+        {
+            "location": "/#usage",
+            "text": "<config>\n    <modules>\n        <Vendor_Package>\n            <active>true</active>\n            <codePool>community</codePool>\n            <depends>\n                <NickolasBurr_GoogleCloud/>\n            </depends>\n        </Vendor_Package>\n    </modules>\n</config>",
+            "title": "Usage"
         },
         {
             "location": "/installation/",
