@@ -1,5 +1,5 @@
-site_name: Cloud Pub/Sub Event Analytics v1.0.0
-site_dir: 1.0.0
+site_name: Cloud Pub/Sub Event Analytics v1.0.1
+site_dir: 1.0.1
 theme: mkdocs
 pages:
   - Home: index.md

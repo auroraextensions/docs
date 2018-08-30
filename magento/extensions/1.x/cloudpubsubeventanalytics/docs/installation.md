@@ -4,25 +4,13 @@
 
 This guide explains how to install Cloud Pub/Sub Event Analytics and its dependencies.
 
-### Requirements
-
-+ [Composer](https://getcomposer.org)
-+ [modman](https://github.com/colinmollenhour/modman) (Recommended)
-
 ### Dependencies
 
-Cloud Pub/Sub Event Analytics relies on components from the [Google Cloud PHP](https://googlecloudplatform.github.io/google-cloud-php) library for Pub/Sub communication.
-Listed below are those dependencies and each dependency requirements, all of which are handled by Composer.
-
-+ [google/cloud-pubsub](https://packagist.org/packages/google/cloud-pubsub)
-    - [google/cloud-core](https://packagist.org/packages/google/cloud-core)
-    - [google/gax](https://packagist.org/packages/google/gax)
-
-Cloud Pub/Sub Event Analytics is pre-packaged with the necessary Composer files, therefore no additional configuration should be needed to install the dependencies.
++ [Google Cloud PHP Autoloader](https://github.com/nickolasburr/GoogleCloudPHPAutoloader.git)
 
 ### Getting Started
 
-Make sure you've downloaded your copy of the extension archive. If you have not yet purchased the extension, you can do so at the following locations:
+Make sure you've downloaded your copy of the extension archive. If you've not yet purchased the extension, you can do so at the following locations:
 
 + <a href="https://store.nickolasburr.com/extensions/magento-1-x/analytics/cloud-pubsub-event-analytics.html" target="_blank">https://store.nickolasburr.com/extensions/magento-1-x/analytics/cloud-pubsub-event-analytics.html</a>
 + <a href="https://marketplace.magento.com/nickolasburr-nickolasburr-cloudpubsubeventanalytics.html" target="_blank">https://marketplace.magento.com/nickolasburr-nickolasburr-cloudpubsubeventanalytics.html</a>
@@ -66,18 +54,6 @@ rsync -Pahmvz --stats \
 rm -rf /tmp/NickolasBurr_CloudPubSubEventAnalytics
 ```
 
-### Composer
-
-After the extension files are installed, we need to install the library dependencies via Composer.
-
-```
-# Replace /var/www with the Magento root directory.
-cd /var/www/lib/NickolasBurr
-composer install --no-dev
-```
-
-The Composer file is configured to install modules under `lib/NickolasBurr` instead of `lib/NickolasBurr/vendor`. This is done to make compatibility with Magento 1.x easier.
-
-### Wrapping It Up
+### Wrap Up
 
 Before attempting to configure the extension, make sure to clear the configuration cache, and, if any admin sessions are open, log out and log back in.
