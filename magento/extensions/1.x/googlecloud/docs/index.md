@@ -10,16 +10,16 @@
 
 ### What is Google Cloud PHP?
 
-Google Cloud PHP encompasses several packages, which are used for integrating with Google Cloud services.
+Google Cloud PHP is a suite of PHP packages for integrating with various Google Cloud services.
 
 ### What is Google Cloud PHP Autoloader?
 
 Google Cloud PHP Autoloader is a Magento extension for autoloading Google Cloud PHP libraries and dependencies.
-It is intended to be used with Magento 1.9 only.
+It is intended to be used with Magento 1.x only, as Magento 2 provides native support for Composer.
 
 ### Usage
 
-To use Google Cloud PHP classes, add `<NickolasBurr_GoogleCloud/>` as a module dependency:
+To use Google Cloud PHP Autoloader, add `<NickolasBurr_GoogleCloud/>` as a module dependency:
 
 ```
 <config>
