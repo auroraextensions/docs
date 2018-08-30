@@ -1,6 +1,11 @@
 Release Notes - Cloud Pub/Sub Event Analytics - Magento 1.x
 ------------------------------------------------
 
+1.0.1
+-----
+
+- Remove autoloader, add NickolasBurr_GoogleCloud dependency.
+
 1.0.0
 -----
 
