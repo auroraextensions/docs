@@ -7,22 +7,22 @@
         
         
         
-        <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Visitor Log Clean - Cron Cloud Functions v1.0.0</title>
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../css/highlight.css">
-        <link href="../../css/extra.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>All Examples - Cron Cloud Functions v1.0.0</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../css/extra.css" rel="stylesheet">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 
-        <script src="../../js/jquery-1.10.2.min.js"></script>
-        <script src="../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../js/highlight.pack.js"></script>
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -48,7 +48,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../..">Cron Cloud Functions v1.0.0</a>
+            <a class="navbar-brand" href="..">Cron Cloud Functions v1.0.0</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -56,21 +56,21 @@
                 <!-- Main navigation -->
                 <ul class="nav navbar-nav">
                     <li >
-                        <a href="../..">Home</a>
+                        <a href="..">Home</a>
                     </li>
                     <li >
-                        <a href="../../installation/">Installation</a>
+                        <a href="../installation/">Installation</a>
                     </li>
                     <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Examples <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
-<li >
-    <a href="../">All Examples</a>
+<li class="active">
+    <a href="./">All Examples</a>
 </li>
                             
-<li class="active">
-    <a href="./">Visitor Log Clean</a>
+<li >
+    <a href="visitor_log_clean/">Visitor Log Clean</a>
 </li>
                         </ul>
                     </li>
@@ -83,12 +83,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../">
+                        <a rel="next" href="../installation/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li class="disabled">
-                        <a rel="prev" >
+                    <li >
+                        <a rel="prev" href="visitor_log_clean/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -100,116 +100,28 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#example-clean-visitor-logs">Example: Clean Visitor Logs</a></li>
-        <li class="main "><a href="#requirements">Requirements</a></li>
-        <li class="main "><a href="#downloads">Downloads</a></li>
-        <li class="main "><a href="#objective">Objective</a></li>
-        <li class="main "><a href="#steps">Steps</a></li>
+        <li class="main active"><a href="#examples">Examples</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
 <blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/magento/extensions/2.x/croncloudfunctions/latest/">here</a>.</blockquote>
 
-<blockquote class="notice">At the time of writing, Cloud Functions only supports three runtimes: Node.js 6, Node.js 8, and Python 3.7.</blockquote>
-
-<h2 id="example-clean-visitor-logs">Example: Clean Visitor Logs</h2>
-<h2 id="requirements">Requirements</h2>
+<h2 id="examples">Examples</h2>
 <ul>
-<li>Active Google account</li>
-<li>GCP project with Cloud Functions API enabled</li>
-<li>Cloud SQL database instance</li>
-<li><code>gcloud</code> command-line tool (Recommended)</li>
-</ul>
-<h2 id="downloads">Downloads</h2>
-<p>To use the Python runtime, two files are required: <code>main.py</code> and <code>requirements.txt</code>. You can download them here:</p>
-<ul>
-<li><a href="https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/python/src/visitor_log_clean/main.py">main.py</a></li>
-<li><a href="https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/python/src/visitor_log_clean/requirements.txt">requirements.txt</a></li>
-</ul>
-<pre><code>mkdir -pv visitor_log_clean &amp;&amp; \
-curl -fsL \
-     https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/python/src/visitor_log_clean/main.py
-     &gt; ./visitor_log_clean/main.py &amp;&amp; \
-curl -fsL \
-     https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/python/src/visitor_log_clean/requirements.txt
-     &gt; ./visitor_log_clean/requirements.txt
-</code></pre>
-
-<h2 id="objective">Objective</h2>
-<p>Clean the database of visitor log entries using Cloud Functions.</p>
-<h2 id="steps">Steps</h2>
-<ol>
-<li>
-<p>Create <code>visitor_log_clean</code> cloud function</p>
-<p>The following environment variables are required for Cloud Functions to access Cloud SQL:</p>
-<ul>
-<li><code>DB_NAME</code>: The name of the Magento database.</li>
-<li><code>DB_USER</code>: The name of the database user.</li>
-<li><code>DB_PASS</code>: The database user's password.</li>
-<li><code>PROJECT_ID</code>: The Google Cloud Platform project ID.</li>
-<li><code>REGION_ID</code>: The region where the Cloud SQL instance exists (e.g. us-central1, us-east4).</li>
-<li><code>INSTANCE_NAME</code>: The name of Cloud SQL instance.</li>
-</ul>
-<p>Using <code>gcloud</code>, run the following:</p>
-<p><pre>
-  <code>
-  gcloud functions deploy visitor_log_clean
-                          --entry-point="log_clean" \
-                          --runtime=python37 \
-                          --set-env-vars=DB_NAME=&lt;YOUR_DB_NAME&gt;,DB_USER=&lt;YOUR_DB_USER&gt;,DB_PASS=&lt;YOUR_DB_PASS&gt;,PROJECT_ID=&lt;GCP_PROJECT_ID&gt;,REGION_ID=&lt;CLOUD_SQL_REGION_ID&gt;,INSTANCE_NAME=&lt;CLOUD_SQL_INSTANCE_NAME&gt; \
-                          --source="./visitor_log_clean" \
-                          --trigger-http
-  </code>
-</pre></p>
-<p>Alternatively, you can use the <a href="https://console.cloud.google.com/functions/list">Cloud Functions</a> interface. Click <em>Create Function</em>
-from the list overview, and specify the following:</p>
-<ul>
-<li>Name: visitor_log_clean</li>
-<li>Memory: 256MB</li>
-<li>Trigger: HTTP</li>
-<li>Source code: Inline editor</li>
-<li>Runtime: Python 3.7</li>
-<li>main.py: Contents of <code>main.py</code> from above</li>
-<li>requirements.txt: Contents of <code>requirements.txt</code> from above</li>
-<li>Function to execute: <code>log_clean</code></li>
-</ul>
-<p>Next, click <em>More</em> and set each of the environment variables listed above. Then click <em>Create</em>.</p>
-</li>
-<li>
-<p>Add entry to <code>&lt;crontab&gt;</code></p>
-<p>To make use of <code>visitor_log_clean</code> from within Magento, you will need to add
-the following to your module <code>config.xml</code> file:</p>
-<p><pre>
-  <code>
-    &lt;crontab&gt;
-      &lt;jobs&gt;
-        &lt;visitor_log_clean&gt;
-          &lt;schedule&gt;
-            &lt;cron_expr&gt;30 2 &#42; &#42; &#42;&lt;/cron_expr&gt;
-          &lt;/schedule&gt;
-          &lt;run&gt;
-            &lt;model&gt;croncloudfunctions/observer::run&lt;/model&gt;
-          &lt;/run&gt;
-        &lt;/visitor_log_clean&gt;
-      &lt;/jobs&gt;
-    &lt;/crontab&gt;
-  </code>
-</pre></p>
-<p>Alternatively, you can use <a href="https://github.com/AOEpeople/Aoe_Scheduler">Aoe_Scheduler</a> to create and schedule
-cron jobs. It's a substantially nicer solution and it provides a ton of additional benefits.</p>
-</li>
-</ol></div>
+<li>Sitemap Generation</li>
+<li><a href="https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/examples/visitor_log_clean/">Visitor Log Clean</a></li>
+</ul></div>
         </div>
 
         <footer class="col-md-12">
             <hr>
             <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script>var base_url = '../..';</script>
-        <script src="../../js/base.js"></script>
-        <script src="../../search/require.js"></script>
-        <script src="../../search/search.js"></script>
+        <script>var base_url = '..';</script>
+        <script src="../js/base.js"></script>
+        <script src="../search/require.js"></script>
+        <script src="../search/search.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">
