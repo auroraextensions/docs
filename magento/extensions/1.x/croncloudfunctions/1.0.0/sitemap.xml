@@ -6,6 +6,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>/installation/</loc>
+     <lastmod>2018-08-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>/examples/visitor_log_clean/</loc>
      <lastmod>2018-08-30</lastmod>
      <changefreq>daily</changefreq>
