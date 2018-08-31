@@ -1,5 +1,5 @@
-site_name: Cron Cloud Functions v1.0.0
-site_dir: 1.0.0
+site_name: Cron Cloud Functions v1.0.1
+site_dir: 1.0.1
 theme:
   name: mkdocs
   highlightjs: true
