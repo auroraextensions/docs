@@ -19,6 +19,7 @@ pages:
   - Examples:
     - 'All Examples': examples/index.md
     - 'Visitor Log Clean': examples/visitor_log_clean.md
+  - Manuals: manuals/index.md
 extra_css:
   - css/extra.css
 google_analytics: ['UA-113897119-2', 'docs.nickolasburr.com']
