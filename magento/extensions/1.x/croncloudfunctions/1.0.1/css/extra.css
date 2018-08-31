@@ -37,6 +37,10 @@ pre, code {
   font-family: monospace, sans-serif;
 }
 
+code.hljs {
+  padding: 0.5em 1em;
+}
+
 pre, .rst-content tt {
   padding: 0;
 }
