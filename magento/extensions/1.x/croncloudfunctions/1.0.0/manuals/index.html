@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <meta name="description" content="None">
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Installation - Cron Cloud Functions v1.0.0</title>
+        <title>Cron Cloud Functions v1.0.0</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -41,7 +41,7 @@
         </script> 
     </head>
 
-    <body>
+    <body class="homepage">
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
@@ -65,8 +65,8 @@
                             <li >
                                 <a href="..">Home</a>
                             </li>
-                            <li class="active">
-                                <a href="./">Installation</a>
+                            <li >
+                                <a href="../installation/">Installation</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Examples <b class="caret"></b></a>
@@ -81,8 +81,8 @@
 </li>
                                 </ul>
                             </li>
-                            <li >
-                                <a href="../manuals/">Manuals</a>
+                            <li class="active">
+                                <a href="./">Manuals</a>
                             </li>
                         </ul>
 
@@ -93,12 +93,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="..">
+                                <a rel="next" href="../examples/visitor_log_clean/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li >
-                                <a rel="prev" href="../examples/">
+                            <li class="disabled">
+                                <a rel="prev" >
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -110,43 +110,17 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#installation-guide">Installation Guide</a></li>
-            <li><a href="#dependencies">Dependencies</a></li>
-            <li><a href="#installing">Installing</a></li>
-            <li><a href="#wrap-up">Wrap Up</a></li>
+        <li class="main active"><a href="#manuals">Manuals</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
 <blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/magento/extensions/2.x/croncloudfunctions/latest/">here</a>.</blockquote>
 
-<h2 id="installation-guide">Installation Guide</h2>
-<p>This guide explains how to install Cron Cloud Functions.</p>
-<h3 id="dependencies">Dependencies</h3>
+<h2 id="manuals">Manuals</h2>
 <ul>
-<li><a href="https://github.com/nickolasburr/GoogleCloudPHPAutoloader.git">Google Cloud PHP Autoloader</a></li>
-</ul>
-<h3 id="installing">Installing</h3>
-<p>Below are examples of how to install the extension via <code>modman</code> and manually.</p>
-<h4 id="modman">modman</h4>
-<pre><code>modman init                                                                         # Only run if you haven't initialized modman yet.
-modman clone https://github.com/nickolasburr/CronCloudFunctions.git
-modman deploy CronCloudFunctions
-</code></pre>
-
-<h4 id="manual">Manual</h4>
-<pre><code>cd /var/www                                                                         # Replace /var/www with the Magento root directory.
-git -C /tmp/ clone https://github.com/nickolasburr/CronCloudFunctions.git
-rsync -Pahmvz --stats \
-              --exclude=&quot;package.xml&quot; \
-              --exclude=&quot;.git*&quot; \
-              --exclude=&quot;modman&quot; \
-              /tmp/CronCloudFunctions/* ./
-rm -rf /tmp/CronCloudFunctions
-</code></pre>
-
-<h3 id="wrap-up">Wrap Up</h3>
-<p>Before attempting to configure the extension, make sure to clear the configuration cache, and, if any admin sessions are open, log out and log back in.</p></div>
+<li><a href="https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/manuals/UserManual.pdf">UserManual.pdf</a></li>
+</ul></div>
         </div>
 
         <footer class="col-md-12">
@@ -226,3 +200,8 @@ rm -rf /tmp/CronCloudFunctions
 
     </body>
 </html>
+
+<!--
+MkDocs version : 1.0.2
+Build Date UTC : 2018-08-31 03:32:15
+-->
