@@ -6,6 +6,8 @@
 - Examples
     + [Visitor Log Clean](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/examples/visitor_log_clean/)
 - [License](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/LICENSE.txt)
+- [Manuals](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/manuals/)
+    + [UserManual.pdf](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/manuals/UserManual.pdf)
 - [Python Scripts](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/python/src/)
 - [Release Notes](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/RELEASE_NOTES.txt)
 - [Sitemap](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/sitemap.xml)
@@ -15,7 +17,7 @@
 
 <blockquote>
   <div>
-    Google Cloud Functions makes it easy for developers to run and scale code in the cloud and build event-driven serverless applications.
+    Cloud Functions makes it easy for developers to run and scale code in the cloud and build event-driven serverless applications.
   </div>
   <ul>
     <li>Simplest way to run your code in the cloud</li>
