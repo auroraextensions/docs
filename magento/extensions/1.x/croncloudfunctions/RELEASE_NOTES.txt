@@ -1,6 +1,11 @@
 Release Notes - Cron Cloud Functions - Magento 1.x
 ------------------------------------------------
 
+1.0.1
+-----
+
+- Add authentication token support.
+
 1.0.0
 -----
 
