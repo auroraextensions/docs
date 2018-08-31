@@ -1,9 +1,22 @@
 site_name: Google Cloud PHP Autoloader v1.0.0
 site_dir: 1.0.0
-theme: mkdocs
-pages:
+theme:
+  name: mkdocs
+  highlightjs: true
+  hljs_languages:
+    - bash
+    - diff
+    - http
+    - makefile
+    - php
+    - python
+  shortcuts:
+    next: 117
+    previous: 116
+nav:
   - Home: index.md
   - Installation: installation.md
+  - Manuals: manuals/index.md
 extra_css:
   - css/extra.css
 google_analytics: ['UA-113897119-2', 'docs.nickolasburr.com']

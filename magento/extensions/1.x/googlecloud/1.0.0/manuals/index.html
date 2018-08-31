@@ -7,21 +7,21 @@
         <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="shortcut icon" href="../img/favicon.ico">
         <title>Google Cloud PHP Autoloader v1.0.0</title>
-        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-        <link href="css/extra.css" rel="stylesheet">
+        <link href="../css/extra.css" rel="stylesheet">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/diff.min.js"></script>
@@ -55,21 +55,21 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href=".">Google Cloud PHP Autoloader v1.0.0</a>
+                    <a class="navbar-brand" href="..">Google Cloud PHP Autoloader v1.0.0</a>
                 </div>
 
                 <!-- Expanded navigation -->
                 <div class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
+                            <li >
+                                <a href="..">Home</a>
+                            </li>
+                            <li >
+                                <a href="../installation/">Installation</a>
+                            </li>
                             <li class="active">
-                                <a href=".">Home</a>
-                            </li>
-                            <li >
-                                <a href="installation/">Installation</a>
-                            </li>
-                            <li >
-                                <a href="manuals/">Manuals</a>
+                                <a href="./">Manuals</a>
                             </li>
                         </ul>
 
@@ -79,13 +79,13 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="disabled">
-                                <a rel="next" >
+                            <li >
+                                <a rel="next" href="../installation/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li >
-                                <a rel="prev" href="installation/">
+                            <li class="disabled">
+                                <a rel="prev" >
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -97,43 +97,15 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#table-of-contents">Table of Contents</a></li>
-            <li><a href="#what-is-google-cloud-php">What is Google Cloud PHP?</a></li>
-            <li><a href="#what-is-google-cloud-php-autoloader">What is Google Cloud PHP Autoloader?</a></li>
-            <li><a href="#usage">Usage</a></li>
+        <li class="main active"><a href="#manuals">Manuals</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="table-of-contents">Table of Contents</h2>
+<h2 id="manuals">Manuals</h2>
 <ul>
-<li><a href="https://docs.nickolasburr.com/magento/extensions/1.x/googlecloud/latest/">Home</a></li>
-<li><a href="https://docs.nickolasburr.com/magento/extensions/1.x/googlecloud/latest/installation/">Installation</a></li>
-<li><a href="https://docs.nickolasburr.com/magento/extensions/1.x/googlecloud/LICENSE.txt">License</a></li>
-<li><a href="https://docs.nickolasburr.com/magento/extensions/1.x/googlecloud/RELEASE_NOTES.txt">Release Notes</a></li>
-<li><a href="https://github.com/nickolasburr/GoogleCloudPHPAutoloader">Repository</a></li>
-<li><a href="https://docs.nickolasburr.com/magento/extensions/1.x/googlecloud/latest/sitemap.xml">Sitemap</a></li>
-<li><a href="https://docs.nickolasburr.com/magento/extensions/1.x/googlecloud/">Versions</a></li>
-</ul>
-<h3 id="what-is-google-cloud-php">What is Google Cloud PHP?</h3>
-<p>Google Cloud PHP is a suite of PHP packages for integrating with various Google Cloud services.</p>
-<h3 id="what-is-google-cloud-php-autoloader">What is Google Cloud PHP Autoloader?</h3>
-<p>Google Cloud PHP Autoloader is a Magento extension for autoloading Google Cloud PHP libraries and dependencies.
-It is intended to be used with Magento 1.x only, as Magento 2 provides native support for Composer.</p>
-<h3 id="usage">Usage</h3>
-<p>To use Google Cloud PHP Autoloader, add <code>&lt;NickolasBurr_GoogleCloud/&gt;</code> as a module dependency:</p>
-<pre><code>&lt;config&gt;
-    &lt;modules&gt;
-        &lt;Vendor_Package&gt;
-            &lt;active&gt;true&lt;/active&gt;
-            &lt;codePool&gt;community&lt;/codePool&gt;
-            &lt;depends&gt;
-                &lt;NickolasBurr_GoogleCloud/&gt;
-            &lt;/depends&gt;
-        &lt;/Vendor_Package&gt;
-    &lt;/modules&gt;
-&lt;/config&gt;
-</code></pre></div>
+<li><a href="https://docs.nickolasburr.com/magento/extensions/1.x/googlecloud/latest/manuals/UserManual.pdf">UserManual.pdf</a></li>
+</ul></div>
         </div>
 
         <footer class="col-md-12">
@@ -141,11 +113,11 @@ It is intended to be used with Magento 1.x only, as Magento 2 provides native su
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"next": 117, "previous": 116};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">
