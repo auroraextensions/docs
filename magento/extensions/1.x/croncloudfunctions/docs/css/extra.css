@@ -33,9 +33,12 @@ footer {
   display: none !important;
 }
 
-pre,
-code {
+pre, code {
   font-family: monospace, sans-serif;
+}
+
+pre, .rst-content tt {
+  padding: 0;
 }
 
 li pre {
@@ -44,8 +47,13 @@ li pre {
   padding: 0;
 }
 
-h1, h2, h3,
-h4, h5, h6 {
+li pre > code,
+li pre > code.hljs {
+  padding: 0;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid rgba(217, 217, 217, 0.5);
   color: #444;
   font-family: Charter, Optima, Palatino, monospace, sans-serif;
