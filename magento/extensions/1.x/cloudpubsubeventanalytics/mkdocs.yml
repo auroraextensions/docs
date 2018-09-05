@@ -1,7 +1,7 @@
 site_name: Cloud Pub/Sub Event Analytics v1.0.1
 site_dir: 1.0.1
 theme: mkdocs
-pages:
+nav:
   - Home: index.md
   - Installation: installation.md
   - Configuration: configuration.md
