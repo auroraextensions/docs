@@ -24,7 +24,7 @@ cd /var/www                                                           # Replace 
 modman init                                                           # Only run if you haven't initialized modman yet.
 mkdir -p .modman/NickolasBurr_CloudPubSubEventAnalytics && \
 tar -C .modman/NickolasBurr_CloudPubSubEventAnalytics \
-    -xzf /path/to/NickolasBurr_CloudPubSubEventAnalytics-1.0.0.tgz
+    -xzf /path/to/NickolasBurr_CloudPubSubEventAnalytics-1.0.1.tgz
 ```
 
 The extension archive does not contain a `modman` file, but one is available [here](https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/examples/modman).
@@ -48,7 +48,7 @@ modman deploy NickolasBurr_CloudPubSubEventAnalytics
 cd /var/www
 mkdir -p /tmp/NickolasBurr_CloudPubSubEventAnalytics && \
 tar -C /tmp/NickolasBurr_CloudPubSubEventAnalytics \
-    -xzf /path/to/NickolasBurr_CloudPubSubEventAnalytics-1.0.0.tgz
+    -xzf /path/to/NickolasBurr_CloudPubSubEventAnalytics-1.0.1.tgz
 rsync -Pahmvz --stats \
               --exclude="package.xml" /tmp/NickolasBurr_CloudPubSubEventAnalytics/* ./
 rm -rf /tmp/NickolasBurr_CloudPubSubEventAnalytics
