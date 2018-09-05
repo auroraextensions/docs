@@ -1,0 +1,5 @@
+app/code/community/NickolasBurr/CloudPubSubInventoryManagement  app/code/community/NickolasBurr/CloudPubSubInventoryManagement
+app/design/adminhtml/base/default/layout/cloudpubsubinventorymanagement  app/design/adminhtml/base/default/layout/cloudpubsubinventorymanagement
+app/etc/modules/NickolasBurr_CloudPubSubInventoryManagement.xml  app/etc/modules/NickolasBurr_CloudPubSubInventoryManagement.xml
+js/cloudpubsubinventorymanagement  js/cloudpubsubinventorymanagement
+lib/NickolasBurr  lib/NickolasBurr

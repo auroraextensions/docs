@@ -1,0 +1,104 @@
+YOU AND YOU ONLY ("YAYO") PUBLIC LICENSE
+
+Copyright (C) 2018 Nickolas Burr <nickolasburr@gmail.com>
+
+End User License Agreement
+
+1. Purpose
+
+Outlined in this document are the terms and conditions ("Terms") of the End User License Agreement ("License", "EULA"). The Terms
+are applicable to the use of the Google Cloud Pub/Sub Inventory Management extension ("Extension"), and contain the contractual terms, conditions,
+procedures of use, rights, obligations, responsibilities, and other requirements between Nickolas Burr ("Licensor") and the
+Extension user ("Licensee").
+
+2. Definitions
+
+The terminology used in the Terms have the following meanings, and interpretation of any term not defined herein have the
+definitions under the relevant laws, regulations, and as prescribed in notices.
+
+a. Magento: Ecommerce software licensed and maintained by Adobe Systems Inc.
+b. Licensor: Nickolas Burr, a Software Developer from Buffalo, NY, USA.
+c. Extension: Software licensed and maintained by the Licensor for users of Magento.
+d. Licensee: Any person or entity using the Extension for any purpose, in any capacity, at any point in time.
+e. Notice of License: A block of text containing license information, located in every source file of the Extension.
+f. Maximum Instances: The maximum allowable number of active or inactive instances of the Extension per one (1) license key.
+g. License Key: A unique sequence of characters given to the Licensee by the Licensor to validate their purchase of the Extension.
+h. License Key Validator: Software contained within, and used by, the Extension for validating the authenticity of the License Key.
+
+3. Terms
+
+By using the Extension, you willfully acknowledge and agree to the following terms:
+
+a. Relicensing of the Extension, in whole or in part, at any point in time, for any purpose, is strictly prohibited.
+b. Redistribution of the Extension, in whole or in part, at any point in time, for any purpose, is strictly prohibited.
+c. Fraudulent, malicious, or otherwise malevolent use of the Extension, in whole or in part, for any purpose, at any point in time, is strictly prohibited.
+d. Removal, alteration, or obfuscation of the Notice of License, in whole or in part, for any purpose, at any point in time, is strictly prohibited.
+e. Exceeding the Maximum Instances allotment of five (5), in whole or in part, for any purpose, at any point in time, is strictly prohibited.
+   A new license key must be purchased if you wish to exceed five (5) instances. Instances used for development, testing, or QA do not apply
+   toward the Maximum Instances allotment. Please contact the Licensor if you have any questions or concerns regarding these terms.
+
+4. Rights
+
+The Licensee has certain, explicit ownership rights, pursuant to their compliance with the Terms.
+
+a. The Licensee has the right to add, delete, and modify, in whole or in part, the Extension, with the exception of:
+    1. Notice of License
+    2. License Key Validator, including any and all dependent, reliant, and/or necessary components required for operation
+b. The Licensee need not request consent from the Licensor to make modifications to the Extension.
+c. The Licensee has the right to use the Extension for purposes beyond the intended use.
+
+5. Maintenance
+
+The Licensor may choose, without obligation and at their own discretion, to provide the Licensee with software updates to the Extension. The schedule and
+frequency of software updates is at the discretion of the Licensor, and it is the sole responsibility of the Licensee to apply and maintain updates to their
+copy of the Extension. The Licensor provides no guarantees with regards to quality, security, and backwards compatibility of versions. The Licensor reserves
+the right to provide no updates.
+
+6. Support
+
+The Licensor provides limited support through electronic mail, during normal business days and hours. Normal business days are Monday - Thursday, with
+hours from 11AM - 5PM EST, excluding all major US and Canadian holidays. The Licensor reserves the right to refuse support at any time, for any reason.
+
+6.1 Security Vulnerabilities
+
+The Licensee is contractually obligated through use of the Extension to notify the Licensor upon discovery of any software defects pertaining to the Extension
+that pose a risk to system and/or application security.
+
+6.2 Feature Requests
+
+Licensee may request additional features in the Extension, provided the following conditions:
+
+a. Licensee waives any and all claims or rights to the feature.
+b. Licensee shall be prohibited from developing the feature through, or in conjunction with, any third-party entity in direct competition with the Licensor.
+c. Licensee shall be prohibited from disclosing the feature request to any third-party entity in direct competition with the Licensor.
+d. Licensee shall be prohibited from disclosing the feature request to any third-party entity that, upon development of feature, is in direct competition with the Licensor.
+e. Licensee asserts the feature does not infringe upon any third-party intellectual property rights, such as patents and trademarks.
+f. Licensee asserts the feature was envisioned independently and solely by the Licensee.
+
+7. Liability
+
+To the extent permissible by law, the Extension is provided AS-IS. The Licensor shall never, and without limitation, be liable for any damages,
+costs, or other expenses incurred by the Licensee as a result of the Extension, including, but not limited to, system and/or application failure,
+downtime, repair costs, purchase costs, lost revenue, or legal fees.
+
+8. Warranty
+
+The Extension is provided without any warranty, implied or otherwise. The Licensor hereby disclaims any warranty that the Extension shall be without defect,
+and provides no guarantees whatsoever, including, but not limited to, warranties regarding the functional and/or operational state of the Extension. The Licensee
+is solely liable for any damages or losses incurred as a result of utilizing the Extension.
+
+8.1 Intellectual Property
+
+Licensor hereby warrants that, to the best of its knowledge, the Extension does not violate, infringe, or otherwise breach any third-party claims with regards to
+intellectual property, patents, and/or trademarks, and no legal action has been taken against it for any infringement or violation of any third-party intellectual
+property rights.
+
+8.2 Informed Consent
+
+Licensee hereby confirms, after analysis of the Extension, it is adequate, meets the basic requirements, does not infringe upon any license agreements of dependent,
+related, or interconnected software, does not interfere with regular operations, and meets the standards of the computer systems.
+
+9. Indemnification
+
+Licensee hereby warrants to hold Licensor harmless and indemnify Licensor for any lawsuit brought against it in regards to the use of the Extension by the Licensee in
+means that violate, breach, or otherwise circumvent the License, the intellectual property rights of the Licensor, or the entitlements of the Licensor in the Extension.
