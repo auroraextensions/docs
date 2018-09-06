@@ -1,4 +1,4 @@
-Release Notes - Cloud Pub/Sub Event Analytics - Magento 1.x
+Release Notes - Google Cloud Pub/Sub Event Analytics - Magento 1.x
 ------------------------------------------------
 
 1.0.1
@@ -9,4 +9,4 @@ Release Notes - Cloud Pub/Sub Event Analytics - Magento 1.x
 1.0.0
 -----
 
-- Initial release of Cloud Pub/Sub Event Analytics.
+- Initial release of Google Cloud Pub/Sub Event Analytics.

@@ -2,7 +2,7 @@
 
 ## Installation Guide
 
-This guide explains how to install Cloud Pub/Sub Event Analytics and its dependencies.
+This guide explains how to install Google Cloud Pub/Sub Event Analytics and its dependencies.
 
 ### Dependencies
 
