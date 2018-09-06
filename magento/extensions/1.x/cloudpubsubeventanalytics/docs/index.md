@@ -30,8 +30,8 @@
   <div>Source:&nbsp;<a href="https://cloud.google.com/pubsub/" target="_blank">Google</a></div>
 </blockquote>
 
-## What is Cloud Pub/Sub Event Analytics?
+## What is Google Cloud Pub/Sub Event Analytics?
 
-Cloud Pub/Sub Event Analytics is a Magento extension for streaming event-driven business analytics data to [Cloud Pub/Sub](https://cloud.google.com/pubsub/).
+Google Cloud Pub/Sub Event Analytics is a Magento extension for streaming event-driven business analytics data to [Cloud Pub/Sub](https://cloud.google.com/pubsub/).
 It eliminates the need for an external integration service to connect Magento to Cloud Pub/Sub, and provides an easy-to-use interface with a variety
 of events and fields to select for data collection.

@@ -2,11 +2,11 @@
 
 # Configuration
 
-To configure Cloud Pub/Sub Event Analytics, log into the **admin panel** and navigate to **System** &#8594; **Configuration** &#8594; **Cloud Pub/Sub Event Analytics** (left sidebar).
+To configure Google Cloud Pub/Sub Event Analytics, log into the **admin panel** and navigate to **System** &#8594; **Configuration** &#8594; **Google Cloud Pub/Sub Event Analytics** (left sidebar).
 
 ### General Settings
 
-1. **Enable Cloud Pub/Sub Event Analytics**: Disabled by default. Event data will not be sent unless the extension is enabled first.
+1. **Enable Google Cloud Pub/Sub Event Analytics**: Disabled by default. Event data will not be sent unless the extension is enabled first.
 2. **Google Cloud Platform Project**: The name of the GCP project. You can find this information through Google Cloud Platform Console.
 3. **JSON Key File Path**: Path to JSON key file. Relative paths are relative to the Magento root directory. For more information on service account keys, see <a href="https://cloud.google.com/iam/docs/creating-managing-service-account-keys" target="_blank">here</a>. To generate a service account key, see <a href="https://console.cloud.google.com/projectselector/iam-admin/serviceaccounts" target="_blank">here</a>.
 4. **Initialize Cloud Pub/Sub Topic**: Enabled by default. If a Cloud Pub/Sub topic does not exist, it will be created.
