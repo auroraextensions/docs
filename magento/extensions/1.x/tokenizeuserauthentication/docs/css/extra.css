@@ -15,13 +15,13 @@ body > .container {
 }
 
 a {
-  color: #0594a9;
+  color: #d6b919;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #0cbec1;
+  color: #f3d00d;
   text-decoration: none;
 }
 
@@ -78,23 +78,23 @@ blockquote.notice {
  */
 
 .navbar {
-  background-image: linear-gradient(#008a9e, #0594a9 50%, #008a9e);
+  background-image: linear-gradient(#d6b919, #cab01e 50%, #d6b919);
   background-repeat: no-repeat;
-  border-bottom: 1px solid #008a9e;
+  border-bottom: 1px solid #b79d09;
 }
 
 .navbar-default .navbar-toggle {
-  border-color: #4ebaca;
+  border-color: #dbb41d;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #1fa3b7;
+  background-color: #d5b718;
 }
 
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #03b2cb;
+  border-color: #c7aa17;
 }
 
 .dropdown-menu > li > a:hover,
@@ -110,7 +110,7 @@ blockquote.notice {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  background-color: #034d57;
+  background-color: #c0a50d;
   color: #fff;
 }
 
