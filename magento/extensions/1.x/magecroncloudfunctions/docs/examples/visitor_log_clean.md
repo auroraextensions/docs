@@ -1,4 +1,4 @@
-<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/magento/extensions/2.x/croncloudfunctions/latest/">here</a>.</blockquote>
+<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/magento/extensions/2.x/magecroncloudfunctions/latest/">here</a>.</blockquote>
 <blockquote class="notice">At the time of writing, Cloud Functions only supports three runtimes: Node.js 6, Node.js 8, and Python 3.7.</blockquote>
 
 ## Example: Clean Visitor Logs
@@ -14,16 +14,16 @@
 
 To use the Python runtime, two files are required: `main.py` and `requirements.txt`. You can download them here:
 
-+ [main.py](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/python/src/visitor_log_clean/main.py)
-+ [requirements.txt](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/python/src/visitor_log_clean/requirements.txt)
++ [main.py](https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/latest/python/src/visitor_log_clean/main.py)
++ [requirements.txt](https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/latest/python/src/visitor_log_clean/requirements.txt)
 
 ```
 mkdir -pv visitor_log_clean && \
 curl -fsL \
-     https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/python/src/visitor_log_clean/main.py
+     https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/latest/python/src/visitor_log_clean/main.py
      > ./visitor_log_clean/main.py && \
 curl -fsL \
-     https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/python/src/visitor_log_clean/requirements.txt
+     https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/latest/python/src/visitor_log_clean/requirements.txt
      > ./visitor_log_clean/requirements.txt
 ```
 
@@ -85,7 +85,7 @@ Clean the database of visitor log entries using Cloud Functions.
                 &lt;cron_expr&gt;30 2 &#42; &#42; &#42;&lt;/cron_expr&gt;
               &lt;/schedule&gt;
               &lt;run&gt;
-                &lt;model&gt;croncloudfunctions/observer::run&lt;/model&gt;
+                &lt;model&gt;magecroncloudfunctions/observer::run&lt;/model&gt;
               &lt;/run&gt;
             &lt;/visitor_log_clean&gt;
           &lt;/jobs&gt;

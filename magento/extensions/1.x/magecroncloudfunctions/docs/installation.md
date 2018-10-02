@@ -1,8 +1,8 @@
-<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/magento/extensions/2.x/croncloudfunctions/latest/">here</a>.</blockquote>
+<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/magento/extensions/2.x/magecroncloudfunctions/latest/">here</a>.</blockquote>
 
 ## Installation Guide
 
-This guide explains how to install Cron Cloud Functions.
+This guide explains how to install Mage Cron Cloud Functions.
 
 ### Dependencies
 
@@ -16,21 +16,21 @@ Below are examples of how to install the extension via `modman` and manually.
 
 ```
 modman init                                                                         # Only run if you haven't initialized modman yet.
-modman clone https://github.com/nickolasburr/CronCloudFunctions.git
-modman deploy CronCloudFunctions
+modman clone https://github.com/nickolasburrMageCronCloudFunctions.git
+modman deployMageCronCloudFunctions
 ```
 
 #### Manual
 
 ```
 cd /var/www                                                                         # Replace /var/www with the Magento root directory.
-git -C /tmp/ clone https://github.com/nickolasburr/CronCloudFunctions.git
+git -C /tmp/ clone https://github.com/nickolasburrMageCronCloudFunctions.git
 rsync -Pahmvz --stats \
               --exclude="package.xml" \
               --exclude=".git*" \
               --exclude="modman" \
-              /tmp/CronCloudFunctions/* ./
-rm -rf /tmp/CronCloudFunctions
+              /tmpMageCronCloudFunctions/* ./
+rm -rf /tmpMageCronCloudFunctions
 ```
 
 ### Wrap Up

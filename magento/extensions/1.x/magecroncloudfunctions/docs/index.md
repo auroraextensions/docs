@@ -1,17 +1,17 @@
-<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/magento/extensions/2.x/croncloudfunctions/latest/">here</a>.</blockquote>
+<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/magento/extensions/2.x/magecroncloudfunctions/latest/">here</a>.</blockquote>
 
 ## Table of Contents
 
-- [Home](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/)
+- [Home](https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/latest/)
 - Examples
-    + [Visitor Log Clean](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/examples/visitor_log_clean/)
-- [License](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/LICENSE.txt)
-- [Manuals](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/manuals/)
-    + [UserManual.pdf](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/manuals/UserManual.pdf)
-- [Python Scripts](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/python/src/)
-- [Release Notes](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/RELEASE_NOTES.txt)
-- [Sitemap](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/sitemap.xml)
-- [Versions](https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/)
+    + [Visitor Log Clean](https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/latest/examples/visitor_log_clean/)
+- [License](https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/LICENSE.txt)
+- [Manuals](https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/latest/manuals/)
+    + [UserManual.pdf](https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/latest/manuals/UserManual.pdf)
+- [Python Scripts](https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/latest/python/src/)
+- [Release Notes](https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/RELEASE_NOTES.txt)
+- [Sitemap](https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/latest/sitemap.xml)
+- [Versions](https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/)
 
 ## What is Cloud Functions?
 
@@ -29,6 +29,6 @@
   <div>Source:&nbsp;<a href="https://cloud.google.com/functions/" target="_blank">Google</a></div>
 </blockquote>
 
-## What is Cron Cloud Functions?
+## What is Mage Cron Cloud Functions?
 
-Cron Cloud Functions is a Magento extension for running cron tasks via Cloud Functions.
+Mage Cron Cloud Functions is a Magento extension for running cron tasks via Cloud Functions.

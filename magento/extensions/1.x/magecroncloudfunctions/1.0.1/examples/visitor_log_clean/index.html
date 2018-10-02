@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Visitor Log Clean - Cron Cloud Functions v1.0.1</title>
+        <title>Visitor Log Clean - Mage Cron Cloud Functions v1.0.1</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -55,7 +55,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="../..">Cron Cloud Functions v1.0.1</a>
+                    <a class="navbar-brand" href="../..">Mage Cron Cloud Functions v1.0.1</a>
                 </div>
 
                 <!-- Expanded navigation -->
@@ -119,7 +119,7 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
-<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/magento/extensions/2.x/croncloudfunctions/latest/">here</a>.</blockquote>
+<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/magento/extensions/2.x/magecroncloudfunctions/latest/">here</a>.</blockquote>
 
 <blockquote class="notice">At the time of writing, Cloud Functions only supports three runtimes: Node.js 6, Node.js 8, and Python 3.7.</blockquote>
 
@@ -134,15 +134,15 @@
 <h2 id="downloads">Downloads</h2>
 <p>To use the Python runtime, two files are required: <code>main.py</code> and <code>requirements.txt</code>. You can download them here:</p>
 <ul>
-<li><a href="https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/python/src/visitor_log_clean/main.py">main.py</a></li>
-<li><a href="https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/python/src/visitor_log_clean/requirements.txt">requirements.txt</a></li>
+<li><a href="https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/latest/python/src/visitor_log_clean/main.py">main.py</a></li>
+<li><a href="https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/latest/python/src/visitor_log_clean/requirements.txt">requirements.txt</a></li>
 </ul>
 <pre><code>mkdir -pv visitor_log_clean &amp;&amp; \
 curl -fsL \
-     https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/python/src/visitor_log_clean/main.py
+     https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/latest/python/src/visitor_log_clean/main.py
      &gt; ./visitor_log_clean/main.py &amp;&amp; \
 curl -fsL \
-     https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/latest/python/src/visitor_log_clean/requirements.txt
+     https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/latest/python/src/visitor_log_clean/requirements.txt
      &gt; ./visitor_log_clean/requirements.txt
 </code></pre>
 
@@ -199,7 +199,7 @@ the following to your module <code>config.xml</code> file:</p>
             &lt;cron_expr&gt;30 2 &#42; &#42; &#42;&lt;/cron_expr&gt;
           &lt;/schedule&gt;
           &lt;run&gt;
-            &lt;model&gt;croncloudfunctions/observer::run&lt;/model&gt;
+            &lt;model&gt;magecroncloudfunctions/observer::run&lt;/model&gt;
           &lt;/run&gt;
         &lt;/visitor_log_clean&gt;
       &lt;/jobs&gt;

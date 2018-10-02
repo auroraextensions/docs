@@ -1,4 +1,4 @@
-Release Notes - Cron Cloud Functions - Magento 1.x
+Release Notes - Mage Cron Cloud Functions - Magento 1.x
 ------------------------------------------------
 
 1.0.1
@@ -9,4 +9,4 @@ Release Notes - Cron Cloud Functions - Magento 1.x
 1.0.0
 -----
 
-- Initial release of Cron Cloud Functions.
+- Initial release of Mage Cron Cloud Functions.
