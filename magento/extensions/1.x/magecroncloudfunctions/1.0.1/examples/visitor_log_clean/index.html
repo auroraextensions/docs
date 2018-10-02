@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Visitor Log Clean - Mage Cron Cloud Functions v1.0.1</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/diff.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/http.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/makefile.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-113897119-2', 'docs.nickolasburr.com');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">Mage Cron Cloud Functions v1.0.1</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li >
+                                <a href="../../installation/">Installation</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Examples <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../">All Examples</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">Visitor Log Clean</a>
+</li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../manuals/">Manuals</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../../manuals/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#example-clean-visitor-logs">Example: Clean Visitor Logs</a></li>
+        <li class="main "><a href="#requirements">Requirements</a></li>
+        <li class="main "><a href="#downloads">Downloads</a></li>
+        <li class="main "><a href="#objective">Objective</a></li>
+        <li class="main "><a href="#steps">Steps</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/magento/extensions/2.x/magecroncloudfunctions/latest/">here</a>.</blockquote>
+
+<blockquote class="notice">At the time of writing, Cloud Functions only supports three runtimes: Node.js 6, Node.js 8, and Python 3.7.</blockquote>
+
+<h2 id="example-clean-visitor-logs">Example: Clean Visitor Logs</h2>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Active Google account</li>
+<li>GCP project with Cloud Functions API enabled</li>
+<li>Cloud SQL database instance</li>
+<li><code>gcloud</code> command-line tool (Recommended)</li>
+</ul>
+<h2 id="downloads">Downloads</h2>
+<p>To use the Python runtime, two files are required: <code>main.py</code> and <code>requirements.txt</code>. You can download them here:</p>
+<ul>
+<li><a href="https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/latest/python/src/visitor_log_clean/main.py">main.py</a></li>
+<li><a href="https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/latest/python/src/visitor_log_clean/requirements.txt">requirements.txt</a></li>
+</ul>
+<pre><code>mkdir -pv visitor_log_clean &amp;&amp; \
+curl -fsL \
+     https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/latest/python/src/visitor_log_clean/main.py
+     &gt; ./visitor_log_clean/main.py &amp;&amp; \
+curl -fsL \
+     https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/latest/python/src/visitor_log_clean/requirements.txt
+     &gt; ./visitor_log_clean/requirements.txt
+</code></pre>
+
+<h2 id="objective">Objective</h2>
+<p>Clean the database of visitor log entries using Cloud Functions.</p>
+<h2 id="steps">Steps</h2>
+<ol>
+<li>
+<p>Create <code>visitor_log_clean</code> cloud function</p>
+<p>The following environment variables are required for Cloud Functions to access Cloud SQL:</p>
+<ul>
+<li><code>DB_NAME</code>: The name of the Magento database.</li>
+<li><code>DB_USER</code>: The name of the database user.</li>
+<li><code>DB_PASS</code>: The database user's password.</li>
+<li><code>PROJECT_ID</code>: The Google Cloud Platform project ID.</li>
+<li><code>REGION_ID</code>: The region where the Cloud SQL instance exists (e.g. us-central1, us-east4).</li>
+<li><code>INSTANCE_NAME</code>: The name of Cloud SQL instance.</li>
+</ul>
+<p>Using <code>gcloud</code>, run the following:</p>
+<p><pre>
+  <code>
+  gcloud functions deploy visitor_log_clean
+                          --entry-point="log_clean" \
+                          --runtime=python37 \
+                          --set-env-vars=DB_NAME=&lt;YOUR_DB_NAME&gt;,DB_USER=&lt;YOUR_DB_USER&gt;,DB_PASS=&lt;YOUR_DB_PASS&gt;,PROJECT_ID=&lt;GCP_PROJECT_ID&gt;,REGION_ID=&lt;CLOUD_SQL_REGION_ID&gt;,INSTANCE_NAME=&lt;CLOUD_SQL_INSTANCE_NAME&gt; \
+                          --source="./visitor_log_clean" \
+                          --trigger-http
+  </code>
+</pre></p>
+<p>Alternatively, you can use the <a href="https://console.cloud.google.com/functions/list">Cloud Functions</a> interface. Click <em>Create Function</em>
+from the list overview, and specify the following:</p>
+<ul>
+<li>Name: visitor_log_clean</li>
+<li>Memory: 256MB</li>
+<li>Trigger: HTTP</li>
+<li>Source code: Inline editor</li>
+<li>Runtime: Python 3.7</li>
+<li>main.py: Contents of <code>main.py</code> from above</li>
+<li>requirements.txt: Contents of <code>requirements.txt</code> from above</li>
+<li>Function to execute: <code>log_clean</code></li>
+</ul>
+<p>Next, click <em>More</em> and set each of the environment variables listed above. Then click <em>Create</em>.</p>
+</li>
+<li>
+<p>Add entry to <code>&lt;crontab&gt;</code></p>
+<p>To make use of <code>visitor_log_clean</code> from within Magento, you will need to add
+the following to your module <code>config.xml</code> file:</p>
+<p><pre>
+  <code>
+    &lt;crontab&gt;
+      &lt;jobs&gt;
+        &lt;visitor_log_clean&gt;
+          &lt;schedule&gt;
+            &lt;cron_expr&gt;30 2 &#42; &#42; &#42;&lt;/cron_expr&gt;
+          &lt;/schedule&gt;
+          &lt;run&gt;
+            &lt;model&gt;magecroncloudfunctions/observer::run&lt;/model&gt;
+          &lt;/run&gt;
+        &lt;/visitor_log_clean&gt;
+      &lt;/jobs&gt;
+    &lt;/crontab&gt;
+  </code>
+</pre></p>
+<p>Alternatively, you can use <a href="https://github.com/AOEpeople/Aoe_Scheduler">Aoe_Scheduler</a> to create and schedule
+cron jobs. It's a substantially nicer solution and it provides a ton of additional benefits.</p>
+</li>
+</ol></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"next": 117, "previous": 116};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

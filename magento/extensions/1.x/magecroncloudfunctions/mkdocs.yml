@@ -1,0 +1,25 @@
+site_name: Mage Mage Cron Cloud Functions v1.0.1
+site_dir: 1.0.1
+theme:
+  name: mkdocs
+  highlightjs: true
+  hljs_languages:
+    - bash
+    - diff
+    - http
+    - makefile
+    - php
+    - python
+  shortcuts:
+    next: 117
+    previous: 116
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Examples:
+    - 'All Examples': examples/index.md
+    - 'Visitor Log Clean': examples/visitor_log_clean.md
+  - Manuals: manuals/index.md
+extra_css:
+  - css/extra.css
+google_analytics: ['UA-113897119-2', 'docs.nickolasburr.com']
