@@ -1,10 +1,9 @@
 ## Table of Contents
 
 - [Home](https://docs.nickolasburr.com/magento/extensions/1.x/magegcs/latest/)
-- [Installation](https://docs.nickolasburr.com/magento/extensions/1.x/magegcs/latest/installation/)
 - [License](https://docs.nickolasburr.com/magento/extensions/1.x/magegcs/LICENSE.txt)
 - [Release Notes](https://docs.nickolasburr.com/magento/extensions/1.x/magegcs/RELEASE_NOTES.txt)
-- [Repository](https://github.com/nickolasburr/GoogleCloudStoragePHPAutoloader)
+- [Repository](https://github.com/nickolasburr/magegcs)
 - [Sitemap](https://docs.nickolasburr.com/magento/extensions/1.x/magegcs/latest/sitemap.xml)
 - [Versions](https://docs.nickolasburr.com/magento/extensions/1.x/magegcs/)
 
