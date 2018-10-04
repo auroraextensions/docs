@@ -1,0 +1,7 @@
+Release Notes - Google Cloud Storage - Magento 1.x
+------------------------------------------------
+
+1.0.0
+-----
+
+- Initial release of Google Cloud Storage.
