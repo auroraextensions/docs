@@ -4,6 +4,8 @@
 
 - [Home](https://docs.nickolasburr.com/magento/extensions/1.x/tokenizeuserauthentication/latest/)
 - [License](https://docs.nickolasburr.com/magento/extensions/1.x/tokenizeuserauthentication/LICENSE.txt)
+- [Manuals](https://docs.nickolasburr.com/magento/extensions/1.x/tokenizeuserauthentication/manuals/)
+    + [UserManual.pdf](https://docs.nickolasburr.com/magento/extensions/1.x/tokenizeuserauthentication/manuals/UserManual.pdf)
 - [Release Notes](https://docs.nickolasburr.com/magento/extensions/1.x/tokenizeuserauthentication/RELEASE_NOTES.txt)
 - [Sitemap](https://docs.nickolasburr.com/magento/extensions/1.x/tokenizeuserauthentication/latest/sitemap.xml)
 - [Versions](https://docs.nickolasburr.com/magento/extensions/1.x/tokenizeuserauthentication/)
