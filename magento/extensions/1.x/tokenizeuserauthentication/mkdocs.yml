@@ -1,5 +1,5 @@
-site_name: Tokenize User Authentication v1.0.0
-site_dir: 1.0.0
+site_name: Tokenize User Authentication v1.1.0
+site_dir: 1.1.0
 theme: mkdocs
 nav:
   - Home: index.md
