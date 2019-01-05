@@ -1,6 +1,13 @@
 Release Notes - Tokenize User Authentication - Magento 1.x
 ------------------------------------------------
 
+1.1.0
+-----
+
+- Fix issue with inaccurate expires_at timestamp
+- Update instructions in customer_account_create template
+- Refactor extension settings for clarity
+
 1.0.0
 -----
 
