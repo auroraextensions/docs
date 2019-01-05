@@ -1,0 +1,130 @@
+/**
+ * extra.css
+ */
+
+/**
+ * Global
+ */
+
+body {
+  font-family: Futura, Helvetica, monospace, sans-serif;
+}
+
+body > .container {
+  font-family: Charter, Optima, Palatino, monospace, sans-serif;
+}
+
+a {
+  color: #d6b919;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #f3d00d;
+  text-decoration: none;
+}
+
+footer {
+  display: none !important;
+}
+
+pre,
+code {
+  font-family: monospace, sans-serif;
+}
+
+blockquote {
+  border-radius: 1px;
+}
+
+@media only screen and (max-width: 770px) {
+  blockquote > p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 771px) {
+  blockquote {
+    margin: 25px 0;
+    padding: 15px;
+  }
+}
+
+/**
+ * Notices, warnings, etc.
+ */
+
+blockquote.important,
+blockquote.notice {
+  font-family: "PT Mono", "Trebuchet MS", monospace, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+blockquote.important {
+  background-color: rgba(237, 237, 237, 0.5);
+  border-left: 5px solid #e11a1a;
+}
+
+blockquote.notice {
+  background-color: rgba(237, 237, 237, 0.5);
+  border-left: 5px solid #e37d0e;
+}
+
+/**
+ * Navigation, menus, etc.
+ */
+
+.navbar {
+  background-image: linear-gradient(#d6b919, #cab01e 50%, #d6b919);
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #b79d09;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #dbb41d;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #d5b718;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #c7aa17;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: #c0a50d;
+  color: #fff;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  outline: 0;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1480px) {
+  .container {
+    width: 1440px;
+  }
+}
