@@ -2,4 +2,4 @@
 
 ## Manuals
 
-- [UserManual.pdf](https://docs.nickolasburr.com/magento/extensions/1.x/tokenizeuserauthentication/1.0.0/manuals/UserManual.pdf)
+- [UserManual.pdf](https://docs.nickolasburr.com/magento/extensions/1.x/tokenizeuserauthentication/1.1.0/manuals/UserManual.pdf)
