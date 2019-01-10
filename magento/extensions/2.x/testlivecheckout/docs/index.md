@@ -1,7 +1,7 @@
 # Overview
 
 <blockquote>
-  <span style="color: red !important; font-weight: bold !important;">IMPORTANT</span>: Test Live Checkout for Magento 2.x is currently unavailable. It will become available for purchase within the next month.
+  <span style="color: red !important; font-weight: bold !important;">IMPORTANT</span>: Test Live Checkout for Magento 2.x is not available.
 </blockquote>
 
 <blockquote>
