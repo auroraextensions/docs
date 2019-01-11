@@ -132,21 +132,21 @@ Listed below are the default packages and subsequent dependencies:</p>
 If you would like to add additional packages to the mix, simply update the composer.json file and re-run the installer.</p>
 <h3 id="installing">Installing</h3>
 <p>Below are examples of how to install the extension via <code>modman</code> and manually.</p>
-<h4 id="modman">modman</h4>
-<pre><code>modman init                                                                         # Only run if you haven't initialized modman yet.
-modman clone https://github.com/nickolasburr/GoogleCloudPHPAutoloader.git
-modman deploy GoogleCloudPHPAutoloader
+<h6 id="modman">modman</h6>
+<pre><code>modman init                                                                            # Only run if you haven't initialized modman yet.
+modman clone https://github.com/auroraextensions/googlecloudphpautoloader.git
+modman deploy googlecloudphpautoloader
 </code></pre>
 
-<h4 id="manual">Manual</h4>
-<pre><code>cd /var/www                                                                         # Replace /var/www with the Magento root directory.
-git -C /tmp/ clone https://github.com/nickolasburr/GoogleCloudPHPAutoloader.git
+<h6 id="manual">Manual</h6>
+<pre><code>cd /var/www                                                                            # Replace /var/www with the Magento root directory.
+git -C /tmp/ clone https://github.com/auroraextensions/googlecloudphpautoloader.git
 rsync -Pahmvz --stats \
               --exclude=&quot;package.xml&quot; \
               --exclude=&quot;.git*&quot; \
               --exclude=&quot;modman&quot; \
-              /tmp/GoogleCloudPHPAutoloader/* ./
-rm -rf /tmp/GoogleCloudPHPAutoloader
+              /tmp/googlecloudphpautoloader/* ./
+rm -rf /tmp/googlecloudphpautoloader
 </code></pre>
 
 <h3 id="composer">Composer</h3>
@@ -155,7 +155,7 @@ rm -rf /tmp/GoogleCloudPHPAutoloader
 composer install --no-dev     # Run the Composer installer.
 </code></pre>
 
-<p>The Composer file is configured to install modules under <code>lib/GoogleCloud</code> instead of <code>lib/GoogleCloud/vendor</code>. This is to make compatibility with Magento 1.x slightly easier.</p>
+<p>The Composer file is configured to install modules under <code>lib/GoogleCloud</code> instead of <code>lib/GoogleCloud/vendor</code>.</p>
 <h3 id="wrap-up">Wrap Up</h3>
 <p>Lastly, you will need to enable the extension from the admin panel. Make sure to clear the configuration cache, and, if any admin sessions are open, log out and log back in.</p></div>
         </div>
