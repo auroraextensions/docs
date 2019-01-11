@@ -27,25 +27,25 @@ If you would like to add additional packages to the mix, simply update the compo
 
 Below are examples of how to install the extension via `modman` and manually.
 
-#### modman
+###### modman
 
 ```
-modman init                                                                         # Only run if you haven't initialized modman yet.
-modman clone https://github.com/nickolasburr/GoogleCloudPHPAutoloader.git
-modman deploy GoogleCloudPHPAutoloader
+modman init                                                                            # Only run if you haven't initialized modman yet.
+modman clone https://github.com/auroraextensions/googlecloudphpautoloader.git
+modman deploy googlecloudphpautoloader
 ```
 
-#### Manual
+###### Manual
 
 ```
-cd /var/www                                                                         # Replace /var/www with the Magento root directory.
-git -C /tmp/ clone https://github.com/nickolasburr/GoogleCloudPHPAutoloader.git
+cd /var/www                                                                            # Replace /var/www with the Magento root directory.
+git -C /tmp/ clone https://github.com/auroraextensions/googlecloudphpautoloader.git
 rsync -Pahmvz --stats \
               --exclude="package.xml" \
               --exclude=".git*" \
               --exclude="modman" \
-              /tmp/GoogleCloudPHPAutoloader/* ./
-rm -rf /tmp/GoogleCloudPHPAutoloader
+              /tmp/googlecloudphpautoloader/* ./
+rm -rf /tmp/googlecloudphpautoloader
 ```
 
 ### Composer
@@ -57,7 +57,7 @@ cd /var/www/lib/GoogleCloud   # Replace /var/www with Magento root directory.
 composer install --no-dev     # Run the Composer installer.
 ```
 
-The Composer file is configured to install modules under `lib/GoogleCloud` instead of `lib/GoogleCloud/vendor`. This is to make compatibility with Magento 1.x slightly easier.
+The Composer file is configured to install modules under `lib/GoogleCloud` instead of `lib/GoogleCloud/vendor`.
 
 ### Wrap Up
 
