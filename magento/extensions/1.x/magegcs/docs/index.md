@@ -3,7 +3,7 @@
 - [Home](https://docs.auroraextensions.com/magento/extensions/1.x/magegcs/latest/)
 - [License](https://docs.auroraextensions.com/magento/extensions/1.x/magegcs/LICENSE.txt)
 - [Release Notes](https://docs.auroraextensions.com/magento/extensions/1.x/magegcs/RELEASE_NOTES.txt)
-- [Repository](https://github.com/nickolasburr/magegcs)
+- [Repository](https://github.com/auroraextensions/magegcs)
 - [Sitemap](https://docs.auroraextensions.com/magento/extensions/1.x/magegcs/latest/sitemap.xml)
 - [Versions](https://docs.auroraextensions.com/magento/extensions/1.x/magegcs/)
 
