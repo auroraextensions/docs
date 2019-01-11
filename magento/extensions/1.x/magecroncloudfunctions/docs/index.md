@@ -10,6 +10,7 @@
     + [UserManual.pdf](https://docs.auroraextensions.com/magento/extensions/1.x/magecroncloudfunctions/latest/manuals/UserManual.pdf)
 - [Python Scripts](https://docs.auroraextensions.com/magento/extensions/1.x/magecroncloudfunctions/latest/python/src/)
 - [Release Notes](https://docs.auroraextensions.com/magento/extensions/1.x/magecroncloudfunctions/RELEASE_NOTES.txt)
+- [Repository](https://github.com/auroraextensions/magecroncloudfunctions)
 - [Sitemap](https://docs.auroraextensions.com/magento/extensions/1.x/magecroncloudfunctions/latest/sitemap.xml)
 - [Versions](https://docs.auroraextensions.com/magento/extensions/1.x/magecroncloudfunctions/)
 
