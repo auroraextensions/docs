@@ -6,7 +6,7 @@ This guide explains how to install Mage Cron Cloud Functions.
 
 ### Dependencies
 
-+ [Google Cloud PHP Autoloader](https://github.com/nickolasburr/GoogleCloudPHPAutoloader.git)
++ [Google Cloud PHP Autoloader](https://github.com/auroraextensions/googlecloudphpautoloader)
 
 ### Installing
 
@@ -16,7 +16,7 @@ Below are examples of how to install the extension via `modman` and manually.
 
 ```
 modman init                                                                         # Only run if you haven't initialized modman yet.
-modman clone https://github.com/nickolasburrMageCronCloudFunctions.git
+modman clone https://github.com/auroraextensions/magecroncloudfunctions.git
 modman deployMageCronCloudFunctions
 ```
 
@@ -24,13 +24,13 @@ modman deployMageCronCloudFunctions
 
 ```
 cd /var/www                                                                         # Replace /var/www with the Magento root directory.
-git -C /tmp/ clone https://github.com/nickolasburrMageCronCloudFunctions.git
+git -C /tmp/ clone https://github.com/auroraextensions/magecroncloudfunctions.git
 rsync -Pahmvz --stats \
               --exclude="package.xml" \
               --exclude=".git*" \
               --exclude="modman" \
-              /tmpMageCronCloudFunctions/* ./
-rm -rf /tmpMageCronCloudFunctions
+              /tmp/magecroncloudfunctions/* ./
+rm -rf /tmp/magecroncloudfunctions
 ```
 
 ### Wrap Up
