@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
+        
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Google Cloud Storage v1.0.0</title>
+        <title>Installation - Google Cloud Storage v1.0.0</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -41,7 +41,7 @@
         </script> 
     </head>
 
-    <body class="homepage">
+    <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
@@ -65,11 +65,11 @@
                             <li >
                                 <a href="..">Home</a>
                             </li>
-                            <li >
-                                <a href="../installation/">Installation</a>
-                            </li>
                             <li class="active">
-                                <a href="./">Manuals</a>
+                                <a href="./">Installation</a>
+                            </li>
+                            <li >
+                                <a href="../manuals/">Manuals</a>
                             </li>
                         </ul>
 
@@ -80,12 +80,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../installation/">
+                                <a rel="next" href="..">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li class="disabled">
-                                <a rel="prev" >
+                            <li >
+                                <a rel="prev" href="../manuals/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -97,15 +97,41 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#manuals">Manuals</a></li>
+        <li class="main active"><a href="#installation-guide">Installation Guide</a></li>
+            <li><a href="#dependencies">Dependencies</a></li>
+            <li><a href="#installing">Installing</a></li>
+            <li><a href="#wrap-up">Wrap Up</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="manuals">Manuals</h2>
+<h2 id="installation-guide">Installation Guide</h2>
+<p>This guide explains how to install Google Cloud Storage for Magento 1.9.</p>
+<h3 id="dependencies">Dependencies</h3>
 <ul>
-<li><a href="https://docs.auroraextensions.com/magento/extensions/1.x/magegcs/latest/manuals/UserManual.pdf">UserManual.pdf</a></li>
-</ul></div>
+<li><a href="https://github.com/auroraextensions/googlecloudphpautoloader">Google Cloud PHP Autoloader</a></li>
+</ul>
+<h3 id="installing">Installing</h3>
+<p>Below are examples of how to install the extension via <code>modman</code> and manually.</p>
+<h4 id="modman">modman</h4>
+<pre><code>modman init                                                                         # Only run if you haven't initialized modman yet.
+modman clone https://github.com/auroraextensions/magegcs.git
+modman deploy magegcs
+</code></pre>
+
+<h4 id="manual">Manual</h4>
+<pre><code>cd /var/www                                                                         # Replace /var/www with the Magento root directory.
+git -C /tmp/ clone https://github.com/auroraextensions/magegcs.git
+rsync -Pahmvz --stats \
+              --exclude=&quot;package.xml&quot; \
+              --exclude=&quot;.git*&quot; \
+              --exclude=&quot;modman&quot; \
+              /tmp/magegcs/* ./
+rm -rf /tmp/magegcs
+</code></pre>
+
+<h3 id="wrap-up">Wrap Up</h3>
+<p>Before attempting to configure the extension, make sure to clear the configuration cache, and, if any admin sessions are open, log out and log back in.</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -185,8 +211,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.0.4
-Build Date UTC : 2019-01-11 20:02:36
--->
