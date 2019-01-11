@@ -1,4 +1,4 @@
-<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/magento/extensions/2.x/cloudpubsubeventanalytics/latest/">here</a>.</blockquote>
+<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.auroraextensions.com/magento/extensions/2.x/cloudpubsubeventanalytics/latest/">here</a>.</blockquote>
 
 ## Installation Guide
 
@@ -27,11 +27,11 @@ tar -C .modman/NickolasBurr_CloudPubSubEventAnalytics \
     -xzf /path/to/NickolasBurr_CloudPubSubEventAnalytics-1.0.1.tgz
 ```
 
-The extension archive does not contain a `modman` file, but one is available [here](https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/examples/modman).
+The extension archive does not contain a `modman` file, but one is available [here](https://docs.auroraextensions.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/examples/modman).
 Run the following to add the `modman` file to the extension root directory:
 
 ```
-curl -fsL https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/examples/modman \
+curl -fsL https://docs.auroraextensions.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/examples/modman \
      > .modman/NickolasBurr_CloudPubSubEventAnalytics/modman
 ```
 

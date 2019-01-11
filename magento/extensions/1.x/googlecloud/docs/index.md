@@ -1,12 +1,12 @@
 ## Table of Contents
 
-- [Home](https://docs.nickolasburr.com/magento/extensions/1.x/googlecloud/latest/)
-- [Installation](https://docs.nickolasburr.com/magento/extensions/1.x/googlecloud/latest/installation/)
-- [License](https://docs.nickolasburr.com/magento/extensions/1.x/googlecloud/LICENSE.txt)
-- [Release Notes](https://docs.nickolasburr.com/magento/extensions/1.x/googlecloud/RELEASE_NOTES.txt)
+- [Home](https://docs.auroraextensions.com/magento/extensions/1.x/googlecloud/latest/)
+- [Installation](https://docs.auroraextensions.com/magento/extensions/1.x/googlecloud/latest/installation/)
+- [License](https://docs.auroraextensions.com/magento/extensions/1.x/googlecloud/LICENSE.txt)
+- [Release Notes](https://docs.auroraextensions.com/magento/extensions/1.x/googlecloud/RELEASE_NOTES.txt)
 - [Repository](https://github.com/nickolasburr/GoogleCloudPHPAutoloader)
-- [Sitemap](https://docs.nickolasburr.com/magento/extensions/1.x/googlecloud/latest/sitemap.xml)
-- [Versions](https://docs.nickolasburr.com/magento/extensions/1.x/googlecloud/)
+- [Sitemap](https://docs.auroraextensions.com/magento/extensions/1.x/googlecloud/latest/sitemap.xml)
+- [Versions](https://docs.auroraextensions.com/magento/extensions/1.x/googlecloud/)
 
 ### What is Google Cloud PHP?
 
