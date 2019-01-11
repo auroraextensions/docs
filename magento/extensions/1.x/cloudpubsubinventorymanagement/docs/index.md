@@ -1,12 +1,12 @@
-<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/magento/extensions/2.x/cloudpubsubinventorymanagement/latest/">here</a>.</blockquote>
+<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.auroraextensions.com/magento/extensions/2.x/cloudpubsubinventorymanagement/latest/">here</a>.</blockquote>
 
 ## Table of Contents
 
-- [Home](https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubinventorymanagement/latest/)
-- [License](https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubinventorymanagement/LICENSE.txt)
-- [Release Notes](https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubinventorymanagement/RELEASE_NOTES.txt)
-- [Sitemap](https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubinventorymanagement/latest/sitemap.xml)
-- [Versions](https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubinventorymanagement/)
+- [Home](https://docs.auroraextensions.com/magento/extensions/1.x/cloudpubsubinventorymanagement/latest/)
+- [License](https://docs.auroraextensions.com/magento/extensions/1.x/cloudpubsubinventorymanagement/LICENSE.txt)
+- [Release Notes](https://docs.auroraextensions.com/magento/extensions/1.x/cloudpubsubinventorymanagement/RELEASE_NOTES.txt)
+- [Sitemap](https://docs.auroraextensions.com/magento/extensions/1.x/cloudpubsubinventorymanagement/latest/sitemap.xml)
+- [Versions](https://docs.auroraextensions.com/magento/extensions/1.x/cloudpubsubinventorymanagement/)
 
 ## What is Cloud Pub/Sub?
 

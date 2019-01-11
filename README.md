@@ -1,3 +1,3 @@
-## docs.nickolasburr.com
+## docs.auroraextensions.com
 
-Hosted repository for [docs.nickolasburr.com](https://docs.nickolasburr.com).
+Hosted repository for [docs.auroraextensions.com](https://docs.auroraextensions.com).

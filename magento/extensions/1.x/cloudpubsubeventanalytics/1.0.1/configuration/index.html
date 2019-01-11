@@ -30,7 +30,7 @@
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-            ga('create', 'UA-113897119-2', 'docs.nickolasburr.com');
+            ga('create', 'UA-113897119-2', 'docs.auroraextensions.com');
             ga('send', 'pageview');
         </script> 
     </head>
@@ -101,7 +101,7 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
-<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.nickolasburr.com/magento/extensions/2.x/cloudpubsubeventanalytics/latest/">here</a>.</blockquote>
+<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.auroraextensions.com/magento/extensions/2.x/cloudpubsubeventanalytics/latest/">here</a>.</blockquote>
 
 <h1 id="configuration">Configuration</h1>
 <p>To configure Google Cloud Pub/Sub Event Analytics, log into the <strong>admin panel</strong> and navigate to <strong>System</strong> &#8594; <strong>Configuration</strong> &#8594; <strong>Google Cloud Pub/Sub Event Analytics</strong> (left sidebar).</p>
@@ -112,7 +112,7 @@
 <li><strong>JSON Key File Path</strong>: Path to JSON key file. Relative paths are relative to the Magento root directory. For more information on service account keys, see <a href="https://cloud.google.com/iam/docs/creating-managing-service-account-keys" target="_blank">here</a>. To generate a service account key, see <a href="https://console.cloud.google.com/projectselector/iam-admin/serviceaccounts" target="_blank">here</a>.</li>
 <li><strong>Initialize Cloud Pub/Sub Topic</strong>: Enabled by default. If a Cloud Pub/Sub topic does not exist, it will be created.</li>
 </ol>
-<p><img alt="General Settings" src="https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/images/general_settings.png" /></p>
+<p><img alt="General Settings" src="https://docs.auroraextensions.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/images/general_settings.png" /></p>
 <h3 id="event-settings">Event Settings</h3>
 <ol>
 <li><strong>Events</strong>: Trackable events. Each event has associated fields, which will display while the event selection is activated.</li>
@@ -123,14 +123,14 @@
 <li><code>customer_register</code>: Customer registration event.</li>
 <li><code>catalogsearch_query</code>: Catalog search event.</li>
 </ul>
-<p><img alt="Event Settings" src="https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/images/event_settings.png" /></p>
+<p><img alt="Event Settings" src="https://docs.auroraextensions.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/images/event_settings.png" /></p>
 <ol>
 <li><strong><code>{event}</code> Event Cloud Pub/Sub Topic</strong>: The name of the Cloud Pub/Sub topic for the event. If <strong>Initialize Cloud Pub/Sub Topic</strong> is set to <strong>Yes</strong>, the topic will be initialized using this value.</li>
 <li><strong><code>{event}</code> Message Type</strong>: The type of message to include in the Cloud Pub/Sub <tt>Data</tt> field.</li>
 <li><strong>Custom <code>{event}</code> Message</strong>: User-defined message to include in the Cloud Pub/Sub <tt>Data</tt> field.</li>
 <li><strong><code>{event}</code> Attributes</strong>: Attributes to include in the Cloud Pub/Sub <tt>Attributes</tt> field.</li>
 </ol>
-<p><img alt="Order Save Event Settings" src="https://docs.nickolasburr.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/images/event_settings_order_save.png" /></p></div>
+<p><img alt="Order Save Event Settings" src="https://docs.auroraextensions.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/images/event_settings_order_save.png" /></p></div>
         </div>
 
         <footer class="col-md-12">
