@@ -10,7 +10,7 @@ This guide explains how to install Google Cloud Storage for Magento 1.9.
 
 Below are examples of how to install the extension via `modman` and manually.
 
-#### modman
+###### modman
 
 ```
 modman init                                                                         # Only run if you haven't initialized modman yet.
@@ -18,7 +18,7 @@ modman clone https://github.com/auroraextensions/magegcs.git
 modman deploy magegcs
 ```
 
-#### Manual
+###### Manual
 
 ```
 cd /var/www                                                                         # Replace /var/www with the Magento root directory.
