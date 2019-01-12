@@ -4,24 +4,24 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Tokenize User Authentication v1.1.0</title>
-        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Installation - Tokenize User Authentication v1.1.0</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-        <link href="css/extra.css" rel="stylesheet">
+        <link href="../css/extra.css" rel="stylesheet">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
         <script>
@@ -35,7 +35,7 @@
         </script> 
     </head>
 
-    <body class="homepage">
+    <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
@@ -49,21 +49,21 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href=".">Tokenize User Authentication v1.1.0</a>
+                    <a class="navbar-brand" href="..">Tokenize User Authentication v1.1.0</a>
                 </div>
 
                 <!-- Expanded navigation -->
                 <div class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
+                            <li >
+                                <a href="..">Home</a>
+                            </li>
                             <li class="active">
-                                <a href=".">Home</a>
+                                <a href="./">Installation</a>
                             </li>
                             <li >
-                                <a href="installation/">Installation</a>
-                            </li>
-                            <li >
-                                <a href="manuals/">Manuals</a>
+                                <a href="../manuals/">Manuals</a>
                             </li>
                         </ul>
 
@@ -73,13 +73,13 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="disabled">
-                                <a rel="next" >
+                            <li >
+                                <a rel="next" href="..">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="installation/">
+                                <a rel="prev" href="../manuals/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -91,35 +91,69 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#table-of-contents">Table of Contents</a></li>
-        <li class="main "><a href="#what-is-tokenize-user-authentication">What is Tokenize User Authentication?</a></li>
-        <li class="main "><a href="#benefits-of-tokenize-user-authentication">Benefits of Tokenize User Authentication</a></li>
+        <li class="main active"><a href="#installation-guide">Installation Guide</a></li>
+            <li><a href="#prerequisites">Prerequisites</a></li>
+            <li><a href="#getting-started">Getting Started</a></li>
+            <li><a href="#wrap-up">Wrap Up</a></li>
+            <li><a href="#caveats">Caveats</a></li>
+            <li><a href="#where-to-buy">Where to buy</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
 <blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.auroraextensions.com/magento/extensions/2.x/tokenizeuserauthentication/latest/">here</a>.</blockquote>
 
-<h2 id="table-of-contents">Table of Contents</h2>
+<h2 id="installation-guide">Installation Guide</h2>
+<p>This guide explains how to install Tokenize User Authentication for Magento 1.x.</p>
+<h3 id="prerequisites">Prerequisites</h3>
 <ul>
-<li><a href="https://docs.auroraextensions.com/magento/extensions/1.x/tokenizeuserauthentication/latest/">Home</a></li>
-<li><a href="https://docs.auroraextensions.com/magento/extensions/1.x/tokenizeuserauthentication/LICENSE.txt">License</a></li>
-<li><a href="https://docs.auroraextensions.com/magento/extensions/1.x/tokenizeuserauthentication/latest/manuals/">Manuals</a><ul>
-<li><a href="https://docs.auroraextensions.com/magento/extensions/1.x/tokenizeuserauthentication/latest/manuals/UserManual.pdf">UserManual.pdf</a></li>
+<li>Purchase extension and download extension archive. See <a href="#where-to-buy">Where to buy</a> if you've not yet purchased the extension.</li>
+<li>Read <a href="#caveats">Caveats</a> to familiarize yourself with potential issues and risks.</li>
 </ul>
-</li>
-<li><a href="https://docs.auroraextensions.com/magento/extensions/1.x/tokenizeuserauthentication/RELEASE_NOTES.txt">Release Notes</a></li>
-<li><a href="https://docs.auroraextensions.com/magento/extensions/1.x/tokenizeuserauthentication/latest/sitemap.xml">Sitemap</a></li>
-<li><a href="https://docs.auroraextensions.com/magento/extensions/1.x/tokenizeuserauthentication/">Versions</a></li>
-</ul>
-<h2 id="what-is-tokenize-user-authentication">What is Tokenize User Authentication?</h2>
-<p>Tokenize User Authentication is a Magento extension for providing tokenized, passwordless
-authentication for administrators and customers.</p>
-<h2 id="benefits-of-tokenize-user-authentication">Benefits of Tokenize User Authentication</h2>
+<h3 id="getting-started">Getting Started</h3>
+<p>To get started, we'll show how to install the extension via <code>modman</code> and manually.</p>
+<h5 id="modman">modman</h5>
+<pre><code>cd /var/www                                                           # Replace with the Magento root directory
+modman init                                                           # Only run if you haven't initialized modman yet.
+mkdir -p .modman/NickolasBurr_TokenizeUserAuthentication &amp;&amp; \
+tar -C .modman/NickolasBurr_TokenizeUserAuthentication \
+    -xzf /path/to/NickolasBurr_TokenizeUserAuthentication-1.1.0.tgz
+</code></pre>
+
+<p>The extension archive does not contain a <code>modman</code> file, but one is available <a href="https://docs.auroraextensions.com/magento/extensions/1.x/tokenizeuserauthentication/latest/examples/modman">here</a>.
+Run the following to add the <code>modman</code> file to the extension root directory:</p>
+<pre><code>curl -fsL https://docs.auroraextensions.com/magento/extensions/1.x/tokenizeuserauthentication/latest/examples/modman \
+     &gt; .modman/NickolasBurr_TokenizeUserAuthentication/modman
+</code></pre>
+
+<p>Lastly, deploy the updates:</p>
+<pre><code>modman deploy NickolasBurr_TokenizeUserAuthentication
+</code></pre>
+
+<h5 id="manual">Manual</h5>
+<pre><code># Replace /var/www with the Magento root directory.
+cd /var/www
+mkdir -p /tmp/NickolasBurr_TokenizeUserAuthentication &amp;&amp; \
+tar -C /tmp/NickolasBurr_TokenizeUserAuthentication \
+    -xzf /path/to/NickolasBurr_TokenizeUserAuthentication-1.1.0.tgz
+rsync -Pahmvz --stats \
+              --exclude=&quot;package.xml&quot; /tmp/NickolasBurr_TokenizeUserAuthentication/* ./
+rm -rf /tmp/NickolasBurr_TokenizeUserAuthentication
+</code></pre>
+
+<h3 id="wrap-up">Wrap Up</h3>
+<p>Before attempting to configure the extension, make sure to clear the configuration cache, and, if any admin sessions are open, log out and log back in.</p>
+<h3 id="caveats">Caveats</h3>
+<p>There are specific areas where close attention to detail should be given to help minimize potential issues and risks.</p>
+<ol>
+<li>Properly managing an SMTP server is tedious and susceptible to unnecessary risks. It is <strong>highly</strong> recommended to use a third-party email provider like Mailgun or SendGrid.</li>
+<li>Make sure to test emails prior to installation. If, for whatever reason, you are not able to send emails from Magento, you'll need to disable the extension to access admin and customer accounts.</li>
+</ol>
+<h3 id="where-to-buy">Where to buy</h3>
+<p>You can purchase the extension at the following:</p>
 <ul>
-<li>One-time, token-based user sessions</li>
-<li>Easy and secure authentication method</li>
-<li>Eliminates brute force attack vectors</li>
+<li><a href="https://store.nickolasburr.com/tokenize-user-authentication.html" target="_blank">https://store.nickolasburr.com/tokenize-user-authentication.html</a></li>
+<li><a href="https://marketplace.magento.com/nickolasburr-nickolasburr-tokenizeuserauthentication.html" target="_blank">https://marketplace.magento.com/nickolasburr-nickolasburr-tokenizeuserauthentication.html</a></li>
 </ul></div>
         </div>
 
@@ -128,11 +162,11 @@ authentication for administrators and customers.</p>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">
@@ -200,8 +234,3 @@ authentication for administrators and customers.</p>
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.0.4
-Build Date UTC : 2019-01-12 22:27:19
--->
