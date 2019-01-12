@@ -3,6 +3,7 @@ site_dir: 1.1.0
 theme: mkdocs
 nav:
   - Home: index.md
+  - Installation: installation.md
   - Manuals: manuals/index.md
 extra_css:
   - css/extra.css
