@@ -1,16 +1,17 @@
-<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.auroraextensions.com/magento/extensions/2.x/magecroncloudfunctions/latest/">here</a>.</blockquote>
 <blockquote class="notice">At the time of writing, Cloud Functions only supports three runtimes: Node.js 6, Node.js 8, and Python 3.7.</blockquote>
 
 ## Example: Clean Visitor Logs
 
-## Requirements
+This example shows how to use Cloud Functions to clean the visitor logs from Magento.
+
+### Prerequisites
 
 + Active Google account
 + GCP project with Cloud Functions API enabled
 + Cloud SQL database instance
 + `gcloud` command-line tool (Recommended)
 
-## Downloads
+### Downloads
 
 To use the Python runtime, two files are required: `main.py` and `requirements.txt`. You can download them here:
 
@@ -27,11 +28,11 @@ curl -fsL \
      > ./visitor_log_clean/requirements.txt
 ```
 
-## Objective
+### Objective
 
 Clean the database of visitor log entries using Cloud Functions.
 
-## Steps
+### Steps
 
 1. Create `visitor_log_clean` cloud function
 

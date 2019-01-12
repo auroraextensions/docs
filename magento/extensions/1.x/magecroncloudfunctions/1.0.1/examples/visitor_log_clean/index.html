@@ -111,27 +111,26 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#example-clean-visitor-logs">Example: Clean Visitor Logs</a></li>
-        <li class="main "><a href="#requirements">Requirements</a></li>
-        <li class="main "><a href="#downloads">Downloads</a></li>
-        <li class="main "><a href="#objective">Objective</a></li>
-        <li class="main "><a href="#steps">Steps</a></li>
+            <li><a href="#prerequisites">Prerequisites</a></li>
+            <li><a href="#downloads">Downloads</a></li>
+            <li><a href="#objective">Objective</a></li>
+            <li><a href="#steps">Steps</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.auroraextensions.com/magento/extensions/2.x/magecroncloudfunctions/latest/">here</a>.</blockquote>
-
 <blockquote class="notice">At the time of writing, Cloud Functions only supports three runtimes: Node.js 6, Node.js 8, and Python 3.7.</blockquote>
 
 <h2 id="example-clean-visitor-logs">Example: Clean Visitor Logs</h2>
-<h2 id="requirements">Requirements</h2>
+<p>This example shows how to use Cloud Functions to clean the visitor logs from Magento.</p>
+<h3 id="prerequisites">Prerequisites</h3>
 <ul>
 <li>Active Google account</li>
 <li>GCP project with Cloud Functions API enabled</li>
 <li>Cloud SQL database instance</li>
 <li><code>gcloud</code> command-line tool (Recommended)</li>
 </ul>
-<h2 id="downloads">Downloads</h2>
+<h3 id="downloads">Downloads</h3>
 <p>To use the Python runtime, two files are required: <code>main.py</code> and <code>requirements.txt</code>. You can download them here:</p>
 <ul>
 <li><a href="https://docs.auroraextensions.com/magento/extensions/1.x/magecroncloudfunctions/latest/python/src/visitor_log_clean/main.py">main.py</a></li>
@@ -146,9 +145,9 @@ curl -fsL \
      &gt; ./visitor_log_clean/requirements.txt
 </code></pre>
 
-<h2 id="objective">Objective</h2>
+<h3 id="objective">Objective</h3>
 <p>Clean the database of visitor log entries using Cloud Functions.</p>
-<h2 id="steps">Steps</h2>
+<h3 id="steps">Steps</h3>
 <ol>
 <li>
 <p>Create <code>visitor_log_clean</code> cloud function</p>
