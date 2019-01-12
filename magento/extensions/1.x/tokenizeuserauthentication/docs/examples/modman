@@ -1,0 +1,7 @@
+app/code/community/NickolasBurr/TokenizeUserAuthentication  app/code/community/NickolasBurr/TokenizeUserAuthentication
+app/design/adminhtml/default/default/layout/tokenizeuserauthentication  app/design/adminhtml/default/default/layout/tokenizeuserauthentication
+app/design/adminhtml/default/default/template/tokenizeuserauthentication  app/design/adminhtml/default/default/template/tokenizeuserauthentication
+app/design/frontend/base/default/layout/tokenizeuserauthentication  app/design/frontend/base/default/layout/tokenizeuserauthentication
+app/design/frontend/base/default/template/tokenizeuserauthentication  app/design/frontend/base/default/template/tokenizeuserauthentication
+app/locale/en_US/template/email/tokenizeuserauthentication  app/locale/en_US/template/email/tokenizeuserauthentication
+app/etc/modules/NickolasBurr_TokenizeUserAuthentication.xml  app/etc/modules/NickolasBurr_TokenizeUserAuthentication.xml
