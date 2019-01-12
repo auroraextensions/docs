@@ -3,6 +3,9 @@
 ## Table of Contents
 
 - [Home](https://docs.auroraextensions.com/magento/extensions/1.x/tokenizeuserauthentication/latest/)
+- Examples
+    + [modman](https://docs.auroraextensions.com/magento/extensions/1.x/tokenizeuserauthentication/latest/examples/modman)
+- [Installation](https://docs.auroraextensions.com/magento/extensions/1.x/tokenizeuserauthentication/latest/installation/)
 - [License](https://docs.auroraextensions.com/magento/extensions/1.x/tokenizeuserauthentication/LICENSE.txt)
 - [Manuals](https://docs.auroraextensions.com/magento/extensions/1.x/tokenizeuserauthentication/latest/manuals/)
     + [UserManual.pdf](https://docs.auroraextensions.com/magento/extensions/1.x/tokenizeuserauthentication/latest/manuals/UserManual.pdf)
