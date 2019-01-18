@@ -1,7 +1,0 @@
-Release Notes - Google Cloud Pub/Sub Inventory Management - Magento 1.x
-------------------------------------------------
-
-1.0.0
------
-
-- Initial release of Google Cloud Pub/Sub Inventory Management.
