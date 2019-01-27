@@ -11,7 +11,7 @@
 
 ## What is Magento Cron Cloud Functions?
 
-Magento Cron Cloud Functions is a Magento extension for running cron jobs via Google Cloud Functions.
+Magento Cron Cloud Functions is a Magento extension for running cron jobs via [Google Cloud Functions](https://cloud.google.com/functions/).
 
 ## Benefits of Magento Cron Cloud Functions
 
