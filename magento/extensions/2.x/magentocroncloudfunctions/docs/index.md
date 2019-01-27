@@ -5,6 +5,7 @@
 - [Home](https://docs.auroraextensions.com/magento/extensions/2.x/magentocroncloudfunctions/latest/)
 - [License](https://docs.auroraextensions.com/magento/extensions/2.x/magentocroncloudfunctions/LICENSE.txt)
 - [Release Notes](https://docs.auroraextensions.com/magento/extensions/2.x/magentocroncloudfunctions/RELEASE_NOTES.txt)
+- [Repository](https://github.com/auroraextensions/magentocroncloudfunctions)
 - [Sitemap](https://docs.auroraextensions.com/magento/extensions/2.x/magentocroncloudfunctions/latest/sitemap.xml)
 - [Versions](https://docs.auroraextensions.com/magento/extensions/2.x/magentocroncloudfunctions/)
 
