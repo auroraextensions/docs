@@ -3,6 +3,7 @@ site_dir: 1.0.0
 theme: mkdocs
 nav:
   - Home: index.md
+  - Manuals: manuals/index.md
 extra_css:
   - css/extra.css
 google_analytics: ['UA-113897119-2', 'docs.auroraextensions.com']
