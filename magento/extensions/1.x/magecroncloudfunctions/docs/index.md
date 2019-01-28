@@ -14,7 +14,7 @@
 - [Sitemap](https://docs.auroraextensions.com/magento/extensions/1.x/magecroncloudfunctions/latest/sitemap.xml)
 - [Versions](https://docs.auroraextensions.com/magento/extensions/1.x/magecroncloudfunctions/)
 
-## What is Cloud Functions?
+## What is Google Cloud Functions?
 
 <blockquote>
   <div>
