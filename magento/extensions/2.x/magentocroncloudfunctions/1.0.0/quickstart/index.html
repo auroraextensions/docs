@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
+        
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Magento Cron Cloud Functions v1.0.0</title>
+        <title>Quick Start - Magento Cron Cloud Functions v1.0.0</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -35,7 +35,7 @@
         </script> 
     </head>
 
-    <body class="homepage">
+    <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
@@ -59,11 +59,11 @@
                             <li >
                                 <a href="..">Home</a>
                             </li>
-                            <li >
-                                <a href="../quickstart/">Quick Start</a>
-                            </li>
                             <li class="active">
-                                <a href="./">Manuals</a>
+                                <a href="./">Quick Start</a>
+                            </li>
+                            <li >
+                                <a href="../manuals/">Manuals</a>
                             </li>
                         </ul>
 
@@ -74,12 +74,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../quickstart/">
+                                <a rel="next" href="..">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li class="disabled">
-                                <a rel="prev" >
+                            <li >
+                                <a rel="prev" href="../manuals/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -91,17 +91,88 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#manuals">Manuals</a></li>
+        <li class="main active"><a href="#quick-start">Quick Start</a></li>
+        <li class="main "><a href="#caveats">Caveats</a></li>
+        <li class="main "><a href="#getting-started">Getting Started</a></li>
+            <li><a href="#step-one-package-requirements">Step One: Package Requirements</a></li>
+            <li><a href="#step-two-virtual-types-and-dependency-injection">Step Two: Virtual Types and Dependency Injection</a></li>
+            <li><a href="#step-three-job-entries-in-crontabxml">Step Three: Job Entries in crontab.xml</a></li>
+            <li><a href="#step-four-deploy-cloud-function">Step Four: Deploy Cloud Function</a></li>
+        <li class="main "><a href="#wrap-up">Wrap Up</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
 <blockquote class="important">This documentation is for Magento 2.x. For Magento 1.x, see <a href="https://docs.auroraextensions.com/magento/extensions/1.x/magecroncloudfunctions/latest/">here</a>.</blockquote>
 
-<h2 id="manuals">Manuals</h2>
+<h2 id="quick-start">Quick Start</h2>
+<p>This guide explains how to utilize Magento Cron Cloud Functions for Magento 2.x
+from within your own custom modules.</p>
+<h2 id="caveats">Caveats</h2>
+<p>Magento Cron Cloud Functions should only be used as a dependency for your own
+modules. Modifying the module directly can be very problematic when, for example,
+you upgrade versions or migrate environments.</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>To get started, take a look at the <a href="https://github.com/auroraextensions/samplecroncloudfunctions">sample module</a>
+we put together. You can use this as boilerplate for your module, as it's very easy to get up and running.</p>
+<h4 id="step-one-package-requirements">Step One: Package Requirements</h4>
+<p>As shown below and in <code>composer.json</code>, you will need to require <code>auroraextensions/magentocroncloudfunctions</code>:</p>
+<pre><code>...
+  &quot;require&quot;: {
+    &quot;php&quot;: &quot;&gt;=7.1&quot;,
+    &quot;auroraextensions/magentocroncloudfunctions&quot;: &quot;~1.0.0&quot;
+  },
+...
+</code></pre>
+
+<h4 id="step-two-virtual-types-and-dependency-injection">Step Two: Virtual Types and Dependency Injection</h4>
+<p>To maximize code reuse and minimize overhead needed to interface with HTTP endpoints, you can
+create <code>&lt;virtualType&gt;</code> classes that hold data specific to each Cloud Functions HTTP endpoint.</p>
+<p>As shown below and in <code>etc/di.xml</code>, there are two <code>&lt;virtualType&gt;</code> classes:</p>
+<pre><code>&lt;config xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:noNamespaceSchemaLocation=&quot;urn:magento:framework:ObjectManager/etc/config.xsd&quot;&gt;
+  &lt;virtualType name=&quot;VisitorLogCronJob&quot; type=&quot;AuroraExtensions\MagentoCronCloudFunctions\Model\Cron\Job&quot;&gt;
+    &lt;arguments&gt;
+      &lt;argument name=&quot;jobCode&quot; xsi:type=&quot;string&quot;&gt;visitor_log_clean&lt;/argument&gt;
+    &lt;/arguments&gt;
+  &lt;/virtualType&gt;
+
+  &lt;virtualType name=&quot;VisitorLogCloudFunctionHttpRequest&quot; type=&quot;AuroraExtensions\MagentoCronCloudFunctions\Model\Http\Request&quot;&gt;
+    &lt;arguments&gt;
+      &lt;argument name=&quot;cronJob&quot; xsi:type=&quot;object&quot;&gt;VisitorLogCronJob&lt;/argument&gt;
+    &lt;/arguments&gt;
+  &lt;/virtualType&gt;
+&lt;/config&gt;
+</code></pre>
+
 <ul>
-<li><a href="https://docs.auroraextensions.com/magento/extensions/2.x/magentocroncloudfunctions/1.0.0/manuals/UserManual.pdf">UserManual.pdf</a></li>
-</ul></div>
+<li><code>VisitorLogCronJob</code> is an instance of <a href="https://github.com/auroraextensions/magentocroncloudfunctions/blob/master/Model/Cron/Job.php"><code>AuroraExtensions\MagentoCronCloudFunctions\Model\Cron\Job</code></a>, and contains the <code>jobCode</code> used to invoke the endpoint.</li>
+<li><code>VisitorLogCloudFunctionHttpRequest</code> is an instance of <a href="https://github.com/auroraextensions/magentocroncloudfunctions/blob/master/Model/Http/Request.php"><code>AuroraExtensions\MagentoCronCloudFunctions\Model\Http\Request</code></a>, and is passed the <code>VisitorLogCronJob</code> instance.</li>
+</ul>
+<h4 id="step-three-job-entries-in-crontabxml">Step Three: Job Entries in crontab.xml</h4>
+<p>Next, create a <code>&lt;job&gt;</code> entry in <code>crontab.xml</code> and use <code>VisitorLogCloudFunctionHttpRequest</code> for the <code>instance</code> attribute value:</p>
+<pre><code>&lt;config xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:noNamespaceSchemaLocation=&quot;urn:magento:module:Magento_Cron:etc/crontab.xsd&quot;&gt;
+  &lt;group id=&quot;default&quot;&gt;
+    &lt;job name=&quot;visitor_log_cloud_function_http_request&quot; instance=&quot;VisitorLogCloudFunctionHttpRequest&quot; method=&quot;execute&quot;&gt;
+      &lt;schedule&gt;* * * * *&lt;/schedule&gt;
+    &lt;/job&gt;
+  &lt;/group&gt;
+&lt;/config&gt;
+</code></pre>
+
+<h4 id="step-four-deploy-cloud-function">Step Four: Deploy Cloud Function</h4>
+<p>There are several ways to set up the Cloud Function HTTP endpoint. See <a href="https://cloud.google.com/functions/docs/calling/http">HTTP Triggers</a> for more information.</p>
+<p>We'll use <code>gcloud</code> below to illustrate a quick way to create the appropriate HTTP endpoint.</p>
+<pre><code>gcloud functions deploy visitor_log_clean --entry-point visitor_log_clean \
+                                          --runtime python37 \
+                                          --trigger-http
+</code></pre>
+
+<p>If you're new to Cloud Functions, simply have the <code>visitor_log_clean</code> function print a string when it's invoked.
+Once you've become acquainted, we <strong>highly</strong> recommend implementing authentication in each cloud function you use,
+as cloud function endpoints are insecure, by default.</p>
+<h2 id="wrap-up">Wrap Up</h2>
+<p>That's it! With a minimal sample module, you're able to easily interact with Cloud Functions HTTP endpoint, enabling
+you to distribute Magento cron jobs across the cloud.</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -181,8 +252,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.0.4
-Build Date UTC : 2019-01-28 20:45:31
--->
