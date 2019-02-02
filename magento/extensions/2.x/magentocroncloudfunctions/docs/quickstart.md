@@ -54,8 +54,10 @@ there are two `<virtualType>` classes:
 </config>
 ```
 
-+ `VisitorLogCronJob` is an instance of [`AuroraExtensions\MagentoCronCloudFunctions\Model\Cron\Job`](https://github.com/auroraextensions/magentocroncloudfunctions/blob/master/Model/Cron/Job.php), and contains the `jobCode` used to invoke the endpoint.
-+ `VisitorLogCloudFunctionHttpRequest` is an instance of [`AuroraExtensions\MagentoCronCloudFunctions\Model\Http\Request`](https://github.com/auroraextensions/magentocroncloudfunctions/blob/master/Model/Http/Request.php), and is passed the `VisitorLogCronJob` instance.
++ `VisitorLogCronJob` is an instance of [`AuroraExtensions\MagentoCronCloudFunctions\Model\Cron\JobInterface`](https://github.com/auroraextensions/magentocroncloudfunctions/blob/master/Model/Cron/JobInterface.php)
+    - Contains the `jobCode` used to invoke HTTP endpoint.
++ `VisitorLogCloudFunctionHttpRequest` is an instance of [`AuroraExtensions\MagentoCronCloudFunctions\Model\Http\RequestInterface`](https://github.com/auroraextensions/magentocroncloudfunctions/blob/master/Model/Http/RequestInterface.php)
+    - Contains the `VisitorLogCronJob` instance used to interact with HTTP endpoint.
 
 #### Step Three: Job Entries in crontab.xml
 
