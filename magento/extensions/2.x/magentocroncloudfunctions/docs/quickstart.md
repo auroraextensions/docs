@@ -18,7 +18,8 @@ we put together. You can use this as boilerplate for your module, as it's very e
 
 #### Step One: Package Requirements
 
-As shown below and in `composer.json`, you will need to require `auroraextensions/magentocroncloudfunctions`:
+As shown below and in [`composer.json`](https://github.com/auroraextensions/samplecroncloudfunctions/blob/master/composer.json),
+you will need to require `auroraextensions/magentocroncloudfunctions`:
 
 ```
 ...
@@ -34,7 +35,8 @@ As shown below and in `composer.json`, you will need to require `auroraextension
 To maximize code reuse and minimize overhead needed to interface with HTTP endpoints, you can
 create `<virtualType>` classes that hold data specific to each Cloud Functions HTTP endpoint.
 
-As shown below and in `etc/di.xml`, there are two `<virtualType>` classes:
+As shown below and in [`etc/di.xml`](https://github.com/auroraextensions/samplecroncloudfunctions/blob/master/etc/di.xml),
+there are two `<virtualType>` classes:
 
 ```
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
@@ -87,5 +89,5 @@ as cloud function endpoints are insecure, by default.
 
 ## Wrap Up
 
-That's it! With a minimal sample module, you're able to easily interact with Cloud Functions HTTP endpoint, enabling
-you to distribute Magento cron jobs across the cloud.
+That's it! With a minimal sample module, you're able to easily interact with Cloud Functions HTTP endpoints using
+the Magento Cron Cloud Functions extension, enabling you to execute Magento cron jobs on Google Cloud Functions.
