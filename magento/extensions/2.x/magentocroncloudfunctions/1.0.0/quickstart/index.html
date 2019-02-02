@@ -147,8 +147,14 @@ there are two <code>&lt;virtualType&gt;</code> classes:</p>
 </code></pre>
 
 <ul>
-<li><code>VisitorLogCronJob</code> is an instance of <a href="https://github.com/auroraextensions/magentocroncloudfunctions/blob/master/Model/Cron/Job.php"><code>AuroraExtensions\MagentoCronCloudFunctions\Model\Cron\Job</code></a>, and contains the <code>jobCode</code> used to invoke the endpoint.</li>
-<li><code>VisitorLogCloudFunctionHttpRequest</code> is an instance of <a href="https://github.com/auroraextensions/magentocroncloudfunctions/blob/master/Model/Http/Request.php"><code>AuroraExtensions\MagentoCronCloudFunctions\Model\Http\Request</code></a>, and is passed the <code>VisitorLogCronJob</code> instance.</li>
+<li><code>VisitorLogCronJob</code> is an instance of <a href="https://github.com/auroraextensions/magentocroncloudfunctions/blob/master/Model/Cron/JobInterface.php"><code>AuroraExtensions\MagentoCronCloudFunctions\Model\Cron\JobInterface</code></a><ul>
+<li>Contains the <code>jobCode</code> used to invoke HTTP endpoint.</li>
+</ul>
+</li>
+<li><code>VisitorLogCloudFunctionHttpRequest</code> is an instance of <a href="https://github.com/auroraextensions/magentocroncloudfunctions/blob/master/Model/Http/RequestInterface.php"><code>AuroraExtensions\MagentoCronCloudFunctions\Model\Http\RequestInterface</code></a><ul>
+<li>Contains the <code>VisitorLogCronJob</code> instance used to interact with HTTP endpoint.</li>
+</ul>
+</li>
 </ul>
 <h4 id="step-three-job-entries-in-crontabxml">Step Three: Job Entries in crontab.xml</h4>
 <p>Next, create a <code>&lt;job&gt;</code> entry in <code>crontab.xml</code> and use <code>VisitorLogCloudFunctionHttpRequest</code> for the <code>instance</code> attribute value:</p>
