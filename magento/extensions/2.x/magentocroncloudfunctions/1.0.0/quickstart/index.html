@@ -116,7 +116,8 @@ you upgrade versions or migrate environments.</p>
 <p>To get started, take a look at the <a href="https://github.com/auroraextensions/samplecroncloudfunctions">sample module</a>
 we put together. You can use this as boilerplate for your module, as it's very easy to get up and running.</p>
 <h4 id="step-one-package-requirements">Step One: Package Requirements</h4>
-<p>As shown below and in <code>composer.json</code>, you will need to require <code>auroraextensions/magentocroncloudfunctions</code>:</p>
+<p>As shown below and in <a href="https://github.com/auroraextensions/samplecroncloudfunctions/blob/master/composer.json"><code>composer.json</code></a>,
+you will need to require <code>auroraextensions/magentocroncloudfunctions</code>:</p>
 <pre><code>...
   &quot;require&quot;: {
     &quot;php&quot;: &quot;&gt;=7.1&quot;,
@@ -128,7 +129,8 @@ we put together. You can use this as boilerplate for your module, as it's very e
 <h4 id="step-two-virtual-types-and-dependency-injection">Step Two: Virtual Types and Dependency Injection</h4>
 <p>To maximize code reuse and minimize overhead needed to interface with HTTP endpoints, you can
 create <code>&lt;virtualType&gt;</code> classes that hold data specific to each Cloud Functions HTTP endpoint.</p>
-<p>As shown below and in <code>etc/di.xml</code>, there are two <code>&lt;virtualType&gt;</code> classes:</p>
+<p>As shown below and in <a href="https://github.com/auroraextensions/samplecroncloudfunctions/blob/master/etc/di.xml"><code>etc/di.xml</code></a>,
+there are two <code>&lt;virtualType&gt;</code> classes:</p>
 <pre><code>&lt;config xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:noNamespaceSchemaLocation=&quot;urn:magento:framework:ObjectManager/etc/config.xsd&quot;&gt;
   &lt;virtualType name=&quot;VisitorLogCronJob&quot; type=&quot;AuroraExtensions\MagentoCronCloudFunctions\Model\Cron\Job&quot;&gt;
     &lt;arguments&gt;
@@ -171,8 +173,8 @@ create <code>&lt;virtualType&gt;</code> classes that hold data specific to each 
 Once you've become acquainted, we <strong>highly</strong> recommend implementing authentication in each cloud function you use,
 as cloud function endpoints are insecure, by default.</p>
 <h2 id="wrap-up">Wrap Up</h2>
-<p>That's it! With a minimal sample module, you're able to easily interact with Cloud Functions HTTP endpoint, enabling
-you to distribute Magento cron jobs across the cloud.</p></div>
+<p>That's it! With a minimal sample module, you're able to easily interact with Cloud Functions HTTP endpoints using
+the Magento Cron Cloud Functions extension, enabling you to execute Magento cron jobs on Google Cloud Functions.</p></div>
         </div>
 
         <footer class="col-md-12">
