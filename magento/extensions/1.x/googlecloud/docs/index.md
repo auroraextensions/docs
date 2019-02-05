@@ -4,7 +4,7 @@
 - [Installation](https://docs.auroraextensions.com/magento/extensions/1.x/googlecloud/latest/installation/)
 - [License](https://docs.auroraextensions.com/magento/extensions/1.x/googlecloud/LICENSE.txt)
 - [Release Notes](https://docs.auroraextensions.com/magento/extensions/1.x/googlecloud/RELEASE_NOTES.txt)
-- [Repository](https://github.com/auroraextensions/googlecloudphpautoloader)
+- [Repository](https://github.com/auroraextensions/NickolasBurr_GoogleCloud)
 - [Sitemap](https://docs.auroraextensions.com/magento/extensions/1.x/googlecloud/latest/sitemap.xml)
 - [Versions](https://docs.auroraextensions.com/magento/extensions/1.x/googlecloud/)
 

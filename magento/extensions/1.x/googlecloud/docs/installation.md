@@ -31,21 +31,21 @@ Below are examples of how to install the extension via `modman` and manually.
 
 ```
 modman init                                                                            # Only run if you haven't initialized modman yet.
-modman clone https://github.com/auroraextensions/googlecloudphpautoloader.git
-modman deploy googlecloudphpautoloader
+modman clone https://github.com/auroraextensions/NickolasBurr_GoogleCloud.git
+modman deploy NickolasBurr_GoogleCloud
 ```
 
 ###### Manual
 
 ```
 cd /var/www                                                                            # Replace /var/www with the Magento root directory.
-git -C /tmp/ clone https://github.com/auroraextensions/googlecloudphpautoloader.git
+git -C /tmp/ clone https://github.com/auroraextensions/NickolasBurr_GoogleCloud.git
 rsync -Pahmvz --stats \
               --exclude="package.xml" \
               --exclude=".git*" \
               --exclude="modman" \
-              /tmp/googlecloudphpautoloader/* ./
-rm -rf /tmp/googlecloudphpautoloader
+              /tmp/NickolasBurr_GoogleCloud/* ./
+rm -rf /tmp/NickolasBurr_GoogleCloud
 ```
 
 ### Composer
