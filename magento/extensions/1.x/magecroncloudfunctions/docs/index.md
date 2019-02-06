@@ -1,4 +1,4 @@
-<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.auroraextensions.com/magento/extensions/2.x/magentocroncloudfunctions/latest/">here</a>.</blockquote>
+<blockquote class="important">This documentation is for Magento 1.x. For Magento 2.x, see <a href="https://docs.auroraextensions.com/magento/extensions/2.x/magecroncloudfunctions/latest/">here</a>.</blockquote>
 
 ## Table of Contents
 
@@ -10,7 +10,7 @@
     + [UserManual.pdf](https://docs.auroraextensions.com/magento/extensions/1.x/magecroncloudfunctions/latest/manuals/UserManual.pdf)
 - [Python Scripts](https://docs.auroraextensions.com/magento/extensions/1.x/magecroncloudfunctions/latest/python/src/)
 - [Release Notes](https://docs.auroraextensions.com/magento/extensions/1.x/magecroncloudfunctions/RELEASE_NOTES.txt)
-- [Repository](https://github.com/auroraextensions/magecroncloudfunctions)
+- [Repository](https://github.com/auroraextensions/NickolasBurr_MageCronCloudFunctions)
 - [Sitemap](https://docs.auroraextensions.com/magento/extensions/1.x/magecroncloudfunctions/latest/sitemap.xml)
 - [Versions](https://docs.auroraextensions.com/magento/extensions/1.x/magecroncloudfunctions/)
 
