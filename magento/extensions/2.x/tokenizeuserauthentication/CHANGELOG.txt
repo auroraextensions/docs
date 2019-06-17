@@ -1,7 +1,14 @@
-Release Notes - Tokenize User Authentication - Magento 2.x
-------------------------------------------------
+# Changelog
 
-1.0.0
------
+## [Unreleased]
 
+## [1.0.1] ~ 2019-06-17
+#### Added
+- ExceptionFactory class for creating any type of Exception.
+
+#### Changed
+- Replaced exceptions created via new with exceptions created via ExceptionFactory.
+
+## [1.0.0] ~ 2019-06-10
+#### Added
 - Initial release of Tokenize User Authentication.
