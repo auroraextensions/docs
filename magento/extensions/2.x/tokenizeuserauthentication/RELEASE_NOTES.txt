@@ -1,7 +1,1 @@
-Release Notes - Tokenize User Authentication - Magento 2.x
-------------------------------------------------
-
-1.0.0
------
-
-- Initial release of Tokenize User Authentication.
+CHANGELOG.txt
