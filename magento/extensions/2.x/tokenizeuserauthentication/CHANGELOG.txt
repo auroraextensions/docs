@@ -4,10 +4,10 @@
 
 ## [1.0.1] ~ 2019-06-17
 #### Added
-- ExceptionFactory class for creating any type of Exception.
+- ExceptionFactory class for creating various exception types.
 
 #### Changed
-- Replaced exceptions created via new with exceptions created via ExceptionFactory.
+- Replace exceptions created via new with exceptions created via ExceptionFactory.
 
 ## [1.0.0] ~ 2019-06-10
 #### Added
