@@ -135,13 +135,3 @@ blockquote.notice {
     width: calc(33.33333% - 5px);
   }
 }
-
-/**
- * Homepage
- */
-
-body.homepage footer {
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-}
