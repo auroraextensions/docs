@@ -1,5 +1,6 @@
 site_name: Tokenize User Authentication v1.1.0
 site_dir: 1.1.0
+copyright: 'Copyright &copy; 2019 <a href="https://auroraextensions.com" target="_blank">Aurora Extensions</a>'
 theme: mkdocs
 nav:
   - Home: index.md
