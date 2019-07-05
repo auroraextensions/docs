@@ -25,12 +25,7 @@ a:focus {
   text-decoration: none;
 }
 
-footer {
-  display: none !important;
-}
-
-pre,
-code {
+pre, code {
   font-family: monospace, sans-serif;
 }
 
