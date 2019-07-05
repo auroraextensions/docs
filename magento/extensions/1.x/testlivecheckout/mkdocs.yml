@@ -1,7 +1,9 @@
 site_name: Test Live Checkout v1.1.0
 site_dir: 1.1.0
-theme: mkdocs
-pages:
+theme:
+  name: 'mkdocs'
+  custom_dir: 'theme'
+nav:
   - Home: index.md
   - Quick Start: quickstart.md
   - Configuration: configuration.md
