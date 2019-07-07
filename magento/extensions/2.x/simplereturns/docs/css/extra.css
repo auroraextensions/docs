@@ -1,0 +1,85 @@
+/**
+ * extra.css
+ */
+
+/**
+ * Global
+ */
+
+body {
+  font-family: Futura, Helvetica, monospace, sans-serif;
+}
+
+body > .container {
+  font-family: Charter, Optima, Palatino, monospace, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+pre, code {
+  font-family: monospace, sans-serif;
+}
+
+blockquote {
+  border-radius: 1px;
+}
+
+@media only screen and (max-width: 770px) {
+  blockquote > p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 771px) {
+  blockquote {
+    margin: 25px 0;
+    padding: 15px;
+  }
+}
+
+/**
+ * Notices, warnings, etc.
+ */
+
+blockquote.important,
+blockquote.notice {
+  font-family: "PT Mono", "Trebuchet MS", monospace, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+blockquote.important {
+  background-color: rgba(237, 237, 237, 0.5);
+  border-left: 5px solid #e11a1a;
+}
+
+blockquote.notice {
+  background-color: rgba(237, 237, 237, 0.5);
+  border-left: 5px solid #e37d0e;
+}
+
+/**
+ * Navigation, menus, etc.
+ */
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  outline: 0;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1480px) {
+  .container {
+    width: 1440px;
+  }
+}
