@@ -9,8 +9,8 @@
 ## What is Simple Returns?
 
 Simple Returns is an easy-to-use, simplified RMA module intended for use with Magento Open Source.
-By augmenting the built-in RMA functionality built into Magento, Simple Returns provides the
-essential functionality required to submit and process returns online.
+By augmenting the RMA functionality built in to Magento, Simple Returns provides the essential
+functionality required to submit and process returns online.
 
 ## Benefits of Simple Returns
 
