@@ -2,9 +2,17 @@
 
 ## [Unreleased]
 
+## [1.0.2] ~ 2019-07-06
+#### Added
+- Add AuthObserver preference to prevent admin password update deadlock.
+
+#### Changed
+- Move system preferences to Aurora Extensions tab.
+- Change email templates from type 'text' to 'html'.
+
 ## [1.0.1] ~ 2019-06-17
 #### Added
-- ExceptionFactory class for creating various exception types.
+- Add ExceptionFactory class for creating various exception types.
 
 #### Changed
 - Replace exceptions created via new with exceptions created via ExceptionFactory.
