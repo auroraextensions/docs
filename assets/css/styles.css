@@ -1,3 +1,7 @@
+/**
+ * styles.css
+ */
+
 html {
   margin: 5px;
 }
@@ -12,10 +16,10 @@ a {
   line-height: 18px;
 }
 
-ol,
-ul {
+ol, ul {
   display: inline-block;
   padding: 5px;
+  width: calc(100% - 20px);
 }
 
 ol {
