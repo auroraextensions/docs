@@ -1,0 +1,11 @@
+# Changelog
+
+## [Unreleased]
+
+## [1.0.1] ~ 2019-07-04
+#### Changed
+- Update system.xml sort order.
+
+## [1.0.0] ~ 2019-06-17
+#### Added
+- Initial release of Simple Cache.
