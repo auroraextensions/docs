@@ -1,15 +1,12 @@
-YOU AND YOU ONLY ("YAYO") PUBLIC LICENSE
+Aurora Extensions End User License Agreement
 
-Copyright (C) 2018 Nickolas Burr <nickolasburr@gmail.com>
-
-End User License Agreement
+Copyright (C) 2018 Aurora Extensions <support@auroraextensions.com>
 
 1. Purpose
 
-Outlined in this document are the terms and conditions ("Terms") of the End User License Agreement ("License"). The Terms
-are applicable to the use of the Test Live Checkout extension ("Extension"), and contain the contractual terms, conditions,
-procedures of use, rights, obligations, responsibilities, and other requirements between Nickolas Burr ("Licensor") and the
-Extension user ("Licensee").
+Outlined in this document are the terms and conditions ("Terms") of the End User License Agreement ("License", "EULA"). The Terms
+are applicable to the use of the Extension, and contain the contractual terms, conditions, procedures of use, rights, obligations,
+responsibilities, and other requirements between Aurora Extensions ("Licensor") and the Extension user ("Licensee").
 
 2. Definitions
 
@@ -17,13 +14,11 @@ The terminology used in the Terms have the following meanings, and interpretatio
 definitions under the relevant laws, regulations, and as prescribed in notices.
 
 a. Magento: Ecommerce software licensed and maintained by Adobe Systems Inc.
-b. Licensor: Nickolas Burr, a Software Developer from Buffalo, NY, USA.
-c. Extension: Software licensed and maintained by the Licensor for users of Magento.
+b. Licensor: Aurora Extensions, an LLC registered in the state of Delaware.
+c. Extension: Software licensed and maintained by the Licensor.
 d. Licensee: Any person or entity using the Extension for any purpose, in any capacity, at any point in time.
 e. Notice of License: A block of text containing license information, located in every source file of the Extension.
-f. Maximum Instances: The maximum allowable number of active or inactive instances of the Extension per one (1) license key.
-g. License Key: A unique sequence of characters given to the Licensee by the Licensor to validate their purchase of the Extension.
-h. License Key Validator: Software contained within, and used by, the Extension for validating the authenticity of the License Key.
+f. Maximum Instances: The maximum allowable number of active or inactive instances of the Extension.
 
 3. Terms
 
@@ -31,21 +26,20 @@ By using the Extension, you willfully acknowledge and agree to the following ter
 
 a. Relicensing of the Extension, in whole or in part, at any point in time, for any purpose, is strictly prohibited.
 b. Redistribution of the Extension, in whole or in part, at any point in time, for any purpose, is strictly prohibited.
-c. Fraudulent, malicious, or otherwise malevolent use of the Extension, in whole or in part, for any purpose, at any point in time, is strictly prohibited.
-d. Removal, alteration, or obfuscation of the Notice of License, in whole or in part, for any purpose, at any point in time, is strictly prohibited.
-e. Exceeding the Maximum Instances allotment of five (5), in whole or in part, for any purpose, at any point in time, is strictly prohibited.
-   A new license key must be purchased if you wish to exceed five (5) instances. Instances used for development, testing, or QA do not apply
+c. Fraudulent, malicious, or otherwise malevolent use of the Extension, in whole or in part, at any point in time, for any purpose, is strictly prohibited.
+d. Removal, alteration, or obfuscation of the Notice of License, in whole or in part, at any point in time, for any purpose, is strictly prohibited.
+e. Exceeding the Maximum Instances allotment of one (1), in whole or in part, at any point in time, for any purpose, is strictly prohibited.
+   An Enterprise License must be purchased if you wish to exceed one (1) instance. Instances used for development, testing, or QA do not apply
    toward the Maximum Instances allotment. Please contact the Licensor if you have any questions or concerns regarding these terms.
 
 4. Rights
 
-The Licensee has certain, explicit ownership rights, pursuant to their compliance with the Terms.
+The Licensee has explicit ownership rights, pursuant to their compliance with the Terms.
 
 a. The Licensee has the right to add, delete, and modify, in whole or in part, the Extension, with the exception of:
     1. Notice of License
-    2. License Key Validator, including any and all dependent, reliant, and/or necessary components required for operation
 b. The Licensee need not request consent from the Licensor to make modifications to the Extension.
-c. The Licensee has the right to use the Extension for purposes beyond the intended use.
+c. The Licensee has the right to use the Extension for purposes beyond and/or outside the intended use.
 
 5. Maintenance
 
@@ -57,12 +51,12 @@ the right to provide no updates.
 6. Support
 
 The Licensor provides limited support through electronic mail, during normal business days and hours. Normal business days are Monday - Thursday, with
-hours from 11AM - 5PM EST, excluding all major US and Canadian holidays. The Licensor reserves the right to refuse support at any time, for any reason.
+hours from 9AM - 5PM EST, excluding all major US and Canadian holidays. The Licensor reserves the right to refuse support at any time, for any reason.
 
 6.1 Security Vulnerabilities
 
-The Licensee is contractually obligated through use of the Extension to notify the Licensor upon discovery of any software defects pertaining to the Extension
-that pose a risk to system and/or application security.
+The Licensee is obligated through use of the Extension to notify the Licensor upon discovery of any software defects pertaining to the Extension
+that pose a risk to system and/or application security. Failure to do so is a breach of the Terms outlined within this document.
 
 6.2 Feature Requests
 
