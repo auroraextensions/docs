@@ -14,7 +14,7 @@ The terminology used in the Terms have the following meanings, and interpretatio
 definitions under the relevant laws, regulations, and as prescribed in notices.
 
 a. Magento: Ecommerce software licensed and maintained by Adobe Systems Inc.
-b. Licensor: Aurora Extensions, an LLC registered in the state of Delaware.
+b. Licensor: Aurora Extensions, an LLC registered in the state of New York.
 c. Extension: Software licensed and maintained by the Licensor.
 d. Licensee: Any person or entity using the Extension for any purpose, in any capacity, at any point in time.
 e. Notice of License: A block of text containing license information, located in every source file of the Extension.
