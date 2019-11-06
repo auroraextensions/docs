@@ -1,18 +1,18 @@
-## docs.auroraextensions.com
+# docs.auroraextensions.com
 
 Documentation for Aurora Extensions products.
 
-### Table of Contents
+## Table of Contents
 
 + [Extensions](#extensions)
   - [Magento 1](#magento-1)
   - [Magento 2](#magento-2)
 
-### Extensions
+## Extensions
 
 If the module you're looking for is not in the list below, please check the [documentation homepage](https://docs.auroraextensions.com).
 
-#### Magento 1
+### Magento 1
 
 + [Google Cloud PHP Autoloader](https://docs.auroraextensions.com/magento/extensions/1.x/googlecloud/latest/)
 + [Google Cloud Pub/Sub Event Analytics](https://docs.auroraextensions.com/magento/extensions/1.x/cloudpubsubeventanalytics/latest/)
@@ -22,7 +22,7 @@ If the module you're looking for is not in the list below, please check the [doc
 + [Tokenize Product Downloads](https://docs.auroraextensions.com/magento/extensions/1.x/tokenizeproductdownloads/latest/)
 + [Tokenize User Authentication](https://docs.auroraextensions.com/magento/extensions/1.x/tokenizeuserauthentication/latest/)
 
-#### Magento 2
+### Magento 2
 
 + [Google Cloud Storage](https://docs.auroraextensions.com/magento/extensions/2.x/googlecloudstorage/latest/)
 + [Google Stackdriver](https://docs.auroraextensions.com/magento/extensions/2.x/stackdriver/latest/)
