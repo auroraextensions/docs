@@ -5,6 +5,7 @@ theme: mkdocs
 nav:
   - Home: index.md
   - Installation: installation.md
+  - Configuration: configuration.md
 extra_css:
   - css/extra.css
 google_analytics: ['UA-113897119-2', 'docs.auroraextensions.com']
