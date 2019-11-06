@@ -13,6 +13,7 @@ This guide explains how to install and configure Simple Returns for Magento Open
     - [Shipping Settings](#shipping-settings)
     - [Origin Settings](#origin-settings)
 + [Carriers](#carriers)
++ [Sample Data](#sample-data) [Optional]
 
 ### Installation
 
@@ -72,3 +73,11 @@ prior to use of Simple Returns.
 
 + [UPS](https://docs.magento.com/m2/ce/user_guide/shipping/ups.html)
 + [Fedex](https://docs.magento.com/m2/ce/user_guide/shipping/fedex.html)
+
+### Sample Data
+
+We strongly recommend testing Simple Returns within your own environments prior to use in production. To assist in testing,
+we offer a sample data module, made available via [GitHub](https://github.com/auroraextensions/simplereturns-sampledata),
+and [Packagist](https://packagist.org/packages/auroraextensions/simplereturns-sampledata).
+
+For more information on installing sample data modules, see [Sample Data](https://docs.auroraextensions.com/magento/extensions/2.x/sampledata/latest/).
