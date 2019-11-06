@@ -27,7 +27,7 @@ If the module you're looking for is not in the list below, please check the [doc
 + [Google Cloud Storage](https://docs.auroraextensions.com/magento/extensions/2.x/googlecloudstorage/latest/)
 + [Google Stackdriver](https://docs.auroraextensions.com/magento/extensions/2.x/stackdriver/latest/)
 + [Mage Cron Cloud Functions](https://docs.auroraextensions.com/magento/extensions/2.x/magecroncloudfunctions/latest/)
-+ [Sample Data](https://docs.auroraextensions.com/magento/extensions/2.x/sampledata/latest/)
++ [Sample Data](https://docs.auroraextensions.com/magento/extensions/2.x/sampledata/index/)
 + [Simple Cache](https://docs.auroraextensions.com/magento/extensions/2.x/simplecache/latest/)
 + [Simple Returns](https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/latest/)
 + [Test Live Checkout](https://docs.auroraextensions.com/magento/extensions/2.x/testlivecheckout/latest/)
