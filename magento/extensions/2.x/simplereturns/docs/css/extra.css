@@ -25,6 +25,11 @@ a:focus {
 
 pre, code {
   font-family: monospace, sans-serif;
+  font-size: 14px !important;
+}
+
+.container pre {
+  padding: 0;
 }
 
 blockquote {
