@@ -1,0 +1,11 @@
+site_name: Aurora Extensions Sample Data Modules
+site_dir: index
+copyright: 'Copyright &copy; 2019 <a href="https://auroraextensions.com" target="_blank">Aurora Extensions</a>'
+theme: mkdocs
+nav:
+  - Home: index.md
+  - Installation:
+    - 'Simple Returns': 'simplereturns/installation.md'
+extra_css:
+  - css/extra.css
+google_analytics: ['UA-113897119-2', 'docs.auroraextensions.com']
