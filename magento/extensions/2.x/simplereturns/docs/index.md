@@ -17,4 +17,4 @@ functionality required to submit and process returns online.
 - Extends built-in RMA functionality
 - Provides easy-to-use features
 - Less overhead compared to other RMA modules
-- More affordable compared to other RMA modules
+- Free!
