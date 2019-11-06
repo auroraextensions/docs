@@ -77,7 +77,7 @@ prior to use of Simple Returns.
 ### Sample Data
 
 We strongly recommend testing Simple Returns within your own environments prior to use in production. To assist in testing,
-we offer a sample data module, made available via [GitHub](https://github.com/auroraextensions/simplereturns-sampledata),
+we offer a sample data module, made available via [GitHub](https://github.com/auroraextensions/simplereturns-sampledata)
 and [Packagist](https://packagist.org/packages/auroraextensions/simplereturns-sampledata).
 
-For more information on installing sample data modules, see [Sample Data](https://docs.auroraextensions.com/magento/extensions/2.x/sampledata/latest/).
+For more information on installing sample data modules, see [Sample Data](https://docs.auroraextensions.com/magento/extensions/2.x/sampledata/index/simplereturns/).
