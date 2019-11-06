@@ -4,7 +4,7 @@ This guide explains how to install and set up Simple Returns sample data module.
 
 ### Table of Contents
 
-+ [Repository](https://github.com/auroraextensions/simplereturns-sampledata) ![Simple Returns Sample Data Repository](/assets/images/extlink.png)
++ [Repository](https://github.com/auroraextensions/simplereturns-sampledata)
 + [Prerequisites](#prerequisites)
 + [Installation](#installation)
     - [Composer](#composer)
