@@ -62,6 +62,9 @@
                             <li class="active">
                                 <a href="./">Installation</a>
                             </li>
+                            <li >
+                                <a href="../configuration/">Configuration</a>
+                            </li>
                         </ul>
 
                     <ul class="nav navbar-nav navbar-right">
@@ -75,8 +78,8 @@
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li class="disabled">
-                                <a rel="prev" >
+                            <li >
+                                <a rel="prev" href="../configuration/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -91,15 +94,14 @@
         <li class="main active"><a href="#installation-guide">Installation Guide</a></li>
             <li><a href="#table-of-contents">Table of Contents</a></li>
             <li><a href="#installation">Installation</a></li>
-            <li><a href="#configuration">Configuration</a></li>
-            <li><a href="#carriers">Carriers</a></li>
-            <li><a href="#sample-data">Sample Data</a></li>
+            <li><a href="#setup">Setup</a></li>
+            <li><a href="#next-steps">Next Steps</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
 <h2 id="installation-guide">Installation Guide</h2>
-<p>This guide explains how to install and configure Simple Returns for Magento Open Source.</p>
+<p>This guide explains how to install and enable Simple Returns for Magento Open Source.</p>
 <h3 id="table-of-contents">Table of Contents</h3>
 <ul>
 <li><a href="https://github.com/auroraextensions/simplereturns">Repository</a></li>
@@ -107,15 +109,8 @@
 <li><a href="#composer">Composer</a></li>
 </ul>
 </li>
-<li><a href="#configuration">Configuration</a><ul>
-<li><a href="#module-settings">Module Settings</a></li>
-<li><a href="#store-information-settings">Store Information Settings</a></li>
-<li><a href="#shipping-settings">Shipping Settings</a></li>
-<li><a href="#origin-settings">Origin Settings</a></li>
-</ul>
-</li>
-<li><a href="#carriers">Carriers</a></li>
-<li><a href="#sample-data">Sample Data</a> [Optional]</li>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#next-steps">Next Steps</a></li>
 </ul>
 <h3 id="installation">Installation</h3>
 <p>You can install Simple Returns several ways, however we highly recommend using <a href="https://getcomposer.org">Composer</a>.
@@ -124,51 +119,18 @@ Simple Returns has several dependencies, so installing with Composer makes depen
 <pre><code>composer require auroraextensions/simplereturns
 </code></pre>
 
-<h3 id="configuration">Configuration</h3>
-<p>This is a multi-step process, so please make sure to complete each step.</p>
-<h4 id="module-settings">Module Settings</h4>
-<p>You can view and update module settings by navigating to <em>Stores &gt; Configuration &gt; Aurora Extensions &gt; Simple Returns</em>.</p>
-<ol>
-<li>Under <em>General Settings</em>, set <em>Enable Simple Returns</em> to <em>Yes</em>.</li>
-<li>Under <em>RMA Settings</em>, select the carrier and method to use for return shipments.</li>
-</ol>
-<h4 id="store-information-settings">Store Information Settings</h4>
-<p>Return shipments require the store information settings to be set. You can view and update store information settings
-by navigating to <em>Stores &gt; Configuration &gt; General &gt; Store Information</em>. The following fields must be set:</p>
-<ol>
-<li>Store Name</li>
-<li>Store Phone Number</li>
-<li>Country</li>
-<li>Region/State</li>
-<li>ZIP/Postal Code</li>
-<li>City</li>
-<li>Street Address</li>
-</ol>
-<h4 id="shipping-settings">Shipping Settings</h4>
-<p>For information on setting up each shipping carrier, see <a href="#carriers">Carriers</a> section.</p>
-<h4 id="origin-settings">Origin Settings</h4>
-<p>The shipping origin is the recipient address for return shipments, such as a returns processing facility or warehouse.
-Return shipments require the shipping origin settings to be set. You can view and update origin settings by navigating
-to <em>Stores &gt; Configuration &gt; Shipping Settings &gt; Origin</em>. The following fields must be set:</p>
-<ol>
-<li>Country</li>
-<li>Region/State</li>
-<li>ZIP/Postal Code</li>
-<li>City</li>
-<li>Street Address</li>
-</ol>
-<h3 id="carriers">Carriers</h3>
-<p>Currently, Simple Returns supports UPS and Fedex for return shipments. The respective carrier settings should be completed
-prior to use of Simple Returns.</p>
-<ul>
-<li><a href="https://docs.magento.com/m2/ce/user_guide/shipping/ups.html">UPS</a></li>
-<li><a href="https://docs.magento.com/m2/ce/user_guide/shipping/fedex.html">Fedex</a></li>
-</ul>
-<h3 id="sample-data">Sample Data</h3>
-<p>We strongly recommend testing Simple Returns within your own environments prior to use in production. To assist in testing,
-we offer a sample data module, made available via <a href="https://github.com/auroraextensions/simplereturns-sampledata">GitHub</a>
-and <a href="https://packagist.org/packages/auroraextensions/simplereturns-sampledata">Packagist</a>.</p>
-<p>For more information on installing sample data modules, see <a href="https://docs.auroraextensions.com/magento/extensions/2.x/sampledata/index/simplereturns/">Sample Data</a>.</p></div>
+<h3 id="setup">Setup</h3>
+<p>Once you've installed the module, you will need to enable it. Run the following from the Magento root directory:</p>
+<pre><code>./bin/magento module:enable AuroraExtensions_SimpleReturns --clear-static-content
+</code></pre>
+
+<p>Lastly, run the setup upgrade command from the Magento root directory:</p>
+<pre><code>rm -rf generated/code &amp;&amp; ./bin/magento cache:clean &amp;&amp; ./bin/magento setup:upgrade
+</code></pre>
+
+<h3 id="next-steps">Next Steps</h3>
+<p>After you've completed the above steps, you will need to configure Simple Returns for use. This is explained at length in
+the <a href="https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/latest/configuration/">Configuration</a> step.</p></div>
         </div>
 
         <footer class="col-md-12">
