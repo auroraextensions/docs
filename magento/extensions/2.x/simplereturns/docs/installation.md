@@ -6,12 +6,12 @@ This guide explains how to install and configure Simple Returns for Magento Open
 
 + [Repository](https://github.com/auroraextensions/simplereturns)
 + [Installation](#installation)
-  - [Composer](#composer)
+    - [Composer](#composer)
 + [Configuration](#configuration)
-  - [Module Settings](#module-settings)
-  - [Store Information Settings](#store-information-settings)
-  - [Shipping Settings](#shipping-settings)
-  - [Origin Settings](#origin-settings)
+    - [Module Settings](#module-settings)
+    - [Store Information Settings](#store-information-settings)
+    - [Shipping Settings](#shipping-settings)
+    - [Origin Settings](#origin-settings)
 + [Carriers](#carriers)
 
 ### Installation
