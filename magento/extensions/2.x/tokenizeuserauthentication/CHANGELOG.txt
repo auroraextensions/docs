@@ -2,6 +2,57 @@
 
 ## [Unreleased]
 
+## [1.1.2] ~ 2019-12-18
+#### Added
+
+- Add customer AccountManagement model compatibility trait
+- Add customer account createPost controller compatibility trait
+
+#### Changed
+
+- Group imports by module in customer token validation controller
+- Group imports by module in customer authentication model
+
+#### Fixed
+
+- Fix < 2.3.3 compatibility issues with customer AccountManagement model
+- Fix < 2.3.3 compatibility issues with customer account createPost controller
+
+## [1.1.1] ~ 2019-12-13
+#### Fixed
+
+- Fix table resolution issue in Customer resource model
+- Fix table resolution issue in User resource model
+
+## [1.1.0] ~ 2019-12-11
+#### Added
+
+- Add TokenManagement class
+- Add TokenManagementInterface interface
+- Add webapi.xml
+- Add customer EmailNotification model
+- Add TokenRepositoryInterface::deleteById()
+- Add TokenRepository::deleteById()
+
+#### Changed
+
+- Group imports by module in admin Authentication plugin classes
+- Override parent constructor in customer AccountManagement model
+- Update frontend login_request.html email template
+- Update frontend account_new_confirmed.html email template
+- Update email_templates.xml
+- Update TokenRepositoryInterface::delete()
+- Update TokenRepository::delete()
+
+#### Fixed
+
+- Fix customer Authentication::validate() return type
+- Fix undefined variable issue in frontend email templates
+
+#### Removed
+
+- Remove adminhtml router
+
 ## [1.0.2] ~ 2019-07-06
 #### Added
 - Add AuthObserver preference to prevent admin password update deadlock.
