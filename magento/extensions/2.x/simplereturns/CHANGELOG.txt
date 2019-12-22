@@ -2,6 +2,48 @@
 
 ## [Unreleased]
 
+## [1.1.0] ~ 2019-12-21
+#### Added
+- Add ModifierPoolTrait component trait
+- Add JsLayoutInterface component interface
+- Add namespace in simplereturns_rma_form.xml
+- Add increment ID data modifier for RMA grid
+- Add increment_id column to simplereturns_rma_grid.xml
+- Add section templates for frontend RMA view layout
+- Add useful containers to RMA edit XML layout
+- Add EventManagerTrait component trait
+- Add customer RMA update email XML configuration options to system.xml
+- Add customer RMA update email XML configuration defaults to config.xml
+- Add customer RMA update email template, update email_templates.xml
+
+#### Changed
+- Set reverseMetadataMerge in simplereturns_rma_form.xml
+- Use array_replace_recursive for merging in SaveButton component class
+- Apply meta, data modifiers in RMA form data provider
+- Change RMA form data provider prepareSubmitUrl method visibility
+- Split adminhtml RMA view template into blocks
+- Hide RMA grid in Actions grid UI component class
+- Dispatch adminhtml RMA create event
+- Revise dispatch data in adminhtml RMA createPost controller
+- Dispatch adminhtml RMA edit event
+- Output child HTML in frontend RMA edit template
+- Change ExceptionFactory to non-final class
+- Rename frontend email template rma_request_status_{update => change}.html
+- Update XML configurations to reflect status change template updates
+- Dispatch useful events in frontend RMA createPost controller
+- Dispatch useful events in frontend RMA editPost controller
+- Dispatch useful events in adminhtml RMA status editPost controller
+- Send relevant customer email in adminhtml RMA status editPost controller
+
+#### Fixed
+- Fix issue with RMA entity data in frontend RMA editPost controller
+- Fix issue with empty order ID in frontend RMA editPost controller
+
+#### Removed
+- Remove unused adminhtml RMA view template
+- Remove unused edit button from adminhtml package view page
+- Remove frontend RMA view template
+
 ## [1.0.0] ~ 2019-11-06
 #### Added
 - Initial release of Simple Returns.
