@@ -5,6 +5,8 @@ Simple Returns Pro
    :maxdepth: 2
    :caption: Contents:
 
+   quickstart
+
 * :ref:`genindex`
 * :ref:`search`
 
