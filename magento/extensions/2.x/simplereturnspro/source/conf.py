@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Simple Returns Pro'
-copyright = '2019, Aurora Extensions'
+copyright = 'Copyright &copy; 2019 <a href="https://auroraextensions.com" target="_blank">Aurora Extensions</a>'
 author = 'Aurora Extensions'
 
 # The full version, including alpha/beta/rc tags
