@@ -4,6 +4,7 @@ Simple Returns Pro
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+
    quickstart
 
 * :ref:`genindex`
