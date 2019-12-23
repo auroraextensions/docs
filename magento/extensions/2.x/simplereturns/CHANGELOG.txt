@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+## [1.1.1] ~ 2019-12-23
+#### Added
+- Add exports.php to polyfill functions for PHP 7.1 support
+
+#### Removed
+- Remove dependency on AuroraExtensions_Polyfill module
+
 ## [1.1.0] ~ 2019-12-21
 #### Added
 - Add ModifierPoolTrait component trait
