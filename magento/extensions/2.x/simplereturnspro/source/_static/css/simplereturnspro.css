@@ -1,10 +1,15 @@
 /**
  * simplereturnspro.css
  */
+.section pre,
+.section tt,
+.section code {
+  font-size: 0.8em;
+}
+
 .section pre {
   background: #fafafa;
   border-radius: 3px;
-  font-size: 0.8em;
 }
 
 .section span.pre {
