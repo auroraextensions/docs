@@ -11,7 +11,7 @@ Quickstart
 Installation
 ------------
 
-To get things rolling, add the following entry to the ``require`` section of your project *composer.json*:
+To get started, add the following entry to the ``require`` section of your project *composer.json*:
 
 .. code-block:: js
 
@@ -24,6 +24,12 @@ Once you've made that update, save the file and run the following command:
     composer install
 
 This will install Simple Returns Pro, along with its dependencies.
+
+.. attention::
+    If you're already using Simple Returns, setup for Simple Returns Pro is minimal. However,
+    if you're not already using Simple Returns prior to installing Simple Returns Pro, you
+    will need to consult the Simple Returns Installation and Configuration guides, which
+    outline everything needed to get up and running.
 
 Next, verify the module and its dependencies are installed by running the following command:
 

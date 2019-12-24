@@ -13,25 +13,39 @@ Simple Returns Pro
 What is Simple Returns?
 -----------------------
 
-Simple Returns is our popular, open-source RMA extension. We are steadfast believers in the power
+Simple Returns is our popular, open-source RMA extension. We are steadfast believers in the value
 of open source, which is why we provide an open-source option for the overwhelming majority of our
-extensions. Likewise, most of our customers start out using one of our free extensions before making
-the decision to upgrade to the premium version.
+extensions. Simple Returns provides enhanced RMA functionality for Magento Open Source. It extends
+the default RMA capabilities built into Magento Open Source and offers several additional features,
+including:
+
+:Customer features:
+    Create, edit RMA requests from frontend
+    Create, edit, delete RMA file attachments
+    Generate shipping label upon RMA approval
+    Available to registered customers and guests
+
+:Administrator features:
+    Create, edit RMA requests from admin
+    Generate shipping labels
+    Supports several carriers, like Fedex and UPS
+
+:Developer features:
+    Customizable RMA reasons, resolutions, statuses
+    Built for dependability and extensibility (Simple Returns Pro is living proof!)
+    Actively maintained by Aurora Extensions
+    Integrates with Fedex and UPS
 
 What is Simple Returns Pro?
 ---------------------------
 
 Simple Returns Pro is an advanced RMA extension intended for use with Magento Open Source. By extending
 the robust functionality of Simple Returns, Simple Returns Pro is able to provide an optimized RMA
-experience for both customers and administrators alike.
-
-Benefits of Simple Returns Pro
-------------------------------
-
-In addition to features provided by Simple Returns, Simple Returns Pro provides the following:
+experience for both customers and administrators alike. In addition to features provided by Simple Returns,
+Simple Returns Pro provides the following:
 
 1. Itemized returns
-2. Partial returns
+2. Partial quantity returns
 3. Customizable product page badge
 4. Archive RMA requests
 5. Lock RMA requests
