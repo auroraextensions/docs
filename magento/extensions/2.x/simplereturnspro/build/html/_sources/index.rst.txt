@@ -19,22 +19,29 @@ extensions. Simple Returns provides enhanced RMA functionality for Magento Open 
 the default RMA capabilities built into Magento Open Source and offers several additional features,
 including:
 
-:Customer features:
-    Create, edit RMA requests from frontend
-    Create, edit, delete RMA file attachments
-    Generate shipping label upon RMA approval
-    Available to registered customers and guests
+Customer features
+^^^^^^^^^^^^^^^^^
 
-:Administrator features:
-    Create, edit RMA requests from admin
-    Generate shipping labels
-    Supports several carriers, like Fedex and UPS
+| Create, edit RMA requests from frontend
+| Create, edit, delete RMA file attachments
+| Generate shipping label upon RMA approval
+| Available to registered customers and guests
 
-:Developer features:
-    Customizable RMA reasons, resolutions, statuses
-    Built for dependability and extensibility (Simple Returns Pro is living proof!)
-    Actively maintained by Aurora Extensions
-    Integrates with Fedex and UPS
+Administrator features
+^^^^^^^^^^^^^^^^^^^^^^
+
+| Create, edit RMA requests from admin
+| Generate shipping labels
+| Supports several carriers, like Fedex and UPS
+| Customizable RMA fields (e.g. reasons, resolutions, statuses)
+
+Developer features
+^^^^^^^^^^^^^^^^^^
+
+| Dependable and extensible (Simple Returns Pro is living proof!)
+| Plugin-friendly classes and methods
+| Events dispatched for most major actions
+| Actively maintained by Aurora Extensions, a Magento partner
 
 What is Simple Returns Pro?
 ---------------------------
