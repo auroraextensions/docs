@@ -11,3 +11,7 @@
   border-radius: 3px;
   padding: 0.25em;
 }
+
+.section code.literal {
+  border-radius: 3px;
+}
