@@ -22,26 +22,26 @@ including:
 Customer features
 ^^^^^^^^^^^^^^^^^
 
-| Create, edit RMA requests from frontend
-| Create, edit, delete RMA file attachments
-| Generate shipping label upon RMA approval
-| Available to registered customers and guests
+- Create, edit RMA requests from frontend
+- Create, edit, delete RMA file attachments
+- Generate shipping label upon RMA approval
+- Available to registered customers and guests
 
 Administrator features
 ^^^^^^^^^^^^^^^^^^^^^^
 
-| Create, edit RMA requests from admin
-| Generate shipping labels
-| Supports several carriers, like Fedex and UPS
-| Customizable RMA fields (e.g. reasons, resolutions, statuses)
+- Create, edit RMA requests from admin
+- Generate shipping labels
+- Supports several carriers, like Fedex and UPS
+- Customizable RMA fields (e.g. reasons, resolutions, statuses)
 
 Developer features
 ^^^^^^^^^^^^^^^^^^
 
-| Dependable and extensible (Simple Returns Pro is living proof!)
-| Plugin-friendly classes and methods
-| Events dispatched for most major actions
-| Actively maintained by Aurora Extensions, a Magento partner
+- Dependable and extensible (Simple Returns Pro is living proof!)
+- Plugin-friendly classes and methods
+- Events dispatched for most major actions
+- Actively maintained by Aurora Extensions, a Magento partner
 
 What is Simple Returns Pro?
 ---------------------------
