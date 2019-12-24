@@ -1,1 +1,13 @@
-/* This file intentionally left blank. */
+/**
+ * simplereturnspro.css
+ */
+.section pre {
+  background: #fafafa;
+  border-radius: 3px;
+  font-size: 0.8em;
+}
+
+.section span.pre {
+  border-radius: 3px;
+  padding: 0.25em;
+}
