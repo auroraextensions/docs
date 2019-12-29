@@ -12,7 +12,7 @@ Table of Contents
 - `Setup`_
 - `Next Steps`_
 
-.. installation:
+.. _installation:
 
 Installation
 ------------

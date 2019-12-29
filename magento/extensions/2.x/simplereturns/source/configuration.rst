@@ -20,7 +20,7 @@ Prerequisites
 
 Before starting this step, please make sure you have completed the :ref:`installation` step.
 
-.. configuration:
+.. _configuration:
 
 Configuration
 -------------
