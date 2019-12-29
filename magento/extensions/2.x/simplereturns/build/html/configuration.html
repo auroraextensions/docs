@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Configuration Guide &#8212; Simple Returns 1.1.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/simplereturns.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Installation Guide" href="installation.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="configuration-guide">
+<h1>Configuration Guide<a class="headerlink" href="#configuration-guide" title="Permalink to this headline">¶</a></h1>
+<p>This guide explains how to configure Simple Returns for Magento Open Source.</p>
+<div class="section" id="table-of-contents">
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="#prerequisites">Prerequisites</a></p></li>
+<li><dl class="simple">
+<dt><a class="reference internal" href="#configuration">Configuration</a></dt><dd><ul>
+<li><p><a class="reference internal" href="#module-settings">Module Settings</a></p></li>
+<li><p><a class="reference internal" href="#store-information-settings">Store Information Settings</a></p></li>
+<li><p><a class="reference internal" href="#shipping-settings">Shipping Settings</a></p></li>
+<li><p><a class="reference internal" href="#origin-settings">Origin Settings</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><a class="reference internal" href="#carriers">Carriers</a></p></li>
+<li><p><a class="reference external" href="https://docs.auroraextensions.com/magento/extensions/2.x/sampledata/index/simplereturns/">Sample Data</a></p></li>
+</ul>
+</div>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<p>Before starting this step, please make sure you have completed the <a class="reference internal" href="installation.html#installation"><span class="std std-ref">Installation</span></a> step.</p>
+</div>
+<div class="section" id="configuration">
+<span id="id1"></span><h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>This is a multi-step process. Please make sure to complete each step sequentially. If you
+encounter issues, please refer to our Troubleshooting section.</p>
+</div>
+<div class="section" id="module-settings">
+<h3>Module Settings<a class="headerlink" href="#module-settings" title="Permalink to this headline">¶</a></h3>
+<p>You can view and update module settings by navigating to <em>Stores</em> &gt; <em>Configuration</em> &gt; <em>Aurora Extensions</em> &gt; <em>Simple Returns</em>.</p>
+<ol class="arabic simple">
+<li><p>Under <em>General Settings</em>, set <em>Enable Simple Returns</em> to <em>Yes</em>.</p></li>
+<li><p>Under <em>RMA Settings</em>, select the carrier and method to use for return shipments.</p></li>
+</ol>
+</div>
+<div class="section" id="store-information-settings">
+<h3>Store Information Settings<a class="headerlink" href="#store-information-settings" title="Permalink to this headline">¶</a></h3>
+<p>Return shipments require the store information settings to be set. You can view and update store information settings
+by navigating to <em>Stores</em> &gt; <em>Configuration</em> &gt; <em>General</em> &gt; <em>Store Information</em>. The following fields must be set:</p>
+<ol class="arabic simple">
+<li><p>Store Name</p></li>
+<li><p>Store Phone Number</p></li>
+<li><p>Country</p></li>
+<li><p>Region/State</p></li>
+<li><p>ZIP/Postal Code</p></li>
+<li><p>City</p></li>
+<li><p>Street Address</p></li>
+</ol>
+</div>
+<div class="section" id="shipping-settings">
+<h3>Shipping Settings<a class="headerlink" href="#shipping-settings" title="Permalink to this headline">¶</a></h3>
+<p>For information on setting up each shipping carrier, see [Carriers](#carriers) section.</p>
+</div>
+<div class="section" id="origin-settings">
+<h3>Origin Settings<a class="headerlink" href="#origin-settings" title="Permalink to this headline">¶</a></h3>
+<p>The shipping origin is the recipient address for return shipments, such as a returns processing facility or warehouse.
+Return shipments require the shipping origin settings to be set. You can view and update origin settings by navigating
+to <em>Stores</em> &gt; <em>Configuration</em> &gt; <em>Shipping Settings</em> &gt; <em>Origin</em>. The following fields must be set:</p>
+<ol class="arabic simple">
+<li><p>Country</p></li>
+<li><p>Region/State</p></li>
+<li><p>ZIP/Postal Code</p></li>
+<li><p>City</p></li>
+<li><p>Street Address</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="carriers">
+<h2>Carriers<a class="headerlink" href="#carriers" title="Permalink to this headline">¶</a></h2>
+<p>Currently, Simple Returns supports UPS and Fedex for return shipments. The respective carrier settings should be completed
+prior to use of Simple Returns.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.magento.com/m2/ce/user_guide/shipping/ups.html">UPS</a></p></li>
+<li><p><a class="reference external" href="https://docs.magento.com/m2/ce/user_guide/shipping/fedex.html">Fedex</a></p></li>
+</ul>
+</div>
+<div class="section" id="sample-data">
+<h2>Sample Data<a class="headerlink" href="#sample-data" title="Permalink to this headline">¶</a></h2>
+<p>We strongly recommend testing Simple Returns within your own environments prior to use in production. To assist in testing,
+we offer a sample data module, made available via <a class="reference external" href="https://github.com/auroraextensions/simplereturns-sampledata">GitHub</a>
+and <a class="reference external" href="https://packagist.org/packages/auroraextensions/simplereturns-sampledata">Packagist</a>.</p>
+<p>For more information on installing sample data modules, see <a class="reference external" href="https://docs.auroraextensions.com/magento/extensions/2.x/sampledata/index/simplereturns/">Sample Data</a>.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Simple Returns</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Configuration Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#table-of-contents">Table of Contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#carriers">Carriers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sample-data">Sample Data</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="installation.html" title="previous chapter">Installation Guide</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;Copyright &copy; 2019 <a href="https://auroraextensions.com" target="_blank">Aurora Extensions</a>.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/configuration.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
