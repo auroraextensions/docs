@@ -54,7 +54,7 @@ by navigating to *Stores* > *Configuration* > *General* > *Store Information*. T
 Shipping Settings
 ^^^^^^^^^^^^^^^^^
 
-For information on setting up each shipping carrier, see [Carriers](#carriers) section.
+For information on setting up each shipping carrier, see `Carriers`_ section.
 
 Origin Settings
 ^^^^^^^^^^^^^^^
