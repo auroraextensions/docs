@@ -1,1 +1,22 @@
-/* simplereturns.css */
+/**
+ * simplereturns.css
+ */
+.section pre,
+.section tt,
+.section code {
+  font-size: 0.8em;
+}
+
+.section pre {
+  background: #fafafa;
+  border-radius: 3px;
+}
+
+.section span.pre {
+  border-radius: 3px;
+  padding: 0.25em;
+}
+
+.section code.literal {
+  border-radius: 3px;
+}
