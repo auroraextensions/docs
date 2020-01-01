@@ -7,6 +7,7 @@ Simple Returns
 
    installation
    configuration
+   Changelog <https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/CHANGELOG.txt>
 
 * :ref:`genindex`
 * :ref:`search`
