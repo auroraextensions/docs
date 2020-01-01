@@ -40,7 +40,7 @@ You can view and update module settings by navigating to *Stores* > *Configurati
 Store Information Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Return shipments require the store information settings to be set. You can view and update store information settings
+Return shipments require specific store information fields to be set. You can view and update store information settings
 by navigating to *Stores* > *Configuration* > *General* > *Store Information*. The following fields must be set:
 
 1. Store Name
