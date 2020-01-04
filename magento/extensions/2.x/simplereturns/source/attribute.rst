@@ -52,6 +52,7 @@ From the product edit page, click *Add Attribute* in the top right corner of the
    :alt: Add attribute button
    :align: center
    :figclass: align-center
+   :scale: 50%
 
 From the attributes grid, select the checkbox for ``simple_return`` and click *Add Selected*.
 
@@ -61,6 +62,7 @@ From the attributes grid, select the checkbox for ``simple_return`` and click *A
    :alt: Add selected attribute
    :align: center
    :figclass: align-center
+   :scale: 50%
 
 Then click *Save* to update the product.
 
@@ -84,5 +86,6 @@ the *Returnable* attribute button to enable returns for the product.
    :alt: Enable Returnable attribute
    :align: center
    :figclass: align-center
+   :scale: 50%
 
 Then click *Save* to update the product.
