@@ -7,12 +7,10 @@ Simple Returns
 
    installation
    configuration
+   attribute
    License <https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt>
    Release Notes <https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/RELEASE_NOTES.txt>
    Versions <https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/index.html>
-
-* :ref:`genindex`
-* :ref:`search`
 
 What is Simple Returns?
 -----------------------
@@ -28,14 +26,16 @@ Customer features
 
 - Create, edit RMA requests from frontend
 - Create, edit, delete RMA file attachments
+- Receive updates via email
 - Generate shipping label upon RMA approval
 - Available to registered customers and guests
 
 Administrator features
 ^^^^^^^^^^^^^^^^^^^^^^
 
-- Create, edit RMA requests from admin
-- Generate shipping labels
+- Create, edit RMA requests
+- Create RMA packages (return shipments)
+- Generate, print shipping labels
 - Supports several carriers, like Fedex and UPS
 - Customizable RMA fields (e.g. reasons, resolutions, statuses)
 
@@ -45,4 +45,4 @@ Developer features
 - Dependable and extensible (Simple Returns Pro is living proof!)
 - Plugin-friendly classes and methods
 - Events dispatched for most major actions
-- Actively maintained by Aurora Extensions, a Magento partner
+- Actively maintained by Aurora Extensions, an ExtDN member and Magento partner

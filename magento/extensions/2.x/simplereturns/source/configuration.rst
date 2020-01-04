@@ -1,7 +1,7 @@
 Configuration Guide
 ===================
 
-This guide explains how to configure Simple Returns for Magento Open Source.
+This guide explains how to configure Simple Returns.
 
 Table of Contents
 -----------------
@@ -14,6 +14,7 @@ Table of Contents
     - `Origin Settings`_
 - `Carriers`_
 - `Sample Data`_
+- `Next Steps`_
 
 Prerequisites
 -------------
@@ -86,3 +87,9 @@ we offer a sample data module, made available via `GitHub <https://github.com/au
 and `Packagist <https://packagist.org/packages/auroraextensions/simplereturns-sampledata>`_.
 
 For more information on installing sample data modules, see `Sample Data <https://docs.auroraextensions.com/magento/extensions/2.x/sampledata/index/simplereturns/>`_.
+
+Next Steps
+----------
+
+After you've completed the above steps, you will need to set and enable the ``simple_return`` product attribute for each
+product you want to make returnable. This is explained at length in the :ref:`attribute` guide.

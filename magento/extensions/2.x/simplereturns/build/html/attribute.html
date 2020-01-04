@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Attribute Guide &#8212; Simple Returns 1.1.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/simplereturns.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Configuration Guide" href="configuration.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="attribute-guide">
+<h1>Attribute Guide<a class="headerlink" href="#attribute-guide" title="Permalink to this headline">¶</a></h1>
+<p>This guide explains how to set the <code class="docutils literal notranslate"><span class="pre">simple_return</span></code> product attribute. This attribute
+must be set and enabled for <em>each product of an order</em>, as required for RMA eligibility.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Simple Returns is an order-based RMA extension, meaning an RMA request is not specific to any
+single item, but the order as a whole. If you need itemized and/or partial returns capabilities,
+please check out our premium RMA extension, Simple Returns Pro. It provides all of the features
+of Simple Returns with several added features like itemized and partial returns, RMA archives,
+and lockable RMAs to prevent customers from editing, just to name a few.</p>
+</div>
+<div class="section" id="table-of-contents">
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="#prerequisites">Prerequisites</a></p></li>
+<li><p><a class="reference internal" href="#attribute">Attribute</a></p></li>
+</ul>
+</div>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<p>Before starting, please make sure you have completed the following steps:</p>
+<p><a class="reference internal" href="installation.html#installation"><span class="std std-ref">Installation</span></a>
+<a class="reference internal" href="configuration.html#configuration"><span class="std std-ref">Configuration</span></a></p>
+</div>
+<div class="section" id="attribute">
+<span id="id1"></span><h2>Attribute<a class="headerlink" href="#attribute" title="Permalink to this headline">¶</a></h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>This is a multi-step process. Please make sure to complete each step sequentially. If you
+encounter issues, please refer to our Troubleshooting section.</p>
+</div>
+<div class="section" id="step-one-add-attribute">
+<h3>Step One: Add Attribute<a class="headerlink" href="#step-one-add-attribute" title="Permalink to this headline">¶</a></h3>
+<p>To start, navigate to <em>Catalog</em> &gt; <em>Products</em> and click on a product you would like to make returnable.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>For configurable products, you will need to complete this step for both the configurable product, as
+well as the associated simple product.</p>
+</div>
+<p>From the product edit page, click <em>Add Attribute</em> in the top right corner of the page.</p>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="_images/step_one_1.png"><img alt="Add attribute button" src="_images/step_one_1.png" style="width: 800px; height: 200px;" /></a>
+</div>
+<p>From the attributes grid, select the checkbox for <code class="docutils literal notranslate"><span class="pre">simple_return</span></code> and click <em>Add Selected</em>.</p>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="_images/step_one_2.png"><img alt="Add selected attribute" src="_images/step_one_2.png" style="width: 1600px; height: 800px;" /></a>
+</div>
+<p>Then click <em>Save</em> to update the product.</p>
+</div>
+<div class="section" id="step-two-reindex-products">
+<h3>Step Two: Reindex Products<a class="headerlink" href="#step-two-reindex-products" title="Permalink to this headline">¶</a></h3>
+<p>The next step is to reindex the products and their attributes. From the Magento root directory,
+run the following command:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>./bin/magento cache:clean <span class="o">&amp;&amp;</span> ./bin/magento indexer:reindex
+</pre></div>
+</div>
+<p>Once the above command has completed, navigate back to the product edit page and look for the
+<em>Attributes</em> section near the bottom of the page. Toggle open the <em>Attributes</em> section and click
+the <em>Returnable</em> attribute button to enable returns for the product.</p>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="_images/step_two_1.png"><img alt="Enable Returnable attribute" src="_images/step_two_1.png" style="width: 1600px; height: 200px;" /></a>
+</div>
+<p>Then click <em>Save</em> to update the product.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Simple Returns</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Attribute Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#table-of-contents">Table of Contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#attribute">Attribute</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt">License</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/RELEASE_NOTES.txt">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/index.html">Versions</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="configuration.html" title="previous chapter">Configuration Guide</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;Copyright &copy; 2019 <a href="https://auroraextensions.com" target="_blank">Aurora Extensions</a>.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/attribute.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
