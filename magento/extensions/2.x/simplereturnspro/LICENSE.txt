@@ -1,6 +1,6 @@
 Aurora Extensions End User License Agreement
 
-Copyright (C) 2018 Aurora Extensions <support@auroraextensions.com>
+Copyright (C) 2020 Aurora Extensions <support@auroraextensions.com>
 
 1. Purpose
 
