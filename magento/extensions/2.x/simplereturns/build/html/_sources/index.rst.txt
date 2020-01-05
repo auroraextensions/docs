@@ -9,6 +9,7 @@ Simple Returns
    configuration
    attribute
    events
+   roadmap
    License <https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt>
    Release Notes <https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/RELEASE_NOTES.txt>
    Versions <https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/index.html>
