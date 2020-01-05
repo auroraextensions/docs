@@ -20,3 +20,8 @@
 .section code.literal {
   border-radius: 3px;
 }
+
+.section div.admonition.warning {
+  background-color: #ffedcc;
+  border: 1px solid #ffc966;
+}
