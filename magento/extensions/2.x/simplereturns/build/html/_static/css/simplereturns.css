@@ -30,3 +30,9 @@ body {
   background-color: #ffedcc;
   border: 1px solid #ffc966;
 }
+
+.section img.align-center,
+.section .figure.align-center,
+.section object.align-center {
+  border: 1px solid #eaeaea;
+}
