@@ -42,7 +42,7 @@ Usage    ``$observer->getEvent()->getStatus();``
 Event    **simplereturns_adminhtml_rma_create_save_after**
 Class    |AdminhtmlRmaCreateSaveAfterClass|_
 Area     ``adminhtml``
-Fields   :rma: ``SimpleReturnInterface``
+Fields   :rma: |SimpleReturnInterfaceReference|_
 Usage    ``$observer->getEvent()->getRma();``
 =======  =======================================================
 
@@ -54,7 +54,7 @@ Usage    ``$observer->getEvent()->getRma();``
 Event    **simplereturns_adminhtml_rma_edit_save_before**
 Class    |AdminhtmlRmaEditSaveBeforeClass|_
 Area     ``adminhtml``
-Fields   :rma: ``SimpleReturnInterface``
+Fields   :rma: |SimpleReturnInterfaceReference|_
          :status: ``string``
          :reason: ``string``
          :resolution: ``string``
@@ -70,7 +70,7 @@ Usage    ``$observer->getEvent()->getReason();``
 Event    **simplereturns_adminhtml_rma_edit_save_after**
 Class    |AdminhtmlRmaEditSaveAfterClass|_
 Area     ``adminhtml``
-Fields   :rma: ``SimpleReturnInterface``
+Fields   :rma: |SimpleReturnInterfaceReference|_
 Usage    ``$observer->getEvent()->getRma();``
 =======  =======================================================
 
@@ -82,7 +82,7 @@ Usage    ``$observer->getEvent()->getRma();``
 Event    **simplereturns_adminhtml_rma_status_edit_save_before**
 Class    |AdminhtmlRmaStatusEditSaveBeforeClass|_
 Area     ``adminhtml``
-Fields   :rma: ``SimpleReturnInterface``
+Fields   :rma: |SimpleReturnInterfaceReference|_
          :status: ``string``
 Usage    ``$observer->getEvent()->getStatus();``
 =======  =======================================================
@@ -95,7 +95,7 @@ Usage    ``$observer->getEvent()->getStatus();``
 Event    **simplereturns_adminhtml_rma_status_edit_save_after**
 Class    |AdminhtmlRmaStatusEditSaveAfterClass|_
 Area     ``adminhtml``
-Fields   :rma: ``SimpleReturnInterface``
+Fields   :rma: |SimpleReturnInterfaceReference|_
 Usage    ``$observer->getEvent()->getRma();``
 =======  =======================================================
 
@@ -106,6 +106,8 @@ Frontend
 2. `simplereturns_rma_create_save_after`_
 3. `simplereturns_rma_edit_save_before`_
 4. `simplereturns_rma_edit_save_after`_
+
+|
 
 .. _simplereturns_rma_create_save_before:
 
@@ -132,7 +134,7 @@ Usage    ``$observer->getEvent()->getOrderId();``
 Event    **simplereturns_rma_create_save_after**
 Class    |FrontendRmaCreateSaveAfterClass|_
 Area     ``frontend``
-Fields   :rma: ``SimpleReturnInterface``
+Fields   :rma: |SimpleReturnInterfaceReference|_
 Usage    ``$observer->getEvent()->getRma();``
 =======  =======================================================
 
@@ -162,7 +164,7 @@ Usage    ``$observer->getEvent()->getComments();``
 Event    **simplereturns_rma_edit_save_after**
 Class    |FrontendRmaEditSaveAfterClass|_
 Area     ``frontend``
-Fields   :rma: ``SimpleReturnInterface``
+Fields   :rma: |SimpleReturnInterfaceReference|_
 Usage    ``$observer->getEvent()->getRma();``
 =======  =======================================================
 
@@ -215,3 +217,9 @@ Usage    ``$observer->getEvent()->getRma();``
 
 .. |FrontendRmaEditSaveAfterClass| replace:: ``AuroraExtensions\SimpleReturns\Controller\Rma\EditPost``
 .. _FrontendRmaEditSaveAfterClass: https://github.com/auroraextensions/simplereturns/blob/master/Controller/Rma/EditPost.php
+
+..
+    SimpleReturnInterface
+
+.. |SimpleReturnInterfaceReference| replace:: ``SimpleReturnInterface``
+.. _SimpleReturnInterfaceReference: https://github.com/auroraextensions/simplereturns/blob/master/Api/Data/SimpleReturnInterface.php
