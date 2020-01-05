@@ -1,6 +1,15 @@
 /**
  * simplereturnspro.css
  */
+
+body {
+  font-family: Baskerville, serif;
+}
+
+.document div.sphinxsidebarwrapper h1.logo {
+  font-size: 1.5rem;
+}
+
 .section pre,
 .section tt,
 .section code {
@@ -19,4 +28,15 @@
 
 .section code.literal {
   border-radius: 3px;
+}
+
+.section div.admonition.warning {
+  background-color: #ffedcc;
+  border: 1px solid #ffc966;
+}
+
+.section img.align-center,
+.section .figure.align-center,
+.section object.align-center {
+  border: 1px solid #eaeaea;
 }
