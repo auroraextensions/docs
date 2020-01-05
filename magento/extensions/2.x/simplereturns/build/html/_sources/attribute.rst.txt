@@ -34,10 +34,6 @@ Before starting, please make sure you have completed the following steps:
 Attribute
 ---------
 
-.. attention::
-    This is a multi-step process. Please make sure to complete each step sequentially. If you
-    encounter issues, please refer to our Troubleshooting section.
-
 Step One: Add Attribute
 ^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -168,14 +164,6 @@ On the *Create new RMA* page, fill out the relevant information about the RMA re
 
 Once the RMA view page had loaded, review the information. You will not be able to generate a shipping
 label until the RMA request is approved.
-
-.. figure:: images/step_four_5.png
-   :width: 800
-   :height: 800
-   :alt: RMA view page
-   :align: center
-   :figclass: align-center
-   :scale: 50%
 
 .. figure:: images/step_four_6.png
    :width: 800
