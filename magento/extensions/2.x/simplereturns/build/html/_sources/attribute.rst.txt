@@ -135,8 +135,8 @@ On the *Orders and Returns* page, fill out the relevant order information. The O
 nine digit order increment ID value, which was generated when the order was created.
 
 .. figure:: images/step_four_2.png
-   :width: 1600
-   :height: 200
+   :width: 1200
+   :height: 600
    :alt: Orders and Returns form
    :align: center
    :figclass: align-center
