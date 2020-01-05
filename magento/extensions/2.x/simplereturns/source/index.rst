@@ -13,7 +13,7 @@ Simple Returns
    License <https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt>
    Release Notes <https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/RELEASE_NOTES.txt>
    Repository <https://github.com/auroraextensions/simplereturns>
-   Simple Returns Pro <https://docs.auroraextensions.com/magento/extensions/2.x/simplereturnspro/index.html>
+   Simple Returns Pro <https://docs.auroraextensions.com/magento/extensions/2.x/simplereturnspro/latest/index.html>
    Versions <https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/index.html>
 
 What is Simple Returns?
