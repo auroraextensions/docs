@@ -8,23 +8,12 @@ and example usage.
 Adminhtml
 ---------
 
-1. *simplereturns_adminhtml_rma_create_save_before*
-2. *simplereturns_adminhtml_rma_create_save_after*
-3. *simplereturns_adminhtml_rma_edit_save_before*
-4. *simplereturns_adminhtml_rma_edit_save_after*
-5. *simplereturns_adminhtml_rma_status_edit_save_before*
-6. *simplereturns_adminhtml_rma_status_edit_save_after*
-
-Frontend
---------
-
-1. *simplereturns_rma_create_save_before*
-2. *simplereturns_rma_create_save_after*
-3. *simplereturns_rma_edit_save_before*
-4. *simplereturns_rma_edit_save_after*
-
-Events
-------
+1. simplereturns_adminhtml_rma_create_save_before
+2. simplereturns_adminhtml_rma_create_save_after
+3. simplereturns_adminhtml_rma_edit_save_before
+4. simplereturns_adminhtml_rma_edit_save_after
+5. simplereturns_adminhtml_rma_status_edit_save_before
+6. simplereturns_adminhtml_rma_status_edit_save_after
 
 =======  =======================================================
 Event    **simplereturns_adminhtml_rma_create_save_before**
@@ -38,7 +27,7 @@ Fields   :order_id: ``int``
          :remote_ip: ``string``
          :token: ``string``
          :created_at: ``string``
-Sample   ``$observer->getEvent()->getStatus();``
+Usage    ``$observer->getEvent()->getStatus();``
 =======  =======================================================
 
 =======  =======================================================
@@ -46,7 +35,7 @@ Event    **simplereturns_adminhtml_rma_create_save_after**
 Class    |AdminhtmlRmaCreateSaveAfterClass|_
 Area     ``adminhtml``
 Fields   :rma: ``SimpleReturnInterface``
-Sample   ``$observer->getEvent()->getRma();``
+Usage    ``$observer->getEvent()->getRma();``
 =======  =======================================================
 
 =======  =======================================================
@@ -58,7 +47,7 @@ Fields   :rma: ``SimpleReturnInterface``
          :reason: ``string``
          :resolution: ``string``
          :comments: ``string``
-Sample   ``$observer->getEvent()->getReason();``
+Usage    ``$observer->getEvent()->getReason();``
 =======  =======================================================
 
 =======  =======================================================
@@ -66,7 +55,7 @@ Event    **simplereturns_adminhtml_rma_edit_save_after**
 Class    |AdminhtmlRmaEditSaveAfterClass|_
 Area     ``adminhtml``
 Fields   :rma: ``SimpleReturnInterface``
-Sample   ``$observer->getEvent()->getRma();``
+Usage    ``$observer->getEvent()->getRma();``
 =======  =======================================================
 
 =======  =======================================================
@@ -75,7 +64,7 @@ Class    |AdminhtmlRmaStatusEditSaveBeforeClass|_
 Area     ``adminhtml``
 Fields   :rma: ``SimpleReturnInterface``
          :status: ``string``
-Sample   ``$observer->getEvent()->getStatus();``
+Usage    ``$observer->getEvent()->getStatus();``
 =======  =======================================================
 
 =======  =======================================================
@@ -83,8 +72,16 @@ Event    **simplereturns_adminhtml_rma_status_edit_save_after**
 Class    |AdminhtmlRmaStatusEditSaveAfterClass|_
 Area     ``adminhtml``
 Fields   :rma: ``SimpleReturnInterface``
-Sample   ``$observer->getEvent()->getRma();``
+Usage    ``$observer->getEvent()->getRma();``
 =======  =======================================================
+
+Frontend
+--------
+
+1. simplereturns_rma_create_save_before
+2. simplereturns_rma_create_save_after
+3. simplereturns_rma_edit_save_before
+4. simplereturns_rma_edit_save_after
 
 =======  =======================================================
 Event    **simplereturns_rma_create_save_before**
@@ -98,7 +95,7 @@ Fields   :order_id: ``int``
          :remote_ip: ``string``
          :token: ``string``
          :created_at: ``string``
-Sample   ``$observer->getEvent()->getOrderId();``
+Usage    ``$observer->getEvent()->getOrderId();``
 =======  =======================================================
 
 =======  =======================================================
@@ -106,7 +103,7 @@ Event    **simplereturns_rma_create_save_after**
 Class    |FrontendRmaCreateSaveAfterClass|_
 Area     ``frontend``
 Fields   :rma: ``SimpleReturnInterface``
-Sample   ``$observer->getEvent()->getRma();``
+Usage    ``$observer->getEvent()->getRma();``
 =======  =======================================================
 
 =======  =======================================================
@@ -120,7 +117,7 @@ Fields   :rma_id: ``int``
          :comments: ``string``
          :remote_ip: ``string``
          :token: ``string``
-Sample   ``$observer->getEvent()->getComments();``
+Usage    ``$observer->getEvent()->getComments();``
 =======  =======================================================
 
 =======  =======================================================
@@ -128,7 +125,7 @@ Event    **simplereturns_rma_edit_save_after**
 Class    |FrontendRmaEditSaveAfterClass|_
 Area     ``frontend``
 Fields   :rma: ``SimpleReturnInterface``
-Sample   ``$observer->getEvent()->getRma();``
+Usage    ``$observer->getEvent()->getRma();``
 =======  =======================================================
 
 ..

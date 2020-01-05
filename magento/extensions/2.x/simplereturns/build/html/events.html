@@ -15,6 +15,7 @@
     <script type="text/javascript" src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Attribute Guide" href="attribute.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -39,25 +40,13 @@ and example usage.</p>
 <div class="section" id="adminhtml">
 <h2>Adminhtml<a class="headerlink" href="#adminhtml" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li><p><em>simplereturns_adminhtml_rma_create_save_before</em></p></li>
-<li><p><em>simplereturns_adminhtml_rma_create_save_after</em></p></li>
-<li><p><em>simplereturns_adminhtml_rma_edit_save_before</em></p></li>
-<li><p><em>simplereturns_adminhtml_rma_edit_save_after</em></p></li>
-<li><p><em>simplereturns_adminhtml_rma_status_edit_save_before</em></p></li>
-<li><p><em>simplereturns_adminhtml_rma_status_edit_save_after</em></p></li>
+<li><p>simplereturns_adminhtml_rma_create_save_before</p></li>
+<li><p>simplereturns_adminhtml_rma_create_save_after</p></li>
+<li><p>simplereturns_adminhtml_rma_edit_save_before</p></li>
+<li><p>simplereturns_adminhtml_rma_edit_save_after</p></li>
+<li><p>simplereturns_adminhtml_rma_status_edit_save_before</p></li>
+<li><p>simplereturns_adminhtml_rma_status_edit_save_after</p></li>
 </ol>
-</div>
-<div class="section" id="frontend">
-<h2>Frontend<a class="headerlink" href="#frontend" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
-<li><p><em>simplereturns_rma_create_save_before</em></p></li>
-<li><p><em>simplereturns_rma_create_save_after</em></p></li>
-<li><p><em>simplereturns_rma_edit_save_before</em></p></li>
-<li><p><em>simplereturns_rma_edit_save_after</em></p></li>
-</ol>
-</div>
-<div class="section" id="events">
-<h2>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h2>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 11%" />
@@ -102,7 +91,7 @@ and example usage.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p>Sample</p></td>
+<tr class="row-odd"><td><p>Usage</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">$observer-&gt;getEvent()-&gt;getStatus();</span></code></p></td>
 </tr>
 </tbody>
@@ -130,7 +119,7 @@ and example usage.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p>Sample</p></td>
+<tr class="row-odd"><td><p>Usage</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">$observer-&gt;getEvent()-&gt;getRma();</span></code></p></td>
 </tr>
 </tbody>
@@ -170,7 +159,7 @@ and example usage.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p>Sample</p></td>
+<tr class="row-odd"><td><p>Usage</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">$observer-&gt;getEvent()-&gt;getReason();</span></code></p></td>
 </tr>
 </tbody>
@@ -198,7 +187,7 @@ and example usage.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p>Sample</p></td>
+<tr class="row-odd"><td><p>Usage</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">$observer-&gt;getEvent()-&gt;getRma();</span></code></p></td>
 </tr>
 </tbody>
@@ -229,7 +218,7 @@ and example usage.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p>Sample</p></td>
+<tr class="row-odd"><td><p>Usage</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">$observer-&gt;getEvent()-&gt;getStatus();</span></code></p></td>
 </tr>
 </tbody>
@@ -257,11 +246,20 @@ and example usage.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p>Sample</p></td>
+<tr class="row-odd"><td><p>Usage</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">$observer-&gt;getEvent()-&gt;getRma();</span></code></p></td>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="section" id="frontend">
+<h2>Frontend<a class="headerlink" href="#frontend" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>simplereturns_rma_create_save_before</p></li>
+<li><p>simplereturns_rma_create_save_after</p></li>
+<li><p>simplereturns_rma_edit_save_before</p></li>
+<li><p>simplereturns_rma_edit_save_after</p></li>
+</ol>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 11%" />
@@ -306,7 +304,7 @@ and example usage.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p>Sample</p></td>
+<tr class="row-odd"><td><p>Usage</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">$observer-&gt;getEvent()-&gt;getOrderId();</span></code></p></td>
 </tr>
 </tbody>
@@ -334,7 +332,7 @@ and example usage.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p>Sample</p></td>
+<tr class="row-odd"><td><p>Usage</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">$observer-&gt;getEvent()-&gt;getRma();</span></code></p></td>
 </tr>
 </tbody>
@@ -380,7 +378,7 @@ and example usage.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p>Sample</p></td>
+<tr class="row-odd"><td><p>Usage</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">$observer-&gt;getEvent()-&gt;getComments();</span></code></p></td>
 </tr>
 </tbody>
@@ -408,7 +406,7 @@ and example usage.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p>Sample</p></td>
+<tr class="row-odd"><td><p>Usage</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">$observer-&gt;getEvent()-&gt;getRma();</span></code></p></td>
 </tr>
 </tbody>
@@ -434,10 +432,15 @@ and example usage.</p>
 
 <h3>Navigation</h3>
 <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="attribute.html">Attribute Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">List of Events</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#adminhtml">Adminhtml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#frontend">Frontend</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference external" href="https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt">License</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/RELEASE_NOTES.txt">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/index.html">Versions</a></li>
@@ -447,6 +450,7 @@ and example usage.</p>
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="attribute.html" title="previous chapter">Attribute Guide</a></li>
   </ul></li>
 </ul>
 </div>
