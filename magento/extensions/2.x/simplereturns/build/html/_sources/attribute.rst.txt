@@ -111,8 +111,8 @@ working with a large catalog. As of right now, we do not have a formalized guide
 Step Four: Test an order [Optional]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This step is optional, but we recommend completing it to get an understanding of how Simple Returns on
-the frontend.
+This step is optional, but we recommend completing it to get an understanding of how Simple Returns works
+on the frontend.
 
 To start this step, create a new order of all returnable products. There are plenty of guides on creating
 test orders in Magento, so we will leave that part up to you.
