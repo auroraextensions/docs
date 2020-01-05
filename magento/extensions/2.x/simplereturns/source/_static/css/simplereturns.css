@@ -1,6 +1,11 @@
 /**
  * simplereturns.css
  */
+
+body {
+  font-family: Baskerville, serif;
+}
+
 .section pre,
 .section tt,
 .section code {
