@@ -48,7 +48,16 @@ and lockable RMAs to prevent customers from editing, just to name a few.</p>
 <h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="#prerequisites">Prerequisites</a></p></li>
-<li><p><a class="reference internal" href="#attribute">Attribute</a></p></li>
+<li><dl class="simple">
+<dt><a class="reference internal" href="#attribute">Attribute</a></dt><dd><ul>
+<li><p><a class="reference internal" href="#step-one-add-attribute">Step One: Add Attribute</a></p></li>
+<li><p><a class="reference internal" href="#step-two-reindex-products">Step Two: Reindex Products</a></p></li>
+<li><p><a class="reference internal" href="#step-three-update-attribute">Step Three: Update Attribute</a></p></li>
+<li><p><a class="reference internal" href="#step-four-test-an-order-optional">Step Four: Test an order [Optional]</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
 </ul>
 </div>
 <div class="section" id="prerequisites">
@@ -74,13 +83,13 @@ well as the associated simple product.</p>
 </div>
 <p>From the product edit page, click <em>Add Attribute</em> in the top right corner of the page.</p>
 <div class="align-center figure">
-<a class="reference internal image-reference" href="_images/step_one_1.png"><img alt="Add attribute button" src="_images/step_one_1.png" style="width: 400.0px; height: 100.0px;" /></a>
+<a class="reference internal image-reference" href="_images/step_one_1.png"><img alt="Add attribute button" src="_images/step_one_1.png" style="width: 800.0px; height: 100.0px;" /></a>
 </div>
 <p>From the attributes grid, select the checkbox for <code class="docutils literal notranslate"><span class="pre">simple_return</span></code> and click <em>Add Selected</em>.</p>
 <div class="align-center figure">
 <a class="reference internal image-reference" href="_images/step_one_2.png"><img alt="Add selected attribute" src="_images/step_one_2.png" style="width: 800.0px; height: 400.0px;" /></a>
 </div>
-<p>Then click <em>Save</em> to update the product.</p>
+<p>Click <em>Save</em> to update the product.</p>
 </div>
 <div class="section" id="step-two-reindex-products">
 <h3>Step Two: Reindex Products<a class="headerlink" href="#step-two-reindex-products" title="Permalink to this headline">¶</a></h3>
@@ -89,13 +98,92 @@ run the following command:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>./bin/magento cache:clean <span class="o">&amp;&amp;</span> ./bin/magento indexer:reindex
 </pre></div>
 </div>
-<p>Once the above command has completed, navigate back to the product edit page and look for the
-<em>Attributes</em> section near the bottom of the page. Toggle open the <em>Attributes</em> section and click
-the <em>Returnable</em> attribute button to enable returns for the product.</p>
-<div class="align-center figure">
-<a class="reference internal image-reference" href="_images/step_two_1.png"><img alt="Enable Returnable attribute" src="_images/step_two_1.png" style="width: 800.0px; height: 100.0px;" /></a>
 </div>
-<p>Then click <em>Save</em> to update the product.</p>
+<div class="section" id="step-three-update-attribute">
+<h3>Step Three: Update Attribute<a class="headerlink" href="#step-three-update-attribute" title="Permalink to this headline">¶</a></h3>
+<p>Once the indexer is finished, navigate back to the product edit page and look for the <em>Attributes</em>
+section near the bottom of the page. Toggle open the <em>Attributes</em> section and click the <em>Returnable</em>
+attribute button to enable returns for the product.</p>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="_images/step_three_1.png"><img alt="Update Returnable attribute" src="_images/step_three_1.png" style="width: 800.0px; height: 100.0px;" /></a>
+</div>
+<p>Click <em>Save</em> to update the product. You should be able to see the attribute value set to enabled
+after the product is finished saving.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the attribute value is not updated after saving the product, the likely causes are:</p>
+<ol class="arabic simple">
+<li><p>You did not complete <a class="reference internal" href="#step-two-reindex-products">Step Two: Reindex Products</a></p></li>
+<li><p>The product was not successfully reindexed with the new attribute</p></li>
+</ol>
+</div>
+<p>Once you’ve verified the attribute value is saving properly, you can either manually update each product
+you would like to make returnable, or you can perform a bulk import to save time, particularly if you’re
+working with a large catalog. As of right now, we do not have a formalized guide on bulk importing.</p>
+</div>
+<div class="section" id="step-four-test-an-order-optional">
+<h3>Step Four: Test an order [Optional]<a class="headerlink" href="#step-four-test-an-order-optional" title="Permalink to this headline">¶</a></h3>
+<p>This step is optional, but we recommend completing it to get an understanding of how Simple Returns on
+the frontend.</p>
+<p>To start this step, create a new order of all returnable products. There are plenty of guides on creating
+test orders in Magento, so we will leave that part up to you.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Please don’t use an existing order, as the order items of an existing order will not have the required
+attribute saved on it.</p>
+</div>
+<p>Once you have your test order submitted, navigate to the <em>Orders and Returns</em> page on the frontend.</p>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="_images/step_four_1.png"><img alt="Orders and Returns footer link" src="_images/step_four_1.png" style="width: 800.0px; height: 100.0px;" /></a>
+</div>
+<p>On the <em>Orders and Returns</em> page, fill out the relevant order information. The Order ID field should be the
+nine digit order increment ID value, which was generated when the order was created.</p>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="_images/step_four_2.png"><img alt="Orders and Returns form" src="_images/step_four_2.png" style="width: 800.0px; height: 100.0px;" /></a>
+</div>
+<p>Click <em>Continue</em> to submit the form. This will take you to the frontend order view page.</p>
+<p>Once the order view page has loaded, you should see a new link next to the <em>Reorder</em> link. It will display
+something to the effect of <em>Return or replace items</em>. Click the link, which will take you to the frontend
+RMA create page.</p>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="_images/step_four_3.png"><img alt="Return or replace items link" src="_images/step_four_3.png" style="width: 700.0px; height: 250.0px;" /></a>
+</div>
+<p>On the <em>Create new RMA</em> page, fill out the relevant information about the RMA request and click <em>Submit</em>.</p>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="_images/step_four_4.png"><img alt="Create new RMA form" src="_images/step_four_4.png" style="width: 400.0px; height: 400.0px;" /></a>
+</div>
+<p>Once the RMA view page had loaded, review the information. You will not be able to generate a shipping
+label until the RMA request is approved.</p>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="_images/step_four_5.png"><img alt="RMA view page" src="_images/step_four_5.png" style="width: 400.0px; height: 400.0px;" /></a>
+</div>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="_images/step_four_6.png"><img alt="RMA view page with notice" src="_images/step_four_6.png" style="width: 400.0px; height: 400.0px;" /></a>
+</div>
+<p>Keeping the RMA view page open, create a new tab in your browser. In the new tab, navigate to the Magento
+backend and approve the RMA request. This will allow you to generate the package and subsequent shipping
+label from the frontend like a customer.</p>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="_images/step_four_7.png"><img alt="Admin RMA view page" src="_images/step_four_7.png" style="width: 900.0px; height: 250.0px;" /></a>
+</div>
+<p>Returning to the frontend RMA view page, reload the page and click the <em>Create Package</em> button. This will
+take you to the Package create page and require you to confirm the package information. Keep the option to
+<em>Generate Shipping Label</em> set to <em>Yes</em> and click <em>Confirm</em>.</p>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="_images/step_four_8.png"><img alt="Confirm new package page" src="_images/step_four_8.png" style="width: 900.0px; height: 250.0px;" /></a>
+</div>
+<p>Once the Package view page has loaded, you should see all of the package details along with the newly generated
+shipping label.</p>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="_images/step_four_9.png"><img alt="Package view page with shipping label" src="_images/step_four_9.png" style="width: 400.0px; height: 200.0px;" /></a>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you encounter issues when confirming the package information, it is almost always an issue communicating
+with the shipping carrier APIs. Please make sure you have properly configured the desired shipping carrier,
+your access credentials are working, and the desired shipping carrier is selected within the Simple Returns
+configuration settings.</p>
+</div>
 </div>
 </div>
 </div>
