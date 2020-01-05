@@ -103,9 +103,9 @@ Frontend
 --------
 
 1. `simplereturns_rma_create_save_before`_
-2. simplereturns_rma_create_save_after
-3. simplereturns_rma_edit_save_before
-4. simplereturns_rma_edit_save_after
+2. `simplereturns_rma_create_save_after`_
+3. `simplereturns_rma_edit_save_before`_
+4. `simplereturns_rma_edit_save_after`_
 
 .. _simplereturns_rma_create_save_before:
 
