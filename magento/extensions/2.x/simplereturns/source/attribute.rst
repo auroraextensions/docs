@@ -26,8 +26,8 @@ Prerequisites
 
 Before starting, please make sure you have completed the following steps:
 
-:ref:`installation`
-:ref:`configuration`
+* :ref:`installation`
+* :ref:`configuration`
 
 .. _attribute:
 
