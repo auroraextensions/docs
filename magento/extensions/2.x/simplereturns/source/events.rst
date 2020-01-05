@@ -8,12 +8,15 @@ and example usage.
 Adminhtml
 ---------
 
-1. simplereturns_adminhtml_rma_create_save_before
+1. `simplereturns_adminhtml_rma_create_save_before`_
 2. simplereturns_adminhtml_rma_create_save_after
 3. simplereturns_adminhtml_rma_edit_save_before
 4. simplereturns_adminhtml_rma_edit_save_after
 5. simplereturns_adminhtml_rma_status_edit_save_before
 6. simplereturns_adminhtml_rma_status_edit_save_after
+
+simplereturns_adminhtml_rma_create_save_before
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 =======  =======================================================
 Event    **simplereturns_adminhtml_rma_create_save_before**
