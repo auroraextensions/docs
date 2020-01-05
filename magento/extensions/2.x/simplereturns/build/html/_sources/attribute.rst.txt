@@ -58,6 +58,8 @@ From the product edit page, click *Add Attribute* in the top right corner of the
    :figclass: align-center
    :scale: 50%
 
+   Visual location of Add Attribute button
+
 From the attributes grid, select the checkbox for ``simple_return`` and click *Add Selected*.
 
 .. figure:: images/step_one_2.png
