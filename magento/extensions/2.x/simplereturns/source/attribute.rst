@@ -87,7 +87,7 @@ Once the indexer is finished, navigate back to the product edit page and look fo
 section near the bottom of the page. Toggle open the *Attributes* section and click the *Returnable*
 attribute button to enable returns for the product.
 
-.. figure:: images/step_two_1.png
+.. figure:: images/step_three_1.png
    :width: 1600
    :height: 200
    :alt: Update Returnable attribute
