@@ -6,6 +6,10 @@ body {
   font-family: Baskerville, serif;
 }
 
+.document div.sphinxsidebarwrapper h1.logo {
+  font-size: 1.5rem;
+}
+
 .section pre,
 .section tt,
 .section code {
