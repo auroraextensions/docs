@@ -5,7 +5,7 @@ Simple Returns Pro
    :maxdepth: 2
    :caption: Table of Contents:
 
-   quickstart
+   installation
    License <https://docs.auroraextensions.com/magento/extensions/2.x/simplereturnspro/LICENSE.txt>
    Release Notes <https://docs.auroraextensions.com/magento/extensions/2.x/simplereturnspro/RELEASE_NOTES.txt>
    Simple Returns <https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/latest/index.html>
