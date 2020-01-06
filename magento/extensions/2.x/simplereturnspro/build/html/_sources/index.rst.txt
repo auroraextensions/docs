@@ -10,7 +10,6 @@ Simple Returns Pro
    Release Notes <https://docs.auroraextensions.com/magento/extensions/2.x/simplereturnspro/RELEASE_NOTES.txt>
    Simple Returns <https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/latest/index.html>
    Versions <https://docs.auroraextensions.com/magento/extensions/2.x/simplereturnspro/index.html>
-   Where to buy <https://auroraextensions.com/products/simple-returns-pro>
 
 What is Simple Returns Pro?
 ---------------------------
