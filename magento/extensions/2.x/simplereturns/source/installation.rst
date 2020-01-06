@@ -15,12 +15,6 @@ Table of Contents
 
 .. _installation:
 
-Installation
-------------
-
-You can install Simple Returns several ways, however we highly recommend using `Composer <https://getcomposer.org>`_.
-Simple Returns has dependencies, so installing with Composer makes dependency management substantially easier.
-
 Dependencies
 ------------
 
@@ -46,6 +40,12 @@ Simple Returns has the following dependencies, as listed in its ``composer.json`
 .. note::
     The aforementioned list of dependencies is subject to change. Please consult the composer.json
     file of the target version you are using to find the most accurate list of dependencies.
+
+Installation
+------------
+
+You can install Simple Returns several ways, however we highly recommend using `Composer <https://getcomposer.org>`_.
+Simple Returns has dependencies, so installing with Composer makes dependency management substantially easier.
 
 Composer
 ^^^^^^^^
