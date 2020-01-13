@@ -2,6 +2,58 @@
 
 ## [Unreleased]
 
+## [1.1.0] ~ 2019-01-07
+#### Added
+- Add adminhtml Lock block
+- Add adminhtml lock.js
+- Add is_locked column to RMA entity table
+- Add lock button to adminhtml RMA view page
+- Add before save event in adminhtml RMA editPost controller
+- Add conditional label in adminhtml RMA state lock block
+- Add iconUrl parameter for JS component in adminhtml RMA state lock block
+- Add IsLocked UI listing column component
+- Add simplereturns_rma_grid UI component XML file
+- Add adminhtml simplereturns_rma_archive_index controller
+- Add archives ACL configuration to acl.xml
+- Add is_archived column to RMA table via db_schema.xml
+- Add IsArchived RMA listing column component class
+- Add adminhtml simplereturns_rma_archive_index.xml
+- Add is_archived column in simplereturns_rma_grid.xml
+- Add FilterUnarchivedRmaRequests plugin class
+- Add AppendArchivesToRmaGridUrlParams plugin class
+- Add FilterArchivedRmaRequests plugin class
+- Add adminhtml RMA archive editPost controller
+- Add adminhtml RMA archive block
+- Add adminhtml RMA archive block to simplereturns_rma_view.xml
+- Add adminhtml archive.js
+- Add foreign key constraint for RMA items table
+- Add db_schema_whitelist.json
+
+#### Changed
+- Put Lock button before other buttons in adminhtml RMA view XML layout
+- Set action attribute on Archives > RMAs menu item
+- Move AppendFormKeyToSubmitUrl plugin into new directory
+- Update RMA archives menu action
+- Update is_locked, is_archived columns sort orders in simplereturns_rma_grid.xml
+- Refactor AppendSelectedItemPresets plugin class
+- Refactor adminhtml simplereturns_rma_editPost controller
+
+#### Fixed
+- Fix class reference in adminhtml RMA view XML layout
+- Fix namespace in adminhtml RMA state lock block
+- Fix RMA lock state column class
+- Fix <dataType> issue in adminhtml simplereturns_rma_grid.xml
+- Fix items array indices issue in FilterUnarchivedRmaRequests plugin class
+- Fix field, event in adminhtml RMA archive editPost controller
+- Fix issue where archive value is not updating in archive.js
+
+#### Removed
+- Remove Edit, Status Actions buttons when RMA is locked
+- Remove domReady! from imports in lock.js
+- Remove unused isLocked method from RMA IsLocked listing component class
+- Remove simplereturns_rma_archive_index controller
+- Remove adminhtml simplereturns_rma_archive_index.xml
+
 ## [1.0.0] ~ 2019-12-21
 #### Added
 - Initial release of Simple Returns Pro.
