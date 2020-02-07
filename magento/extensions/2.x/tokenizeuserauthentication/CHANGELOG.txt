@@ -85,7 +85,7 @@
 
 #### Deprecated
 
-- Deprecate ModuleComponentInterface
+- Deprecate Shared\ModuleComponentInterface
 - Deprecate Plugin\Backend\Authentication plugin
 - Deprecate all helper classes:
   + Helper\Action
