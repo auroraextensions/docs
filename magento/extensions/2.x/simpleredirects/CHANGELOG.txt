@@ -1,0 +1,41 @@
+# Changelog
+
+## [Unreleased]
+
+## [1.1.0] ~ 2020-03-11
+#### Added
+- Add priority row to adminhtml simpleredirects_rule_view template
+- Add basic rule chaining support in RuleValidator validation model
+- Add Rule select source model
+- Include name, parent_id during save in adminhtml rule createPost, editPost controllers
+- Add name, parent_id form elements in simpleredirects_rule_form.xml
+- Include rule name in adminhtml rule view details template
+- Add parent_id column UI component class
+- Add Target column UI component class
+- Add Rule view model View::getParentName() method
+- Add parent, target rows to simpleredirects_rule_view template
+- Add CancelButton UI component class
+- Add cancel button to simpleredirects_rule_form.xml
+- Add adminhtml rule back button block
+- Add back button block in adminhtml simpleredirects_rule_view.xml
+- Add DeleteButton UI component class
+- Add adminhtml simpleredirects_rule_deletePost controller
+- Add adminhtml rule delete.js
+- Add delete button in adminhtml simpleredirects_rule_form.xml
+
+#### Changed
+- Update default value in ParentId::getLabel()
+- Set RuleInterface::getTarget() nullable return type
+- Check if rule has target value in Router::match()
+- Make target column nullable in db_schema.xml
+- Update button CSS class in adminhtml rule edit button block
+- Update <actionsColumn> config in simpleredirects_rule_grid.xml
+- Set RuleInterface::setParentId() parameter as nullable type
+
+#### Removed
+- Remove validation for target field
+- Remove edit button from simpleredirects_rule_grid actions column
+
+## [1.0.0] ~ 2019-03-03
+#### Added
+- Initial release of Simple Redirects.
