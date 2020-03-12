@@ -1,0 +1,153 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rules Guide &#8212; Simple Redirects 1.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/simpleredirects.css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Configuration Guide" href="configuration.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="configuration.html" title="Configuration Guide"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Simple Redirects 1.1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Rules Guide</a><ul>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li><a class="reference internal" href="#rules">Rules</a><ul>
+<li><a class="reference internal" href="#creating-rules">Creating rules</a></li>
+<li><a class="reference internal" href="#editing-rules">Editing rules</a></li>
+<li><a class="reference internal" href="#deleting-rules">Deleting rules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="configuration.html"
+                        title="previous chapter">Configuration Guide</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/rules.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="rules-guide">
+<h1>Rules Guide<a class="headerlink" href="#rules-guide" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#prerequisites" id="id2">Prerequisites</a></p></li>
+<li><p><a class="reference internal" href="#rules" id="id3">Rules</a></p>
+<ul>
+<li><p><a class="reference internal" href="#creating-rules" id="id4">Creating rules</a></p></li>
+<li><p><a class="reference internal" href="#editing-rules" id="id5">Editing rules</a></p></li>
+<li><p><a class="reference internal" href="#deleting-rules" id="id6">Deleting rules</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="prerequisites">
+<h2><a class="toc-backref" href="#id2">Prerequisites</a><a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<p>Before starting this step, please make sure you have completed the following:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="installation.html#installation"><span class="std std-ref">Dependencies</span></a></p></li>
+<li><p><a class="reference internal" href="configuration.html#configuration"><span class="std std-ref">Configuration</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="rules">
+<span id="id1"></span><h2><a class="toc-backref" href="#id3">Rules</a><a class="headerlink" href="#rules" title="Permalink to this headline">¶</a></h2>
+<p>In this guide, we’ll talk about two different types of rules: <em>atomic</em> and <em>composite</em>.
+Atomic rules are simple, single-purpose rules and are the building blocks of Simple Redirects.
+Composite rules are just atomic rules that are chained together, which allows for multiple
+conditions when applying rules.</p>
+<div class="section" id="creating-rules">
+<h3><a class="toc-backref" href="#id4">Creating rules</a><a class="headerlink" href="#creating-rules" title="Permalink to this headline">¶</a></h3>
+<p>To create a new rule, navigate to <em>Marketing</em> &gt; <em>Simple Redirects</em> and click <em>Create Rule</em> in
+the top right corner.</p>
+</div>
+<div class="section" id="editing-rules">
+<h3><a class="toc-backref" href="#id5">Editing rules</a><a class="headerlink" href="#editing-rules" title="Permalink to this headline">¶</a></h3>
+<p>To edit a rule, navigate to <em>Marketing</em> &gt; <em>Simple Redirects</em> and click the row of the rule
+you would like to edit.</p>
+</div>
+<div class="section" id="deleting-rules">
+<h3><a class="toc-backref" href="#id6">Deleting rules</a><a class="headerlink" href="#deleting-rules" title="Permalink to this headline">¶</a></h3>
+<p>To delete a rule, navigate to <em>Marketing</em> &gt; <em>Simple Redirects</em>, click on the row of the rule
+you would like to delete, and from the edit page, click <em>Delete</em> in the top right corner.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="configuration.html" title="Configuration Guide"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Simple Redirects 1.1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020 Aurora Extensions.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.1.
+    </div>
+  </body>
+</html>
