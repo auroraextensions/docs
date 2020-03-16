@@ -14,4 +14,4 @@ exclude_patterns = []
 # HTML configuration
 html_theme = 'bizstyle'
 html_static_path = ['_static']
-html_css_files = ['css/simpleredirects.css']
+html_css_files = ['css/styles.css']
