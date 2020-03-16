@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 
+- HTTP header rule type
+- Bulk import rules
+
 ## [1.1.0] ~ 2020-03-11
 #### Added
 - Add priority row to adminhtml simpleredirects_rule_view template
