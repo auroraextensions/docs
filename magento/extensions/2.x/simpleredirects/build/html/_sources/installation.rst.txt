@@ -4,8 +4,6 @@ Installation Guide
 .. contents:: Table of Contents
     :local:
 
-.. _installation:
-
 Dependencies
 ------------
 
@@ -24,6 +22,8 @@ Simple Redirects has the following dependencies, as listed in its ``composer.jso
 .. note::
     The aforementioned list of dependencies is subject to change. Please consult the composer.json
     file of the target version you are using to find the most accurate list of dependencies.
+
+.. _installation:
 
 Installation
 ------------
