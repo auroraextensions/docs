@@ -13,7 +13,7 @@ body.homepage {
 a {
   clear: left;
   float: left;
-  line-height: 18px;
+  line-height: normal;
 }
 
 ol, ul {
@@ -51,4 +51,16 @@ span.bold {
 
 span.emph {
   font-style: italic;
+}
+
+@media screen and (max-width: 480px) {
+  span.bold, ul > li {
+    font-size: 3rem;
+    line-height: 3rem;
+    padding: 1rem;
+  }
+
+  ul {
+    margin-left: 3rem;
+  }
 }
