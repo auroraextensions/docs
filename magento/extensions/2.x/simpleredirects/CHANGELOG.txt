@@ -39,6 +39,6 @@
 - Remove validation for target field
 - Remove edit button from simpleredirects_rule_grid actions column
 
-## [1.0.0] ~ 2019-03-03
+## [1.0.0] ~ 2020-03-03
 #### Added
 - Initial release of Simple Redirects.
