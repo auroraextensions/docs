@@ -10,7 +10,7 @@ templates_path = ['_templates']
 exclude_patterns = []
 
 # HTML configuration
-html_baseurl = 'https://whiteboard.auroraextensions.com/'
+html_baseurl = 'https://docs.auroraextensions.com/'
 html_theme = 'bizstyle'
 html_static_path = ['_static']
 html_css_files = ['css/styles.css']
