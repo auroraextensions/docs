@@ -1,42 +1,61 @@
 /**
  * styles.css
  */
-
 body {
-  font-family: Baskerville, serif;
+  border-left: 1px solid #3123ae;
+  border-right: 1px solid #3123ae;
 }
 
-.document div.sphinxsidebarwrapper h1.logo {
-  font-size: 1.25rem;
+div.related ul,
+div.sphinxsidebar h3,
+div.sphinxsidebar h4 {
+  background-color: #3123ae;
 }
 
-.section pre,
-.section tt,
-.section code {
-  font-size: 0.8em;
+div.sphinxsidebar h3,
+div.sphinxsidebar h4,
+div.sphinxsidebar input {
+  border: 1px solid #3123ae;
 }
 
-.section pre {
-  background: #fafafa;
-  border-radius: 3px;
+h1, h2, h3, a,
+div.footer,
+div.footer a {
+  color: #3123ae;
 }
 
-.section span.pre {
-  border-radius: 3px;
-  padding: 0.25em;
+a:hover {
+  color: #2a2080;
 }
 
-.section code.literal {
-  border-radius: 3px;
+h2, div.footer {
+  border-bottom: 1px solid #3123ae;
 }
 
-.section div.admonition.warning {
-  background-color: #ffedcc;
-  border: 1px solid #ffc966;
+h4 {
+  background-color: #f2f2f2;
+  color: #000;
+  padding: 1px 3px;
 }
 
-.section img.align-center,
-.section .figure.align-center,
-.section object.align-center {
-  border: 1px solid #eaeaea;
+div.bodywrapper {
+  margin: 0 0 0 280px;
+}
+
+div.sphinxsidebar {
+  width: 250px;
+}
+
+@media screen and (max-width: 1024px) {
+  dd, div.bodywrapper {
+    margin: 0 !important;
+  }
+
+  div.body {
+    min-width: auto !important;
+  }
+
+  ul.simple {
+    padding-inline-start: 20px;
+  }
 }
