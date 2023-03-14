@@ -1,6 +1,6 @@
 # Project configuration
 project = 'Simple Returns'
-copyright = '2020 Aurora Extensions'
+copyright = '2023 Aurora Extensions'
 author = 'Aurora Extensions'
 release = '1.1.1'
 
