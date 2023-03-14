@@ -74,7 +74,7 @@ run the following command:
 
 .. code-block:: sh
 
-    ./bin/magento cache:clean && ./bin/magento indexer:reindex
+    bin/magento cache:clean && bin/magento indexer:reindex
 
 Step Three: Update Attribute
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
