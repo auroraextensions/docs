@@ -62,13 +62,14 @@ the Magento root directory:
 
 .. code-block:: sh
 
-    ./bin/magento module:enable AuroraExtensions_ImageProcessor AuroraExtensions_SimpleReturns --clear-static-content
+    bin/magento module:enable AuroraExtensions_ImageProcessor AuroraExtensions_SimpleReturns \
+                --clear-static-content
 
 Next, run the setup upgrade command from the Magento root directory:
 
 .. code-block:: sh
 
-    ./bin/magento cache:clean && ./bin/magento setup:upgrade
+    bin/magento setup:upgrade
 
 .. note::
     The above command may take a few minutes to finish, so please be patient.
@@ -77,7 +78,7 @@ After setup upgrade has completed, verify the modules are listed as enabled:
 
 .. code-block:: sh
 
-    ./bin/magento module:status
+    bin/magento module:status
 
 Next Steps
 ----------
