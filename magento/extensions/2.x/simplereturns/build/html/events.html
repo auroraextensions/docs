@@ -2,29 +2,32 @@
 
 <!doctype html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
     <title>List of Events &#8212; Simple Returns 1.1.1 documentation</title>
-    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/bizstyle.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/styles.css" />
     
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
-    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/bizstyle.js"></script>
     <link rel="canonical" href="https://docs.auroraextensions.com/events.html" />
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Project Roadmap" href="roadmap.html" />
     <link rel="prev" title="Attribute Guide" href="attribute.html" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <script src="_static/css3-mediaqueries.js"></script>
     <![endif]-->
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -39,58 +42,23 @@
         <li class="right" >
           <a href="attribute.html" title="Attribute Guide"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Simple Returns 1.1.1 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Simple Returns 1.1.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">List of Events</a></li> 
       </ul>
-    </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Table of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">List of Events</a><ul>
-<li><a class="reference internal" href="#adminhtml">Adminhtml</a></li>
-<li><a class="reference internal" href="#frontend">Frontend</a></li>
-</ul>
-</li>
-</ul>
-
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="attribute.html"
-                        title="previous chapter">Attribute Guide</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="roadmap.html"
-                        title="next chapter">Project Roadmap</a></p>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/events.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
+    </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="list-of-events">
-<h1>List of Events<a class="headerlink" href="#list-of-events" title="Permalink to this headline">¶</a></h1>
+  <section id="list-of-events">
+<h1>List of Events<a class="headerlink" href="#list-of-events" title="Permalink to this heading">¶</a></h1>
 <p>Simple Returns dispatches events for most major actions. The list below shows
 events by area and includes information like dispatch class, associated data,
 and example usage.</p>
-<div class="section" id="adminhtml">
-<h2>Adminhtml<a class="headerlink" href="#adminhtml" title="Permalink to this headline">¶</a></h2>
+<section id="adminhtml">
+<h2>Adminhtml<a class="headerlink" href="#adminhtml" title="Permalink to this heading">¶</a></h2>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="#simplereturns-adminhtml-rma-create-save-before">simplereturns_adminhtml_rma_create_save_before</a></p></li>
 <li><p><a class="reference internal" href="#simplereturns-adminhtml-rma-create-save-after">simplereturns_adminhtml_rma_create_save_after</a></p></li>
@@ -103,10 +71,6 @@ and example usage.</p>
 <div class="line"><br /></div>
 </div>
 <table class="docutils align-default" id="simplereturns-adminhtml-rma-create-save-before">
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 89%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Event</p></td>
 <td><p><strong>simplereturns_adminhtml_rma_create_save_before</strong></p></td>
@@ -119,28 +83,28 @@ and example usage.</p>
 </tr>
 <tr class="row-even"><td><p>Fields</p></td>
 <td><dl class="field-list simple">
-<dt class="field-odd">order_id</dt>
+<dt class="field-odd">order_id<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">int</span></code></p>
 </dd>
-<dt class="field-even">status</dt>
+<dt class="field-even">status<span class="colon">:</span></dt>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
-<dt class="field-odd">reason</dt>
+<dt class="field-odd">reason<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
-<dt class="field-even">resolution</dt>
+<dt class="field-even">resolution<span class="colon">:</span></dt>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
-<dt class="field-odd">comments</dt>
+<dt class="field-odd">comments<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
-<dt class="field-even">remote_ip</dt>
+<dt class="field-even">remote_ip<span class="colon">:</span></dt>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
-<dt class="field-odd">token</dt>
+<dt class="field-odd">token<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
-<dt class="field-even">created_at</dt>
+<dt class="field-even">created_at<span class="colon">:</span></dt>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
 </dl>
@@ -155,10 +119,6 @@ and example usage.</p>
 <div class="line"><br /></div>
 </div>
 <table class="docutils align-default" id="simplereturns-adminhtml-rma-create-save-after">
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 89%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Event</p></td>
 <td><p><strong>simplereturns_adminhtml_rma_create_save_after</strong></p></td>
@@ -171,7 +131,7 @@ and example usage.</p>
 </tr>
 <tr class="row-even"><td><p>Fields</p></td>
 <td><dl class="field-list simple">
-<dt class="field-odd">rma</dt>
+<dt class="field-odd">rma<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://github.com/auroraextensions/simplereturns/blob/master/Api/Data/SimpleReturnInterface.php"><code class="docutils literal notranslate"><span class="pre">SimpleReturnInterface</span></code></a></p>
 </dd>
 </dl>
@@ -186,10 +146,6 @@ and example usage.</p>
 <div class="line"><br /></div>
 </div>
 <table class="docutils align-default" id="simplereturns-adminhtml-rma-edit-save-before">
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 89%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Event</p></td>
 <td><p><strong>simplereturns_adminhtml_rma_edit_save_before</strong></p></td>
@@ -202,19 +158,19 @@ and example usage.</p>
 </tr>
 <tr class="row-even"><td><p>Fields</p></td>
 <td><dl class="field-list simple">
-<dt class="field-odd">rma</dt>
+<dt class="field-odd">rma<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://github.com/auroraextensions/simplereturns/blob/master/Api/Data/SimpleReturnInterface.php"><code class="docutils literal notranslate"><span class="pre">SimpleReturnInterface</span></code></a></p>
 </dd>
-<dt class="field-even">status</dt>
+<dt class="field-even">status<span class="colon">:</span></dt>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
-<dt class="field-odd">reason</dt>
+<dt class="field-odd">reason<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
-<dt class="field-even">resolution</dt>
+<dt class="field-even">resolution<span class="colon">:</span></dt>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
-<dt class="field-odd">comments</dt>
+<dt class="field-odd">comments<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
 </dl>
@@ -229,10 +185,6 @@ and example usage.</p>
 <div class="line"><br /></div>
 </div>
 <table class="docutils align-default" id="simplereturns-adminhtml-rma-edit-save-after">
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 89%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Event</p></td>
 <td><p><strong>simplereturns_adminhtml_rma_edit_save_after</strong></p></td>
@@ -245,7 +197,7 @@ and example usage.</p>
 </tr>
 <tr class="row-even"><td><p>Fields</p></td>
 <td><dl class="field-list simple">
-<dt class="field-odd">rma</dt>
+<dt class="field-odd">rma<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://github.com/auroraextensions/simplereturns/blob/master/Api/Data/SimpleReturnInterface.php"><code class="docutils literal notranslate"><span class="pre">SimpleReturnInterface</span></code></a></p>
 </dd>
 </dl>
@@ -260,10 +212,6 @@ and example usage.</p>
 <div class="line"><br /></div>
 </div>
 <table class="docutils align-default" id="simplereturns-adminhtml-rma-status-edit-save-before">
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 89%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Event</p></td>
 <td><p><strong>simplereturns_adminhtml_rma_status_edit_save_before</strong></p></td>
@@ -276,10 +224,10 @@ and example usage.</p>
 </tr>
 <tr class="row-even"><td><p>Fields</p></td>
 <td><dl class="field-list simple">
-<dt class="field-odd">rma</dt>
+<dt class="field-odd">rma<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://github.com/auroraextensions/simplereturns/blob/master/Api/Data/SimpleReturnInterface.php"><code class="docutils literal notranslate"><span class="pre">SimpleReturnInterface</span></code></a></p>
 </dd>
-<dt class="field-even">status</dt>
+<dt class="field-even">status<span class="colon">:</span></dt>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
 </dl>
@@ -294,10 +242,6 @@ and example usage.</p>
 <div class="line"><br /></div>
 </div>
 <table class="docutils align-default" id="simplereturns-adminhtml-rma-status-edit-save-after">
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 89%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Event</p></td>
 <td><p><strong>simplereturns_adminhtml_rma_status_edit_save_after</strong></p></td>
@@ -310,7 +254,7 @@ and example usage.</p>
 </tr>
 <tr class="row-even"><td><p>Fields</p></td>
 <td><dl class="field-list simple">
-<dt class="field-odd">rma</dt>
+<dt class="field-odd">rma<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://github.com/auroraextensions/simplereturns/blob/master/Api/Data/SimpleReturnInterface.php"><code class="docutils literal notranslate"><span class="pre">SimpleReturnInterface</span></code></a></p>
 </dd>
 </dl>
@@ -321,9 +265,9 @@ and example usage.</p>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="frontend">
-<h2>Frontend<a class="headerlink" href="#frontend" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="frontend">
+<h2>Frontend<a class="headerlink" href="#frontend" title="Permalink to this heading">¶</a></h2>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="#simplereturns-rma-create-save-before">simplereturns_rma_create_save_before</a></p></li>
 <li><p><a class="reference internal" href="#simplereturns-rma-create-save-after">simplereturns_rma_create_save_after</a></p></li>
@@ -334,10 +278,6 @@ and example usage.</p>
 <div class="line"><br /></div>
 </div>
 <table class="docutils align-default" id="simplereturns-rma-create-save-before">
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 89%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Event</p></td>
 <td><p><strong>simplereturns_rma_create_save_before</strong></p></td>
@@ -350,28 +290,28 @@ and example usage.</p>
 </tr>
 <tr class="row-even"><td><p>Fields</p></td>
 <td><dl class="field-list simple">
-<dt class="field-odd">order_id</dt>
+<dt class="field-odd">order_id<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">int</span></code></p>
 </dd>
-<dt class="field-even">status</dt>
+<dt class="field-even">status<span class="colon">:</span></dt>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
-<dt class="field-odd">reason</dt>
+<dt class="field-odd">reason<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
-<dt class="field-even">resolution</dt>
+<dt class="field-even">resolution<span class="colon">:</span></dt>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
-<dt class="field-odd">comments</dt>
+<dt class="field-odd">comments<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
-<dt class="field-even">remote_ip</dt>
+<dt class="field-even">remote_ip<span class="colon">:</span></dt>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
-<dt class="field-odd">token</dt>
+<dt class="field-odd">token<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
-<dt class="field-even">created_at</dt>
+<dt class="field-even">created_at<span class="colon">:</span></dt>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
 </dl>
@@ -386,10 +326,6 @@ and example usage.</p>
 <div class="line"><br /></div>
 </div>
 <table class="docutils align-default" id="simplereturns-rma-create-save-after">
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 89%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Event</p></td>
 <td><p><strong>simplereturns_rma_create_save_after</strong></p></td>
@@ -402,7 +338,7 @@ and example usage.</p>
 </tr>
 <tr class="row-even"><td><p>Fields</p></td>
 <td><dl class="field-list simple">
-<dt class="field-odd">rma</dt>
+<dt class="field-odd">rma<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://github.com/auroraextensions/simplereturns/blob/master/Api/Data/SimpleReturnInterface.php"><code class="docutils literal notranslate"><span class="pre">SimpleReturnInterface</span></code></a></p>
 </dd>
 </dl>
@@ -417,10 +353,6 @@ and example usage.</p>
 <div class="line"><br /></div>
 </div>
 <table class="docutils align-default" id="simplereturns-rma-edit-save-before">
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 89%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Event</p></td>
 <td><p><strong>simplereturns_rma_edit_save_before</strong></p></td>
@@ -433,25 +365,25 @@ and example usage.</p>
 </tr>
 <tr class="row-even"><td><p>Fields</p></td>
 <td><dl class="field-list simple">
-<dt class="field-odd">rma_id</dt>
+<dt class="field-odd">rma_id<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">int</span></code></p>
 </dd>
-<dt class="field-even">status</dt>
+<dt class="field-even">status<span class="colon">:</span></dt>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
-<dt class="field-odd">reason</dt>
+<dt class="field-odd">reason<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
-<dt class="field-even">resolution</dt>
+<dt class="field-even">resolution<span class="colon">:</span></dt>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
-<dt class="field-odd">comments</dt>
+<dt class="field-odd">comments<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
-<dt class="field-even">remote_ip</dt>
+<dt class="field-even">remote_ip<span class="colon">:</span></dt>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
-<dt class="field-odd">token</dt>
+<dt class="field-odd">token<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 </dd>
 </dl>
@@ -466,10 +398,6 @@ and example usage.</p>
 <div class="line"><br /></div>
 </div>
 <table class="docutils align-default" id="simplereturns-rma-edit-save-after">
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 89%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Event</p></td>
 <td><p><strong>simplereturns_rma_edit_save_after</strong></p></td>
@@ -482,7 +410,7 @@ and example usage.</p>
 </tr>
 <tr class="row-even"><td><p>Fields</p></td>
 <td><dl class="field-list simple">
-<dt class="field-odd">rma</dt>
+<dt class="field-odd">rma<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://github.com/auroraextensions/simplereturns/blob/master/Api/Data/SimpleReturnInterface.php"><code class="docutils literal notranslate"><span class="pre">SimpleReturnInterface</span></code></a></p>
 </dd>
 </dl>
@@ -493,11 +421,54 @@ and example usage.</p>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
+</section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">List of Events</a><ul>
+<li><a class="reference internal" href="#adminhtml">Adminhtml</a></li>
+<li><a class="reference internal" href="#frontend">Frontend</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="attribute.html"
+                          title="previous chapter">Attribute Guide</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="roadmap.html"
+                          title="next chapter">Project Roadmap</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/events.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -514,12 +485,13 @@ and example usage.</p>
         <li class="right" >
           <a href="attribute.html" title="Attribute Guide"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Simple Returns 1.1.1 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Simple Returns 1.1.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">List of Events</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2020 Aurora Extensions.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.1.
+        &#169; Copyright 2023 Aurora Extensions.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
     </div>
   </body>
 </html>
